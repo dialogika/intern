@@ -2307,6 +2307,18 @@ section {
   position: relative;
 }
 
+.resume .resume-item blockquote {
+  color: #000;
+  background-color: #DCF2FE;
+  padding-left: 20px;
+  font-size: 15px;
+  font-family: var(--font-default);
+  border-left: 2px solid #0f61a8;
+  margin: 40px 0;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
@@ -2421,6 +2433,46 @@ section {
 .resume .resume-item .play-btn:hover:after {
   border-left: 15px solid #0B2B6A;
   transform: scale(20);
+}
+
+.resume .resume-item.redres {
+  border-left: 2px solid #e7181a;
+}
+
+.resume .resume-item.redres p {
+  color: #e7181a;
+}
+
+.resume .resume-item.redres::before  {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #e7181a; 
+}
+
+.resume .resume-item.redres h4 {
+  color: #e7181a;
+}
+
+.resume .resume-item.redres ul li {
+  color: #e7181a;
+}
+
+.resume .resume-item.redres blockquote {
+  color: #000;
+  background-color: #fdeff2;
+  padding-left: 20px;
+  font-size: 15px;
+  font-family: var(--font-default);
+  border-left: 2px solid #e7181a;
+  margin: 40px 0;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 @-webkit-keyframes pulsate-btn {
