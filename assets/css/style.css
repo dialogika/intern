@@ -2437,6 +2437,7 @@ section {
 
 .resume .resume-item.redres {
   border-left: 2px solid #e7181a;
+
 }
 
 .resume .resume-item.redres p {
@@ -2452,7 +2453,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #e7181a; 
+  border: 2px solid #e7181a;
 }
 
 .resume .resume-item.redres h4 {
@@ -3969,10 +3970,14 @@ section {
 
 .contact .php-email-form .form-text {
   font-weight: 50px;
-  font-size: 10px;
-  color: #aaaaaa;
+  font-size: 15px;
+  color: #000000;
   margin-top: -20px;
   margin-bottom: 20px;
+}
+
+.contact .php-email-form .form-group input[type="checkbox"] {
+   transform: scale(10);
 }
 
 @-webkit-keyframes animate-loading {
