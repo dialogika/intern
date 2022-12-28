@@ -1240,13 +1240,23 @@
 
               <div class="form-text" style="margin-top:5px;margin-bottom: 20px;">
                 <label>
-                  <input type="checkbox" name="basicRules">
-                  <span>Basic Rules Sudah Saya Baca</span>
+                  <input type="checkbox" id="rules" name="Rule" >
+                  <span>Saya bersedia mematuhi <b><a href="#resume">Basic Rules</a></b> Dialogika</span>
                 </label>
                 <label>
-                  <input type="checkbox" name="dearcandidates">
-                  <span>Saya <b>telah membaca "dear candidate"</b></span>
+                  <input type="checkbox" id="reads" name="Read" >
+                  <span>Saya <b>telah membaca secara lengkap <a href="#dearcandidate">"dear candidate"</a></b></span>
                 </label>
+                <label>
+                  <input type="checkbox" id="threemonths" name="Three Month" >
+                  <span>Saya bersedia magang <b>selama tiga bulan</b></span>
+                </label>
+                <label>
+                  <input type="checkbox" id="unpaids" name="Unpaid" >
+                  <span>Saya bersedia magang <b>secara unpaid</b></span>
+                </label>
+                <hr/>
+                <em>Apabila secara mental Anda <b>merasa tidak siap,</b> <u>jangan melamar</u> internship ini, karena kami ingin mencetak generasi tangguh.</em>
               </div>
               
               <div class="text-center" style="margin-top:20px;">
@@ -1402,7 +1412,7 @@
       $(function () {
         $('#submits').attr('disabled', true);
         $('#myForm').change(function () {
-            if ($('#names').val() != '' && $('#works').val() != '' && $('#locations').val() != '' && $('#whatsapps').val() != '') {
+            if ( $('#names').val() != '' && $('#works').val() != '' && $('#locations').val() != '' && $('#whatsapps').val() != '' && $('#instagram').val() != '' && $('#tiktok').val() != '' && $('#messages').val() != '' && $('#rules:checked').val() && $('#reads:checked').val() && $('#threemonths:checked').val() && $('#unpaids:checked').val() ) {
                 $('#submits').attr('disabled', false);
             } else {
                 $('#submits').attr('disabled', true);
