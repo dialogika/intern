@@ -195,12 +195,29 @@
   }
 
   /**
+   * Swipe to appear
+   */
+  let swipetoappear = select('.swipe-to-appear')
+  if (swipetoappear) {
+    const toggleSwipetoappear = () => {
+      if (window.scrollY > 4500) {
+        swipetoappear.classList.add('active')
+      } else {
+        swipetoappear.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleSwipetoappear)
+    onscroll(document, toggleSwipetoappear)
+  }
+
+  /**
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
+    // select('#navbar').classList.toggle('navbar-mobile')
+    // this.classList.toggle('bi-list')
+    // this.classList.toggle('bi-x')
+    $('#sidebar-mobile').offcanvas('show');
   })
 
   /**
@@ -427,6 +444,25 @@
   countDownDate();
   setInterval(countDownDate, 1000);
 
-  
+  // untuk footer
+  if (window.innerWidth <= 768) {
+            const myElement = document.getElementById("footer-about-dialogika");
+            const myElement1 = document.getElementById("footer-counseling-program");
+            const myElement2 = document.getElementById("footer-event-agency");
+            const myElement3 = document.getElementById("footer-our-service");
+            const myElement4 = document.getElementById("footer-useful-link");
+            const myElement5 = document.getElementById("footer-career-info");
+            const myElement6 = document.getElementById("footer-private-program");
+
+            // Menghapus class "my-class" pada elemen HTML
+            myElement.classList.remove("show");
+            myElement1.classList.remove("show");
+            myElement2.classList.remove("show");
+            myElement3.classList.remove("show");
+            myElement4.classList.remove("show");
+            myElement5.classList.remove("show");
+            myElement6.classList.remove("show");
+            }
+
 
 })()
