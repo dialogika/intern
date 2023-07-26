@@ -3,7 +3,7 @@ $(document).on('click','.send_contact', function(){
 
     /* Whatsapp Settings */
     var walink = 'https://web.whatsapp.com/send',
-        phone = '628976896855',
+        phone = '6285162992597',
         walink2 = 'Salam Hangat, Saya melihat *Lowongan Internship Dialogika* dan saya tertarik.' + '%0A%0A' 
                 + 'Berikut Data Diri Saya: ',
         text_yes = 'Terkirim.',
