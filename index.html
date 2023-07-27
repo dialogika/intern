@@ -56,46 +56,26 @@
   
   <!-- Spreadsheet API Form Pendaftaran -->
     <script
-      src="https://code.jquery.com/jquery-3.4.1.js"      
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
     <script>
       function SubForm (){
         $.ajax({
-        url:"https://api.apispreadsheets.com/data/Xo2BXzM3nwY5l9Wv/",
-        type:"post",
-        data:$("#myForm").serializeArray(),
-        headers:{
-          accessKey: "58c51c5f5849fce496e40d42be2834fc",
-          secretKey: "bce1bc127f076f89b45fa04a589345ba"},
-          success: function(){ 
-            // alert("Form Terkirim :)")
-            $('#notifications').modal('show');
-            // const sendBtn = document.getElementsByClassName("send_contact")[0];
-            // sendBtn.addEventListener("click", function() {
-            //   // Perform some action when the button is clicked
-            // });
-          },
-          error: function(){
-            alert("There was an error :(")
-          }
-        });
-      }
-
-      function Subcription (){
-        $.ajax({
-          url:"https://api.apispreadsheets.com/data/18511/",
+          url:"https://api.apispreadsheets.com/data/qBMNmHWNwLnA3S2s/",
           type:"post",
-          data:$("#subcriptions").serializeArray(),
+          data:$("#myForm").serializeArray(),
           success: function(){
-            window.location.href = "https://link.dialogika.co/open-whatsapp-group";
+            alert("Form Data Submitted :)")
           },
           error: function(){
             alert("There was an error :(")
           }
         });
+        
       }
     </script>
+   
   <!-- End Spreadsheet API Form Pendaftaran -->
 
   <!-- Meta Pixel Code -->
@@ -1159,7 +1139,7 @@
           <p></p>
         </div>
 
-        <form action="javascript:void" method="post" id="myForm" enctype="text/plain" role="form" class="php-email-form needs-validation" onsubmit="SubForm()">
+        <form action="javascript:void" method="post" id="myForm" enctype="text/plain" role="form" class="php-email-form needs-validation" onsubmit="SubForm ()">
           <div class="row">
             <div class="col-md-4 form-group">
               <input type="text" class="form-control" name="Name" id="names" pattern="[a-zA-Z\s]{3,100}" placeholder="Full Name*" required>
@@ -2200,16 +2180,16 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/whatsapp.js"></script>
     <script type="text/javascript">
-      $(function () {
-        $('#submits').attr('disabled', true);
-        $('#myForm').change(function () {
-            if ($('#names').val() != '' && $('#works').val() != '' && $('#locations').val() != '' && $('#whatsapps').val() != '') {
-                $('#submits').attr('disabled', false);
-            } else {
-                $('#submits').attr('disabled', true);
-            }
-        });
-      });
+      // $(function () {
+      //   $('#submits').attr('disabled', true);
+      //   $('#myForm').change(function () {
+      //       if ($('#names').val() != '' && $('#works').val() != '' && $('#locations').val() != '' && $('#whatsapps').val() != '') {
+      //           $('#submits').attr('disabled', false);
+      //       } else {
+      //           $('#submits').attr('disabled', true);
+      //       }
+      //   });
+      // });
       // get date
       var today = new Date();
       var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
