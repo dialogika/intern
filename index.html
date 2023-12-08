@@ -14,1794 +14,747 @@
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-    <meta property="og:site_name" content="Dialogika | Kelas Public Speaking" /> 
-    <meta property="og:site" content="dialogika.co" /> 
-    <meta property="og:title" content="Internship Dialogika"/> 
-    <meta property="og:description" content="Formulir Pendaftaran" /> 
-    <meta property="og:image" content="https://empowerly.com/wordpress/wp-content/uploads/2022/07/AdobeStock_423656331-1-scaled-e1658326790962.jpeg" /> <!-- GANTI -->
-    <meta property="og:url" content="dialogika.co/intern/index.html" /> 
+    <meta property="og:site_name" content="Dialogika | Kelas Public Speaking" />
+    <meta property="og:site" content="dialogika.co" />
+    <meta property="og:title" content="Internship Dialogika"/>
+    <meta property="og:description" content="Formulir Pendaftaran" />
+    <meta property="og:image" content="https://empowerly.com/wordpress/wp-content/uploads/2022/07/AdobeStock_423656331-1-scaled-e1658326790962.jpeg" />'
+    <meta property="og:url" content="dialogika.co/intern/index.html" />
     <meta property="og:type" content="article" />
 
   <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
-    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"/>
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet"/>
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.css" rel="stylesheet">
+  
 
-  <!-- Vendor Epora -->
-    <link rel="stylesheet" href="assets/vendor/epora/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/vendor/epora/css/meanmenu.css">
-    <link rel="stylesheet" href="assets/vendor/epora/css/animate.css">
-    <link rel="stylesheet" href="assets/vendor/epora/css/slick.css">
-    <link rel="stylesheet" href="assets/vendor/epora/css/backtotop.css">
-    <link rel="stylesheet" href="assets/vendor/epora/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/vendor/epora/css/nice-select.css">
-    <link rel="stylesheet" href="assets/vendor/epora/css/ui-icon.css">
-    <link rel="stylesheet" href="assets/vendor/epora/css/elegentfonts.css">
-    <link rel="stylesheet" href="assets/vendor/epora/css/font-awesome-pro.css">
-    <link rel="stylesheet" href="assets/vendor/epora/css/spacing.css">
-    <link href="assets/vendor/epora/css/style.css" rel="stylesheet"/>
+  <!-- Part CSS Files -->
+  <link href="assets/part/theme-counter/theme-counter.css" rel="stylesheet"/>
+  <link href="assets/part/testimoni-insurin/testi.css" rel="stylesheet"/>
+  <link href="assets/part/breadcrumbs-banner/banner.css" rel="stylesheet"/>
+  <link href="assets/part/course-mentor/course.css" rel="stylesheet"/>
+  <link href="assets/part/team-impact/team.css" rel="stylesheet"/>
+  <link href="assets/part/counting-down/count.css" rel="stylesheet"/>
+  <link href="assets/part/schedule-event/schedule.css" rel="stylesheet"/>
+  <link href="assets/part/contact-append/contact.css" rel="stylesheet"/>
+  <link href="assets/part/popup-box/popup.css" rel="stylesheet"/>
+  <link href="assets/part/video-sec/video.css" rel="stylesheet"/>
+  <link href="assets/part/cta-echooling/cta.css" rel="stylesheet"/>
+  <link href="assets/part/gallery-photo/gallery.css" rel="stylesheet"/>
+  <link href="assets/part/internship-list/internship.css" rel="stylesheet"/>
+      
+  <script src="https://kit.fontawesome.com/cdde75dea2.js" crossorigin="anonymous"></script>
+  
 
   <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet"/>
-  
-  <!-- Spreadsheet API Form Pendaftaran -->
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-    <script>
-      function SubForm (){
-        $.ajax({
-          url:"https://api.apispreadsheets.com/data/qBMNmHWNwLnA3S2s/",
-          type:"post",
-          data:$("#myForm").serializeArray(),
-          success: function(){
-            alert("Form Data Submitted :)")
-          },
-          error: function(){
-            alert("There was an error :(")
+  <link href="assets/css/style.css" rel="stylesheet"/>
+    
+
+  <!--  ========================================================  -->
+        <!-- Spreadsheet API Form Pendaftaran -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+          crossorigin="anonymous"></script>
+        <script>
+          function HeroForm() {
+            $.ajax({
+              url:"https://api.apispreadsheets.com/data/nFEcActjMjE46FAP/",
+              type:"post",
+              data:$("#heroForm").serializeArray(),
+              headers:{
+                accessKey: "6df7b75d348bfbdfa9684dfc76ed0053",
+                secretKey: "68a998592183dc30cdc2b07576759f04"},
+              success: function(){
+                alert("Anda Telah Mendaftar :)")
+              },
+              error: function(){
+                alert("There was an error :(")
+              }
+            });
           }
-        });
-        
-      }
-    </script>
-   
-  <!-- End Spreadsheet API Form Pendaftaran -->
 
-  <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '916674555903437');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=916674555903437&ev=PageView&noscript=1"
-    /></noscript>
-  <!-- End Meta Pixel Code -->
+          function SubForm (){
+            $.ajax({
+              url:"https://api.apispreadsheets.com/data/nFEcActjMjE46FAP/",
+              type:"post",
+              data:$("#myForm").serializeArray(),
+              headers:{
+                accessKey: "6df7b75d348bfbdfa9684dfc76ed0053",
+                secretKey: "68a998592183dc30cdc2b07576759f04"},
+              success: function(){
+                alert("Anda Telah Mendaftar :)")
+              },
+              error: function(){
+                alert("There was an error :(")
+              }
+            });
+          }
 
-  <!-- Pixel Quora -->
-    <!-- DO NOT MODIFY -->
-      <!-- Quora Pixel Code (JS Helper) -->
-      <script>
-      !function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
-      qp('init', 'cae6711903da464ab62f03df5f66aedc');
-      qp('track', 'ViewContent');
-      </script>
-      <noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/cae6711903da464ab62f03df5f66aedc/pixel?tag=ViewContent&noscript=1"/></noscript>
-      <!-- End of Quora Pixel Code -->
-      <script>qp('track', 'GenerateLead');</script>
-  <!-- End Pixel Quora -->
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148836422-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+          function Subcription() {
+            $.ajax({
+              url: "https://api.apispreadsheets.com/data/18511/",
+              type: "post",
+              data: $("#subcriptions").serializeArray(),
+              success: function () {
+                // $('#subcription-modal').modal('show');
+                // open("https://link.dialogika.co/open-whatsapp-group");
+                window.location.href = "https://link.dialogika.co/open-whatsapp-group";
+              },
+              error: function () {
+                alert("There was an error :(")
+              }
+            });
+          }
+        </script>
+        <!-- End Spreadsheet API Form Pendaftaran -->
 
-      gtag('config', 'UA-148836422-2');
-    </script>
-  <!-- End Global site tag (gtag.js) - Google Analytics -->
+        <!-- Meta Pixel Code -->
+        <script>
+          !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+              n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+          }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '916674555903437');
+          fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=916674555903437&ev=PageView&noscript=1" /></noscript>
+        <!-- End Meta Pixel Code -->
 
-  <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KGK9D6H');</script>
-  <!-- End Google Tag Manager -->
+        <!-- Pixel Quora -->
+        <!-- DO NOT MODIFY -->
+        <!-- Quora Pixel Code (JS Helper) -->
+        <script>
+          !function (q, e, v, n, t, s) { if (q.qp) return; n = q.qp = function () { n.qp ? n.qp.apply(n, arguments) : n.queue.push(arguments); }; n.queue = []; t = document.createElement(e); t.async = !0; t.src = v; s = document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, 'script', 'https://a.quora.com/qevents.js');
+          qp('init', 'cae6711903da464ab62f03df5f66aedc');
+          qp('track', 'ViewContent');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+            src="https://q.quora.com/_/ad/cae6711903da464ab62f03df5f66aedc/pixel?tag=ViewContent&noscript=1" /></noscript>
+        <!-- End of Quora Pixel Code -->
+        <script>qp('track', 'GenerateLead');</script>
+        <!-- End Pixel Quora -->
 
-  <!-- Hotjar Tracking Code for https://dialogika.co -->
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:2828594,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HV60XT856G"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+
+          gtag('config', 'UA-148836422-2');
+          gtag('config', 'G-HV60XT856G');
+        </script>
+        <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+        <!-- Google Tag Manager -->
+        <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+              'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+          })(window, document, 'script', 'dataLayer', 'GTM-KGK9D6H');</script>
+        <!-- End Google Tag Manager -->
+
+        <!-- Hotjar Tracking Code for https://dialogika.co -->
+        <script>
+          (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2828594, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
             a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
-  <!-- End Hotjar -->
-
+          })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+        </script>
+        <!-- End Hotjar -->
+  <!--  ========================================================  -->
 </head>
 
 <body>
 
   <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGK9D6H"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGK9D6H" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript><!-- End Google Tag Manager (noscript) -->
 
-  <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="d-flex align-items-center fixed-top">
-    <div class="container d-flex justify-content-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope"></i> <a href="mailto:hello@dialogika.co">hello@dialogika.co</a>
-        <i class="bi bi-phone"></i> <a href="https://link.dialogika.co/wasap-2597-dialogika-co">+62 851-6299-2597</a>
+  <!-- ======= Top Bar, Header, Side Bar ======= -->
+  <main-header></main-header>
+  <!-- ======= Top Bar, Header, Side Bar ======= -->  
+
+  <!-- ======= Breadcrumbs Section ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Internship Program</h2>
+        <ol>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="index.html">Intern</a></li>
+        </ol>
       </div>
-      <div class="d-none d-lg-flex social-links align-items-center">
-        <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://link.dialogika.co/facebook" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://link.dialogika.co/instagram" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://link.dialogika.co/linkedin" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
+
     </div>
-  </div><!-- End Top Bar -->
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
-       <a href="https://dialogika.co/" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul id="navbar-navlist">
-          <li><a class="nav-link scrollto active" data-scroll href="#hero">Home</a></li>
-          <li class="nav-categories"><a href="program/index.html"><span>Program</span><i class='bx bx-chevron-down-circle' ></i></a>
-            <ul>
-                <li>
-                  <span class="badge rounded-blue">Online</span>&nbsp;
-                  <span class="badge rounded-blue">Subscribe</span>&nbsp;
-                </li>
-                <li>
-                  <span class="badge rounded-blue">Online</span>&nbsp;
-                  <span class="badge rounded-blue">Package</span>
-                </li>
-                <li>
-                  <span class="badge rounded-red">Private</span>&nbsp;
-                  <span class="badge rounded-blue">Package</span>&nbsp;
-                </li>
-                <li>
-                  <span class="badge rounded-blue">Online</span>&nbsp;
-                  <span class="badge rounded-orange">Advance</span>&nbsp;
-                </li>
-                <li>
-                  <a href="corporate/">
-                  <span class="badge rounded-green">Corporate</span>&nbsp;
-                  <span class="badge rounded-blue">Training</span>&nbsp;
-                  </a>
-                </li>
-                <li><a href="../subscribe/action-play.html"><i class='bx bxs-chevron-right' ></i>&nbsp;Action Play</a></li>
-                <li>
-                  <a href="../program/kids-class.html"><i class='bx bxs-chevron-right' ></i>&nbsp;Kids Class</a>
-                  <span class="badge rounded-blue-turtle">Kids</span>
-                </li>
-                <li>
-                  <a href="../private/basic-private.html"><i class='bx bxs-chevron-right' ></i>&nbsp;Basic Private</a>
-                  <span class="badge rounded-blue">Online</span>
-                </li>
-                <li><a href="../program/presentation-class.html"><i class='bx bxs-chevron-right' ></i>&nbsp;Presentation Class</a>
-                </li>
-                <li><a href="../corporate/basic-training.html"><i class='bx bxs-chevron-right' ></i>&nbsp;Basic Training</a>
-                </li>
-                <li>
-                  <a href="../subscribe/kids-play.html"><i class='bx bxs-chevron-right' ></i>&nbsp;Kids Play</a>
-                  <span class="badge rounded-blue-turtle">Kids</span>
-                </li>
-                <li>
-                  <a href="../program/basic-plus.html"><i class='bx bxs-chevron-right' ></i>&nbsp;Basic Plus</a>
-                </li>
-                <li>
-                  <a href="../private/first-private.html"><i class='bx bxs-chevron-right' ></i>&nbsp;First Private</a>
-                  <span class="badge rounded-green">Jogja</span>
-                </li>
-                <li>
-                  <a href="../program/voice-over.html"><i class='bx bxs-chevron-right' ></i>&nbsp;Voice Over</a>
-                </li>
-                <li>
-                   <a href="../corporate/advance-training.html"><i class='bx bxs-chevron-right' ></i>&nbsp;Advance Training</a>
-                </li>
-                <li>
-                    <span class="badge rounded-green">Offline</span>&nbsp;
-                    <span class="badge rounded-blue">Subscribe</span>&nbsp;
-                </li>
-                <li>
-                   <span class="badge rounded-green">Offline</span>&nbsp;
-                   <span class="badge rounded-blue">Package</span>&nbsp;
-                </li>
-                <li>
-                  <a href="../private/first-private.html"><i class='bx bxs-chevron-right' ></i>&nbsp;Kids Private</a>
-                  <span class="badge rounded-blue-turtle">Kids</span>&nbsp;
-                  <span class="badge rounded-blue">Online</span>&nbsp;
-                </li>
-                <li>
-                   <span class="badge rounded-green">Offline</span>&nbsp;
-                   <span class="badge rounded-blue">Subscribe</span>&nbsp;
-                </li>
-                <li>
-                   <a href="../corporate/certified-training.html"><i class='bx bxs-chevron-right' ></i>&nbsp;Certified Training</a>
-                   <span class="badge rounded-grey">Coming Soon</span>
-                </li>
-                <li>
-                  <a href="../subscribe/jogja-play.html"><i class='bx bxs-chevron-right' ></i>&nbsp;Jogja Play</a>
-                </li>
-                <li>
-                 <a href="../program/first-class.html"><i class='bx bxs-chevron-right' ></i>&nbsp;First Class</a>
-                 <span class="badge rounded-green">Jogja</span>
-                </li>
-                <li>
-                    &nbsp;
-                </li>
-                <li>
-                  <a href="../program/emcee-class.html"><i class='bx bxs-chevron-right' ></i>&nbsp;Master of Ceremony</a>
-                </li>
-                <li></li>
-                <li>&nbsp;</li>
-                <li>
-                  <a href="../program/royal-class-jakarta.html"><i class='bx bxs-chevron-right' ></i>&nbsp;Royal Class</a><span class="badge rounded-green">Jakarta</span>
-                </li>
-                <li>&nbsp;</li>
-                <li></li>
-                <li></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="service/"><span>Service</span><i class='bx bx-chevron-down-circle' ></i></a>
-            <ul>
-              <li class="dropdown">
-                <a href="../service/counseling/"><span>Counseling</span> <i class="bi bi-chevron-right"></i></a>
-                  <ul>
-                    <li><a href="../service/counseling/relationship.html">
-                      <span>Relationship
-                        <sup>&nbsp;</sup>
-                      </span>
-                    </a></li>
-                    <li><a href="../service/counseling/parenting.html">
-                      <span>Parenting
-                        <sup>&nbsp;</sup>
-                      </span>
-                    </a></li>
-                    <li><a href="../service/counseling/children.html">
-                      <span>Children
-                        <sup>&nbsp;</sup>
-                      </span>
-                    </a></li>
-                    <li class="dropdown-divider"></li>
-                    <li><a href="../service/counseling/request.html">
-                      <span>Request</span>
-                    </a></li>
-                  </ul>
-              </li>
-              <li class="dropdown">
-                <a href="../service/mentoring/"><span>Mentoring</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="../service/mentoring/teenager.html"><span>Teenager</span></a></li>
-                  <li><a href="../service/mentoring/self-development.html"><span>Self Development</span></a></li>
-                  <li class="dropdown-divider"></li>
-                  <li><a href="../service/mentoring/request.html"><span>Request</span></a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="../service/agency/"><span>Agency</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="../service/agency/emcee.html"><span>Master of Ceremony</span></a></li>
-                  <li><a href="../service/agency/host.html"><span>Host</span></a></li>
-                  <li><a href="../service/agency/voice-over.html"><span>Voice Over</span></a></li>
-                  <li class="dropdown-divider"></li>
-                  <li><a href="../service/agency/request.html"><span>Request</span></a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="shop/"><span>Shop</span><i class='bx bx-chevron-down-circle' ></i></a>
-            <ul>
-              <li><a href="../shop/book.html">Book</a></li>
-              <li><a href="../shop/module.html">Module</a></li>
-              <li class="dropdown-divider"></li>
-              <li><a href="../shop/">Discover</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link" href="../event/">Event</a></li>
-          <li><a class="nav-link" href="../blog/">Blog</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <a href="#appointment" class="blue-btn position-relative">Register <span class="d-none d-md-inline">Now</span>
-      </a>
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Sidebar Mobile ======= -->
-  <div class="offcanvas offcanvas-start d-block d-sm-none" id="sidebar-mobile" data-bs-scroll="true">
-    <div class="offcanvas-header">
-      &nbsp;<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
-      <div class="offcanvas-body">
-        <div class="nav-menu">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto ">
-              <i class="fa fa-home" style="margin-left: 10px;"></i>
-              <span>Home</span>
-            </a>
-          </li>
-          <li><a href="#online-collapse" data-bs-toggle="collapse" class="nav-link ">
-              <i class="fa-solid fa-house-signal" style="margin-left: 10px;"></i>
-              <span>Online</span>
-            </a>
-          </li>
-            <div class="collapse" id="online-collapse" data-bs-parent="">
-              <li><a href="../program/basic-plus.html" style="background-color: #f2f3f5;">
-                <i class="fa-solid fa-shield-check" style="margin-left: 10px;"></i>
-                <span>Basic Plus</span>
-                </a>
-              </li>
-              <li><a href="../subscribe/action-play.html" style="background-color: #f2f3f5;">
-                <i class="fa-solid fa-shield-xmark" style="margin-left: 10px;"></i>
-                <span>Action Play</span>
-                </a>
-              </li>
-            </div>
-          <li><a href="#offline-collapse" data-bs-toggle="collapse" class="nav-link ">
-              <i class="fa-solid fa-hand-wave" style="margin-left: 10px;"></i>
-              <span>Offline</span>
-            </a>
-          </li> 
-            <div class="collapse" id="offline-collapse" data-bs-parent="">
-              <li><a href="../program/first-class.html" style="background-color: #f2f3f5;">
-                <i class="fa-solid fa-shield-check" style="margin-left: 10px;"></i>
-                <span>First Class</span>
-                </a>
-              </li>
-              <li><a href="../program/royal-class-jakarta.html" style="background-color: #f2f3f5;">
-                <i class="fa-solid fa-shield-check" style="margin-left: 10px;"></i>
-                <span>Royal Class</span>
-                </a>
-              </li>
-              <li><a href="../subscribe/jogja-play.html" style="background-color: #f2f3f5;">
-                <i class="fa-solid fa-shield-xmark" style="margin-left: 10px;"></i>
-                <span>Jogja Play</span>
-                </a>
-              </li>
-            </div>
-          <li><a href="#kids-collapse" data-bs-toggle="collapse" class="nav-link ">
-            <i class="fa-solid fa-family-pants" style="margin-left: 10px;"></i>
-            <span>Kids</span>
-            </a>
-          </li>
-            <div class="collapse" id="../kids-collapse" data-bs-parent="">
-              <li><a href="../program/kids-class.html" style="background-color: #f2f3f5;">
-                <i class="fa-solid fa-shield-check" style="margin-left: 10px;"></i>
-                <span>Kids Class</span>
-                </a>
-              </li>
-              <li><a href="../subscribe/kids-play.html" style="background-color: #f2f3f5;">
-                <i class="fa-solid fa-shield-xmark" style="margin-left: 10px;"></i>
-                <span>Kids Play</span>
-                </a>
-              </li>
-            </div>
-          <li><a href="../corporate/" class="nav-link">
-            <i class="fa-solid fa-building" style="margin-left: 10px;"></i>
-            <span>Corporate</span>
-            </a>
-          </li>
-          <li><a href="../event/" class="nav-link">
-            <i class="fa-solid fa-calendar-star" style="margin-left: 10px;"></i>
-            <span>Event</span>
-            </a>
-          </li>
-          <li><a href="../blog/" class="nav-link">
-            <i class="fa-brands fa-blogger-b" style="margin-left: 10px;"></i>
-            <span>Blog</span>
-            </a>
-          </li>
-        </ul>
-        </div>
-      </div>
-  </div><!-- End Sidebar -->
+  </section><!-- End Breadcrumbs Section -->
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs" style="margin-bottom:-67px;">
-      <div class="container">
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center" >
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4">
+                <span class="badge bg-primary">SYNC OUR VIBES</span>
+              <h1 data-aos="fade-up">Dialogika <br/> Internship Program</h1>
+              <blockquote data-aos="fade-up" data-aos-delay="100">
+                <p>Unleash your full potential by join our internship program for three months in Yogyakarta. The tasks in this internship program are easy, but the challenging part is building your mental resilience.</p>
+              </blockquote>
+              <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                <a href="#about" class="btn-get-started">Get Started</a>
+                &nbsp;&nbsp;
+                <a href="assets/img/about.mp4" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+              </div>
 
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>&nbsp;</h2>
-          <ol>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="index.html">Internship</a></li>
-          </ol>
+            </div>
+          </div>
+        </div>
+    </section><!-- End Hero -->
+    
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/corporate/uad.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/corporate/ugm.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/corporate/ui.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/corporate/amikom.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/corporate/mercu.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/corporate/polita.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/corporate/uin-suka.png" class="img-fluid" alt=""></div>
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about" >
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+              <img class="img-fluid" src="assets/img/about.webp">
+            <a href="assets/img/happy.mp4" class="glightbox play-btn mb-4"></a>
+          </div>
+
+          <div class="col-xl-6 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <div class="col-md-8">
+              
+              <div class="section-title">
+                <h5>About Us</h5>
+                <h3>Building Career... <span>Isn't</span>  Simple</h3>
+              </div>
+              <p>Embarking on an internship program is a vital step towards building a <span class="badge text-bg-primary">successful career,</span> where challenges are embraced as opportunities for growth and learning.</p>
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-check-circle-fill"></i></div>
+                <h4 class="title"><a href="">Requirement</a></h4>
+                <p class="description">Our terms are quite simple, actually: can you commit to a 3-month in-office internship, unpaid, and adhere to basic rules.
+                </p>
+                <a href="#basic-rules" data-bs-toggle="modal" class="more-btn">Basic Rules</a>
+              </div>
+
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-stars"></i></div>
+                <h4 class="title"><a href="">Benefit</a></h4>
+                <p class="description">Among the things we can provide are eCertificates, LinkedIn recommendations (for good attitude), and free public speaking classes (for certain roles)
+                </p>
+                <a href="#open-letter" data-bs-toggle="modal" class="more-btn">Open Letter</a>
+              </div>
+
+          </div>
         </div>
 
       </div>
-    </section><!-- End Breadcrumbs Section -->
-
-    <!-- slider-area -->
-    <section class="slider-area">
-       <div class="slider-active slider-arrow">
-          <div class="slider-item slider-bg-height d-flex align-items-center p-relative" data-background="https://empowerly.com/wordpress/wp-content/uploads/2022/07/AdobeStock_423656331-1-scaled-e1658326790962.jpeg">
-             <div class="container">
-                <div class="row">
-                   <div class="col-xl-7 col-lg-7 col-12">
-                      <div class="slider-content">
-                         <span class="slider-text mb-15">Join Our Vibes</span>
-                         <h2 class="slider-title mb-65">Unleash Your Full Potential</h2>
-                         <div class="slider-btn">
-                            <a class="tp-x-border-btn mr-5" href="#explore-position">Explore Position</a>
-                            <a class="tp-s-border-btn" href="assets/img/gallery/2.mp4">Watch Videos</a>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-xl-5 col-lg-5 d-none d-lg-block">
-                      <div class="slider-info-list">
-                         <ul>
-                            <li>
-                               <span>3 Month</span>Internship
-                            </li>
-                            <li>
-                               <span>70+</span>Indonesian Students
-                            </li>
-                            <li>
-                               <span>4.1 <i class="fi fi-ss-star"></i></span>Honest Review
-                            </li>
-                         </ul>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-          <div class="slider-item slider-bg-height d-flex align-items-center p-relative" data-background="https://i.ytimg.com/vi/1hJKq6QAb48/maxresdefault.jpg">
-             <div class="container">
-                <div class="row">
-                   <div class="col-xl-7 col-lg-7">
-                      <div class="slider-content">
-                         <span class="slider-text mb-15">Forging Your Mental & Skills.</span>
-                         <h2 class="slider-title mb-65">No Pain, No Gain.</h2>
-                         <div class="slider-btn">
-                            <a class="tp-x-border-btn mr-5" href="#explore-position">Explore Position</a>
-                            <a class="tp-s-border-btn" href="assets/img/gallery/2.mp4">Watch Videos</a>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-xl-5 col-lg-5 d-none d-lg-block">
-                      <div class="slider-info-list">
-                         <!-- <ul>
-                            <li>
-                               <span>3.5K</span>Free Pro Courses
-                            </li>
-                            <li>
-                               <span>235K</span>Worldwide Students
-                            </li>
-                            <li>
-                               <span>4.7 <i class="fi fi-ss-star"></i></span>Worldwide Review
-                            </li>
-                         </ul> -->
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </section><!-- slider-area-end -->
-
-    <!-- brand-area -->
-    <section class="brand-area pt-110" style="margin-top:-100px;">
-       <div class="container">
-          <div class="row">
-             <div class="col-lg-12">
-                <div class="section-title mb-65 text-center">
-                   <h2 class="tp-section-title mb-20">Intern Alumni</h2>
-                </div>
-             </div>
-          </div>
-          <div class="row">
-             <div class="col-xl-12">
-                <div class="brand-area tp-brand-active">
-                   <div class="brand-item">
-                      <a href="#"><img src="assets/img/univ/ugm.png" alt="brand-logo"></a>
-                   </div>
-                   <div class="brand-item">
-                      <a href="#"><img src="assets/img/univ/ui.png" alt="brand-logo"></a>
-                   </div>
-                   <div class="brand-item">
-                      <a href="#"><img src="assets/img/univ/uin-suka.png" alt="brand-logo"></a>
-                   </div>
-                   <div class="brand-item">
-                      <a href="#"><img src="assets/img/univ/uii.png" alt="brand-logo"></a>
-                   </div>
-                   <div class="brand-item">
-                      <a href="#"><img src="assets/img/univ/amikom-jogja.png" alt="brand-logo"></a>
-                   </div>
-                   <div class="brand-item">
-                      <a href="#"><img src="assets/img/univ/uad.png" alt="brand-logo"></a>
-                   </div>
-                   
-                </div>
-             </div>
-          </div>
-       </div>
-    </section><!-- brand-area-end -->
-
-    <!-- about-area -->
-    <section class="about--area pt-120 pb-60">
-       <div class="container">
-          <div class="row align-items-center">
-             <div class="col-xl-7 col-lg-6 col-md-12 col-12">
-                <div class="tp-ab-circle-img p-relative mb-60">
-                   <img src="assets/img/about-main.png" alt="about-img">
-                   <div class="ab-circle-shape">
-                      <img src="assets/img/about-side.png" alt="about-shape" class="ab-circle-one">
-                      <img src="assets/img/about-arrow.png" alt="about-shape" class="ab-circle-two">
-                   </div>
-                </div>
-             </div>
-             <div class="col-xl-5 col-lg-6 col-md-12 col-12">
-                <div class="tp-abcircle-content ml-65 mb-60">
-                   <div class="section-title mb-35">
-                      <span class="tp-sub-title-box mb-15" style="color: #F9C72E;">About Internship</span>
-                      <h2 class="tp-section-title mb-20">Building Career... Isn't Simple</h2>
-                      <p>Embarking on an internship program is a vital step towards building a successful career, where challenges are embraced as opportunities for growth and learning.</p>
-                   </div>
-                   <div class="about-circle-list mb-40">
-                      <ul>
-                         <li><i class="fa-solid fa-car-building"></i>Work From Office</li>
-                         <li><i class="fa-solid fa-calendar-days"></i>Three Month</li>
-                         <li><i class="fa-solid fa-file-certificate"></i>Get eCertificate</li>
-                         <li><i class="fa-sharp fa-solid fa-fire"></i>Unpaid Intern</li>
-                         <li><i class="fa-solid fa-podium-star"></i>Get Free Public Speaking Online Course</li>
-                         <li><i class="fa-brands fa-linkedin"></i>Get Linkedin Recommendation*</li>
-                      </ul>
-                   </div>
-                   <div class="tp-ab-circle-btn">
-                      <a href="#open-letter" class="tp-btn" data-bs-toggle="modal">Open Letter</a>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </section><!-- about-area-end -->
-
-    <!-- catergory-area -->
-    <section class="category-ractangle-area pb-90" id="explore-position">
-       <div class="container">
-          <div class="row">
-             <div class="col-lg-12">
-                <div class="section-title mb-65">
-                   <span class="tp-sub-title-box mb-15" style="color: #F9C72E;">Position</span>
-                   <h2 class="tp-section-title">Explore Positions That You Can Apply For</h2>
-                </div>
-             </div>
-          </div>
-          <div class="row">
-             <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                <div class="tp-cat-item tp-rec-item mb-35">
-                   <div class="tp-category-icon mb-30">
-                    <img src="assets/img/vector/system-manager.png" alt="category-img">
-                   </div>
-                   <h4 class="tp-category-title tp-r-cat-title"><a href="#client-manager" data-bs-toggle="modal">Client Manager</a></h4>
-                   <p>Learn how to manage clients, mentors, develop product public speaking</p>
-                </div>
-             </div>
-             <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                <div class="tp-cat-item tp-rec-item mb-35">
-                   <div class="tp-category-icon mb-30">
-                    <img src="assets/img/vector/deal-maker.png" alt="category-img">
-                   </div>
-                   <h4 class="tp-category-title tp-r-cat-title"><a href="#deal-maker" data-bs-toggle="modal">Deal Maker</a></h4>
-                   <p>Learn how to to chat, respond, persuade, and negotiate with potential clients</p>
-                </div>
-             </div>
-             <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                <div class="tp-cat-item tp-rec-item mb-35">
-                   <div class="tp-category-icon mb-30">
-                    <img src="assets/img/vector/copywriter.png" alt="category-img">
-                   </div>
-                   <h4 class="tp-category-title tp-r-cat-title"><a href="#ai-copywriter" data-bs-toggle="modal">AI Copywriter</a></h4>
-                   <p>Learn how to create copies, headlines, subheadings, and main paragraphs.</p>
-                </div>
-             </div>
-             <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                <div class="tp-cat-item tp-rec-item mb-35">
-                   <div class="tp-category-icon mb-30">
-                    <img src="assets/img/vector/model-talent.png" alt="category-img">
-                   </div>
-                   <h4 class="tp-category-title tp-r-cat-title"><a href="#">Model Talent</a></h4>
-                   <p>Learn how to present in front of the camera & provide education.</p>
-                </div>
-             </div>
-             <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                <div class="tp-cat-item tp-rec-item mb-35">
-                   <div class="tp-category-icon mb-30">
-                    <img src="assets/img/vector/design-graphic.png" alt="category-img">
-                   </div>
-                   <h4 class="tp-category-title tp-r-cat-title"><a href="#">Design Graphic</a></h4>
-                   <p>Learn to create elegant, persuasive, and high-end designs.</p>
-                </div>
-             </div>
-             <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                <div class="tp-cat-item tp-rec-item mb-35">
-                   <div class="tp-category-icon mb-30">
-                    <img src="assets/img/vector/influencer.png" alt="category-img">
-                   </div>
-                   <h4 class="tp-category-title tp-r-cat-title"><a href="#">Group Admin</a></h4>
-                   <p>Learn how to increase engagement and followers.</p>
-                </div>
-             </div>
-             <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                <div class="tp-cat-item tp-rec-item mb-35">
-                   <div class="tp-category-icon mb-30">
-                    <img src="assets/img/vector/recruiter.png" alt="category-img">
-                   </div>
-                   <h4 class="tp-category-title tp-r-cat-title"><a href="#">Recruiter Specialist</a></h4>
-                   <p>Learn how to conduct interviews for intern, mentor & team.</p>
-                </div>
-             </div>
-             <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                <div class="tp-cat-item tp-rec-item mb-35">
-                   <div class="tp-category-icon mb-30">
-                    <img src="assets/img/vector/data-entry.png" alt="category-img">
-                   </div>
-                   <h4 class="tp-category-title tp-r-cat-title"><a href="course-grid.htmcourse-details.html">Data Entry</a></h4>
-                   <p>Learn to search, input, analyze and delve into data needed by Dialogika.</p>
-                </div>
-             </div>
-             <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-              <div class="tp-cat-item tp-rec-item mb-35">
-                 <div class="tp-category-icon mb-30">
-                  <img src="assets/img/vector/video-editor.png" alt="category-img">
-                 </div>
-                 <h4 class="tp-category-title tp-r-cat-title"><a href="course-grid.htmcourse-details.html">Video Editor</a></h4>
-                 <p>Learn how to edit a advertising, educating, and entertaining videos.</p>
-              </div>
-             </div>
-             <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-              <div class="tp-cat-item tp-rec-item mb-35">
-                 <div class="tp-category-icon mb-30">
-                  <img src="assets/img/vector/video-editor.png" alt="category-img">
-                 </div>
-                 <h4 class="tp-category-title tp-r-cat-title"><a href="course-grid.htmcourse-details.html">HTML Writer</a></h4>
-                 <p>Learn how to create a website page, based on SEO and beautiful UI.</p>
-              </div>
-             </div>
-          </div>
-       </div>
-    </section><!-- category-area-end --> 
+    </section><!-- End About Section -->
     
-    <!-- choose-area -->
-    <section class="choose-area bg-bottom grey-bg pt-120 pb-90" data-background="assets/img/bg/shape-bg-1.png">
-       <div class="container">
-          <div class="row align-items-center">
-             <div class="col-xl-5 col-lg-6 col-md-12">
-                <div class="tp-choose-content mb-30">
-                   <div class="section-title mb-25">
-                      <span class="tp-sub-title-box mb-15" style="color: #F9C72E;">Why Choose Us</span>
-                      <h2 class="tp-section-title mb-20">We don't just forge skills, but also mindset and mental fortitude.</h2>
-                      <p>Joining Dialogika's internship program means not only honing your skills, but also cultivating a resilient mindset and unwavering mental fortitude - essential ingredients for a successful and fulfilling career. The following are the requirements:</p>
-                   </div>
-                   <div class="tp-choose-list tp-choose-bg mb-60">
-                      <ul>
-                         <li>
-                            <div class="tp-list-bg">
-                               <i class="fa-light fa-check"></i>Aspiring to partake in an internship program in Jogja
-                            </div>
-                         </li>
-                         <li>
-                            <div class="tp-list-bg">
-                               <i class="fa-light fa-check"></i>Capable of providing fast responses outside of working hours
-                            </div>
-                         </li>
-                         <li>
-                            <div class="tp-list-bg">
-                               <i class="fa-light fa-check"></i>Not actively involved in organizational activities and able to manage time effectively
-                            </div>
-                         </li>
-                         <li>
-                            <div class="tp-list-bg">
-                               <i class="fa-light fa-check"></i>Possess a laptop and means of transportation
-                            </div>
-                         </li>
-                         <li>
-                            <div class="tp-list-bg">
-                               <i class="fa-light fa-check"></i>Comply with <a>basic rules</a> and embrace the working vibes at Dialogika
-                            </div>
-                         </li>
-                      </ul>
-                   </div>
-                   <div class="choose-btn">
-                      <a href="#basic-rules" data-bs-toggle="modal" class="tp-btn">Read Basic Rules</a>
-                   </div>
-                </div>
-             </div>
-             <div class="col-xl-7 col-lg-6 col-md-12">
-                <div class="tp-choose-img tp-choose-img-2 p-relative mb-30 mr-50 text-end">
-                   <img src="assets/img/about-why.png" alt="choose-img">
-                   <div class="tpchoose-img-text tp-chose-shape d-none d-md-block">
-                      <ul>
-                         <li>
-                            <i class="fa-light fa-check"></i>
-                            <p>Uncanny Mindset</p>
-                         </li>
-                         <li>
-                            <i class="fa-light fa-check"></i>
-                            <p>Work & Fun Vibes</p>
-                         </li>
-                         <li>
-                            <p>Build Network</p>
-                            <img src="assets/img/team-mentor-intern.png" alt="choose-shape" class="tp-small-image">
-                         </li>
-                      </ul>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </section><!-- choose-area-end -->
-
-    <!-- testimonial-area -->
-    <section class="testimonial-white-area pb-90">
-       <div class="container">
-          <div class="row justify-content-between">
-             <div class="col-lg-6 col-md-8">
-                <div class="section-title mb-35">
-                   <span class="tp-sub-title-box mb-15" style="color: #F9C72E;">Testimonial</span>
-                   <h2 class="tp-section-title mb-20">70+ Happy Students</h2>
-                </div>
-             </div>
-             <div class="col-6 col-md-4">
-                <div class="tp-section-arrow d-flex justify-content-md-end"></div>
-             </div>
-          </div>
-          <div class="testimonial--active tp-slide-space">
-             <div class="tp-test-s-item">
-                <div class="tp-testi">
-                   <div class="tp-testi__ava d-flex align-items-center mb-15">
-                      <img src="assets/img/intern/member/milllenia.jpg" alt="testi-avatar">
-                      <div class="tp-testi__avainfo ml-20">
-                         <h3 class="tp-testi__title mt-5"><a href="#">Millenia Hana</a></h3>
-                         <i>Design Graphic</i>
+    <!-- ======= Internship Section ======= -->
+    <section class="internship-list">
+        <div class="container">
+            <div class="section-title">
+                <h6>Our Position</h6>
+                <h2>Internship Program</h2>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card mb-3 mb-4">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                          <img src="https://t2307700.p.clickup-attachments.com/t2307700/ecd09102-923f-43b3-a39a-8e621fc51cf2/373398202_1000487147944057_4559664189400822511_n.jpg?view=open" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Client Manager</h5>
+                            <p class="card-text">Learn how to manage clients, mentors, develop product public speaking.</p>
+                            <a href="" target="_blank">Job Description</a>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
                       </div>
-                   </div>
-                   <p>❶ Dapet pengalaman, relasi, koneksi, dan banyak pengetahuan baru di lingkungan yang positif.
-                      ❷ Belajar memanajemen waktu dan mengatur prioritas.
-                      ❸ Jadi paham seperti apa dunia kerja terutama di ranah startup.</p>
-                   <div class="tp-testi__rating mb-5">
-                      <ul class="d-flex align-items-center">
-                         <li><i class="fi fi-ss-star"></i></li>
-                         <li><i class="fi fi-ss-star"></i></li>
-                         <li><i class="fi fi-ss-star"></i></li>
-                         <li><i class="fi fi-ss-star"></i></li>
-                         <li><i class="fi fi-rs-star"></i></li>
-                      </ul>
-                   </div>
-                </div>
-             </div>
-             <div class="tp-test-s-item">
-                <div class="tp-testi">
-                   <div class="tp-testi__ava d-flex align-items-center mb-15">
-                      <img src="assets/img/intern/member/aghisa.jpg" alt="testi-avatar">
-                      <div class="tp-testi__avainfo ml-20">
-                         <h3 class="tp-testi__title mt-5"><a href="#">Salsabilla Aghisa</a></h3>
-                         <i>Deal Maker</i>
+                    </div>
+                    <div class="card mb-3 mb-4">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                          <img src="https://t2307700.p.clickup-attachments.com/t2307700/3ff36f0f-2ef8-4dfd-8d52-40ef9945698c/377954194_254034817618353_6211807791235251580_n.jpg?view=open" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Deal Maker</h5>
+                            <p class="card-text">Learn how to to chat, respond, persuade, and negotiate with potential clients.</p>
+                            <a href="" target="_blank">Job Description</a>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
                       </div>
-                   </div>
-                   <p>Haii kenalin nama aku aghisa umur 18 tahun,aku mahasiswa administrasi bisnis universitas brawijaya dan juga sebagai marketing intern di dialogika. Selama 3 bulan di dialogika aku belajar dunia kerja, profesional dan bertemu banyak orang-orang keren lohh. Karena disini aku working remotely jadi aku bisa bebas kerja dimana aja dan kapan aja tanpa harus mengganggu waktu kuliahku tapiii tugasnya harus tetap selesai tepat waktu yaa... <a href="#comment_1" data-bs-toggle="collapse">Read more</a></p>
-                   <div class="collapse" id="comment_1">
-                    <p>
-                    Dialogika really helping me to reach my potential,aku belajar banyak hal seperti time management,deal maker,problem solving dan masih banyak lagi</p>
-                    <p>
-                    Bisa jadi salah satu bagian dari dialogika adalah pengalaman yang berharga banget buat aku di tahun ini. Aku bisa bertemu mentor dan rekan kerja yang baik bangett. Apalagi  ini merupakan first time aku ngerasain intern padahal aku masih semester 1. Sebelumnya aku udah apply hampir 20 intern tapi gak ada satupun yang lolos karena mereka gamau menerima mahasiswa semester 1, awalnya aku udah pesimis kalo memang semester 1 gabisa intern, tapi ternyata dialogika mematahkan statement itu dengan menerima aku sebagai intern saat masih semester 1. Kereenn bangett sih dialogika bener-bener ngebimbing aku dan selalu mendorong untuk bisa lebih dan lebih</p>
-                    <p>
-                    Thanks for everything dialogika sukses teruss yaa,semoga bisa jadi top course public speaking terbaik di indonesia aamiin...</p>
-                    <p>
-                    oiyaa terimakasih juga kak ronn karena udah jadi mentor yang baik hati dan tidak sombong wkwk
-                    udah itu dulu yaa gaiss bye...</p>
-                   </div>
-                   <div class="tp-testi__rating mb-5">
-                      <ul class="d-flex align-items-center">
-                         <li><i class="fi fi-ss-star"></i></li>
-                         <li><i class="fi fi-ss-star"></i></li>
-                         <li><i class="fi fi-ss-star"></i></li>
-                         <li><i class="fi fi-ss-star"></i></li>
-                         <li><i class="fi fi-ss-star"></i></li>
-                      </ul>
-                   </div>
-                </div>
-             </div>
-             <div class="tp-test-s-item">
-                <div class="tp-testi">
-                   <div class="tp-testi__ava d-flex align-items-center mb-15">
-                      <img src="assets/img/intern/member/yunita.jpg" alt="testi-avatar">
-                      <div class="tp-testi__avainfo ml-20">
-                         <h3 class="tp-testi__title mt-5"><a href="#">Yunita Sara</a></h3>
-                         <i>Recruiter Specialist</i>
+                    </div>
+                    <div class="card mb-3 mb-4">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                          <img src="https://t2307700.p.clickup-attachments.com/t2307700/38d9b95f-9d56-47ec-bc2b-d4fd8aebd5a0/371517311_2513303405516003_3999818227749497297_n.jpg?view=open" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Design Specialist</h5>
+                            <p class="card-text">Learn to create elegant, persuasive, and high-end designs.</p>
+                            <a href="" target="_blank">Job Description</a>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
                       </div>
-                   </div>
-                   <p>Selama saya terlibat sebagai intern di Dialogika, saya telah mencicipi bagian kecil dari dunia karir. Saya tumbuh menjadi orang yang lebih cekatan dan disiplin dalam menjalankan tugas. Memang ada saat-saat berat terutama ketika harus membagi waktu dengan kegiatan lain, tetapi pada akhirnya saya merasa menjadi orang yang lebih baik disini.</p>
-                   <div class="tp-testi__rating mb-5">
-                      <ul class="d-flex align-items-center">
-                         <li><i class="fi fi-ss-star"></i></li>
-                         <li><i class="fi fi-ss-star"></i></li>
-                         <li><i class="fi fi-ss-star"></i></li>
-                         <li><i class="fi fi-ss-star"></i></li>
-                         <li><i class="fi fi-ss-star"></i></li>
-                      </ul>
-                   </div>
-                </div>
-             </div>
-             <div class="tp-test-s-item">
-                <div class="tp-testi">
-                   <div class="tp-testi__ava d-flex align-items-center mb-15">
-                      <img src="assets/img/intern/member/indhira.jpg" alt="testi-avatar">
-                      <div class="tp-testi__avainfo ml-20">
-                         <h3 class="tp-testi__title mt-5"><a href="#">Indhira Widanur</a></h3>
-                         <i>Copywriter</i>
+                    </div>
+                    <div class="card mb-3 mb-4">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                          <img src="https://t2307700.p.clickup-attachments.com/t2307700/b6cf3559-1e72-4615-9b40-335b86b1e521/WhatsApp%20Image%202023-09-21%20at%2009.21.44.jpeg?view=open" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Model Talent</h5>
+                            <p class="card-text">Learn how to present in front of the camera & provide education.</p>
+                            <a href="" target="_blank">Job Description</a>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
                       </div>
-                   </div>
-                   <p>Alhamdulillah magang di dialogika aku ngerasa banyak bgt benefit, selain portofolio juga ilmu-ilmu yang lain. Sering masuk kelas jg jd tambah pengetahuan dengan gratis hehe.</p>
-                   <div class="tp-testi__rating mb-5">
-                      <ul class="d-flex align-items-center">
-                         <li><i class="fi fi-ss-star"></i></li>
-                         <li><i class="fi fi-ss-star"></i></li>
-                         <li><i class="fi fi-ss-star"></i></li>
-                         <li><i class="fi fi-ss-star"></i></li>
-                         <li><i class="fi fi-ss-star"></i></li>
-                      </ul>
-                   </div>
+                    </div>
+                    <div class="card mb-3 mb-4">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                          <img src="https://t2307700.p.clickup-attachments.com/t2307700/d80fde3a-c5e0-4dd0-85b6-e424c39a53e2/IMG_20230928_130329%5B1%5D.jpg?view=open" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Video Editing</h5>
+                            <p class="card-text">Learn how to edit, cut and creating a short video, cinematography for company branding.</p>
+                            <a href="" target="_blank">Job Description</a>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
-             </div>
-          </div>
-       </div>
-    </section><!-- testimonial-area-end -->   
-
-    <!-- ======= Gallery Single Section ======= -->
-    <section id="gallery-single" class="gallery-single d-block d-sm-none">
-      <div class="container">
-        <div class="section-title" style="text-align: center;">
-          <h2 class="dumpil">Gallery</h2>
-          <h2 class="tengah">Intern Dialogika</h2>
+                <div class="col-lg-6">
+                    <div class="card mb-3 mb-4">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                          <img src="https://t2307700.p.clickup-attachments.com/t2307700/664cb8dc-f983-4d2a-915a-c0ca11e9f14c/375024722_3692506054406685_7717780661619991390_n.jpg?view=open" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Content Writing</h5>
+                            <p class="card-text">Learn how to create copies, headlines, subheadings, and main paragraphs.</p>
+                            <a href="" target="_blank">Job Description</a>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3 mb-4">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                          <img src="https://t2307700.p.clickup-attachments.com/t2307700/9ab2c208-ff27-4f75-8fa5-0e6ea748de66/IMG_20231112_104825%5B1%5D.jpg?view=open" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Recruiter Specialist</h5>
+                            <p class="card-text">Learn how to conduct interviews for intern, mentor & team.</p>
+                            <a href="" target="_blank">Job Description</a>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3 mb-4">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                          <img src="https://t2307700.p.clickup-attachments.com/t2307700/cd796abf-b45d-41a6-a1bd-f423fd78e627/IMG_20231112_154812%5B1%5D.jpg?view=open" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">People Development</h5>
+                            <p class="card-text">Learn how to engage with new team and teaching other intern.</p>
+                            <a href="" target="_blank">Job Description</a>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3 mb-4">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                          <img src="https://t2307700.p.clickup-attachments.com/t2307700/e9392305-f6ba-44d6-9a72-fb477e15cdf0/IMG_20231121_143919%5B1%5D.jpg?view=open" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Digital Marketing</h5>
+                            <p class="card-text">Learn how to analyze and understand google ads and keywords</p>
+                            <a href="" target="_blank">Job Description</a>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3 mb-4">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                          <img src="https://t2307700.p.clickup-attachments.com/t2307700/a40ca27c-e7a2-4461-90bf-7678a9eb8aa6/IMG_20230928_124430%5B1%5D.jpg?view=open" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">HTML Writing</h5>
+                            <p class="card-text">Learn how to create a website page, based on SEO and beautiful UI.</p>
+                            <a href="" target="_blank">Job Description</a>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section><!-- Internship Section End Here -->
+    
+    <!-- ======= CTA Section ======= -->
+    <div id="react-footer" class="react-footer react-footer-two pt---120">
+        <div class="container">
+            <div class="footer-top-cta">
+                <div class="row">
+                    <div class="col-lg-7 text-lg-start text-center">
+                        <h4>Join Our Vibes</h4>
+                        <h3>Ready to dive in? <br> Check Our Details.</h3>
+                    </div>
+                    <div class="col-lg-5 text-lg-right text-center">
+                        <a href="#faq">Go To FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- CTA Section End Here -->
+    
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+          <div class="row">
+              <div class="col-lg-6 mt-4">
+                  <div class="section-title">
+                    <h5>Why Choose Us</h5>
+                    <h3>We don't just <span>forge skills,</span> <br class="d-md-block d-none">but also <span>mindset</span> and mental fortitude.</h3>
+                    <p class="text-start">Joining Dialogika's internship program means not only honing your skills, but also cultivating a resilient mindset and unwavering mental fortitude - essential ingredients for a successful and fulfilling career. </p>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0 mt-4">
+                      <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon">
+                          <img src="assets/img/home/map-blue.webp" class="course-social-1 ">
+                          <img src="assets/img/home/map-yellow.webp" class="course-social-2 ">
+                        </div>
+                        <h4 class="title"><a href="#">Live in Yogyakarta</a></h4><hr/>
+                        <p class="description">Aspiring to partake in an internship program in Yogyakarta for a three months</p>
+                      </div>
+                    </div>
 
-        <div class="position-relative h-100">
-          <div class="slides-1 portfolio-details-slider swiper">
-            <div class="swiper-wrapper align-items-center">
+                    <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0 mt-4">
+                      <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon">
+                          <img src="assets/img/home/stopwatch-blue.webp" class="course-social-1 ">
+                          <img src="assets/img/home/stopwatch-yellow.webp" class="course-social-2 ">
+                        </div>
+                        <h4 class="title"><a href="">Fast Response</a></h4><hr/>
+                        <p class="description">Capable of providing fast responses outside of working hours & Possess a laptop and means of transportation</p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0 mt-4">
+                      <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon">
+                          <img src="assets/img/home/dart-blue.webp" class="course-social-1 ">
+                          <img src="assets/img/home/dart-red.webp" class="course-social-2 ">
+                        </div>
+                        <h4 class="title"><a href="">Having a Focus</a></h4><hr/>
+                        <p class="description">Not actively involved in organizational activities and able to manage time effectively</p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0 mt-4">
+                      <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon">
+                          <img src="assets/img/home/copy-blue.webp" class="course-social-1 ">
+                          <img src="assets/img/home/copy-yellow.webp" class="course-social-2 ">
+                        </div>
+                        <h4 class="title"><a href="">Basic Rules</a></h4><hr/>
+                        <p class="description">Comply with basic rules and embrace the working vibes at Dialogika</p>
+                      </div>
+                    </div>
+
+                  </div>
+              </div>
+              <div class="col-lg-6 mt-4 faq" id="faq">
+                  <div class="section-title">
+                    <h6>F.A.Q</h6>
+                    <h2>About Internship Program</h2>
+                    <p>Please pay attention to the points below; provide a detailed explanation of all the details regarding our internship. Happy reading!</p>
+                  </div>
+                  <div class="faq-list">
+                    <ul>
+                        <li>
+                          <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-attend" class="collapsed">Do we need to attend every day?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                          <div id="faq-list-attend" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                            You just need to be present every Tuesday, Thursday, Saturday, and Sunday from 10:00 AM to 4:00 PM. However, on Saturdays and Sundays, we start at 9:00 AM sometimes.
+                            </p>
+                          </div>
+                        </li>
+                    
+                      <span class="badge rounded-pill bg-primary">What?</span>
+                      <li>
+                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Is this internship paid or unpaid?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                          <p>
+                            Unfortunately, at the moment, the internship program at Dialogika remains unpaid, as we are still a new and developing company and lack the financial stability to provide monetary compensation. We can only hope for better prospects in the future for our interns.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li >
+                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Is there any compensation provided by the company, such as transportation and lunch?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                          <p>Unfortunately, we are unable to provide perks such as lunch and transportation at this time. Occasionally, Dialogika organizes group meals during certain events, but these are still quite rare. If you find this unsatisfactory, we kindly ask that you refrain from applying to this program.</p>
+                        </div>
+                      </li>
+
+                      <li>
+                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">What if I don't complete the internship program?  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                          <p>
+                            If you are unable to complete this internship program, it is regrettable that you will not receive an eCertificate from us, and it is also unfortunate that if any companies ask about you in the future, we will not be able to speak much about you. Make sure your heart is ready if you want to join.
+                          </p>
+                        </div>
+                      </li>
+
+                      <span class="badge rounded-pill bg-primary">Why?</span>
+                      <li>
+                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Why should I join this program? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                          <p>
+                            While we appreciate your interest in joining our internship program, we do not recommend it if you are solely looking for a source of income. Our program aims to equip you with the mental and professional skills necessary to succeed in the workforce. We also have a unique working environment where we work and have fun at the same time, though not everyone may find it suitable. However, many of our interns have gone on to become key members of our team at Dialogika.</p>
+                        </div>
+                      </li>
+
+
+                      <span class="badge rounded-pill bg-primary">How?</span>
+                      <li>
+                        <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-1">How can I apply for this internship?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
+                          <p>
+                            To apply for this internship, simply fill out the "Registration Form" located at the bottom of this page and complete all required fields. Please note that we do not require you to send us your CV or resume.</p>
+                          <p>
+                            We kindly request that you do not make your Instagram and TikTok accounts private, as our selection process begins there. Also, please ensure that your face is clearly visible so we can recognize you. Thank you for your understanding.
+                          </p>
+                        </div>
+                      </li>
+
+                    </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+       <div class="row">
+        <div class="col-lg-3">
+          <div class="section-title" data-aos="fade-right">
+            <h5>Testimonials</h5>
+            <h3>Positive Feedback</h3>
+            <p class="text-start">Here are testimonials from friends who participated in the internship activities at Dialogika, especially those who joined the internship program in Yogyakarta.</p>
+            <div class="text-center text-md-start" style="margin-top:20px;">
+              <a target="__blank" href="https://www.google.com/maps/place/Dialogika+Kelas+Public+Speaking/@-7.7552251,110.3760129,17z/data=!4m18!1m9!3m8!1s0x2e7a597ab489149d:0x9306a2474322de7c!2sDialogika+Kelas+Public+Speaking!8m2!3d-7.7552251!4d110.3785878!9m1!1b1!16s%2Fg%2F11qyjgv8c8!3m7!1s0x2e7a597ab489149d:0x9306a2474322de7c!8m2!3d-7.7552251!4d110.3785878!9m1!1b1!16s%2Fg%2F11qyjgv8c8?entry=ttu">Google Review</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
 
               <div class="swiper-slide">
-                <img src="assets/img/gallery/2.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/gallery/1.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <a href="assets/img/gallery/1.mp4" class="glightbox">
-                  <span class="badge badge-pill rounded-yellow" style="position: absolute;top: 8px; right:16px;"> Ketuk Untuk Melihat Video</span>
-                  <img src="assets/img/gallery/c1.jpg" alt="">
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="assets/img/gallery/2.mp4" class="glightbox">
-                  <span class="badge badge-pill rounded-yellow" style="position: absolute;top: 8px; right:16px;"> Ketuk Untuk Melihat Video</span>
-                  <img src="assets/img/gallery/c2.jpg" alt="">
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="assets/img/gallery/3.mp4" class="glightbox">
-                  <span class="badge badge-pill rounded-yellow" style="position: absolute;top: 8px; right:16px;"> Ketuk Untuk Melihat Video</span>
-                  <img src="assets/img/gallery/c3.jpg" alt="">
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/gallery/4.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/gallery/5.jpg" alt="">
-              </div>
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <img src="assets/img/intern/millenia.jpg" class="testimonial-img" alt="">
+                    <h3>Millenia Hana</h3>
+                    <h4>
+                      Design Specialist
+                    </h4>
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      ❶ Dapet pengalaman, relasi, koneksi, dan banyak pengetahuan baru di lingkungan yang positif.<br/>
+                         ❷ Belajar memanajemen waktu dan mengatur prioritas.<br/>
+                         ❸ Jadi paham seperti apa dunia kerja terutama di ranah startup.<br/>
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
 
               <div class="swiper-slide">
-                <a href="assets/img/gallery/4.mp4" class="glightbox">
-                  <span class="badge badge-pill rounded-yellow" style="position: absolute;top: 8px; right:16px;"> Ketuk Untuk Melihat Video</span>
-                  <img src="assets/img/gallery/c4.jpg" alt="">
-                </a>
-              </div>
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <img src="assets/img/intern/aghisa.jpg" class="testimonial-img" alt="">
+                    <h3>Salsabilla Aghisa</h3>
+                    <h4>
+                      Deal Maker
+                    </h4>
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      Haii kenalin nama aku aghisa umur 18 tahun,aku mahasiswa administrasi bisnis universitas brawijaya dan juga sebagai marketing intern di dialogika. Selama 3 bulan di dialogika aku belajar dunia kerja, profesional dan bertemu banyak orang-orang keren lohh. Karena disini aku working remotely jadi aku bisa bebas kerja dimana aja dan kapan aja tanpa harus mengganggu waktu kuliahku tapiii tugasnya harus tetap selesai tepat waktu yaa...
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+
+              
+
               <div class="swiper-slide">
-                <a href="assets/img/gallery/5.mp4" class="glightbox">
-                  <span class="badge badge-pill rounded-yellow" style="position: absolute;top: 8px; right:16px;"> Ketuk Untuk Melihat Video</span>
-                  <img src="assets/img/gallery/c5.jpg" alt="">
-                </a>
-              </div>
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <img src="assets/img/intern/yunita.jpg" class="testimonial-img" alt="">
+                    <h3>Yunita Sara</h3>
+                    <h4>
+                      Recruiter Specialist
+                    </h4>
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      Selama saya terlibat sebagai intern di Dialogika, saya telah mencicipi bagian kecil dari dunia karir. Saya tumbuh menjadi orang yang lebih cekatan dan disiplin dalam menjalankan tugas. Memang ada saat-saat berat terutama ketika harus membagi waktu dengan kegiatan lain, tetapi pada akhirnya saya merasa menjadi orang yang lebih baik disini.
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-wrap">
+                  <div class="testimonial-item">
+                    <img src="assets/img/intern/indhira.jpg" class="testimonial-img" alt="">
+                    <h3>Indhira Widanur</h3>
+                    <h4>
+                      Copywriting
+                    </h4>
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      Alhamdulillah magang di dialogika aku ngerasa banyak bgt benefit, selain portofolio juga ilmu-ilmu yang lain. Sering masuk kelas jg jd tambah pengetahuan dengan gratis hehe.
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
 
             </div>
             <div class="swiper-pagination"></div>
-          </div> 
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-        </div>
-      </div>
-    </section><!-- End Gallery Section -->
-
-    <!-- ======= galeria Section ======= -->
-    <section id="galeria" class="galeria d-none d-md-block">
-      <div class="container-fluid">
-
-        <div class="section-title" style="text-align: center;">
-          <h2 class="dumpil">Gallery </h2>
-          <h2 class="tengah">Intern Dialogika</h2>
-          <p></p>
-        </div>
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="galeria-item h-100">
-              <img src="assets/img/gallery/1.jpg" class="img-fluid" alt="">
-              <div class="galeria-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/1.jpg" title="galeria 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div><!-- End galeria Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="galeria-item h-100">
-              <img src="assets/img/gallery/2.jpg" class="img-fluid" alt="">
-              <div class="galeria-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/2.jpg" title="galeria 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div><!-- End galeria Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="galeria-item h-100">
-              <img src="assets/img/gallery/3.jpg" class="img-fluid" alt="">
-              <div class="galeria-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/3.jpg" title="galeria 3" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div><!-- End galeria Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="galeria-item h-100">
-              <img src="assets/img/gallery/c1.jpg" class="img-fluid" alt="">
-              <span class="badge badge-pill rounded-yellow" style="position: absolute;top: 8px; right:16px;"> Ketuk Untuk Melihat Video</span>
-              <div class="galeria-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/1.mp4" title="galeria 9" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div><!-- End galeria Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="galeria-item h-100">
-              <img src="assets/img/gallery/c2.jpg" class="img-fluid" alt="">
-              <span class="badge badge-pill rounded-yellow" style="position: absolute;top: 8px; right:16px;"> Ketuk Untuk Melihat Video</span>
-              <div class="galeria-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/2.mp4" title="galeria 10" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div><!-- End galeria Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="galeria-item h-100">
-              <img src="assets/img/gallery/c3.jpg" class="img-fluid" alt="">
-              <span class="badge badge-pill rounded-yellow" style="position: absolute;top: 8px; right:16px;"> Ketuk Untuk Melihat Video</span>
-              <div class="galeria-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/3.mp4" title="galeria 13" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div><!-- End galeria Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="galeria-item h-100">
-              <img src="assets/img/gallery/4.jpg" class="img-fluid" alt="">
-              <div class="galeria-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/4.jpg" title="galeria 4" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div><!-- End galeria Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="galeria-item h-100">
-              <img src="assets/img/gallery/5.jpg" class="img-fluid" alt="">
-              <div class="galeria-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/5.jpg" title="galeria 5" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div><!-- End galeria Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="galeria-item h-100">
-              <img src="assets/img/gallery/6.jpg" class="img-fluid" alt="">
-              <div class="galeria-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/6.jpg" title="galeria 6" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="galeria-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End galeria Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="galeria-item h-100">
-              <img src="assets/img/gallery/7.jpg" class="img-fluid" alt="">
-              <div class="galeria-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/7.jpg" title="galeria 7" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div><!-- End galeria Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="galeria-item h-100">
-              <img src="assets/img/gallery/8.jpg" class="img-fluid" alt="">
-              <div class="galeria-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/8.jpg" title="galeria 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div><!-- End galeria Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="galeria-item h-100">
-              <img src="assets/img/gallery/c4.jpg" class="img-fluid" alt="">
-              <span class="badge badge-pill rounded-yellow" style="position: absolute;top: 8px; right:16px;"> Ketuk Untuk Melihat Video</span>
-              <div class="galeria-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/4.mp4" title="galeria 13" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              </div>
-            </div>
-          </div><!-- End galeria Item -->
-
-        </div>
-
-      </div>
-    </section><!-- End galeria Section -->
-
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
-      <div class="container">
-
-        <div class="section-title" style="text-align: center;">
-          <h2>Frequently <span style="color: #9e0035;">Asked</span> Questions</h2>
-        </div>
-
-        <div class="faq-list">
-          <ul>
-            <span class="badge rounded-pill bg-blues">What?</span>
-            <li>
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Is this internship paid or unpaid?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Unfortunately, at the moment, the internship program at Dialogika remains unpaid, as we are still a new and developing company and lack the financial stability to provide monetary compensation. We can only hope for better prospects in the future for our interns.
-                </p>
-              </div>
-            </li>
-
-            <li >
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Is there any compensation provided by the company, such as transportation and lunch?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                <p>Unfortunately, we are unable to provide perks such as lunch and transportation at this time. Occasionally, Dialogika organizes group meals during certain events, but these are still quite rare. If you find this unsatisfactory, we kindly ask that you refrain from applying to this program.</p>
-              </div>
-            </li>
-
-            <li>
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">What if I don't complete the internship program?  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  If you are unable to complete this internship program, it is regrettable that you will not receive an eCertificate from us, and it is also unfortunate that if any companies ask about you in the future, we will not be able to speak much about you. Make sure your heart is ready if you want to join.
-                </p>
-              </div>
-            </li>
-
-            <span class="badge rounded-pill bg-blues">Why?</span>
-            <li>
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Why should I join this program? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  While we appreciate your interest in joining our internship program, we do not recommend it if you are solely looking for a source of income. Our program aims to equip you with the mental and professional skills necessary to succeed in the workforce. We also have a unique working environment where we work and have fun at the same time, though not everyone may find it suitable. However, many of our interns have gone on to become key members of our team at Dialogika.</p>
-              </div>
-            </li>
-
-
-            <span class="badge rounded-pill bg-blues">How?</span>
-            <li>
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-1">How can I apply for this internship?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  To apply for this internship, simply fill out the "Registration Form" located at the bottom of this page and complete all required fields. Please note that we do not require you to send us your CV or resume.</p>
-                <p>
-                  We kindly request that you do not make your Instagram and TikTok accounts private, as our selection process begins there. Also, please ensure that your face is clearly visible so we can recognize you. Thank you for your understanding.
-                </p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-      <div style="margin-top: 30px; margin-bottom: -70px;">
-        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed/v1/place?q=Kelas+Public+Speaking:+Dialogika,+Jatempanol,+Tempel,+Caturtunggal,+Sleman+Regency,+Special+Region+of+Yogyakarta,+Indonesia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </section><!-- End Frequently Asked Questions Section -->
-
-    <!-- ======= Appointment Section ======= -->
-    <section id="appointment" class="appointment">
-      <div class="container">
-        <div class="section-title" style="text-align: center;">
-          <h2 class="dumpil">Form</h2>
-          <h2 class="tengah">Registration</h2>
-          <p></p>
-        </div>
-
-        <form action="javascript:void" method="post" id="myForm" enctype="text/plain" role="form" class="php-email-form needs-validation" onsubmit="SubForm ()">
-          <div class="row">
-            <div class="col-md-4 form-group">
-              <input type="text" class="form-control" name="Name" id="names" pattern="[a-zA-Z\s]{3,100}" placeholder="Full Name*" required>
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="text" class="form-control" name="Location" id="locations" pattern="[a-zA-Z\s]{3,100}" placeholder="Where do you live?*" required>
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" pattern="[0-9]{10,15}" placeholder="Whatsapp*" required="">
-              <div class="validate"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 form-group mt-3">
-              <select name="WFO" id="wfos" class="form-select">
-                <option value="">I'm Ready WFO in Jogja</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-              </select>
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="Division" id="divisions" class="form-select" required>
-                <option value="">Apply Position</option>
-                <option value="Client Manager">Client Manager</option>
-                <option value="Deal Maker">Deal Maker</option>
-                <option value="Model Talent">Model Talent</option>
-                <option value="Group Admin">Group Admin</option>
-                <option value="Design Graphic">Design Graphic</option>
-                <option value="AI Copywriter">AI Copywriter</option>
-                <option value="Recruiter Specialist">Recruiter Specialist</option>
-                <option value="Video Editor">Video Editor</option>
-                <option value="HTML Writer">HTML Writer</option>
-                <option value="Data Entry">Data Entry</option>
-              </select>
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="unpaid" id="unpaids" class="form-select">
-                <option value="">I acknowledge and agree that</option>
-                <option value="Yes">This internship is unpaid</option>
-              </select>
-              <div class="validate"></div>
-            </div>
-          </div>
-
-          <select class="d-none" name="Timestamp">
-            <option id="timestamp"></option>
-          </select>
-
-          <div class="row">
-            <div class="col-md-4 form-group mt-3">
-              <select name="3-Month" id="monthss" class="form-select">
-                <option value="">I am willing and committed to</option>
-                <option value="Yes">Completing internship program for 3 months.</option>
-              </select>
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <input type="text" class="form-control" name="Instagram" id="instagram" placeholder="instagram.com/username (personal account)*"/>
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <input type="text" class="form-control" name="Tiktok" id="tiktok" placeholder="tiktok.com/@username (personal account)*"/>
-              <div class="validate"></div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-4 form-group mt-3">
-              <input type="text" class="form-control" name="University" id="univ"  placeholder="University*" required>
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <input type="text" class="form-control" name="Major" id="majors"  placeholder="Major*" required>
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <input type="tel" class="form-control" name="Semester" id="semesters" placeholder="Semester*" required="">
-              <div class="validate"></div>
-            </div>
-          </div>
-
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="Why" id="messages" rows="8" placeholder="Tell us Your Purpose, please be honest, and you able to use bahasa indonesia"></textarea>
-                <div class="validate"></div>
-          </div>
-
-          <div class="form-text" style="margin-top:5px;margin-bottom: 20px;">
-            <div class="row">
-              <div class="col-md-6">
-                <ul style="list-style: none;">
-                  <li>
-                    <label class="align-items-center">
-                      <input type="checkbox" id="rules" name="Rule" class="checkbox-form">
-                      <span>I am willing to comply with Dialogika's <b><a href="#basic-rules" data-bs-toggle="modal">basic rules</a></b> without exception.</span>
-                    </label>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul style="list-style: none;">
-                  <li class="align-items-center">
-                    <label>
-                      <input type="checkbox" id="reads" name="Read" class="checkbox-form" >
-                      <span>I have read the <b><a href="#open-letter" data-bs-toggle="modal">open letter.</a></b></span>
-                    </label>
-                  </li>
-                </ul>
-              </div>
-
-            </div>
-            <hr/>
-            <em>If you feel that you are not mentally prepared and financially stable, we highly recommend that you do not apply for this program. However, if you are curious and would like to learn more about our program, you are welcome to apply.</em>
-          </div>
-
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your application request has been sent successfully. Thank you!</div>
-          </div>
-          <div class="text-center">
-            <button type="submit" id="submits" class="send_contact" data-bs-target="#wait" data-bs-toggle="modal">Send Application</button>
-          </div>
-        </form>
-
-      </div>
-    </section><!-- End Appointment Section -->
-
-    <!-- blog-area -->
-    <section class="blog-area pt-115 pb-110">
-       <div class="container">
-          <div class="row">
-             <div class="col-lg-12">
-                <div class="section-title mb-65 text-center">
-                   <span class="tp-sub-title-box mb-15" style="color: #F9C72E;">Top Blogs</span>
-                   <h2 class="tp-section-title mb-20">Check Our Blog</h2>
-                </div>
-             </div>
-          </div>
-          <div class="row">
-             <div class="col-lg-4 col-md-6">
-                <div class="tp-blog mb-60">
-                   <div class="tp-blog__thumb p-relative">
-                      <div class="fix blog-round">
-                        <a href="blog-details.html"><img src="https://media.istockphoto.com/id/1366788380/id/vektor/tanggal-8-maret-spanduk-ucapan-selamat.jpg?s=612x612&w=0&k=20&c=-LM9_iXmSJ2Zi0Kd1vsHkq6HwHDw42zQyzKNORtGMf8=" alt="blog-img"></a>
-                      </div>
-                      <div class="tp-blog__meta-ab">
-                         <a href="https://www.dialogika.co/blog/peran-perempuan-di-era-digital.html">Woman</a> <span>-</span> 
-                         <a href="https://www.dialogika.co/blog/peran-perempuan-di-era-digital.html">Maret 12 , 2023</a>
-                      </div>
-                   </div>
-                   <div class="tp-blog__content blog-box p-relative">
-                      <h3 class="tp-blog__title mb-15 mt-20"><a href="https://www.dialogika.co/blog/peran-perempuan-di-era-digital.html">Peran Perempuan Di Era Digital - Saatnya Perempuan Bicara</a></h3>
-                      <p>Peran Perempuan di Era Digital - Saatnya perempuan bicara, 9 hal yang harus kamu lakukan agar pendapatmu lebih didengar: 1. Kamu bernilai dan berdampak</p>
-                      <span><i class="fi fi-rr-clock"></i> 3 minute read</span>
-                   </div>
-                </div>
-             </div>
-             <div class="col-lg-4 col-md-6">
-                <div class="tp-blog mb-60">
-                   <div class="tp-blog__thumb p-relative">
-                      <div class="fix blog-round">
-                         <a href="blog-details.html"><img src="https://media.istockphoto.com/id/1445644465/id/foto/kue-ulang-tahun-dengan-30-lilin-kuning-menyala.jpg?s=612x612&w=0&k=20&c=8e7Pttl4NII6moOJhPdAposOYz9sFfNouRB6il-uwAU=" alt="blog-img"></a>
-                      </div>
-                      <div class="tp-blog__meta-ab">
-                         <a href="https://www.dialogika.co/blog/7-hal-yang-harus-kamu-hindari-sebelum-umur-30.html">Mindset</a> <span>-</span> 
-                         <a href="https://www.dialogika.co/blog/7-hal-yang-harus-kamu-hindari-sebelum-umur-30.html">Maret 21 , 2023</a>
-                      </div>
-                   </div>
-                   <div class="tp-blog__content blog-box p-relative">
-                      <h3 class="tp-blog__title mb-15 mt-20"><a href="https://www.dialogika.co/blog/7-hal-yang-harus-kamu-hindari-sebelum-umur-30.html">7 Hal Yang Harus Kamu Hindari Sebelum Umur 30</a></h3>
-                      <p>Saat kita menginjak usia 20-an, kita sering dihadapkan dengan situasi yang mengharuskan kita untuk membuat keputusan....</p>
-                      <span><i class="fi fi-rr-clock"></i> 2 minute read</span>
-                   </div>
-                </div>
-             </div>
-             <div class="col-lg-4 col-md-6">
-                <div class="tp-blog mb-60">
-                   <div class="tp-blog__thumb p-relative">
-                      <div class="fix blog-round">
-                         <a href="blog-details.html"><img src="https://media.istockphoto.com/id/1205852013/id/foto/kantor-pusat.jpg?s=612x612&w=0&k=20&c=Bs77PLbyQR1R89cSO2izd7EnkOj4BmzK0nD3mKVSwm8=" alt="blog-img"></a>
-                      </div>
-                      <div class="tp-blog__meta-ab">
-                         <a href="https://www.dialogika.co/blog/keterampilan-memecahkan-masalah.html">Education</a> <span>-</span> 
-                         <a href="https://www.dialogika.co/blog/keterampilan-memecahkan-masalah.html">Maret 19 , 2023</a>
-                      </div>
-                   </div>
-                   <div class="tp-blog__content blog-box p-relative">
-                      <h3 class="tp-blog__title mb-15 mt-20"><a href="https://www.dialogika.co/blog/keterampilan-memecahkan-masalah.html">Keterampilan Memecahkan Masalah</a></h3>
-                      <p>Ketika kamu merasa terjebak dalam suatu masalah dan tidak mengerti bagaimana cara mencari solusi, penting bagi kamu untuk mengetahui bagaimana keterampilan atau skills memecahkan masalah...</p>
-                      <span><i class="fi fi-rr-clock"></i> 5 minute read</span>
-                   </div>
-                </div>
-             </div>
-          </div>
-          <div class="row">
-             <div class="col-lg-12">
-                <div class="blog-btn text-center">
-                   <a href="../blog/" class="tp-btn">All Blog</a>
-                </div>
-             </div>
           </div>
        </div>
-    </section><!-- blog-area-end -->
+      </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section class="gallery-photo">
+        <div class="panels">
+            <div class="panel panel1">
+                <p class="title-manager">Join</p>
+                <p class="title-manager">Our</p>
+                <p class="title-manager">Exciting</p>
+            </div>
+            <div class="panel panel2">
+                <p class="title-manager">Joyful</p>
+                <p class="title-manager">Happy</p>
+                <p class="title-manager">Adventure</p>
+            </div>
+            <div class="panel panel3">
+                <p class="title-manager">Experience</p>
+                <p class="title-manager">Internship</p>
+                <p class="title-manager">Program</p>
+            </div>
+            <div class="panel panel4">
+                <p class="title-manager">Collaborate</p>
+                <p class="title-manager">With</p>
+                <p class="title-manager">Us</p>
+            </div>
+            <div class="panel panel5">
+                <p class="title-manager">Togather</p>
+                <p class="title-manager">Dialogika</p>
+                <p class="title-manager">Team</p>
+            </div>
+        </div>
+    </section><!-- End Gallery -->
+    
+    <div style="margin-top:-100px;margin-bottom:-10px;">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15813.303312562135!2d110.3785878!3d-7.7552251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a597ab489149d%3A0x9306a2474322de7c!2sDialogika%20Kelas%20Public%20Speaking!5e0!3m2!1sid!2sid!4v1700713315422!5m2!1sid!2sid" frameborder="0" allowfullscreen>
+        </iframe>
+      </div>
 
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <!-- ======= Footer & Counter Area ======= -->
+  <main-footer></main-footer>
+  <!-- ======= End Footer & Counter Area ======= -->
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row justify-content-between">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3><img src="assets/img/white-logo.png" class="footer-logo" alt="Kelas Public Speaking Jogja" /></h3>
-            <p>
-              Wadah pengembangan diri membangun aura positif sekaligus meningkatkan kualitas skill, karir hingga level kehidupan Anda. 
-            </p><br>
-            <p>Kami memberikan pelatihan Kelas Public Speaking karena dengan menguasai Public Speaking, mental, perilaku, penampilan hingga sikap Anda terbentuk.</p><br>
-            <h4 class="d-flex justify-content-between">Contact Us<i class='bx bx-chevron-down d-md-none'></i></h4>
-            <div class="social-link d-flex mt-3">
-              <a href="https://link.dialogika.co/wasap-2597-dialogika-co" class="d-flex align-items-center justify-content-center"><i class="bx bxl-whatsapp"></i></a>
-              <a href="mailto:hello@dialogika.co" class="d-flex align-items-center justify-content-center"><i class="bi bi-envelope-at-fill"></i></a>
-            </div>
-            <hr/>
-            <p>Punya pertanyaan mengenai Dialogika?</p>
-              <br>
-            <p>
-              <strong>Phone:</strong> +62 851-6299-2597<br>
-              <strong>Email:</strong> hello@dialogika.co<br>
-            </p>
-            <br><br>
-            <h4 class="d-flex justify-content-between">Follow Us<i class='bx bx-chevron-down d-md-none'></i></h4>
-            <div class="social-link d-flex mt-3">
-              <a href="https://link.dialogika.co/twitter" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
-              <a href="https://link.dialogika.co/facebook" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
-              <a href="https://link.dialogika.co/instagram" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
-              <a href="https://link.dialogika.co/linkedin" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links accordion">
-            <div class="d-none d-md-block">
-              <h4>Best Program</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../program/basic-plus.html">Online Class</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../program/first-class.html">Offline Class</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../program/kids-class.html">Kids Class</a>
-                </li>
-              </ul><br>
-            </div>
-            <div class="d-block d-md-none">
-            <a href="#footer-best-program" class="d-flex justify-content-between " data-bs-toggle="collapse" id="footer-accordion"><h4>Best Program</h4><i class='bx bx-chevron-down d-md-none'></i></a>
-            <ul class="accordion-collapse collapse show" id="footer-best-program" data-bs-parent=".footer-links">
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../program/basic-plus.html">Online Class</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../program/first-class.html">Offline Class</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../program/kids-class.html">Kids Class</a>
-              </li>
-            </ul></div><br>
-            
-            <div class="d-none d-md-block">
-              <h4>Corporate Program</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../corporate/workshop.html">Workshop</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../corporate/webinar.html">Webinar</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../corporate/class.html">Class</a>
-                </li>
-              </ul><br>
-            </div>
-            <div class="d-block d-md-none">
-            <a href="#footer-corporate-program" class="d-flex justify-content-between" data-bs-toggle="collapse" id="footer-accordion"><h4>Corporate Program</h4><i class='bx bx-chevron-down d-md-none'></i></a>
-            <ul class="accordion-collapse collapse show" id="footer-corporate-program" >
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../corporate/workshop.html">Workshop</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../corporate/webinar.html">Webinar</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../corporate/class.html">Class</a>
-              </li>
-            </ul></div><br>
-
-
-            <div class="widget d-none d-md-block">
-              <h4>Private Program</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../mentor/private-online.html">Online Class</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../mentor/private-offline.html">Offline Class</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../mentor/private-kids.html">Kids Only</a>
-                </li>
-              </ul><br>
-            </div>
-            <div class="d-block d-md-none">
-            <a href="#footer-private-program" class="d-flex justify-content-between" data-bs-toggle="collapse" id="footer-accordion"><h4>Private Program</h4><i class='bx bx-chevron-down d-md-none'></i></a>
-            <ul class="accordion-collapse collapse show" id="footer-private-program" data-bs-parent=".footer-links">
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../private/basic-private.html">Online Private</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../private/first-private.html">Offline Private</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../private/kids-private.html">Kids Private</a>
-              </li>
-            </ul></div><br>
-
-
-            <div class="widget d-none d-md-block">
-              <h4>Career Info</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../about/registration.html">Team</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../mentor/registration.html">Mentor</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../intern/index.html">Internship</a>
-                </li>
-              </ul>
-              <br>
-            </div>
-            <div class="d-block d-md-none">
-            <a href="#footer-career-info" class="d-flex justify-content-between" data-bs-toggle="collapse" id="footer-accordion"><h4>Career Info</h4><i class='bx bx-chevron-down d-md-none'></i></a>
-            <ul class="accordion-collapse collapse show" id="footer-career-info" data-bs-parent=".footer-links">
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../about/registration.html">Team</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../mentor/registration.html">Mentor</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../intern/index.html">Internship</a>
-              </li>
-            </ul>
-            <br>
-            </div>
-
-            <div class="widget d-none d-md-block">
-              <h4>Useful Link</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../blog/">Blog Dialogika</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../mentor/">Mentor Dialogika</a>
-                </li>
-              </ul>
-            </div>
-            <div class="d-block d-md-none">
-            <a href="#footer-useful-link" class="d-flex justify-content-between" data-bs-toggle="collapse" id="footer-accordion"><h4>Useful Link</h4><i class='bx bx-chevron-down d-md-none'></i></a>
-            <ul class="accordion-collapse collapse show" id="footer-useful-link" data-bs-parent=".footer-links">
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../blog/index.html">Blog Dialogika</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../mentor/index.html">Mentor Dialogika</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-
-        
-          <div class="col-lg-3 col-md-6 footer-links">
-            <div class="widget d-none d-md-block">
-              <h4>Our Service</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../service/counseling/">Counseling</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../service/mentoring/">Mentoring</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../service/agency/">Agency</a>
-                </li>
-              </ul>
-              <br>
-            </div>
-            <div class="d-block d-md-none">
-            <a href="#footer-our-service" class="d-flex justify-content-between" data-bs-toggle="collapse" id="footer-accordion"><h4>Our Service</h4><i class='bx bx-chevron-down d-md-none'></i></a>
-            <ul class="accordion-collapse collapse show" id="footer-our-service" data-bs-parent=".footer-links">
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../service/counseling/">Counseling</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../service/mentoring/">Mentoring</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../service/agency/">Agency</a>
-              </li>
-            </ul>
-            <br>
-          </div>
-
-
-            <div class="widget d-none d-md-block">
-              <h4>Event Agency</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../service/agency/emcee.html">Master of Ceremony</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../service/agency/host.html">Host</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../service/agency/moderator.html">Moderator</a>
-                </li>
-              </ul>
-              <br>
-            </div>
-            <div class="d-block d-md-none">
-            <a href="#footer-event-agency" class="d-flex justify-content-between" data-bs-toggle="collapse" id="footer-accordion"><h4>Event Agency</h4><i class='bx bx-chevron-down d-md-none'></i></a>
-            <ul class="accordion-collapse collapse show" id="footer-event-agency" data-bs-parent=".footer-links">
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../service/agency/emcee.html">Master of Ceremony</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../service/agency/host.html">Host</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../service/agency/moderator.html">Moderator</a>
-              </li>
-            </ul>
-            <br>
-          </div>
-
-
-            <div class="widget d-none d-md-block">
-              <h4>Counseling</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../service/counseling/relationship.html">Relationship</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../service/counseling/parenting.html">Parenting</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i>
-                  <a href="../service/counseling/kids.html">Children</a>
-                </li>
-              </ul>
-              <br>
-            </div>
-            <div class="d-block d-md-none">
-            <a href="#footer-counseling-program" class="d-flex justify-content-between" data-bs-toggle="collapse" id="footer-accordion"><h4>Counseling</h4><i class='bx bx-chevron-down d-md-none'></i></a>
-            <ul class="accordion-collapse collapse show" id="footer-counseling-program" data-bs-parent=".footer-links">
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../service/counseling/relationship.html">Relationship</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../service/counseling/parenting.html">Parenting</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../service/counseling/kids.html">Children</a>
-              </li>
-            </ul>
-            <br>
-          </div>
-
-
-          <div class="widget d-none d-md-block">
-            <h4>About Dialogika</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i>
-                <a href="../about/">About Us</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i>
-                <a href="../about/faq.html">FAQ</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i>
-                <a href="../about/help.html">Help Center</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i>
-                <a href="../about/privacy.html">Privacy Policy</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i>
-                <a href="../about/terms.html">Terms & Agreements</a>
-              </li>
-            </ul>
-          </div>
-          <div class="d-block d-md-none">
-            <a href="#footer-about-dialogika" class="d-flex justify-content-between" data-bs-toggle="collapse" id="footer-accordion"><h4>About Dialogika</h4><i class='bx bx-chevron-down d-md-none'></i></a>
-            <ul class="accordion-collapse collapse show" id="footer-about-dialogika" data-bs-parent=".footer-links">
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../about/">About Us</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../about/faq.html">FAQ</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../about/help.html">Help Center</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../about/privacy.html">Privacy Policy</a>
-              </li>
-              <li><i class="bx bx-chevron-right"></i> 
-                <a href="../about/terms.html">Terms & Agreements</a>
-              </li>
-            </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4 class="d-flex justify-content-between">Join Whatsapp Group Community<i class='bx bx-chevron-down d-md-none'></i></h4>
-            <p>Secara Berkala Kami Akan Bagi-Bagi Tips & Trik Gratis, Dan Info Promo Lainnya</p>
-            <form action="javascript:void" role="form" id="subcriptions" method="post">
-              <input type="tel" name="Surel" placeholder="Nomor Whatsapp"><input type="submit" value="Join Now" onclick="Subcription()">
-            </form>
-            <br><br>
-            <h4 class="d-flex justify-content-between">Payment Method<i class='bx bx-chevron-down d-md-none'></i></h4>
-            <p><i class="bx bx-chevron-down"></i> Bank Transfer</p>
-            <img src="assets/img/bank.png"/>
-            <br><br>
-            <p><i class="bx bx-chevron-down"></i> E-Wallet</p>
-            <img src="assets/img/wallet.png"/>
-
-            <div class="card">
-              <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted" style="color:#fff;">Telah Terdaftar Oleh</h6>
-                <img src="assets/img/ham.png" class=""/><br>
-                <p>
-                  <strong>Nomor:</strong> AHU-0118640.AH.01.11.TAHUN 2022<br>
-                  <strong>Registrasi: </strong>4022062334106037<br/>  
-                </p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container d-md-flex py-4">
-
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Dialogika</span></strong> | PT. Dialogika Persona Indonesia
-        </div>
-        
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://link.dialogika.co/facebook" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://link.dialogika.co/instagram" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://link.dialogika.co/wasap-2597-dialogika-co" class="google-plus"><i class="bx bxl-whatsapp"></i></a>
-        <a href="https://link.dialogika.co/linkedin" class="linkedin"><i class="bx bxl-linkedin"></i></i></a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <!-- ======= Modal Contact ======= -->
-  <div class="modal fade" id="contact-modal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body contact">
-          <div class="section-title">
-            <h2 class="tengah">Form Kontak Admin</h2>
-            <p>Salam Kenal Saya Meida Dari Dialogika,<br> See You Soon</p>
-          </div>
-
-          <div class="row justify-content-center"  >
-
-            <div class="col-lg-6">
-              <form action="javascript:void" method="post" id="myFormModal" enctype="text/plain" role="form" class="php-email-form needs-validation" onsubmit="SubFormModal()">
-                <div class="form-group">
-                  <input type="text" name="Name" class="form-control" id="names" pattern="[a-zA-Z\s]{3,100}" placeholder="Nama Lengkap*" required>
-                  <div class="validate"></div>
-                </div>
-                  
-                <div class="row">
-                  <div class="form-group">
-                    <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" pattern="[0-9]{10,15}" placeholder="Whatsapp*" required="">
-                    <div class="validate"></div>
-                  </div>
-                  
-                </div>
-                <div class="form-group d-none">
-                  <select name="Program" id="programs" class="form-select" required>
-                    <option value="Workshop">IDR 247K: 3 Hari (Workshop Only)</option>
-                  </select>
-                </div>
-                <select class="d-none" name="Timestamp">
-                  <option id="timestampModal"></option>
-                </select>
-                <div class="form-text">
-                  *Informasi Dijamin Aman.
-                </div>
-                <div class="text-center">
-                  <button type="submit" id="submits" class="" data-bs-toggle="modal" data-bs-target="#notifications" onclick="window.open('https://link.dialogika.co/whatsapp-modal');" >
-                    <i class='bx bxl-whatsapp bx-tada'></i>
-                    Chat Sekarang</button>
-                </div>
-              </form>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div><!-- End Modal Contact-->
-
-  <!-- ======= Modal Wait ======= -->
-  <div class="modal fade" id="wait" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1><b>Please Wait</b></h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-      </div>
-    </div>
-  </div><!-- End Modal Notification -->
-
-  <!-- ======= Modal Nofication ======= -->
-  <div class="modal fade" id="notifications" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>Pesan telah dikirimkan, apabila <b>anda tidak langsung ter-redirect</b> ke Aplikasi Whatsapp atau Whatsapp Web silahkan pencet tombol Redirect dibawah ini</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius:25px;background: #cccccc;">Close</button>
-          <a role="button" href="javascript:void" class="btn btn-primary send_contact" style="border-radius:25px;background: #0B2B6A;">Redirect</a>
-        </div>
-      </div>
-    </div>
-  </div><!-- End Modal Notification -->
-
+  <a href="#hero" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
   <!-- ======= Modal Basic Rules ======= -->
   <div class="modal fade" id="basic-rules" tabindex="-1" aria-labelledby="basic-rules" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
@@ -1829,7 +782,7 @@
 
             <div class="resume-item">
               <h4>Mendapatkan Izin Orang Tua</h4>
-                <img src="https://img.freepik.com/free-photo/happiness-asian-family-candid-daughter-hug-grandparent-mother-farther-senior-elder-cozy-relax-sofa-couch-surprise-visiting-living-room-hometogether-hug-cheerful-asian-family-home_609648-2050.jpg?w=1800&t=st=1671641337~exp=1671641937~hmac=3d4f23dec0d2372f4979f146ba7d5ae8a05ddec6c1536213b1eb06ca081fd543" class="img-fluid rounded" alt="" style="margin-bottom:10px;" /> 
+                <img src="https://img.freepik.com/free-photo/happiness-asian-family-candid-daughter-hug-grandparent-mother-farther-senior-elder-cozy-relax-sofa-couch-surprise-visiting-living-room-hometogether-hug-cheerful-asian-family-home_609648-2050.jpg?w=1800&t=st=1671641337~exp=1671641937~hmac=3d4f23dec0d2372f4979f146ba7d5ae8a05ddec6c1536213b1eb06ca081fd543" class="img-fluid rounded" alt="" style="margin-bottom:10px;" />
                   <p>Pastikan sebelum join kamu sudah mendapatkan izin dari orang tua, kami tidak ingin internshipmu terhenti karena tidak dapat izin dari orang tua</p>
             </div>
 
@@ -1850,7 +803,7 @@
             <div class="resume-item">
               <h4>Smile : Happy & Fun</h4>
               <p>Making one person smile can change the world. Maybe not the whole world, but their world. Mari kita bersama-sama membiasakan tersenyum, memberi salam, dan menyapa kepada siapapun yang kita jumpai.</p>
-              <blockquote>Wajib bangeet untuk senyum selama kerja. Dan wajib izin apabila nggak bisa senyum atau mood lagi jelek.</blockquote>  
+              <blockquote>Wajib bangeet untuk senyum selama kerja. Dan wajib izin apabila nggak bisa senyum atau mood lagi jelek.</blockquote>
               <img src="https://img.freepik.com/free-photo/group-asia-young-creative-people-smart-casual-wear-smiling-arms-crossed-creative-office-workplace-diverse-asian-male-female-stand-together-startup-coworker-teamwork-concept_7861-2570.jpg?w=1800&t=st=1671641237~exp=1671641837~hmac=7e12daedc58f74ec0a02968fba9eb63e453beafc909efb827dea99ef683ed552" class="img-fluid rounded" alt="">
             </div>
 
@@ -1951,7 +904,7 @@
             <div class="resume-item">
               <h4>Berlatih Membuat Laporan</h4>
               <p>
-                Apapun profesimu dimasa depan, membuat laporan adalah bagian dari perkerjaan yang akan selalu kamu lakukan. Baik itu entrepreneur, seniman dan lain-lain. 
+                Apapun profesimu dimasa depan, membuat laporan adalah bagian dari perkerjaan yang akan selalu kamu lakukan. Baik itu entrepreneur, seniman dan lain-lain.
                 <blockquote>
                   <p>Perkerjaan ini tidak menyenangkan namun berlatihlah untuk melakukannya</p>
                 </blockquote>
@@ -2089,120 +1042,70 @@
       </div>
     </div>
   </div><!-- End Modal Open Letter -->
-  
-  <!-- ======= Modal Client Manager ======= -->
-  <div class="modal fade" id="client-manager" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3><b>Client Manager</b></h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <iframe src="https://doc.clickup.com/2307700/p/h/26dkm-18422/b50170a066b74a4" width="100%" height="300" title="Client Manager Jobdesk"></iframe>
-        </div>
-      </div>
-    </div>
-  </div><!-- End Modal Notification -->
-  
-  <!-- ======= Modal Deal Maker ======= -->
-  <div class="modal fade" id="deal-maker" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3><b>Deal Maker</b></h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <iframe src="https://doc.clickup.com/2307700/p/h/26dkm-18402/7da263ffff4e7d1" width="100%" height="300" title="Deal Maker Jobdesk"></iframe>
-        </div>
-      </div>
-    </div>
-  </div><!-- End Modal Notification -->
-  
-  <!-- ======= Modal AI Copywriter ======= -->
-  <div class="modal fade" id="ai-copywriter" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3><b>AI Copywriter</b></h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <iframe src="https://doc.clickup.com/2307700/p/h/26dkm-18362/431ffb460339ce4" width="100%" height="300" title="AI Copywriter Jobdesk"></iframe>
-        </div>
-      </div>
-    </div>
-  </div><!-- End Modal Notification -->
-  
-  <!-- ======= Modal Model Talent ======= -->
-  <div class="modal fade" id="ai-copywriter" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3><b>Model Talent</b></h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <iframe src="https://doc.clickup.com/2307700/p/h/26dkm-18362/431ffb460339ce4" width="100%" height="300" title="Model Talent Jobdesk"></iframe>
-        </div>
-      </div>
-    </div>
-  </div><!-- End Modal Notification -->
 
-  <!-- Vendor JS Files -->
-    
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    
-    <script src="assets/vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- Modal 2 -->
+  <div class="modal popup-box fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+     <div class="modal-dialog popup-box-dialog modal-dialog-centered">
+        <div class="modal-content popup-box-content">
+           <div class="popup-card" style="width:100%">
+              <button type="button" class="btn popup2-btn ms-auto" data-bs-dismiss="modal"><i
+                    class="fa-solid fa-xmark"></i></button>
+              <img src="https://i.ytimg.com/vi/1hJKq6QAb48/maxresdefault.jpg" class="card-img-top" alt="" style="border-top-left-radius: 20px;border-top-right-radius: 20px;border:0px;">
+              <div class="card-body popup-card-body">
+                 <div class="popup-title-area">
+                    <p class="popup-sub">Isikan Sekarang</p>
+                    <h5 class="card-title popup-title">Form Pendaftaran Internship</h5>
+                 </div>
+                 <a href="#" class="btn popup-play" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                       class="fa-solid fa-play"></i></a>
+              </div>
+              <form action="javascript:void" method="post" id="heroForm" enctype="text/plain" class="popup-form">
+                 <div class="row gy-3 mb-3">
+                    <div class="col-lg-6">
+                       <label for="names" class="form-label">Full Name</label>
+                       <input type="text" name="Name" class="form-control" id="names" pattern="[a-zA-Z\s]{3,100}" placeholder="Nama Lengkap*" required>
+                    </div>
+                    <div class="col-lg-6">
+                       <label for="locations" class="form-label">Domisili</label>
+                       <input type="text" class="form-control" name="Location" id="locations" pattern="[a-zA-Z\s]{3,100}" placeholder="Domisili*" required>
+                    </div>
+                    <div class="col-lg-6">
+                       <label for="whatsapps" class="form-label">Whatsapp</label>
+                       <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" pattern="[0-9]{10,15}" placeholder="Whatsapp*" required="">
+                    </div>
+                    <div class="col-lg-6">
+                       <label for="events" class="form-label">Position</label>
+                       <input type="text" name="Event" class="form-control" id="events"
+                          placeholder="Posisi Yang Dilamar" disabled>
+                    </div>
+                    <select class="d-none" name="Timestamp">
+                      <option id="timestamp"></option>
+                    </select>
+                 </div>
+                 <button class="custom-btn2 send_contact" id="submits" onclick="HeroForm()">Daftar Sekarang</button>
+              </form>
+           </div>
+        </div>
+     </div>
+  </div>
 
-  <!-- Vendor Epora JS -->
-   <script src="assets/vendor/epora/js/vendor/jquery.js"></script>
-   <script src="assets/vendor/epora/js/vendor/waypoints.js"></script>
-   <script src="assets/vendor/epora/js/bootstrap-bundle.js"></script>
-   <script src="assets/vendor/epora/js/meanmenu.js"></script>
-   <script src="assets/vendor/epora/js/slick.js"></script>
-   <script src="assets/vendor/epora/js/magnific-popup.js"></script>
-   <script src="assets/vendor/epora/js/parallax.js"></script>
-   <script src="assets/vendor/epora/js/backtotop.js"></script>
-   <script src="assets/vendor/epora/js/nice-select.js"></script>
-   <script src="assets/vendor/epora/js/counterup.js"></script>
-   <script src="assets/vendor/epora/js/wow.js"></script>
-   <script src="assets/vendor/epora/js/isotope-pkgd.js"></script>
-   <script src="assets/vendor/epora/js/imagesloaded-pkgd.js"></script>
-   <script src="assets/vendor/epora/js/ajax-form.js"></script>
-   <script src="assets/vendor/epora/js/main.js"></script>
+  <!-- Part -->
+  <script src="assets/part/counting-down/count.js"></script>
+  <script src="assets/part/gallery-photo/gallery.js"></script>
 
-  <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/whatsapp.js"></script>
-    <script type="text/javascript">
-      // $(function () {
-      //   $('#submits').attr('disabled', true);
-      //   $('#myForm').change(function () {
-      //       if ($('#names').val() != '' && $('#works').val() != '' && $('#locations').val() != '' && $('#whatsapps').val() != '') {
-      //           $('#submits').attr('disabled', false);
-      //       } else {
-      //           $('#submits').attr('disabled', true);
-      //       }
-      //   });
-      // });
-      // get date
-      var today = new Date();
-      var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-      var time = today.getHours() + ":" + today.getMinutes();
-      var dateTime = date+'    '+time;
-      document.getElementById("timestamp").innerHTML = dateTime;
-    </script>
-    <!-- untuk popup -->
-    <!-- <script type="text/javascript"> 
-      $(window).on('load', function() {
-          $('#popups').modal('show');
-      });
-    </script> -->
+   <!-- Vendor JS Files -->
+   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+   <script src="assets/vendor/php-email-form/validate.js"></script>
+
+   <!-- Template Main JS File -->
+   <script src="assets/js/headerfooter.js"></script>
+   <script src="assets/js/timestamp.js"></script>
+   <script src="assets/js/whatsapp.js"></script>
+   <script src="assets/js/main.js"></script>
+
 
 </body>
 

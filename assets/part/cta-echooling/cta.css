@@ -1,0 +1,63 @@
+
+.react-footer {
+  position: relative;
+  color: #fff;
+}
+.react-footer .footer-top-cta {
+  background: url('../../img/cta.jpg') no-repeat center top;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 50px 55px;
+  width: 100%;
+  top: -17%;
+  max-width: 1300px;
+  z-index: 1;
+  margin-bottom:75px;
+  box-shadow: 0px 7px 5px 0px rgba(102, 74, 144, 1);
+  -webkit-box-shadow: 0px 7px 5px 0px rgba(102, 74, 144, 1);
+  -moz-box-shadow: 0px 7px 5px 0px rgba(102, 74, 144, 1);
+}
+.react-footer .footer-top-cta .row {
+  align-items: center;
+}
+.react-footer .footer-top-cta h4 {
+  font-size: 16px;
+  color: #fff;
+  margin: 0 0 8px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.react-footer .footer-top-cta h3 {
+  font-size: 44px;
+  color: #fff;
+  margin: 0;
+  line-height: 50px;
+  font-weight: 700;
+}
+.react-footer .footer-top-cta a {
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 35px 12px 35px;
+  color: #fff;
+  display: inline-block;
+  margin-top: 20px;
+  line-height: 20px;
+}
+.react-footer .footer-top-cta a svg {
+  width: 18px;
+}
+.react-footer .footer-top-cta a:hover {
+  background: #fff;
+  color: #0F1216;
+}
+
+@media (max-width: 768px) {
+    .react-footer .footer-top-cta h3 {
+        font-size:38px;
+    }
+    .react-footer .footer-top-cta h4 {
+            font-size:14px;
+    }
+}

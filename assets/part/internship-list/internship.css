@@ -1,0 +1,50 @@
+.internship-list {
+    
+}
+
+.internship-list .card {
+    border-radius: 8px;
+    border-color: #fff;
+    box-shadow: 0px 9px 16px -6px rgba(11, 43, 106, 1);
+}
+
+.internship-list .card img {
+    
+}
+
+.internship-list .card .card-body h5.card-title{
+    font-weight: 700;
+    color: #0B2B6A;
+}
+
+.internship-list .card .card-body a {
+  margin-bottom: 7px;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  background: linear-gradient(to bottom, #0f61a8 5%, #0b2b6a 100%);
+  box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
+  -webkit-box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
+  -moz-box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
+}
+
+.internship-list .card .card-body a:hover {
+      background: linear-gradient(to bottom, #0b2b6a 5%, #0f61a8 100%);
+  background-color: #0b2b6a;
+  color: #fff;
+  box-shadow: 0px 0px 4px 2px rgba(114, 4, 207, 0.75);
+  -webkit-box-shadow: 0px 0px 4px 2px rgba(114, 4, 207, 0.75);
+  -moz-box-shadow: 0px 0px 4px 2px rgba(114, 4, 207, 0.75);
+}
+
+
+@media (max-width: 768px) {
+    .internship-list .card .card-body a {
+    margin: 0 15px 0 0;
+    padding: 6px 18px;
+    }
+}
