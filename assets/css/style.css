@@ -974,13 +974,24 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about {
-    
+.about img {
+    max-width:100%;
+    min-height:500px;
 }
+
+.about .icon-boxes{
+
+}
+
+.about .icon-boxes p {
+    width:100%;
+}
+
 .about .icon-boxes h4 {
   font-size: 18px;
   color: #4b7dab;
   margin-bottom: 15px;
+  
 }
 
 .about .icon-boxes h3 {
@@ -1058,8 +1069,9 @@ section {
 }
 
 .about .video-box {
-  
-  min-height: 500px;
+    background: url("../img/about.webp") center center no-repeat;
+    background-size: cover;
+    min-height: 100%;
 }
 
 .about .play-btn {
