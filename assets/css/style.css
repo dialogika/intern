@@ -660,10 +660,11 @@ h6 {
     margin-bottom: 30px;
   }
   #hero .btn-get-started {
-      font-family: "Raleway", sans-serif;
+      
         box-shadow: inset 0px 1px 0px 0px #f9c72e;
         background: linear-gradient(to bottom, #f9c62e 5%, #ffb13b 100%);
         background-color: #f9c62e;
+        padding: 6px 24px;
   }
   #hero .btn-get-started:hover {
       background: linear-gradient(to bottom, #ffb13b 5%, #f9c62e 100%);
@@ -674,6 +675,8 @@ h6 {
       background-color:transparent;
         border:1px solid #f9c62e;
         color: #f9c62e;
+        padding: 6px 24px;
+        
   }
   #hero .btn-watch-video:hover {
       background-color:#f9c62e;
@@ -684,6 +687,7 @@ h6 {
   }
   #hero .btn-watch-video:hover i {
       color: #000;
+      background-color:#f9c62e;
   }
   #hero blockquote{
       color: #fff;
@@ -974,17 +978,13 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about img {
-    max-width:100%;
-    min-height:500px;
-}
 
 .about .icon-boxes{
 
 }
 
 .about .icon-boxes p {
-    width:100%;
+    
 }
 
 .about .icon-boxes h4 {
@@ -1071,7 +1071,7 @@ section {
 .about .video-box {
     background: url("../img/about.webp") center center no-repeat;
     background-size: cover;
-    min-height: 100%;
+    min-height: 500px;
 }
 
 .about .play-btn {
