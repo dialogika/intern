@@ -500,7 +500,7 @@ h6 {
 #hero {
   width: 100%;
   min-height: 81vh;
-  background: url("https://empowerly.com/wordpress/wp-content/uploads/2022/07/AdobeStock_423656331-1-scaled-e1658326790962.jpeg") top center;
+  background: url("../img/hero-bg.webp") top center;
   background-size: cover;
   position: relative;
   padding: 120px 0;
@@ -521,7 +521,7 @@ h6 {
 #hero:before {
   position: absolute;
   content: "";
-  background: rgba(11, 43, 106, 0.3);
+  background: rgba(11, 43, 106, 0);
   inset: 0;
 }
 
@@ -545,7 +545,7 @@ h6 {
   color: #0b2b6a;;
   padding-left: 20px;
   font-size: 15px;
-  font-family: var(--font-default);
+  font-family: 'Amatic SC',cursive;
   border-left: 2px solid #0b2b6a;
   margin: 40px 0;
 }
@@ -639,10 +639,10 @@ h6 {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   #hero {
     margin-bottom: 0;
-    height: 100vh;
+    height: 75vh;
   }
 
   #hero .container {
@@ -660,7 +660,6 @@ h6 {
     margin-bottom: 30px;
   }
   #hero .btn-get-started {
-      
         box-shadow: inset 0px 1px 0px 0px #f9c72e;
         background: linear-gradient(to bottom, #f9c62e 5%, #ffb13b 100%);
         background-color: #f9c62e;
@@ -989,7 +988,7 @@ section {
 
 .about .icon-boxes h4 {
   font-size: 18px;
-  color: #4b7dab;
+  color: #0B2B6A;
   margin-bottom: 15px;
   
 }
@@ -1071,7 +1070,7 @@ section {
 .about .video-box {
     background: url("../img/about.webp") center center no-repeat;
     background-size: cover;
-    min-height: 500px;
+    min-height: 750px;
 }
 
 .about .play-btn {
@@ -1173,6 +1172,9 @@ section {
     margin: 0 5px 0 0;
     padding: 6px 18px;
     margin-left: 85px;
+  }
+  .about .video-box {
+      min-height: 500px;
   }
 }
 
@@ -2541,6 +2543,12 @@ section {
   height: 75px;
   width: 75px;
   margin: 10px;
+}
+
+#footer .footer-newsletter form input:active,
+#footer .footer-newsletter form input:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 #footer .footer-newsletter i {

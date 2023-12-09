@@ -3,9 +3,13 @@
 --------------------------------------------------------------*/
 .breadcrumbs-banner {
   text-align: center;
-  background: #0B2B6A;
+  background: #0B2B6A top center;
   padding: 100px 0;
   color: #fff;
+  background-size:cover;
+  object-fit: cover; 
+  object-position: center;
+    
 }
 
 @media (max-width: 992px) {
