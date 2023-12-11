@@ -105,7 +105,7 @@ class Header extends HTMLElement {
         <i class="bi bi-list d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"></i>
        </nav><!-- .navbar -->
 
-      <a href="#trial-request" data-bs-toggle="modal" class="appointment-btn"><span class="d-none d-md-inline">Request</span> Trial</a>
+      <a href="../promo/" target="_blank" class="appointment-btn">Promo <span class="d-none d-md-inline">Class</span></a>
 
     </div>
   </header><!-- End Header -->
