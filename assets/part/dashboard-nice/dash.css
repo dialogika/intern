@@ -1,5 +1,5 @@
 /* Card */
-.card {
+.dashboard .card {
   margin-bottom: 30px;
   border: none;
   border-radius: 10px;
@@ -7,15 +7,15 @@
   background: rgba(255, 255, 255, 0.7);
 }
 
-.card-header,
-.card-footer {
+.dashboard .card-header,
+.dashboard .card-footer {
   border-color: #ebeef4;
   background-color: #fff;
   color: #798eb3;
   padding: 15px;
 }
 
-.card-title {
+.dashboard .card-title {
   padding: 20px 0 15px 0;
   font-size: 18px;
   font-weight: 500;
@@ -23,17 +23,17 @@
   font-family: "Poppins", sans-serif;
 }
 
-.card-title span {
+.dashboard .card-title span {
   color: #899bbd;
   font-size: 14px;
   font-weight: 400;
 }
 
-.card-body {
+.dashboard .card-body {
   padding: 0 20px 20px 20px;
 }
 
-.card-img-overlay {
+.dashboard .card-img-overlay {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
