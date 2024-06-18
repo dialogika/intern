@@ -58,7 +58,6 @@ class Header extends HTMLElement {
                 <ul>
                   <li><a href="../program/index-jogja.html">Yogyakarta</a></li>
                   <li><a href="../program/index-tangsel.html">Bintaro</a></li>
-                  <li><a href="../program/index-solo.html">Solo</a></li>
                   <li><a href="../program/index-surabaya.html" onclick="return false;">
                     <span>Surabaya</span>
                     <span class="badge rounded-pill text-bg-secondary">Coming Soon</span></a>
@@ -69,30 +68,30 @@ class Header extends HTMLElement {
           </li>
           <li class="dropdown"><a href="#"><span>Position</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
-                <li><a href="client-manager.html">
+                <li><a href="b-client-manager.html">
                     <span>Client Manager</span>
                     <span class="badge bg-success">Best</span></a>
                 </li>
-                <li><a href="video-editing.html">Video Editor</a></li>
+                <li><a href="b-video-editing.html">Video Editor</a></li>
                 <li><hr/></li>
-                <li><a href="deal-maker.html">
+                <li><a href="b-deal-maker.html">
                     <span>Deal Maker</span>
                     <span class="badge bg-success">Best</span>
                 </a></li>
-                <li><a href="digital-marketing.html">Digital Marketing</a>
+                <li><a href="b-digital-marketing.html">Digital Marketing</a>
                 <li><hr/></li>
-                <li><a href="model-talent.html">
+                <li><a href="b-model-talent.html">
                     <span>Model Talent</span>
                     <span class="badge bg-success">Best</span>
                 </a></li>
-                <li><a href="content-writing.html">Content Writing</a></li>
-                <li><a href="design-specialist.html">Design Specialist</a></li>
-                <li><a href="html-writing.html">HTML Writing</a></li>
+                <li><a href="b-content-writing.html">Content Writing</a></li>
+                <li><a href="b-design-specialist.html">Design Specialist</a></li>
+                <li><a href="b-html-writing.html">HTML Writing</a></li>
                 
                 </li>
                 <li><hr/></li>
-                <li><a href="people-development.html">People Development</a></li>
-                <li><a href="recruiter-specialist.html">
+                <li><a href="b-people-development.html">People Development</a></li>
+                <li><a href="b-recruiter-specialist.html">
                     <span>Recruiter Specialist</span>
                     <span class="badge bg-success">Best</span>
                 </a></li>
@@ -194,34 +193,34 @@ class Header extends HTMLElement {
                   </div>
                 </a>
                 <div class="collapse" id="position-collapse">
-                  <a href="client-manager.html"><div class="card card-body">
+                  <a href="b-client-manager.html"><div class="card card-body">
                     <div class="d-flex justify-content-between">
                         <span>Client Manager</span>
                         <span class="badge bg-warning rounded-pill">Best</span>
                     </div>
                   </div></a>
-                  <a href="video-editing.html"><div class="card card-body">Video Editor</div></a>
+                  <a href="b-video-editing.html"><div class="card card-body">Video Editor</div></a>
                   <hr/>
-                  <a href="deal-maker.html"><div class="card card-body">
+                  <a href="b-deal-maker.html"><div class="card card-body">
                     <div class="d-flex justify-content-between">
                         <span>Deal Maker</span>
                         <span class="badge bg-warning rounded-pill">Best</span>
                     </div>
                   </div></a>
-                  <a href="digital-marketing.html"><div class="card card-body">Digital Marketing</div></a>
+                  <a href="b-digital-marketing.html"><div class="card card-body">Digital Marketing</div></a>
                   <hr/>
-                  <a href="model-talent.html"><div class="card card-body">
+                  <a href="b-model-talent.html"><div class="card card-body">
                     <div class="d-flex justify-content-between">
                         <span>Model Talent</span>
                         <span class="badge bg-warning rounded-pill">Best</span>
                     </div>
                   </div></a>
-                  <a href="content-writing.html"><div class="card card-body">Content Writing</div></a>
-                  <a href="design-specialist.html"><div class="card card-body">Design Specialist</div></a>
-                  <a href="html-writing.html"><div class="card card-body">HTML Writing</div></a>
+                  <a href="b-content-writing.html"><div class="card card-body">Content Writing</div></a>
+                  <a href="b-design-specialist.html"><div class="card card-body">Design Specialist</div></a>
+                  <a href="b-html-writing.html"><div class="card card-body">HTML Writing</div></a>
                   <hr/>
-                  <a href="people-development.html"><div class="card card-body">People Development</div></a>
-                  <a href="recruiter-specialist.html"><div class="card card-body">
+                  <a href="b-people-development.html"><div class="card card-body">People Development</div></a>
+                  <a href="b-recruiter-specialist.html"><div class="card card-body">
                       <span>Recruiter Specialist</span>
                   </div></a>
 
