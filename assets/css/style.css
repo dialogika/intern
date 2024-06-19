@@ -2197,6 +2197,70 @@ section {
   transform: scale(1.1);
 }
 
+/*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
+.features-quick .nav-tabs {
+  border: 0;
+}
+
+.features-quick .nav-item {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.features-quick .nav-item:last-child {
+  margin-bottom: 0;
+}
+
+.features-quick .nav-link {
+  color: #3e5055;
+  border: 0;
+  padding: 30px;
+  transition: 0.3s;
+  border-radius: 10px;
+  display: flex;
+  cursor: pointer;
+}
+
+.features-quick .nav-link i {
+  background-color: #fff;
+  color: #388da8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  width: 48px;
+  height: 48px;
+  font-size: 22px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px color-mix(in srgb, #3d4348, transparent 85%);
+}
+
+.features-quick .nav-link h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  transition: 0.3s;
+}
+
+.features-quick .nav-link p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.features-quick .nav-link:hover {
+  background: color-mix(in srgb, #388da8, transparent 96%);
+}
+
+.features-quick .nav-link.active {
+  background: color-mix(in srgb, #388da8, transparent 92%);
+}
+
+.features-quick .tab-pane img {
+  border-radius: 15px;
+}
 
 /*--------------------------------------------------------------
 # Contact
