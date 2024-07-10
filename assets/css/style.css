@@ -2173,6 +2173,99 @@ section {
   background-color: #0B2B6A;
 }
 
+/*tambahan*/
+
+.testimonials .testimonial-item article {
+  background: var(--surface-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.testimonials .testimonial-item .post-img {
+  max-height: 240px;
+  margin: -30px -30px 15px -30px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.testimonials .testimonial-item .post-category {
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.testimonials .testimonial-item .title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 7px 0;
+  text-align: left;
+}
+
+.testimonials .testimonial-item .title a {
+  color: var(--heading-color);
+  transition: 0.3s;
+}
+
+.testimonials .testimonial-item .title a:hover {
+  color: var(--accent-color);
+}
+
+.testimonials .testimonial-item .post-author-img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.testimonials .testimonial-item .post-author {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.testimonials .testimonial-item .post-date {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.testimonials .testimonial-item .post-meta {
+    text-align: left;
+}
+
+.testimonials .testimonial-item .post-meta a {
+    margin-top: 9px;
+    margin-bottom: 13px;
+    margin-left: 0px;
+    color: #fff;
+    border-radius: 50px;
+    padding: 8px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+    background: linear-gradient(to bottom, #0f61a8 5%, #0b2b6a 100%);
+    box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
+    -webkit-box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
+    -moz-box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
+}
+
+.testimonials .testimonial-item .post-meta a:hover {
+  background: linear-gradient(to bottom, #0b2b6a 5%, #0f61a8 100%);
+  background-color: #0b2b6a;
+  color: #fff;
+  box-shadow: 0px 0px 4px 2px rgba(114, 4, 207, 0.75);
+  -webkit-box-shadow: 0px 0px 4px 2px rgba(114, 4, 207, 0.75);
+  -moz-box-shadow: 0px 0px 4px 2px rgba(114, 4, 207, 0.75);
+}
+
+/*end tambahan*/
+
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
