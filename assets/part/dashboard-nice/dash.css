@@ -18,15 +18,20 @@
 .dashboard .card-title {
   padding: 20px 0 15px 0;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   color: #012970;
   font-family: "Poppins", sans-serif;
 }
 
 .dashboard .card-title span {
   color: #899bbd;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
+}
+@media (max-width: 768px) {
+    .dashboard .card-title span {
+        font-size: 14px;
+    }
 }
 
 .dashboard .card-body {
