@@ -1048,56 +1048,85 @@
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Talent Statement</h2>
-          <p>"ISI_DENGAN_TESTIMONI_TALENT."</p>
+          <p>
+            <i id="testimoni-talent"
+              >seru internship di dialogika, sebuah pengalaman yang berharga
+              buatku karena banyak ilmu baru yang didapat. internship disini
+              juga meningkatkan kesiapanku menghadapi dunia kerja.</i
+            >
+          </p>
         </div>
         <!-- End Section Title -->
 
         <div class="container">
           <div class="row justify-content-between">
             <div class="col-lg-5 d-flex align-items-center">
-              <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
-                <li class="nav-item">
+              <ul
+                class="nav nav-tabs"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
                   <a
                     class="nav-link active show"
                     data-bs-toggle="tab"
                     data-bs-target="#features-tab-1"
+                    aria-selected="true"
+                    role="tab"
                   >
                     <i class="bi bi-heart-pulse-fill"></i>
                     <div>
-                      <h4 class="d-none d-lg-block">
-                        ISI_DENGAN_KEMAMPUAN_INTERN
+                      <h4 class="d-none d-lg-block" id="kemampuan1">
+                        Search Engine Optimization
                       </h4>
-                      <p>ISI_DENGAN_DESKRIPSI_KEMAMPUAN_TERSEBUT</p>
+                      <p id="deskripsi-kemampuan1">
+                        di sini aku belajar menulis konten blog dan website yang
+                        menarik, informatif, dan SEO-friendly
+                      </p>
                     </div>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" role="presentation">
                   <a
                     class="nav-link"
                     data-bs-toggle="tab"
                     data-bs-target="#features-tab-2"
+                    aria-selected="false"
+                    tabindex="-1"
+                    role="tab"
                   >
                     <i class="bi bi-person-fill-up"></i>
                     <div>
-                      <h4 class="d-none d-lg-block">
-                        ISI_DENGAN_KEMAMPUAN_INTERN
+                      <h4 class="d-none d-lg-block" id="kemampuan2">
+                        Team work
                       </h4>
-                      <p>ISI_DENGAN_DESKRIPSI_KEMAMPUAN_TERSEBUT</p>
+                      <p id="deskripsi-kemampuan2">
+                        diskusi, brainstorming, bekerjasama dalam tim yang
+                        memiliki berbagai keahlian atau bidangnya masing-masing
+                      </p>
                     </div>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" role="presentation">
                   <a
                     class="nav-link"
                     data-bs-toggle="tab"
                     data-bs-target="#features-tab-3"
+                    aria-selected="false"
+                    tabindex="-1"
+                    role="tab"
                   >
                     <i class="bi bi-chat-dots-fill"></i>
                     <div>
-                      <h4 class="d-none d-lg-block">
-                        ISI_DENGAN_KEMAMPUAN_INTERN
+                      <h4 class="d-none d-lg-block" id="kemampuan3">
+                        Media Buying
                       </h4>
-                      <p>ISI_DENGAN_DESKRIPSI_KEMAMPUAN_TERSEBUT</p>
+                      <p id="deskripsi-kemampuan3">
+                        belajar strategi media buying untuk mempromosikan suatu
+                        produk dan layanan yang ditawarkan. Dalam hal ini yaitu
+                        blog yang saya tulis selama intern di dialogika.
+                      </p>
                     </div>
                   </a>
                 </li>
@@ -1107,7 +1136,11 @@
 
             <div class="col-lg-6">
               <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-                <div class="tab-pane fade active show" id="features-tab-1">
+                <div
+                  class="tab-pane fade active show"
+                  id="features-tab-1"
+                  role="tabpanel"
+                >
                   <img
                     src="../assets/img/portofolio/arya-difa/2.webp"
                     alt=""
@@ -1116,7 +1149,7 @@
                 </div>
                 <!-- End Tab Content Item -->
 
-                <div class="tab-pane fade" id="features-tab-2">
+                <div class="tab-pane fade" id="features-tab-2" role="tabpanel">
                   <img
                     src="../assets/img/portofolio/arya-difa/3.webp"
                     alt=""
@@ -1125,7 +1158,7 @@
                 </div>
                 <!-- End Tab Content Item -->
 
-                <div class="tab-pane fade" id="features-tab-3">
+                <div class="tab-pane fade" id="features-tab-3" role="tabpanel">
                   <img
                     src="../assets/img/portofolio/arya-difa/2.webp"
                     alt=""
