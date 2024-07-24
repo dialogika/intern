@@ -35,35 +35,37 @@ const tagDeskripsiKemampuan2 = document.getElementById("deskripsi-kemampuan2");
 const tagKemampuan3 = document.getElementById("kemampuan3");
 const tagDeskripsiKemampuan3 = document.getElementById("deskripsi-kemampuan3");
 
+// TALENT STATEMENT
 const testimoni =
   "seru internship di dialogika, sebuah pengalaman yang berharga buatku karena banyak ilmu baru yang didapat. internship disini juga meningkatkan kesiapanku menghadapi dunia kerja.";
 
+// 3 KEMAMPUAN YANG MAU DITONJOLKAN
 const kemampuan = {
   kemampuan1: "Search Engine Optimization",
   descKemampuan1:
-    "di sini aku belajar menulis konten blog dan website yang menarik, informatif, dan SEO-friendly",
+    "Di sini aku belajar menulis konten blog dan website yang menarik, informatif, dan SEO-friendly",
 
   kemampuan2: "Team work",
   descKemampuan2:
-    "diskusi, brainstorming, bekerjasama dalam tim yang memiliki berbagai keahlian atau bidangnya masing-masing",
+    "Diskusi, brainstorming, bekerjasama dalam tim yang memiliki berbagai keahlian atau bidangnya masing-masing",
 
   kemampuan3: "Media Buying",
   descKemampuan3:
-    "belajar strategi media buying untuk mempromosikan suatu produk dan layanan yang ditawarkan. Dalam hal ini yaitu blog yang saya tulis selama intern di dialogika.",
+    "Belajar strategi media buying untuk mempromosikan suatu produk dan layanan yang ditawarkan. Dalam hal ini yaitu blog yang saya tulis selama intern di dialogika.",
 };
 
 const scoreTalent = {
-  excellentScore: 16,
-  acceptableAttendance: 15,
-  notbadProject: 5,
-  excellentRoutine: 20,
-  moderateRole: 21,
-  noviceInitiative: 25,
+  excellentScore: 16, // ACH
+  acceptableAttendance: 16, // INT
+  notbadProject: 10, // TW
+  excellentRoutine: 17, // OC
+  moderateRole: 21, // TL
+  noviceInitiative: 25, // SCT
 };
 
 // speed , percise, mentality, communication, sense, discipline
-const minimumScore = [10, 10, 10, 10, 10, 10];
-const grafikPotensial = [20, 18, 10, 13, 10, 14];
+const minimumScore = [10, 10, 10, 10, 10, 10]; // MINIMUM SCORE
+const grafikPotensial = [20, 18, 10, 13, 10, 14]; // POTENSIAL TALENT
 
 const score = scoreTalent;
 const grafik = grafikPotensial;
@@ -86,6 +88,13 @@ document.addEventListener("DOMContentLoaded", () => {
   textOc.innerHTML = oc;
   textTl.innerHTML = tl;
   textSct.innerHTML = sct;
+
+  textAch.style.color = GetBgColorScore(score.excellentScore);
+  textInt.style.color = GetBgColorScore(score.acceptableAttendance);
+  textTw.style.color = GetBgColorScore(score.notbadProject);
+  textOc.style.color = GetBgColorScore(score.excellentRoutine);
+  textTl.style.color = GetBgColorScore(score.moderateRole);
+  textSct.style.color = GetBgColorScore(score.noviceInitiative);
 
   // grafik start
   var budgetChart = echarts
@@ -205,9 +214,9 @@ function GetBgColorScore(score) {
   const number = Number(score);
   if (!number) return "black";
 
-  if (number >= 17) return "#006A4E"; // hijau "#006A4E"
-  if (number >= 11 && score <= 16) return "#F7B12C"; // kuning "#F7B12C"
-  if (number <= 10) return "#E7181A"; // merah "#E7181A"
+  if (number >= 17) return "#006A4E"; // hijau
+  if (number >= 11 && score <= 16) return "#F7B12C"; // kuning
+  if (number <= 10) return "#E7181A"; // merah
 }
 
 function getTextAssessment(score) {
@@ -218,11 +227,4 @@ function getTextAssessment(score) {
   if (number >= 11 && score <= 16) return "Acceptable";
   if (number <= 10) return "Poor";
 }
-
-// function GetBgColorScore(score) {
-//   if (score <= 8) return "white"; // white
-//   if (score >= 9 && score <= 11) return "black"; // black
-//   if (score >= 12 && score <= 16) return "black"; // black
-//   if (score >= 17) return "black"; // black
-// }
 // utils end
