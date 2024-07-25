@@ -6,15 +6,23 @@
 .new-card {
   color: #2b2c48;
   font-family: "Jost", sans-serif;
-  background-image: url(https://images.unsplash.com/photo-1566738780863-f9608f88f3a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80);
+/*  background-image: url(https://images.unsplash.com/photo-1566738780863-f9608f88f3a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80);*/
+  /*  background-image: url('../../img/bg1.webp');*/
+  background: url(https://img.freepik.com/free-vector/abstract-pastel-futuristic-texture-background_53876-115746.jpg?t=st=1721920903~exp=1721924503~hmac=e5793d644650d37b75c40b6a35fdfae3415a91ca62e2c7bbe3bf4230f793f3e0&w=2000);
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
+}
+
+.new-card:before {
+    
 }
 
 .new-card .card {

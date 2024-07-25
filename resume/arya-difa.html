@@ -317,7 +317,7 @@
             <div
               class="card-cover"
               style="
-                background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
+                background-image: url('https://img.freepik.com/free-vector/abstract-low-poly-mesh-background-design_1048-7440.jpg?w=996&t=st=1721919621~exp=1721920221~hmac=7b1ef160c0708715700c5007021c8ded2e2cca5ee0a2939f4f579f8c1cd99a3b');
               "
             ></div>
             <img
@@ -825,7 +825,7 @@
                     <div class="card-body">
                       <h5 class="card-title">
                         Talent Notes <i class="bi bi-card-heading"></i>
-                        <span>| Our Impression</span>
+                        <span style="font-size:18px;" >| Our Impression</span>
                       </h5>
 
                       <p>ISI_DENGAN_CATATAN_TENTANG_INTERN</p>
@@ -860,8 +860,8 @@
 
                     <div class="card-body">
                       <h5 class="card-title">
-                        Talent Achievement <i class="bi bi-star"></i>
-                        <span>| Our Review</span>
+                        Talent Achievement <i class="bi bi-card-checklist"></i>
+                        <span style="font-size:18px;">| Our Review</span>
                       </h5>
 
                       <p>
@@ -1282,7 +1282,7 @@
     </div>
 
     <!-- Part -->
-    <script src="./arya-difa.js"></script>
+    <!--    <script src="./arya-difa.js"></script>-->
 
     <!-- Vendor JS Files -->
     <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -1297,5 +1297,240 @@
     <script src="../assets/js/timestamp.js"></script>
     <script src="../assets/js/whatsapp.js"></script>
     <script src="../assets/js/main.js"></script>
+    
+    <script>
+        const excellent = document.getElementById("excellent-score");
+        const acceptableAttendance = document.getElementById("acceptable-score");
+        const notbadProject = document.getElementById("notbadProject-score");
+        const excellentRoutine = document.getElementById("excellentRoutine-score");
+        const moderateRole = document.getElementById("moderateRole-score");
+        const noviceInitiative = document.getElementById("noviceInitiative-score");
+
+        const textAch = document.getElementById("text-ach");
+        const textInt = document.getElementById("text-int");
+        const textTw = document.getElementById("text-tw");
+        const textOc = document.getElementById("text-oc");
+        const textTl = document.getElementById("text-tl");
+        const textSct = document.getElementById("text-sct");
+
+        const excellentContainer = document.getElementById("excellent-score-container");
+        const acceptableAttendanceContainer = document.getElementById(
+          "acceptableAttendanceContainer"
+        );
+        const notbadProjectContainer = document.getElementById(
+          "notbadProjectContainer"
+        );
+        const excellentRoutineContainer = document.getElementById(
+          "excellentRoutineContainer"
+        );
+        const moderateRoleContainer = document.getElementById("moderateRoleContainer");
+        const noviceInitiativeContainer = document.getElementById(
+          "noviceInitiativeContainer"
+        );
+
+        const testimoniTalent = document.getElementById("testimoni-talent");
+        const tagKemampuan1 = document.getElementById("kemampuan1");
+        const tagDeskripsiKemampuan1 = document.getElementById("deskripsi-kemampuan1");
+        const tagKemampuan2 = document.getElementById("kemampuan2");
+        const tagDeskripsiKemampuan2 = document.getElementById("deskripsi-kemampuan2");
+        const tagKemampuan3 = document.getElementById("kemampuan3");
+        const tagDeskripsiKemampuan3 = document.getElementById("deskripsi-kemampuan3");
+
+        // TALENT STATEMENT
+        const testimoni =
+          "seru internship di dialogika, sebuah pengalaman yang berharga buatku karena banyak ilmu baru yang didapat. internship disini juga meningkatkan kesiapanku menghadapi dunia kerja.";
+
+        // 3 KEMAMPUAN YANG MAU DITONJOLKAN
+        const kemampuan = {
+          kemampuan1: "Search Engine Optimization",
+          descKemampuan1:
+            "Di sini aku belajar menulis konten blog dan website yang menarik, informatif, dan SEO-friendly",
+
+          kemampuan2: "Team work",
+          descKemampuan2:
+            "Diskusi, brainstorming, bekerjasama dalam tim yang memiliki berbagai keahlian atau bidangnya masing-masing",
+
+          kemampuan3: "Media Buying",
+          descKemampuan3:
+            "Belajar strategi media buying untuk mempromosikan suatu produk dan layanan yang ditawarkan. Dalam hal ini yaitu blog yang saya tulis selama intern di dialogika.",
+        };
+
+        const scoreTalent = {
+          excellentScore: 16, // ACH
+          acceptableAttendance: 15, // INT
+          notbadProject: 14, // TW
+          excellentRoutine: 17, // OC
+          moderateRole: 21, // TL
+          noviceInitiative: 25, // SCT
+        };
+
+        // ACH , INT, TW, OC, TL, SCT
+        const minimumScore = [10, 10, 10, 10, 10, 10]; // MINIMUM SCORE
+        const grafikPotensial = [16, 25, 4, 13, 10, 14]; // Report TALENT
+
+        const score = scoreTalent;
+        const grafik = grafikPotensial;
+
+        document.addEventListener("DOMContentLoaded", () => {
+          testimoniTalent.innerHTML = testimoni;
+          addKemampuan(kemampuan);
+          assessment(score);
+
+          const ach = getTextAssessment(score.excellentScore);
+          const int = getTextAssessment(score.acceptableAttendance);
+          const tw = getTextAssessment(score.notbadProject);
+          const oc = getTextAssessment(score.excellentRoutine);
+          const tl = getTextAssessment(score.moderateRole);
+          const sct = getTextAssessment(score.noviceInitiative);
+
+          textAch.innerHTML = ach;
+          textInt.innerHTML = int;
+          textTw.innerHTML = tw;
+          textOc.innerHTML = oc;
+          textTl.innerHTML = tl;
+          textSct.innerHTML = sct;
+
+          textAch.style.color = GetBgColorScore(score.excellentScore);
+          textInt.style.color = GetBgColorScore(score.acceptableAttendance);
+          textTw.style.color = GetBgColorScore(score.notbadProject);
+          textOc.style.color = GetBgColorScore(score.excellentRoutine);
+          textTl.style.color = GetBgColorScore(score.moderateRole);
+          textSct.style.color = GetBgColorScore(score.noviceInitiative);
+
+          // grafik start
+          var budgetChart = echarts
+            .init(document.querySelector("#budgetChart"))
+            .setOption({
+              legend: {
+                data: ["Minimum", "Report"],
+              },
+              radar: {
+                // shape: 'circle', // ACH , INT, TW, OC, TL, SCT
+                indicator: [
+                  {
+                    name: "ACH",
+                    max: 25,
+                  },
+                  {
+                    name: "INT",
+                    max: 25,
+                  },
+                  {
+                    name: "TW",
+                    max: 25,
+                  },
+                  {
+                    name: "OC",
+                    max: 25,
+                  },
+                  {
+                    name: "TL",
+                    max: 25,
+                  },
+                  {
+                    name: "SCT",
+                    max: 25,
+                  },
+                ],
+              },
+              series: [
+                {
+                  name: "Budget vs spending",
+                  type: "radar",
+                  data: [
+                    {
+                      value: minimumScore,
+                      name: "Minimum",
+                    },
+                    {
+                      value: grafik,
+                      name: "Report",
+                    },
+                  ],
+                },
+              ],
+            });
+          // grafik end
+        });
+
+        // utils start
+        function assessment(score) {
+          excellent.innerHTML = score.excellentScore;
+          excellent.style.color = GetBgColorScore(score.excellentScore);
+          excellentContainer.style.backgroundColor = GetBgColorScore(
+            score.excellentScore
+          );
+
+          acceptableAttendance.innerHTML = score.acceptableAttendance;
+          acceptableAttendance.style.color = GetBgColorScore(
+            score.acceptableAttendance
+          );
+          acceptableAttendanceContainer.style.backgroundColor = GetBgColorScore(
+            score.acceptableAttendance
+          );
+
+          notbadProject.innerHTML = score.notbadProject;
+          notbadProject.style.color = GetBgColorScore(score.notbadProject);
+          notbadProjectContainer.style.backgroundColor = GetBgColorScore(
+            score.notbadProject
+          );
+
+          excellentRoutine.innerHTML = score.excellentRoutine;
+          excellentRoutine.style.color = GetBgColorScore(score.excellentRoutine);
+          excellentRoutineContainer.style.backgroundColor = GetBgColorScore(
+            score.excellentRoutine
+          );
+
+          moderateRole.innerHTML = score.moderateRole;
+          moderateRole.style.color = GetBgColorScore(score.moderateRole);
+          moderateRoleContainer.style.backgroundColor = GetBgColorScore(
+            score.moderateRole
+          );
+
+          noviceInitiative.innerHTML = score.noviceInitiative;
+          noviceInitiative.style.color = GetBgColorScore(score.noviceInitiative);
+          noviceInitiativeContainer.style.backgroundColor = GetBgColorScore(
+            score.noviceInitiative
+          );
+        }
+
+        function addKemampuan({
+          kemampuan1,
+          kemampuan2,
+          kemampuan3,
+          descKemampuan1,
+          descKemampuan2,
+          descKemampuan3,
+        }) {
+          tagKemampuan1.innerHTML = kemampuan1;
+          tagKemampuan2.innerHTML = kemampuan2;
+          tagKemampuan3.innerHTML = kemampuan3;
+
+          tagDeskripsiKemampuan1.innerHTML = descKemampuan1;
+          tagDeskripsiKemampuan2.innerHTML = descKemampuan2;
+          tagDeskripsiKemampuan3.innerHTML = descKemampuan3;
+        }
+
+        function GetBgColorScore(score) {
+          const number = Number(score);
+          if (!number) return "black";
+
+          if (number >= 17) return "#006A4E"; // hijau
+          if (number >= 11 && score <= 16) return "#F7B12C"; // kuning
+          if (number <= 10) return "#E7181A"; // merah
+        }
+
+        function getTextAssessment(score) {
+          const number = Number(score);
+          if (!number) return "black";
+
+          if (number >= 17) return "Outstanding";
+          if (number >= 11 && score <= 16) return "Acceptable";
+          if (number <= 10) return "Poor";
+        }
+        // utils end
+
+    </script>
+    
   </body>
 </html>
