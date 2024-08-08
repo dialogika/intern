@@ -72,7 +72,6 @@ class Header extends HTMLElement {
                     <span>Client Manager</span>
                     <span class="badge bg-success">Best</span></a>
                 </li>
-                <li><a href="video-editing.html">Video Editor</a></li>
                 <li><hr/></li>
                 <li><a href="deal-maker.html">
                     <span>Deal Maker</span>
@@ -87,6 +86,7 @@ class Header extends HTMLElement {
                 <li><a href="content-writing.html">Content Writing</a></li>
                 <li><a href="design-specialist.html">Design Specialist</a></li>
                 <li><a href="html-writing.html">HTML Writing</a></li>
+                <li><a href="video-editing.html">Video Editor</a></li>
                 
                 </li>
                 <li><hr/></li>
