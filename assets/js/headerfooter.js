@@ -98,7 +98,7 @@ class Header extends HTMLElement {
               </ul>
           </li>
           <li><a class="nav-link scrollto" href="../event/">Event</a></li>
-          <li><a class="nav-link scrollto" href="../service/">Services</a></li>
+          <li><a class="nav-link scrollto" href="../intern/resume/">Resume</a></li>
           <li><a class="nav-link scrollto" href="../shop/">Shop</a></li>
           <li><a class="nav-link scrollto" href="../blog/">Blog</a></li>
         </ul>
