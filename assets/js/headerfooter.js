@@ -377,7 +377,7 @@ class Footer extends HTMLElement {
               </a>
               <ul class="accordion-collapse collapse show" id="footer-career-info" data-bs-parent=".footer-links">
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../mentor/registration.html">Mentor</a>
+                  <a href="../mentor/">Mentor</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
                   <a href="../intern/index.html">Internship</a>
@@ -412,10 +412,10 @@ class Footer extends HTMLElement {
                   <a href="../about/">About Us</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../about/faq.html">Frequent Asked Question</a>
+                  <a href="../help/program-belajar.html">Frequent Asked Question</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../about/help.html">Help Center</a>
+                  <a href="../help/">Help Center</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
                   <a href="../about/privacy.html">Privacy Policy</a>
