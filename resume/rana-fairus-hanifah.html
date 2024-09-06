@@ -55,6 +55,7 @@
   <link href="../assets/part/dashboard-nice/dash.css" rel="stylesheet" />
   <link href="../assets/part/other-listing/listing.css" rel="stylesheet" />
   <link href="../assets/part/new-card/style.css" rel="stylesheet" />
+  <link href="../assets/part/read-more/read-more_less.css" rel="stylesheet" />
 
   <script src="https://kit.fontawesome.com/cdde75dea2.js" crossorigin="anonymous"></script>
 
@@ -257,7 +258,7 @@
           <div class="card-cover" style="
                 background: url('https://img.freepik.com/free-vector/abstract-pastel-futuristic-texture-background_53876-115746.jpg?t=st=1721920903~exp=1721924503~hmac=e5793d644650d37b75c40b6a35fdfae3415a91ca62e2c7bbe3bf4230f793f3e0&w=2000');
               "></div>
-          <img class="card-avatar" src="/assets/img/portofolio/rana-fairus-hanifah/Rana.webp" alt="avatar" />
+          <img class="card-avatar" src="../assets/img/portofolio/rana-fairus-hanifah/Rana.webp" alt="avatar" />
           <h1 class="card-fullname">
             Rana Fairus Hanifah
           </h1>
@@ -270,7 +271,7 @@
             <a onclick="return false;"><i class="bi bi-star"></i></a>
           </div>
           <div class="top-right">
-            <a href="http://127.0.0.1:5500/assets/pdf/resume/rana-fairus-hanifah.pdf" target="_blank">
+            <a href="../assets/pdf/resume/rana-fairus-hanifah.pdf" target="_blank">
               <i class="bi bi-box-arrow-in-down"></i>
             </a>
           </div>
@@ -323,7 +324,7 @@
             <button data-section="#about" class="is-active">
               <i class="bi bi-person-circle"></i> About Me
             </button>
-            <button onclick="location.href='https://wa.me/085876062095';">
+            <button onclick="location.href='https://wa.me/+6285876062095';">
               <i class="bi bi-whatsapp"></i> Whatsapp Me
             </button>
             <button onclick="location.href='mailto:admin@dialogika.co';">
@@ -828,7 +829,7 @@
       <div class="container section-title" data-aos="fade-up">
         <h2>Talent Statement</h2>
         <p>
-          <i id="testimoni-talent-fahmi"><b>Testimoni</b> Selama 3 bulan internship di Dialogika sebagai Recruiter
+          <i id="testimoni-talent"><b>Testimoni</b> Selama 3 bulan internship di Dialogika sebagai Recruiter
             Specialist, aku belajar banyak tentang rekrutmen, mulai dari jobpost hingga interview, serta cara bekerja
             profesional dalam tim dan berkoordinasi untuk menyelesaikan tugas..</i>
         </p>
@@ -988,6 +989,8 @@
   <script src="../assets/js/whatsapp.js"></script>
   <script src="../assets/js/main.js"></script>
 
+  <script src="../assets/part/read-more/read-more_less.js"></script>
+
   <script>
     const excellent = document.getElementById("excellent-score");
     const acceptableAttendance = document.getElementById("acceptable-score");
@@ -1018,7 +1021,7 @@
       "noviceInitiativeContainer"
     );
 
-    const testimoniTalent = document.getElementById("testimoni-talent-fahmi");
+    const testimoniTalent = document.getElementById("testimoni-talent");
     const tagKemampuan1 = document.getElementById("kemampuan1");
     const tagDeskripsiKemampuan1 = document.getElementById("deskripsi-kemampuan1");
     const tagKemampuan2 = document.getElementById("kemampuan2");
@@ -1027,7 +1030,8 @@
     const tagDeskripsiKemampuan3 = document.getElementById("deskripsi-kemampuan3");
 
     // TALENT STATEMENT
-    const testimoni = "Selama 3 bulan internship di Dialogika sebagai Recruiter Specialist, aku belajar banyak tentang rekrutmen, mulai dari jobpost hingga interview, serta cara bekerja profesional dalam tim dan berkoordinasi untuk menyelesaikan tugas.";
+    const testimoni = 'Selama 3 bulan ikut serta dalam program internship di Dialogika sebagai Recruiter Specialist, saya mendapatkan berbagai insight mengenai proses rekrutmen baik dalam merekrut intern maupun mentor, mulai dari perencanaan pembukaan jobpost sampai pada tahapan interview. Di sini saya juga belajar teknik dalam melakukan interview baik ke rekan yang sekiranya seumuran maupun ketika melakukan interview dengan mereka yang jauh lebih berpenga<span class="dots">...</span><span class="readMore ">Read More &raquo;</span><span class="moreText text-black">laman. Selain itu, selama melaksanakan internship, saya juga mempelajari bagaimana bekerja secara profesional dalam sebuah tim, membangun komunikasi yang baik dengan anggota tim, serta bagaimana berkoordinasi untuk menyelesaikan sebuah tugas/project. </span><span class="readLess"> &laquo; Read Less</span>';
+
 
     // 3 KEMAMPUAN YANG MAU DITONJOLKAN
     const kemampuan = {
