@@ -351,7 +351,7 @@ class Footer extends HTMLElement {
                   </a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../program/first-class.html">Surabaya <span class="badge rounded-pill text-bg-warning">Coming Soon</span></a>
+                  <a href="404.html">Surabaya <span class="badge rounded-pill text-bg-warning">Coming Soon</span></a>
                 </li>
               </ul>
             </div><br>
