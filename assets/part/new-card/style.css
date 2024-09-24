@@ -3,13 +3,152 @@
   box-sizing: border-box;
 }
 
+.search-intern {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+}
+
+.search-intern .search-input-intern {
+  border: solid 1px black;
+  border-radius: 50px;
+  width: 100%;
+  padding: 10px 45px 10px 20px;
+  z-index: 2;
+}
+
+.search-intern .search-intern-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.intern-section-title {
+  color: black;
+  width: 100%;
+  margin: 0px 0px;
+  padding: 30px 80px 0px 80px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  z-index: 99;
+}
+
+.intern-section-title::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background-color: black;
+  margin: 6px 10px;
+}
+
+
+/* Style untuk Tablet */
+@media (min-width: 768px) and (max-width : 960px) {
+  .search-intern {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+  }
+
+  .search-intern .search-input-intern {
+    border: solid 1px black;
+    border-radius: 50px;
+    width: 100%;
+    padding: 10px 45px 10px 20px;
+    z-index: 2;
+  }
+
+  .search-intern .search-intern-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+  }
+
+  .intern-section-title {
+    color: black;
+    width: 100%;
+    margin: 0px 0px;
+    padding: 0 45px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    z-index: 99;
+  }
+
+  .intern-section-title::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background-color: black;
+    margin: 6px 10px;
+  }
+}
+
+/* Style untuk mobile */
+@media (max-width: 768px) {
+  .search-intern {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+  }
+
+  .search-intern .search-input-intern {
+    border: solid 1px black;
+    border-radius: 50px;
+    width: 100%;
+    padding: 10px 45px 10px 20px;
+    z-index: 2;
+  }
+
+  .search-intern .search-intern-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+  }
+
+  .intern-section-title {
+    color: black;
+    width: 100%;
+    padding: 0 0;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: 700;
+    z-index: 99;
+  }
+
+  .intern-section-title::after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    display: inline-block;
+    background-color: black;
+    margin: 6px 10px;
+  }
+}
+
 .new-card {
-/*  color: #2b2c48;*/
+  /*  color: #2b2c48;*/
   font-family: "Jost", sans-serif;
   /*  background-image: url(https://images.unsplash.com/photo-1566738780863-f9608f88f3a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80);*/
   /*  background-image: url('../../img/bg1.webp');*/
-/*    background: url(https://as1.ftcdn.net/v2/jpg/02/92/69/72/1000_F_292697253_V97kvv4ELxCP9KowmudzU7AdW9ZZz0lL.jpg);*/
-/*  background-repeat: no-repeat;*/
+  /*    background: url(https://as1.ftcdn.net/v2/jpg/02/92/69/72/1000_F_292697253_V97kvv4ELxCP9KowmudzU7AdW9ZZz0lL.jpg);*/
+  /*  background-repeat: no-repeat;*/
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -17,8 +156,12 @@
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
-  background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);;
-  z-index:-999;
+  background: radial-gradient(
+    circle at 12.3% 19.3%,
+    rgb(85, 88, 218) 0%,
+    rgb(95, 209, 249) 100.2%
+  );
+  z-index: -999;
 }
 
 .new-card:before {
@@ -30,7 +173,7 @@
   height: 100%;
   background: inherit;
   filter: blur(3px);
-  z-index: 0;   
+  z-index: 0;
 }
 
 .new-card .card {
@@ -58,20 +201,19 @@
 }
 
 .new-card .card .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-/*    color: #F9C72E;*/
-background: linear-gradient(to right, #F9C72E, #f7b12c);
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  /*    color: #F9C72E;*/
+  background: linear-gradient(to right, #f9c72e, #f7b12c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 .new-card .card[data-state="#about"] {
   height: 100%;
   min-height: 555px;
-/*  height: 450px;*/
+  /*  height: 450px;*/
 }
 .new-card .card[data-state="#about"] .card-main {
   padding-top: 0;
@@ -147,18 +289,18 @@ background: linear-gradient(to right, #F9C72E, #f7b12c);
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%) translateY(-64px);
 }
 
 .new-card .card-fullname {
   position: absolute;
-  bottom: 0;
+  bottom: 13px;
   font-size: 22px;
   font-weight: 700;
   text-align: center;
@@ -169,7 +311,7 @@ background: linear-gradient(to right, #F9C72E, #f7b12c);
 
 .new-card .card-jobtitle {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   font-size: 11px;
   white-space: nowrap;
   font-weight: 500;
@@ -204,7 +346,7 @@ background: linear-gradient(to right, #F9C72E, #f7b12c);
   line-height: 1.6;
   color: #636b6f;
   font-size: 14px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
 }
@@ -260,9 +402,9 @@ background: linear-gradient(to right, #F9C72E, #f7b12c);
 .new-card .card-buttons button {
   flex: 1 1 auto;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background: 0;
   font-size: 13px;
   border: 0;
@@ -275,11 +417,54 @@ background: linear-gradient(to right, #F9C72E, #f7b12c);
   outline: 0;
   border-bottom: 3px solid transparent;
 }
-.new-card .card-buttons button.is-active, .card-buttons button:hover {
+.new-card .card-buttons button.is-active,
+.card-buttons button:hover {
   color: #2b2c48;
   border-bottom: 3px solid #1c84e3;
-  background: linear-gradient(to bottom, rgba(127, 199, 231, 0) 0%, rgba(207, 204, 255, 0.2) 44%, rgba(211, 226, 255, 0.4) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(127, 199, 231, 0) 0%,
+    rgba(207, 204, 255, 0.2) 44%,
+    rgba(211, 226, 255, 0.4) 100%
+  );
 }
+.new-card .card-buttons .about-me-animate {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+}
+
+.new-card .card-buttons .about-me-animate::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: -50%;
+  width: 10px;
+  height: 200px;
+  background: linear-gradient(
+    to top right,
+    rgba(0, 115, 230, 0.2),
+    rgba(255, 235, 235, 0.6)
+  );
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform: rotate(325deg);
+  transform-origin: center;
+  animation: shine-diagonal 2s ease-in-out infinite;
+}
+
+@keyframes shine-diagonal {
+  0% {
+    top: 10%;
+    left: -50%;
+  }
+  100% {
+    top: -150%; /* End at top-right */
+    left: 120%;
+  }
+}
+
+/* END OF NEW Custom untuk tombol about me di kiri bawah */
 
 .new-card .card-section {
   display: none;
@@ -287,7 +472,7 @@ background: linear-gradient(to right, #F9C72E, #f7b12c);
 .new-card .card-section.is-active {
   display: block;
   -webkit-animation: fadeIn 0.6s both;
-          animation: fadeIn 0.6s both;
+  animation: fadeIn 0.6s both;
 }
 
 @-webkit-keyframes fadeIn {
@@ -393,7 +578,11 @@ background: linear-gradient(to right, #F9C72E, #f7b12c);
 .new-card .contact-me {
   border: 0;
   outline: none;
-  background: linear-gradient(to right, rgba(83, 200, 239, 0.8) 0%, rgba(81, 106, 204, 0.8) 96%);
+  background: linear-gradient(
+    to right,
+    rgba(83, 200, 239, 0.8) 0%,
+    rgba(81, 106, 204, 0.8) 96%
+  );
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
   color: #fff;
   padding: 12px 16px;
