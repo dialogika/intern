@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       // Reset section visiblity bila tidak ada hasil
       completedInternTitle.innerText = "COMPLETED INTERN";
-      incompleteInternTitle.style.display = "flex";
       incompleteInternTitle.innerText = "INCOMPLETE INTERN";
 
       // Reset sections to display all
