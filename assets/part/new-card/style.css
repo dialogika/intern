@@ -213,7 +213,7 @@
 .new-card .card[data-state="#about"] {
   height: 100%;
   min-height: 555px;
-  /*  height: 450px;*/
+  min-width: 340px;
 }
 .new-card .card[data-state="#about"] .card-main {
   padding-top: 0;
