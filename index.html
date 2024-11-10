@@ -39,6 +39,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.css" rel="stylesheet" />
+  <link href="assets/vendor/international-phone-number/intlTelInput.css" rel="stylesheet" />
 
 
   <!-- Part CSS Files -->
@@ -57,7 +59,10 @@
   <link href="assets/part/internship-list/internship.css" rel="stylesheet" />
   <link href="assets/part/tiga-d-gallery/style.css" rel="stylesheet" />
   <link href="assets/part/event-venue/style.css" rel="stylesheet" />
+  <link href="assets/part/read-more/read-more_less.css" rel="stylesheet" />
   <link href="assets/part/smooth-slider/smooth-slider.css" rel="stylesheet" />
+  <link href="assets/part/custom-hero-section/style.css" rel="stylesheet" />
+  <link href="assets/part/modals/modal.css" rel="stylesheet" />
 
   <script src="https://kit.fontawesome.com/cdde75dea2.js" crossorigin="anonymous"></script>
 
@@ -207,7 +212,7 @@
   <!-- ======= Top Bar, Header, Side Bar ======= -->
 
   <!-- ======= Breadcrumbs Section ======= -->
-  <section class="breadcrumbs">
+  <section class="breadcrumbs" style="margin-top: 115px;">
     <div class="container">
 
       <div class="d-flex justify-content-between align-items-center">
@@ -222,29 +227,36 @@
   </section><!-- End Breadcrumbs Section -->
 
   <main id="main">
-
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-4">
-            <span class="badge bg-primary">SYNC OUR VIBES</span>
-            <h1 data-aos="fade-up">Dialogika <br /> Internship Program</h1>
-            <blockquote data-aos="fade-up" data-aos-delay="100">
-              <p>Unleash your full potential by join our internship program for three months in Yogyakarta. The tasks in
-                this internship program are easy, but the challenging part is building your mental resilience.</p>
-            </blockquote>
-            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-              <a href="#about" class="btn-get-started"><span class="d-none d-md-inline">Get</span> Started</a>
-              &nbsp;&nbsp;
-              <a href="assets/img/about.mp4" class="glightbox btn-watch-video d-flex align-items-center"><i
-                  class="bi bi-play-circle"></i><span>Watch <span class="d-none d-md-inline">Video</span></span></a>
-            </div>
+    <section id="section" class="align-items-center pt-lg-5 pt-0">
+      <div class="container text-center text-md-start position-relative w-100 hero-container">
+        <div class="d-flex h-auto row px-1 justify-content-between hero-content">
+          <!-- Column for image (pindah keatas text saat di mobile) -->
+          <div class="col-lg-6 col-md-6 text-center text-md-end hero-image-container order-1 order-md-2"
+            data-aos="zoom-out" data-aos-delay="100" style="z-index: 2;">
+            <img src="assets/img/gambar-hero.webp" class="img-fluid animated" loading="eager" alt="Gambar Intern memegang call card">
+          </div>
 
+          <!-- Column for text -->
+          <div
+            class="col-lg-6 col-md-6 d-flex flex-column justify-content-center text-center text-md-start order-2 order-md-1"
+            data-aos="fade-in">
+            <h1>Dialogika Internship Program</h1>
+            <p class="text-black text-md-start text-center hero-paragraph text-uppercase">
+              Unleash your full potential by joining our internship program for three months in Yogyakarta
+            </p>
+            <div class="d-flex flex-column flex-md-row align-items-center gap-3 mt-3">
+              <a href="#contact" class=" text-white fw-semibold btn-get-started">
+                <span>Get Started</span>
+              </a>
+              <a href="https://youtu.be/ihKNTxHdYkM" class="glightbox text-black fw-semibold  btn-watch-video">
+                <span>Watch Video</span>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section><!-- End Hero -->
+    </section>
+    <!-- End Hero -->
 
     <!-- ======= Clients Section ======= -->
     <section class="section" id='partner' style="background: #F1F7FD;">
@@ -348,11 +360,11 @@
     <!-- End Clients Section -->
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container-fluid">
+    <section id="about" class="about section">
+      <div class="container-fluid container">
 
         <div class="row">
-          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+          <div class="col-xl-6 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
             <a href="assets/img/happy.mp4" class="glightbox play-btn mb-4"></a>
           </div>
 
@@ -373,7 +385,7 @@
               <p class="description">Our terms are quite simple, actually: can you commit to a 3-month in-office
                 internship, unpaid, and adhere to basic rules.
               </p>
-              <a href="#basic-rules" data-bs-toggle="modal" class="more-btn">Basic Rules</a>
+              <a href="#basic-rules" data-bs-toggle="modal" class="more-btn blue-modern-dialogika-btn">Basic Rules</a>
             </div>
 
             <div class="icon-box">
@@ -382,7 +394,7 @@
               <p class="description">Among the things we can provide are eCertificates, LinkedIn recommendations (for
                 good attitude), and free public speaking classes (for certain roles)
               </p>
-              <a href="#open-letter" data-bs-toggle="modal" class="more-btn">Open Letter</a>
+              <a href="#open-letter" data-bs-toggle="modal" class="more-btn blue-modern-dialogika-btn">Open Letter</a>
             </div>
 
 
@@ -407,7 +419,9 @@
                 <br /><br />Namun jika kamu bingung bisa <b>chat langsung</b> ke admin via whatsapp dibawah ini
               </p>
               <div class="text-center text-md-start" style="margin-top: 20px">
-                <a target="__blank" href="https://wa.me/6285780007799"><i class="bi bi-whatsapp"></i> Whatsapp Admin</a>
+                <a target="__blank" href="https://wa.me/6285780007799" class="more-btn blue-modern-dialogika-btn"><i
+                    class="bi bi-whatsapp"></i> Whatsapp
+                  Admin</a>
               </div>
             </div>
           </div>
@@ -433,8 +447,10 @@
 
                         <div class="d-flex align-items-center">
                           <div class="post-meta">
-                            <p class="post-author">Learn how to present in front of the camera & provide education..</p>
-                            <a href="model-talent.html" target="_blank">Job Description</a>
+                            <p class="post-author">Learn how to present in front of the camera & provide education..
+                            </p>
+                            <a href="model-talent.html" target="_blank" class="blue-modern-dialogika-btn">Job
+                              Description</a>
                             <p class="post-date">
                               <time datetime="2022-01-01">
                                 <span class="badge text-bg-success">Work From Office <i
@@ -470,9 +486,11 @@
 
                       <div class="d-flex align-items-center">
                         <div class="post-meta">
-                          <p class="post-author">Learn how to manage clients, mentors, develop product public speaking.
+                          <p class="post-author">Learn how to manage clients, mentors, develop product public
+                            speaking.
                           </p>
-                          <a href="client-manager.html" target="_blank">Job Description</a>
+                          <a href="client-manager.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job
+                            Description</a>
                           <p class="post-date">
                             <time datetime="2022-01-01">
                               <span class="badge text-bg-success">Work From Office <i
@@ -507,7 +525,8 @@
                       <div class="d-flex align-items-center">
                         <div class="post-meta">
                           <p class="post-author">Learn to create elegant, persuasive, and high-end designs.</p>
-                          <a href="design-specialist.html" target="_blank">Job Description</a>
+                          <a href="design-specialist.html" target="_blank"
+                            class="more-btn blue-modern-dialogika-btn">Job Description</a>
                           <p class="post-date">
                             <time datetime="2022-01-01">
                               <span class="badge text-bg-success">Work From Office <i
@@ -543,7 +562,8 @@
                         <div class="post-meta">
                           <p class="post-author">Learn how to to chat, respond, persuade, and negotiate with potential
                             clients.</p>
-                          <a href="deal-maker.html" target="_blank">Job Description</a>
+                          <a href="deal-maker.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job
+                            Description</a>
                           <p class="post-date">
                             <time datetime="2022-01-01">
                               <span class="badge text-bg-success">Work From Office <i
@@ -579,7 +599,8 @@
                         <div class="post-meta">
                           <p class="post-author">Learn how to create copies, headlines, subheadings, and main
                             paragraphs.</p>
-                          <a href="content-writing.html" target="_blank">Job Description</a>
+                          <a href="content-writing.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job
+                            Description</a>
                           <p class="post-date">
                             <time datetime="2022-01-01">
                               <span class="badge text-bg-success">Work From Office <i
@@ -615,7 +636,8 @@
                       <div class="d-flex align-items-center">
                         <div class="post-meta">
                           <p class="post-author">Learn how to conduct interviews for intern, mentor & team.</p>
-                          <a href="recruiter-specialist.html" target="_blank">Job Description</a>
+                          <a href="recruiter-specialist.html" target="_blank"
+                            class="more-btn blue-modern-dialogika-btn">Job Description</a>
                           <p class="post-date">
                             <time datetime="2022-01-01">
                               <span class="badge text-bg-success">Work From Office <i
@@ -650,7 +672,8 @@
                       <div class="d-flex align-items-center">
                         <div class="post-meta">
                           <p class="post-author">Learn to create elegant, persuasive, and high-end designs.</p>
-                          <a href="people-development.html" target="_blank">Job Description</a>
+                          <a href="people-development.html" target="_blank"
+                            class="more-btn blue-modern-dialogika-btn">Job Description</a>
                           <p class="post-date">
                             <time datetime="2022-01-01">
                               <span class="badge text-bg-success">Work From Office <i
@@ -686,7 +709,8 @@
                         <div class="post-meta">
                           <p class="post-author">Learn how to edit, cut and creating a short video, cinematography for
                             company branding.</p>
-                          <a href="video-editing.html" target="_blank">Job Description</a>
+                          <a href="video-editing.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job
+                            Description</a>
                           <p class="post-date">
                             <time datetime="2022-01-01">
                               <span class="badge text-bg-success">Work From Office <i
@@ -722,7 +746,8 @@
                       <div class="d-flex align-items-center">
                         <div class="post-meta">
                           <p class="post-author">Learn how to analyze and understand google ads and keywords</p>
-                          <a href="digital-marketing.html" target="_blank">Job Description</a>
+                          <a href="digital-marketing.html" target="_blank"
+                            class="more-btn blue-modern-dialogika-btn">Job Description</a>
                           <p class="post-date">
                             <time datetime="2022-01-01">
                               <span class="badge text-bg-success">Work From Office <i
@@ -756,8 +781,10 @@
 
                       <div class="d-flex align-items-center">
                         <div class="post-meta">
-                          <p class="post-author">Learn how to create a website page, based on SEO and beautiful UI.</p>
-                          <a href="html-writing.html" target="_blank">Job Description</a>
+                          <p class="post-author">Learn how to create a website page, based on SEO and beautiful UI.
+                          </p>
+                          <a href="html-writing.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job
+                            Description</a>
                           <p class="post-date">
                             <time datetime="2022-01-01">
                               <span class="badge text-bg-success">Work From Office <i
@@ -811,7 +838,8 @@
               <h3>We don't just <span>forge skills,</span> <br class="d-md-block d-none">but also <span>mindset</span>
                 and mental fortitude.</h3>
               <p class="text-start">Joining Dialogika's internship program means not only honing your skills, but also
-                cultivating a resilient mindset and unwavering mental fortitude - essential ingredients for a successful
+                cultivating a resilient mindset and unwavering mental fortitude - essential ingredients for a
+                successful
                 and fulfilling career. </p>
             </div>
             <div class="row">
@@ -836,7 +864,8 @@
                   </div>
                   <h4 class="title"><a href="">Fast Response</a></h4>
                   <hr />
-                  <p class="description">Capable of providing fast responses outside of working hours & Possess a laptop
+                  <p class="description">Capable of providing fast responses outside of working hours & Possess a
+                    laptop
                     and means of transportation</p>
                 </div>
               </div>
@@ -896,8 +925,10 @@
                       class="bx bx-chevron-up icon-close"></i></a>
                   <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                     <p>
-                      Unfortunately, at the moment, the internship program at Dialogika remains unpaid, as we are still
-                      a new and developing company and lack the financial stability to provide monetary compensation. We
+                      Unfortunately, at the moment, the internship program at Dialogika remains unpaid, as we are
+                      still
+                      a new and developing company and lack the financial stability to provide monetary compensation.
+                      We
                       can only hope for better prospects in the future for our interns.
                     </p>
                   </div>
@@ -905,7 +936,8 @@
 
                 <li>
                   <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3"
-                    class="collapsed">Is there any compensation provided by the company, such as transportation and
+                    class="collapsed">Is there any compensation provided by the company,
+                    such as transportation and
                     lunch?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                     <p>Unfortunately, we are unable to provide perks such as lunch and transportation at this time.
@@ -921,9 +953,11 @@
                       class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                     <p>
-                      If you are unable to complete this internship program, it is regrettable that you will not receive
+                      If you are unable to complete this internship program, it is regrettable that you will not
+                      receive
                       an eCertificate from us, and it is also unfortunate that if any companies ask about you in the
-                      future, we will not be able to speak much about you. Make sure your heart is ready if you want to
+                      future, we will not be able to speak much about you. Make sure your heart is ready if you want
+                      to
                       join.
                     </p>
                   </div>
@@ -931,11 +965,13 @@
 
                 <li>
                   <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4"
-                    class="collapsed">What happens if my class schedule and internship hours overlap? <i
-                      class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    class="collapsed">What happens if my class schedule and internship
+                    hours overlap? <i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i></a>
                   <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                     <p>
-                      During the interview, we will inquire about your class schedule. Typically, if you are unavailable
+                      During the interview, we will inquire about your class schedule. Typically, if you are
+                      unavailable
                       on Tuesdays, Thursdays, Saturdays, and Sundays, we would advise against taking this internship
                       program. However, if there are only two days that you cannot attend, we can still consider your
                       participation.</p>
@@ -978,10 +1014,11 @@
             <div class="section-title" data-aos="fade-right">
               <h5>Testimonials</h5>
               <h3>Positive Feedback</h3>
-              <p class="text-start">Here are testimonials from friends who participated in the internship activities at
+              <p class="text-start">Here are testimonials from friends who participated in the internship activities
+                at
                 Dialogika, especially those who joined the internship program in Yogyakarta.</p>
               <div class="text-center text-md-start" style="margin-top:20px;">
-                <a target="__blank"
+                <a target="__blank" class="more-btn blue-modern-dialogika-btn"
                   href="https://www.google.com/maps/place/Dialogika+Kelas+Public+Speaking/@-7.7552251,110.3760129,17z/data=!4m18!1m9!3m8!1s0x2e7a597ab489149d:0x9306a2474322de7c!2sDialogika+Kelas+Public+Speaking!8m2!3d-7.7552251!4d110.3785878!9m1!1b1!16s%2Fg%2F11qyjgv8c8!3m7!1s0x2e7a597ab489149d:0x9306a2474322de7c!8m2!3d-7.7552251!4d110.3785878!9m1!1b1!16s%2Fg%2F11qyjgv8c8?entry=ttu">Google
                   Review</a>
               </div>
@@ -990,6 +1027,35 @@
           <div class="col-lg-9">
             <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
               <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <img loading="lazy" src="assets/img/intern/naela.webp" class="testimonial-img " alt="Testimoni-1">
+                      <h3>Naela Rosya N</h3>
+                      <h4>
+                        Telemarketing
+                      </h4>
+                      <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Magang di Dialogika selama 3 bulan adalah pengalaman luar biasa yang membuka wawasan saya dalam
+                        dunia marketing. Selama waktu tersebut, saya tidak hanya belajar teori, tetapi langsung terjun
+                        dan menghadapi tantangan nyata dalam mengembangkan strategi pemasaran dan berinteraksi dengan
+                        klien.
+                        <span class="dots">...</span> <span class="readMore">Read More
+                          &raquo;</span>
+                        <span class="moreText"> Lingkungan kerja yang mendukung dan kesempatan untuk terus belajar
+                          membuat saya semakin
+                          percaya diri untuk melangkah ke dunia profesional.
+                          Thank you, Dialogika, for shaping me into a better version of myself.
+                          <span class="readLess">&laquo;Real Less</span>
+                        </span>
+
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
 
                 <div class="swiper-slide">
                   <div class="testimonial-wrap">
@@ -1022,7 +1088,8 @@
                       <p>
                         <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                         Worth it banget untuk teman teman mahasiswa atau teman teman yang lagi cari experience magang
-                        baik itu online atau offline, bisa nambah relasi, nambah pengalaman, bisa untuk isi portofolio,
+                        baik itu online atau offline, bisa nambah relasi, nambah pengalaman, bisa untuk isi
+                        portofolio,
                         dan cv jugaa teman temanya seruu dan humble.
                         <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                       </p>
@@ -1155,6 +1222,8 @@
   <!-- ======= Footer & Counter Area ======= -->
   <main-footer></main-footer>
   <!-- ======= End Footer & Counter Area ======= -->
+
+  <footer-modal></footer-modal>
 
   <a href="#hero" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -1357,7 +1426,7 @@
                 <p>Kata-kata "tinggal" itu <b>bukanlah</b> deal done</p>
                 <img
                   src="https://quotefancy.com/media/wallpaper/3840x2160/5183024-Nastia-Liukin-Quote-Finish-what-you-start-no-matter-how-painful-it.jpg"
-                  class="img-fluid rounded">
+                  class="img-fluid rounded" loading="lazy">
                 <p></p>
               </div>
 
@@ -1572,6 +1641,8 @@
   <script src="assets/part/gallery-photo/gallery.js"></script>
   <script src="assets/part/redirect.js"></script>
   <script src="assets/part/smooth-slider/smooth-slider.js"></script>
+  <script src="assets/part/read-more/read-more_less.js"></script>
+  <script src="assets/part/modals/modal-component.js"></script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -1579,12 +1650,16 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/international-phone-number/intlTelInput.min.js"></script>
+  <script src="assets/vendor/international-phone-number/script.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
   <script src="assets/js/headerfooter.js"></script>
   <script src="assets/js/timestamp.js"></script>
   <script src="assets/js/whatsapp.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/clickup-task.js"></script>
 
 
 </body>
