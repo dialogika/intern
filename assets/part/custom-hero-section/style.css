@@ -116,11 +116,6 @@
 }
 
 .blue-modern-dialogika-btn:hover {
-  /* background: linear-gradient(
-    270deg,
-    rgba(30, 129, 208, 1) 0%,
-    rgba(7, 39, 107, 1) 100%
-  ) !important; */
   border: none !important;
   box-shadow: 0px 0px 5px 2px #1e81d0 !important;
 }
