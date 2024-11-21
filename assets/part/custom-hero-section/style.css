@@ -44,11 +44,6 @@
 }
 
 .hero-container .hero-content .btn-get-started:hover {
-  background: linear-gradient(
-    270deg,
-    rgba(30, 129, 208, 1) 0%,
-    rgba(7, 39, 107, 1) 100%
-  );
   box-shadow: 0px 0px 4px 2px #1e81d0;
   -webkit-box-shadow: 0px 0px 4px 2px #1e81d0;
   -moz-box-shadow: 0px 0px 4px 2px #1e81d0;
