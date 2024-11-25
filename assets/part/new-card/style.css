@@ -47,9 +47,8 @@
   margin: 6px 10px;
 }
 
-
 /* Style untuk Tablet */
-@media (min-width: 768px) and (max-width : 960px) {
+@media (min-width: 768px) and (max-width: 960px) {
   .search-intern {
     position: relative;
     width: 80%;
@@ -196,8 +195,15 @@
   top: 8px;
   right: 16px;
   cursor: pointer;
-  color: #fff;
   font-size: 20px;
+}
+
+.new-card .card .top-right a {
+  color: white;
+}
+.new-card .card .top-right a:hover {
+  color: #3291e6;
+  font-size: 25px;
 }
 
 .new-card .card .top-left {
