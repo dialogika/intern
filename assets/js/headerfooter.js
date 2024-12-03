@@ -27,7 +27,7 @@ class Header extends HTMLElement {
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-       <a href="../index.html" class="logo me-auto"><img src="../assets/img/logo.webp" alt="" class="img-fluid"></a>
+       <a href="https://www.dialogika.co/index.html" class="logo me-auto"><img src="../assets/img/logo.webp" alt="" class="img-fluid"></a>
 
        <nav id="navbar" class="navbar order-last order-lg-0">
         <ul class="navbar-desktop-list">
@@ -116,7 +116,7 @@ class Header extends HTMLElement {
         <div class="container-fluid">
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <a href="../index.html">
+              <a href="https://www.dialogika.co/index.html">
                 <img src="../assets/img/logo.webp" class="offcanvas-title" id="offcanvasNavbarLabel"/>
               </a>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
