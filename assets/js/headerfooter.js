@@ -227,25 +227,22 @@ class Header extends HTMLElement {
 
                 </div>
               </div>
-              <a href="../event/"><div class="card card-body">
+              <a href="../resume/"><div class="card card-body">
                 <div class="justify-content-between d-flex">
                   <span>Event </span>
                   <!-- <span class="badge bg-info rounded-pill">New</span> -->
                 </div>
               </div></a>
-              <a href="../service/" onclick="return false;"><div class="card card-body">
-                <div class="justify-content-between d-flex">
-                  <span>Service </span>
-                  <span class="badge bg-warning rounded-pill">Coming Soon</span>
-                </div>
-              </div></a>
-              <a href="../shop/" onclick="return false;"><div class="card card-body">
-                <div class="justify-content-between d-flex">
-                  <span>Shop </span>
-                  <span class="badge bg-warning rounded-pill">Coming Soon</span>
-                </div>
-              </div></a>
-              <a href="../blog/"><div class="card card-body">Blog</div></a>
+             
+              <li class="dropdown" style="color: #0b2b6a"><a disabled><span>More</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="../event/">Event</a></li>
+                  <li><a href="../shop">Shop</a></li>
+                  <li><a href="../blog">Blog</a></li>
+                  <li><a href="../service/">Service</a></li>
+                   <li><a href="../about/">About Us</a></li>
+                </ul>
+              </li>
             </div>
           </div>
         </div>
