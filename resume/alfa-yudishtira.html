@@ -37,6 +37,7 @@
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
   <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
   <link href="../assets/vendor/swiper/swiper-bundle.css" rel="stylesheet" />
+  <link href="../assets/vendor/international-phone-number/intlTelInput.css" rel="stylesheet" />
 
   <!-- Part CSS Files -->
   <link href="../assets/part/theme-counter/theme-counter.css" rel="stylesheet" />
@@ -55,6 +56,8 @@
   <link href="../assets/part/dashboard-nice/dash.css" rel="stylesheet" />
   <link href="../assets/part/other-listing/listing.css" rel="stylesheet" />
   <link href="../assets/part/new-card/style.css" rel="stylesheet" />
+  <link href="../assets/part/read-more/read-more_less.css" rel="stylesheet" />
+  <link href="../assets/part/modals/modal.css" rel="stylesheet" />
 
   <script src="https://kit.fontawesome.com/cdde75dea2.js" crossorigin="anonymous"></script>
 
@@ -259,7 +262,7 @@
               "></div>
           <img class="card-avatar" src="../assets/img/portofolio/alfa-yudishtira/avatar.webp" alt="avatar" />
           <h1 class="card-fullname">
-            Alfa Yudishtira 
+            Alfa Yudishtira
           </h1>
           <h2 class="card-jobtitle">Telemarketing</h2>
           <div class="top-left">
@@ -279,15 +282,23 @@
           <div class="card-section is-active" id="about">
             <div class="card-content">
               <div class="card-subtitle">About Me</div>
+
               <p class="card-desc">
-                It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at
-                its layout
+                Mahasiswa Manajemen Universitas Islam Indonesia yang memiliki ketertarikan pada dunia bisnis terutama
+                pada bidang pemasaran dan juga operasi, memiliki cita cita sebagai
+                <span class="dots">...</span> <span class="readMore">Read More
+                  &raquo;</span>
+                <span class="moreText">
+                  pengusaha yang berhasil dan sukses, dan mampu membantu mensejahterakan karyawan dan juga manusia.
+                  Memiliki kemampuan untuk belajar yang baik dan semangat kerja yang tinggi, mempunyai target, kemampuan
+                  berkomunikasi dan organisasi dengan baik,
+                  bekerja sama bersama tim dan kemampuan untuk mengelola proyek.
+                  <span class="readLess">&laquo;Real Less</span>
               </p>
               <p class="card-desc small">
                 <span class="badge rounded-pill text-bg-success">Completed Intern</span>
                 <span class="badge rounded-pill text-bg-info">Extended Intern</span>
-            <span class="badge rounded-pill text-bg-warning">Excellent Talent</span>
+                <span class="badge rounded-pill text-bg-warning">Excellent Talent</span>
               </p>
             </div>
             <div class="card-social">
@@ -667,8 +678,8 @@
                     </h5>
 
                     <ul style="list-style-type: disc">
-                      <li style="margin-bottom: 10px;">Kontribusi dalam modifikasi web dialogika</li>
-                      <li style="margin-bottom: 10px;">Push article di blog +++30</li>
+                      <!-- <li style="margin-bottom: 10px;">Kontribusi dalam modifikasi web dialogika</li> -->
+                      <!-- <li style="margin-bottom: 10px;">Push article di blog +++30</li> -->
                     </ul>
                   </div>
                 </div>
@@ -1025,8 +1036,10 @@
     </div>
   </div>
 
-  <!-- Part -->
-  <!--    <script src="./arya-difa.js"></script>-->
+  <!-- Part JS -->
+  <script src="../assets/part/new-card/new-card-search.js"></script>
+  <script src="../assets/part/read-more/read-more_less.js"></script>
+  <script src="../assets/part/modals/modal-component.js"></script>
 
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -1034,6 +1047,8 @@
   <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/international-phone-number/intlTelInput.min.js"></script>
+  <script src="../assets/vendor/international-phone-number/script.js"></script>
 
   <!-- Template Main JS File -->
   <script src="../assets/vendor/echarts/echarts.min.js"></script>
@@ -1041,6 +1056,7 @@
   <script src="../assets/js/timestamp.js"></script>
   <script src="../assets/js/whatsapp.js"></script>
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/clickup-task.js"></script>
 
   <script>
     const excellent = document.getElementById("excellent-score");
