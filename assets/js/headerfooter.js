@@ -32,35 +32,35 @@ class Header extends HTMLElement {
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul class="navbar-desktop-list">
             <li><a class="nav-link scrollto active" href="../index.html">Home</a></li>
-            <li class="dropdown"><a href="../program"><span>Program</span> <i class="bi bi-chevron-down"></i></a>
+            <li class="dropdown"><a href="https://www.dialogika.co/program/index.html"><span>Program</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
                 <li class="dropdown"><a href="#"><span>Online</span> <i class="bi bi-chevron-right"></i></a>
                   <ul>
-                    <li><a href="../program/basic-play.html">Basic Play <span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
-                    <li><a href="../program/basic-plus.html">Basic Plus</a></li>
-                    <li><a href="../program/basic-private.html">Basic Private</a></li>
+                    <li><a href="https://www.dialogika.co/program/basic-play.html">Basic Play <span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
+                    <li><a href="https://www.dialogika.co/program/basic-plus.html">Basic Plus</a></li>
+                    <li><a href="https://www.dialogika.co/program/basic-private.html">Basic Private</a></li>
                     <li><hr/></li>
-                    <li><a href="../program/kids-play.html">Kids Play</a></li>
-                    <li><a href="../program/kids-plus.html">Kids Plus<span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
-                    <li><a href="../program/kids-private.html">Kids Private</a></li>
+                    <li><a href="https://www.dialogika.co/program/kids-play.html">Kids Play</a></li>
+                    <li><a href="https://www.dialogika.co/program/kids-plus.html">Kids Plus<span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
+                    <li><a href="https://www.dialogika.co/program/kids-private.html">Kids Private</a></li>
                   </ul>
                 </li>
                 <li class="dropdown"><a href="#"><span>Offline</span> <i class="bi bi-chevron-right"></i></a>
                   <ul>
-                    <li><a href="../program/first-class.html">First Class <span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
-                    <li><a href="../program/first-kids.html">First Kids</a></li>
+                    <li><a href="https://www.dialogika.co/program/first-class.html">First Class <span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
+                    <li><a href="https://www.dialogika.co/program/first-kids.html">First Kids</a></li>
                     <li><hr/></li>
-                    <li><a href="../program/first-private.html">First Private</a></li>
+                    <li><a href="https://www.dialogika.co/program/first-private.html">First Private</a></li>
                   </ul>
                 </li>
                 <li><hr/></li>
                 <li class="dropdown"><a disabled><span>Area</span> <i class="bi bi-chevron-right"></i></a>
                   <ul>
-                    <li><a href="../program/index-jogja.html">Yogyakarta</a></li>
-                    <li><a href="../program/index-tangsel.html">Bintaro</a></li>
-                    <li><a href="../program/index-solo.html">Solo</a></li>
-                    <li><a href="../program/index-banjarbaru.html">Banjarbaru</a></li>
-                    <li><a href="../program/index-surabaya.html">
+                    <li><a href="https://www.dialogika.co/program/index-jogja.html">Yogyakarta</a></li>
+                    <li><a href="https://www.dialogika.co/program/index-tangsel.html">Bintaro</a></li>
+                    <li><a href="https://www.dialogika.co/program/index-solo.html">Solo</a></li>
+                    <li><a href="https://www.dialogika.co/program/index-banjarbaru.html">Banjarbaru</a></li>
+                    <li><a href="https://www.dialogika.co/program/index-surabaya.html">
                       <span>Surabaya</span></a>
                     </li>
                   </ul>
@@ -242,19 +242,35 @@ class Header extends HTMLElement {
                 </div>
               </div></a>
              
-              <li class="dropdown" style="color: #0b2b6a"><a disabled><span>More</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="../event/">Event</a></li>
-                  <li><a href="../shop">Shop</a></li>
-                  <li><a href="../blog">Blog</a></li>
-                  <li><a href="../service/">Service</a></li>
-                   <li><a href="../about/">About Us</a></li>
-                </ul>
-              </li>
+              <div class="card">
+                <a href="#more-collapse" data-bs-toggle="collapse">
+                  <div class="card-body d-flex justify-content-between">
+                    <span>More</span><i class="bi bi-chevron-down"></i>
+                  </div>
+                </a>
+              <div class="collapse" id="more-collapse">
+                <a href="../event/">
+                  <div class="card card-body">Event</div>
+                </a>
+                <a href="../shop">
+                  <div class="card card-body">Shop</div>
+                </a>
+                <a href="../blog">
+                  <div class="card card-body">Blog</div>
+                </a>
+                <a href="../service/">
+                  <div class="card card-body">Service</div>
+                </a>
+                <a href="../about/">
+                  <div class="card card-body">About Us</div>
+                </a>
+              </div>
+            </div>
             </div>
           </div>
         </div>
-      </nav><!-- End Mobile Nav -->
+      </nav>
+      <!-- End Mobile Nav -->
 
     `;
   }
