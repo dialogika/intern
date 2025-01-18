@@ -74,8 +74,8 @@ class Header extends HTMLElement {
                     <span class="badge bg-success">Best</span></a>
                 </li>
                 <li><hr/></li>
-                <li><a href="https://www.dialogika.co/intern/deal-maker.html">
-                    <span>Deal Maker</span>
+                <li><a href="https://www.dialogika.co/intern/telemarketing.html">
+                    <span>Telemarketing</span>
                     <span class="badge bg-success">Best</span>
                 </a></li>
                 <li><a href="https://www.dialogika.co/intern/digital-marketing.html">Digital Marketing</a>
@@ -83,6 +83,9 @@ class Header extends HTMLElement {
                 <li><a href="https://www.dialogika.co/intern/model-talent.html">
                     <span>Model Talent</span>
                     <span class="badge bg-success">Best</span>
+                </a></li>
+                <li><a href="https://www.dialogika.co/intern/social-media-analyst.html">
+                    <span>Social Media Analyst</span>
                 </a></li>
                 <li><a href="https://www.dialogika.co/intern/content-writing.html">Content Writing</a></li>
                 <li><a href="https://www.dialogika.co/intern/design-specialist.html">Design Specialist</a></li>
@@ -92,6 +95,7 @@ class Header extends HTMLElement {
                 </li>
                 <li><hr/></li>
                 <li><a href="https://www.dialogika.co/intern/people-development.html">People Development</a></li>
+                <li><a href="https://www.dialogika.co/intern/hr-generalist.html">HR Generalist</a></li>
                 <li><a href="https://www.dialogika.co/intern/recruiter-specialist.html">
                     <span>Recruiter Specialist</span>
                     <span class="badge bg-success">Best</span>
@@ -210,9 +214,9 @@ class Header extends HTMLElement {
                   </div></a>
                   <a href="video-editing.html"><div class="card card-body">Video Editor</div></a>
                   <hr/>
-                  <a href="deal-maker.html"><div class="card card-body">
+                  <a href="telemarketing.html"><div class="card card-body">
                     <div class="d-flex justify-content-between">
-                        <span>Deal Maker</span>
+                        <span>Telemarketing</span>
                         <span class="badge bg-warning rounded-pill">Best</span>
                     </div>
                   </div></a>
