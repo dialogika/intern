@@ -36,11 +36,13 @@ class Header extends HTMLElement {
               <ul>
                 <li class="dropdown"><a href="#"><span>Online</span> <i class="bi bi-chevron-right"></i></a>
                   <ul>
-                    <li><a href="https://www.dialogika.co/program/basic-play.html">Basic Play</a></li>
-                    <li><a href="https://www.dialogika.co/program/basic-class.html">Basic Class <span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
+                    <li><a href="../program/basic-play.html">Basic Play </a></li>
+                    <li><a href="../program/basic-class.html">Basic Class <span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
+                    <!-- <li><a href="../program/basic-private.html">Basic Private</a></li> -->
                     <li><hr/></li>
-                    <li><a href="https://www.dialogika.co/program/kids-play.html">Kids Play</a></li>
-                    <li><a href="https://www.dialogika.co/program/kids-class.html">Kids Class<span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
+                    <li><a href="../program/kids-play.html">Kids Play</a></li>
+                    <li><a href="../program/kids-class.html">Kids Class<span class="badge rounded-pill text-bg-success">Best Buy</span></a></li>
+                    <!-- <li><a href="../program/kids-private.html">Kids Private</a></li> -->
                   </ul>
                 </li>
                 <li class="dropdown"><a href="#"><span>Offline</span> <i class="bi bi-chevron-right"></i></a>
@@ -147,21 +149,21 @@ class Header extends HTMLElement {
                           <a href="../program/basic-plus.html">
                             <div class="card card-body">
                                 <div class="justify-content-between d-flex">
-                                    <span>Basic Plus</span>
+                                    <span>Basic Class</span>
                                     <span class="badge bg-warning rounded-pill text-dark">Best Buy</span>
                                 </div>
                             </div>
                           </a>
-                          <a href="../program/basic-private.html"><div class="card card-body">Basic Private</div></a>
+                          <!-- <a href="../program/basic-private.html"><div class="card card-body">Basic Private</div></a> -->
                           <hr/>
                           <a href="../program/kids-play.html"><div class="card card-body">Kids Play</div></a>
-                          <a href="../program/kids-plus.html"><div class="card card-body">
+                          <a href="../program/kids-class.html"><div class="card card-body">
                             <div class="justify-content-between d-flex">
-                              <span>Kids Plus </span>
-                              <span class="badge bg-info rounded-pill">New</span>
+                              <span>Kids Class </span>
+                              <span class="badge bg-info rounded-pill">Best BUy</span>
                             </div>
                           </div></a>
-                          <a href="../program/kids-plus.html"><div class="card card-body">Kids Private</div></a>
+                          <!-- <a href="../program/kids-plus.html"><div class="card card-body">Kids Private</div></a> -->
                         </div>
                     </div>
                   </a>
