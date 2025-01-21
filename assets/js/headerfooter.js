@@ -206,35 +206,41 @@ class Header extends HTMLElement {
                   </div>
                 </a>
                 <div class="collapse" id="position-collapse">
-                  <a href="client-manager.html"><div class="card card-body">
+                  <a href="https://www.dialogika.co/intern/client-manager.html"><div class="card card-body">
                     <div class="d-flex justify-content-between">
                         <span>Client Manager</span>
                         <span class="badge bg-warning rounded-pill">Best</span>
                     </div>
                   </div></a>
-                  <a href="video-editing.html"><div class="card card-body">Video Editor</div></a>
                   <hr/>
-                  <a href="telemarketing.html"><div class="card card-body">
+                  <a href="https://www.dialogika.co/intern/telemarketing.html"><div class="card card-body">
                     <div class="d-flex justify-content-between">
                         <span>Telemarketing</span>
                         <span class="badge bg-warning rounded-pill">Best</span>
                     </div>
                   </div></a>
-                  <a href="digital-marketing.html"><div class="card card-body">Digital Marketing</div></a>
+                  <a href="https://www.dialogika.co/intern/digital-marketing.html">
+                  <div class="card card-body">Digital Marketing</div></a>
                   <hr/>
-                  <a href="model-talent.html"><div class="card card-body">
+                  <a href="https://www.dialogika.co/intern/model-talent.html"><div class="card card-body">
                     <div class="d-flex justify-content-between">
                         <span>Model Talent</span>
                         <span class="badge bg-warning rounded-pill">Best</span>
                     </div>
                   </div></a>
-                  <a href="content-writing.html"><div class="card card-body">Content Writing</div></a>
-                  <a href="design-specialist.html"><div class="card card-body">Design Specialist</div></a>
-                  <a href="html-writing.html"><div class="card card-body">HTML Writing</div></a>
+                  <a href="https://www.dialogika.co/intern/content-writing.html"><div class="card card-body">Content Writing</div></a>
+                  <a href="https://www.dialogika.co/intern/design-specialist.html"><div class="card card-body">Design Specialist</div></a>
+                  <a href="https://www.dialogika.co/intern/social-media-analyst.html"><div class="card card-body">Social Media Analyst</div></a>
+                  <a href="https://www.dialogika.co/intern/html-writing.html"><div class="card card-body">HTML Writing</div></a>
+                  <a href="https://www.dialogika.co/intern/video-editing.html"><div class="card card-body">Video Editor</div></a>
                   <hr/>
-                  <a href="people-development.html"><div class="card card-body">People Development</div></a>
-                  <a href="recruiter-specialist.html"><div class="card card-body">
+                  <a href="https://www.dialogika.co/intern/people-development.html"><div class="card card-body">People Development</div></a>
+                  <a href="https://www.dialogika.co/intern/hr-generalist.html"><div class="card card-body">HR Generalist</div></a>
+                  <a href="https://www.dialogika.co/intern/recruiter-specialist.html"><div class="card card-body">
+                    <div class="d-flex justify-content-between">
                       <span>Recruiter Specialist</span>
+                        <span class="badge bg-warning rounded-pill">Best</span>
+                        </div>
                   </div></a>
 
                 </div>
