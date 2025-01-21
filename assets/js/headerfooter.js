@@ -211,7 +211,9 @@ class Header extends HTMLElement {
                         <span class="badge bg-warning rounded-pill">Best</span>
                     </div>
                   </div></a>
+
                   <hr/>
+                  
                   <a href="https://www.dialogika.co/intern/telemarketing.html"><div class="card card-body">
                     <div class="d-flex justify-content-between">
                         <span>Telemarketing</span>
@@ -231,10 +233,10 @@ class Header extends HTMLElement {
                   <a href="https://www.dialogika.co/intern/design-specialist.html"><div class="card card-body">Design Specialist</div></a>
                   <a href="https://www.dialogika.co/intern/social-media-analyst.html"><div class="card card-body">Social Media Analyst</div></a>
                   <a href="https://www.dialogika.co/intern/html-writing.html"><div class="card card-body">HTML Writing</div></a>
-                  <a href="https://www.dialogika.co/intern/video-editing.html"><div class="card card-body">Video Editor</div></a>
+                  <a href="https://www.dialogika.co/intern/video-editing.html"><div class="card card-body">Video Editor </div></a>
                   <hr/>
                   <a href="https://www.dialogika.co/intern/people-development.html"><div class="card card-body">People Development</div></a>
-                  <a href="https://www.dialogika.co/intern/hr-generalist.html"><div class="card card-body">HR Generalist</div></a>
+                  <a href="https://www.dialogika.co/intern/hr-generalist.html"><div class="card card-body">HR Generalist </div></a>
                   <a href="https://www.dialogika.co/intern/recruiter-specialist.html"><div class="card card-body">
                     <div class="d-flex justify-content-between">
                       <span>Recruiter Specialist</span>
