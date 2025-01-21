@@ -122,7 +122,6 @@ class Header extends HTMLElement {
       </div>
     </header><!-- End Header -->
 
- 
     <!-- ======= Mobile Nav ======= -->
       <nav class="navbar-canvas fixed-top">
         <div class="container-fluid">
