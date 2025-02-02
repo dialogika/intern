@@ -144,6 +144,7 @@
   left: 16px;
   /*    color: #F9C72E;*/
   background: linear-gradient(to right, #f9c72e, #f7b12c);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
