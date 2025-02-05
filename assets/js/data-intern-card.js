@@ -2,6 +2,38 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const dataIntern = [
+    // Kak Nadia Nasywa
+    {
+      namaIntern: "Nadia Nasywa",
+      posisi: "Telemarketing",
+      tags: ["Completed Intern"],
+      AboutIntern: `An undergraduate student of Communication Science at Yogyakarta State University, who has interests in several fields such as marketing, advertising, and public relations. Experienced in managing databases and communication with clients, and able to build relationships with new clients.`,
+      socialMedia: [
+        { instagram: "https://www.instagram.com/nadnsw_/" },
+        { linkedIn: "https://www.linkedin.com/in/nadia-nasywa-nurul-huda-bb512b31b/" },
+      ],
+      rating: 3,
+      whatsappNumber: "+6289665716724",
+      profilePage: "https://www.dialogika.co/intern/resume/nadia-nasywa-nurul-huda.html",
+      avatarPath: "../assets/img/portofolio/nadia-nasywa/avatar.webp",
+      resumePath: "../assets/pdf/resume/nadia-nasywa-nurul-huda.pdf",
+    },
+    // Kak Veni Listiyaningsih
+    {
+      namaIntern: "Veni Listiyaningsih",
+      posisi: "Client Manager",
+      tags: ["Completed Intern"],
+      AboutIntern: `Saya adalah mahasiswa jurusan Ekonomi Pembangunan UPN "Veteran" Yogyakarta yang bersemangat, berorientasi pada solusi, dan selalu terbuka untuk belajar hal-hal baru. Saya memiliki ketertarikan di bidang Public Relations, Business Development, Manajemen, dan Administrasi. Berbekal pengalaman dalam magang, organisasi, dan kepanitiaan, saya telah mengasah keterampilan komunikasi, kepemimpinan, manajemen proyek, serta problem-solving. Saya terbiasa bekerja di lingkungan yang dinamis, berpikir strategis, dan menyelesaikan tugas secara terorganisir dengan hasil yang maksimal. Dengan kemampuan beradaptasi yang baik serta komitmen untuk terus berkembang, saya siap berkontribusi dan menjalin hubungan kerja yang positif dalam tim maupun dengan klien.`,
+      socialMedia: [
+        { instagram: "https://www.instagram.com/venilstynh" },
+        { linkedIn: "https://www.linkedin.com/in/veni-listiyaningsih-4625412a0/" },
+      ],
+      rating: 3,
+      whatsappNumber: "+6282133659317",
+      profilePage: "https://www.dialogika.co/intern/resume/veni-listiyaningsih.html",
+      avatarPath: "../assets/img/portofolio/veni-listiyaningsih/avatar.webp",
+      resumePath: "../assets/pdf/resume/veni-listiyaningsih.pdf",
+    },
     // Kak Natalia Cristi
     {
       namaIntern: "Natalia Cristi Fany Br B.",
@@ -782,7 +814,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const filterInput = document.getElementById("filter-posisi");
 
   const searchInput = document.getElementById("search-input-intern");
-  
+
   const renderInternCard = () => {
     const posisi = filterInput.value.toLowerCase();
     const nama = searchInput.value.toLowerCase();
