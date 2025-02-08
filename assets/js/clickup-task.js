@@ -81,13 +81,13 @@ const createNewTask = async (listId, taskName, customFields, description) => {
     throw new Error("Gagal mengirim data. Harap coba lagi !");
 };
 
-const apiToken = "pk_3640079_B56O8X0HW6FAEIZJFFJAQW99IAHQMF8N";
+const apiToken = "pk_276677813_5LZTC2L1TYHRVBRRRK5BKXBZDVUU2X7E";
 
 // ? Function untuk cek id custom field clickup. Buka browser dev tool untuk lihat response dan daftar id-idnya.
 // ? Buat button dengan id "getClickupData" untuk menggunakan function ini
 const handleGetClickupIds = async (event) => {
   event.preventDefault();
-  const apiToken = "pk_3640079_B56O8X0HW6FAEIZJFFJAQW99IAHQMF8N";
+  const apiToken = "pk_276677813_5LZTC2L1TYHRVBRRRK5BKXBZDVUU2X7E";
   const listId = "14355106"; // Ganti dengan id yng sesuai. Contoh link https://app.clickup.com/2307700/v/li/14355106
   let taskId = null; // Variabel untuk menyimpan task ID
 
