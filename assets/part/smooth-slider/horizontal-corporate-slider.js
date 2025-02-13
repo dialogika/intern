@@ -8,6 +8,10 @@ class horizontalSlider extends HTMLElement {
                 <div class="clients-slider swiper">
                 <div class="swiper-wrapper align-items-center">
                         <div class="swiper-slide">
+                        <img src="../assets/img/corporate/PertaminaDrilling.png" class="img-fluid object-fit-contain" style="max-height: 80px;"
+                            alt="Pertamina Drilling logo" />
+                        </div>
+                        <div class="swiper-slide">
                         <img src="../assets/img/corporate/uad.png" class="img-fluid object-fit-contain" style="max-height: 80px;"
                             alt="universitas Ahmad Dahlan logo" />
                         </div>

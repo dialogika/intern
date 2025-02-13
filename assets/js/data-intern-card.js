@@ -2,6 +2,22 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const dataIntern = [
+    // Kak Erico Rizky Nabilah
+    {
+      namaIntern: "Erico Rizky Nabilah",
+      posisi: "Designer Specialist",
+      tags: ["Completed Intern"],
+      AboutIntern: `Halo Nama aku Erico, mahasiswa informatika yang tertarik di industri kreatif khususnya di bidang graphic design dan game development.`,
+      socialMedia: [
+        { instagram: "https://www.instagram.com/ericorizky.n" },
+        { linkedIn: "https://www.linkedin.com/in/erico-rizky-011a74280/" },
+      ],
+      rating: 3,
+      whatsappNumber: "+6282247463677",
+      profilePage: "https://www.dialogika.co/intern/resume/erico-rizky-nabilah.html",
+      avatarPath: "../assets/img/portofolio/erico-rizky/avatar.webp",
+      resumePath: "../assets/pdf/resume/erico-rizky-nabilah.pdf",
+    },
     // Kak Nadia Nasywa
     {
       namaIntern: "Nadia Nasywa",
