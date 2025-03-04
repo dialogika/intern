@@ -2,7 +2,31 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const dataIntern = [
-        // Kak Athif Fakhri Firmansyah
+    // Kak Octafiana Hanani
+    {
+      namaIntern: "Octafiana Hanani",
+      posisi: "Video editor",
+      tags: ["Completed Intern"],
+      AboutIntern: `Saya adalah mahasiswa Sistem Informasi dengan konsentrasi di Creative Multimedia, yang fokus pada
+pengembangan karir di bidang teknologi dan multimedia. Selama studi, saya terlibat dalam berbagai
+proyek, seperti desain UI/UX, pengembangan website, perancangan game AR dan VR, serta editing video. Pengalaman ini
+telah mengasah keterampilan saya dalam pemrograman, kreativitas, manajemen proyek,
+serta kemampuan bekerja dalam tim.
+
+Selain itu, saya juga memiliki kemampuan komunikasi yang baik, inisiatif yang tinggi, dan kemampuan
+analisis yang kuat. Keterampilan-keterampilan ini mendukung saya dalam memecahkan masalah dan bekerja
+secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mandiri.`,
+      socialMedia: [
+        { instagram: "https://www.instagram.com/octfianah/" },
+        { linkedIn: "https://www.linkedin.com/in/octafianahanani" },
+      ],
+      rating: 3,
+      whatsappNumber: "+6285326906778",
+      profilePage: "https://www.dialogika.co/intern/resume/octafiana-hanani.html",
+      avatarPath: "../assets/img/portofolio/octafiana-hanani/avatar.webp",
+      resumePath: "../assets/pdf/resume/octafiana-hanani-fityati-syifa.pdf",
+    },
+    // Kak Athif Fakhri Firmansyah
     {
       namaIntern: "Athif Fakhri Firmansyah",
       posisi: "Copywriter",
