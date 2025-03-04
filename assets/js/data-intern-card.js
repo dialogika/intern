@@ -2,6 +2,26 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const dataIntern = [
+        // Kak Athif Fakhri Firmansyah
+    {
+      namaIntern: "Athif Fakhri Firmansyah",
+      posisi: "Copywriter",
+      tags: ["Completed Intern"],
+      AboutIntern: `Saya Athif Fakhri Firmansyah, saya saat ini adalah mahasiswa tingkat akhir dari Sekolah Vokasi
+                Universitas Gadjah Mada. Memiliki ketertarikan di dunia copywriting, social media content creation, dan
+                event management. Saat ini saya terus mengasah soft skill & hard skill saya dengan mencoba eksplorasi magang sekaligus
+                  meningkatkan value diri sendiri dengan menerapkan integritas, empati, kepercayaan, dan attitude di
+                  dunia kerja dan juga diluar pekerjaan.`,
+      socialMedia: [
+        { instagram: "https://www.instagram.com/athiffakhri/" },
+        { linkedIn: "https://www.linkedin.com/in/athif-fakhri-firmansyah-02717426a" },
+      ],
+      rating: 3,
+      whatsappNumber: "+6287738127417",
+      profilePage: "https://www.dialogika.co/intern/resume/athif-fakhri-firmansyah.html",
+      avatarPath: "../assets/img/portofolio/athif-fakhri-firmansyah/avatar.webp",
+      resumePath: "../assets/pdf/resume/athif-fakhri-firmansyah.pdf",
+    },
     // Kak Erico Rizky Nabilah
     {
       namaIntern: "Erico Rizky Nabilah",
