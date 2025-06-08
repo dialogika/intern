@@ -442,16 +442,16 @@ class Footer extends HTMLElement {
               </a>
               <ul class="accordion-collapse collapse show" id="footer-about-dialogika" data-bs-parent=".footer-links">
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../about/">About Us</a>
+                  <a href="https://www.dialogika.co/about">About Us</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../help/program-belajar.html">Frequent Asked Question</a>
+                  <a href="https://www.dialogika.co/help/payment">Frequent Asked Question</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../help/">Help Center</a>
+                  <a href="https://www.dialogika.co/help/">Help Center</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
-                  <a href="../about/privacy.html">Privacy Policy</a>
+                  <a href="https://www.dialogika.co/policy/">Privacy Policy</a>
                 </li>
                 <li><i class="bx bx-chevron-right"></i>
                   <a href="../about/terms.html">Terms & Agreements</a>
