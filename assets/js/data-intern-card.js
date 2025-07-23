@@ -2,6 +2,314 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const dataIntern = [
+    {
+      namaIntern: "Zahra",
+      posisi: "Telemarketing",
+      tags: ["Completed Intern"], // atau tag lain sesuai status
+      AboutIntern: "Deskripsi singkat tentang intern",
+      socialMedia: [
+        { instagram: "https://www.instagram.com/hafzhra" },
+        { linkedIn: "https://www.linkedin.com/in/hafizah-az-zahra-a70b162b3/" },
+      ],
+      rating: 3,
+      whatsappNumber: "+628225069705",
+      profilePage: "zahra.html",
+      avatarPath: "../assets/img/portofolio/zahra/avatar.webp",
+      resumePath: "../assets/pdf/resume/zahra.pdf",
+    },
+    {
+      namaIntern: "Hazel Haikal",
+      posisi: "People Development",
+      tags: ["Completed Intern"],
+      AboutIntern:
+        "Mahasiswa tahun ke-3 dari Universitas Gadjah Mada jurusan Ilmu Komunikasi yang memiliki minat dan bakat di organisasi serta manajemen. Bermotivasi tinggi dan selalu ingin belajar hal baru serta memperluas zona nyaman, memiliki skill komunikasi dan adaptabilitas yang baik dan berkomitmen tinggi untuk kerja dan belajar.",
+      socialMedia: [
+        { instagram: "http://instagram.com/hazelhaikal" },
+        { linkedIn: "http://linkedin.com/in/hazelhaikal" },
+      ],
+      rating: 3, // rating 1-5
+      whatsappNumber: "+6285162900340",
+      profilePage: "hazel-haikal.html",
+      avatarPath: "../assets/img/portofolio/hazel-haikal/avatar.webp",
+      resumePath: "../assets/pdf/resume/hazel-haikal.pdf",
+    },
+    {
+      namaIntern: "Ulfiatun Wahidah",
+      posisi: "Admin Kelas",
+      tags: ["Completed Intern"],
+      AboutIntern: "Deskripsi singkat tentang intern",
+      socialMedia: [
+        {
+          instagram: "https://www.instagram.com/ulfiiaaaaaa",
+        },
+        { linkedIn: "https://www.linkedin.com/in/ulfiatun-wahidah-349226305/" },
+      ],
+      rating: 3, // rating 1-5
+      whatsappNumber: "+6289653353780",
+      profilePage: "ulfiatun-wahidah.html",
+      avatarPath: "../assets/img/portofolio/ulfiatun-wahidah/avatar.webp",
+      resumePath: "../assets/pdf/resume/ulfiatun-wahidah.pdf",
+    },
+    {
+      namaIntern: "Nisa Nurlatifa Rahmah",
+      posisi: "Telemarketing",
+      tags: ["Completed Intern"],
+      AboutIntern: "Deskripsi singkat tentang intern",
+      socialMedia: [
+        { instagram: "http://instagram.com/nisanurlatifa11" },
+        { linkedIn: "https://www.linkedin.com/in/nisanurlatifarahmah/" },
+      ],
+      rating: 3, // rating 1-5
+      whatsappNumber: "+6289689974039",
+      profilePage: "nisa-nurlatifa-rahmah.html",
+      avatarPath: "../assets/img/portofolio/nisa-nurlatifa-rahmah/avatar.webp",
+      resumePath: "../assets/pdf/resume/nisa-nurlatifa-rahmah.pdf",
+    },
+    {
+      namaIntern: "Maura Paska Proborini",
+      posisi: "Admin Kelas",
+      tags: ["Completed Intern"],
+      AboutIntern:
+        "Saya seorang mahasiswi semester 6 program studi Ekonomi dari Universitas Sanata Dharma. Selama perkuliahan, saya telah mempelajari berbagai konsep dasar ekonomi seperti teori mikro dan makroekonomi, analisis data ekonomi, serta kebijakan ekonomi.",
+      socialMedia: [
+        { instagram: "https://www.instagram.com/fremilltea" },
+        {
+          linkedIn: "https://www.linkedin.com/in/maura-paska-5157b4307/",
+        },
+      ],
+      rating: 3, // rating 1-5
+      whatsappNumber: "+6282143165764",
+      profilePage: "maura-paska.html",
+      avatarPath: "../assets/img/portofolio/maura-paska/avatar.webp",
+      resumePath: "../assets/pdf/resume/maura-paska.pdf",
+    },
+    {
+      namaIntern: "Muhammad Rachmeza Ibrahim Adha",
+      posisi: "HR Generalist",
+      tags: ["Completed Intern"],
+      AboutIntern:
+        "Perkenalkan nama saya Muhammad Rachmeza Ibrahim Adha, saat ini sedang menempuh S1 Psikologi semester akhir di Universitas Islam Indonesia. saya memiliki ketertarikan di bidang human resources dan psikologi abnormal. saya memiliki pengalaman sebagai asisten psikolog dan mendapatkan sertifikasi CHRNLP pada tahun 2022. Saya memiliki kemampuan bekerja secara detail, komunikatif, problem solving, behavioral interview, konseling, asesmen psikologi, dan basic microsoft word.",
+      socialMedia: [
+        { instagram: "https://www.instagram.com/muhammadrachmeza_" },
+        {
+          linkedIn:
+            "https://www.linkedin.com/in/muhammad-rachmeza-ibrahim-adha-a883b9220",
+        },
+      ],
+      rating: 3, // rating 1-5
+      whatsappNumber: "+6282240193593",
+      profilePage: "muhammad-rachmeza.html",
+      avatarPath: "../assets/img/portofolio/muhammad-rachmeza/avatar.webp",
+      resumePath: "../assets/pdf/resume/muhammad-rachmeza.pdf",
+    },
+    {
+      namaIntern: "Damar Adi Nugroho",
+      posisi: "HTML Writer",
+      tags: ["Completed Intern"],
+      AboutIntern:
+        "Perkenalkan, saya Damar Adi Nugroho, mahasiswa semester 6 di Universitas Amikom Yogyakarta, program studi Sistem Informasi. Saya selalu antusias dalam belajar dan mengembangkan diri, terutama dalam bidang pengembangan web, baik dari sisi frontend maupun backend.",
+      socialMedia: [
+        { instagram: "https://www.instagram.com/damar.an_/" },
+        {
+          linkedIn: "https://www.linkedin.com/in/damar-adi-nugroho-a79725331",
+        },
+      ],
+      rating: 3,
+      whatsappNumber: "+6281910443084",
+      profilePage: "damar-adi-nugroho.html",
+      avatarPath: "../assets/img/portofolio/damar-adi-nugroho/avatar.webp",
+      resumePath: "../assets/pdf/resume/damar-adi-nugroho.pdf",
+    },
+    {
+      namaIntern: "Romdhoni Afif Nasrullah",
+      posisi: "Admin Kelas",
+      tags: ["Completed Intern"],
+      AboutIntern:
+        "Saat ini, saya adalah mahasiswa di Fakultas Filsafat Universitas Gadjah Mada semester 8, dengan minat yang besar dalam mengeksplorasi isu-isu pendidikan, khususnya neuroeducation. Saya bangga dengan keterampilan interpersonal yang kuat, mudah beradaptasi, motivasi tinggi, ambisi, serta dorongan yang mendalam untuk berinovasi.",
+      socialMedia: [
+        { instagram: "https://www.instagram.com" },
+        { linkedIn: "https://www.linkedin.com/in/" },
+      ],
+      rating: 3, // rating 1-5
+      whatsappNumber: "+6282119795404",
+      profilePage: "romdhoni-afif.html",
+      avatarPath: "../assets/img/portofolio/romdhoni-afif/avatar.webp",
+      resumePath: "../assets/pdf/resume/romdhoni-afif.pdf",
+    },
+
+    {
+      namaIntern: "Erena Valentina Br Ginting",
+      posisi: "Content Creator",
+      tags: ["Completed Intern"],
+      AboutIntern: "Deskripsi singkat tentang intern",
+      socialMedia: [
+        { instagram: "http://instagram.com/erenavga" },
+        { linkedIn: "https://www.linkedin.com/in/ernvga/" },
+      ],
+      rating: 3, // rating 1-5
+      whatsappNumber: "+6285760734542",
+      profilePage: "erena-valentina.html",
+      avatarPath: "../assets/img/portofolio/erena-valentina/avatar.webp",
+      resumePath: "../assets/pdf/resume/erena-valentina.pdf",
+    },
+    {
+      namaIntern: "Ilham Afriansyah",
+      posisi: "Admin Kelas",
+      tags: ["Completed Intern"],
+      AboutIntern: "Deskripsi singkat tentang intern",
+      socialMedia: [
+        { instagram: "http://instagram.com/lukeeskywalkerr" },
+        { linkedIn: "http://linkedin.com/in/ilhamafrian" },
+      ],
+      rating: 3, // rating 1-5
+      whatsappNumber: "+6281287912148",
+      profilePage: "ilham-afriansyah.html",
+      avatarPath: "../assets/img/portofolio/ilham-afriansyah/avatar.webp",
+      resumePath: "../assets/pdf/resume/ilham-afriansyah.pdf",
+    },
+    {
+      namaIntern: "Bela Setiya Ambarwati",
+      posisi: "Telemarketing",
+      tags: ["Completed Intern"],
+      AboutIntern: "Deskripsi singkat tentang intern",
+      socialMedia: [
+        { instagram: "http://instagram.com/bellaset__" },
+        { linkedIn: "http://linkedin.com/Bela-Setiya-Ambarwati" },
+      ],
+      rating: 3, // rating 1-5
+      whatsappNumber: "+6285741592802",
+      profilePage: "bela-setiya.html",
+      avatarPath: "../assets/img/portofolio/bela-setiya/avatar.webp",
+      resumePath: "../assets/pdf/resume/bela-setiya.pdf",
+    },
+    {
+      namaIntern: "Ariful Fathoni",
+      posisi: "AI Content/Copy Writer",
+      tags: ["Completed Intern"], // atau tag lain sesuai status
+      AboutIntern: "Deskripsi singkat tentang intern",
+      socialMedia: [
+        { instagram: "http://instagram.com/rif.fathoni" },
+        { linkedIn: "http://linkedin.com/in/ariful-fathoni-823194235" },
+      ],
+      rating: 3, // rating 1-5
+      whatsappNumber: "+6282233080858",
+      profilePage: "ariful-fathoni.html",
+      avatarPath: "../assets/img/portofolio/ariful-fathoni/avatar.webp",
+      resumePath: "../assets/pdf/resume/ariful-fathoni.pdf",
+    },
+    {
+      namaIntern: "Muhammad Rubben Ramadhan",
+      posisi: "Video Editor",
+      tags: ["Completed Intern"],
+      AboutIntern: "Deskripsi singkat tentang intern",
+      socialMedia: [
+        { instagram: "http://instagram.com/benzramadhan" },
+        { linkedIn: "http://www.linkedin.com/in/ben-ramadhan" },
+      ],
+      rating: 3, // rating 1-5
+      whatsappNumber: "+6282134969328",
+      profilePage: "muhammad-rubben.html",
+      avatarPath: "../assets/img/portofolio/muhammad-rubben/avatar.webp",
+      resumePath: "../assets/pdf/resume/muhammad-rubben.pdf",
+    },
+    {
+      namaIntern: "Dyan Purnama",
+      posisi: "AI Content/Copy Writer",
+      tags: ["Completed Intern"],
+      AboutIntern: "Deskripsi singkat tentang intern",
+      socialMedia: [
+        {
+          instagram: "https://www.instagram.com/_dyanprn",
+        },
+        {
+          linkedIn: "https://www.linkedin.com/in/dyan-purnama",
+        },
+      ],
+      rating: 3, // rating 1-5
+      whatsappNumber: "+62895424446730",
+      profilePage: "dyan-purnama.html",
+      avatarPath: "../assets/img/portofolio/dyan-purnama/avatar.webp",
+      resumePath: "../assets/pdf/resume/dyan-purnama.pdf",
+    },
+    {
+      namaIntern: "Irsyadassabila ",
+      posisi: "Designer Specialist",
+      tags: ["Completed Intern"],
+      AboutIntern: "Deskripsi singkat tentang intern",
+      socialMedia: [
+        { instagram: "http://instagram.com/syaunthetic" },
+        { linkedIn: "https://www.linkedin.com/in/irsya-dassabila/" },
+      ],
+      rating: 3, // rating 1-5
+      whatsappNumber: "+6289510043418",
+      profilePage: "irsyadassabila.html",
+      avatarPath: "../assets/img/portofolio/irsyadassabila/avatar.webp",
+      resumePath: "../assets/pdf/resume/irsyadassabila.pdf",
+    },
+    {
+      namaIntern: "Cincinniati Ika Noveria",
+      posisi: "Recruiters Spesialist",
+      tags: ["Completed Intern"],
+      AboutIntern: ``,
+      socialMedia: [
+        { instagram: "http://instagram.com/cikaairaa/" },
+        { linkedIn: "http://linkedin.com/in/cincinniati-ika-noveria" },
+      ],
+      rating: 3,
+      whatsappNumber: "+6285727353772",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/cincinniati-ika-noveria.html",
+      avatarPath:
+        "../assets/img/portofolio/cincinniati-ika-noveria/avatar.webp",
+      resumePath: "../assets/pdf/resume/cincinniati-ika-noveria.pdf",
+    },
+    {
+      namaIntern: "Qonita Azkiyyah",
+      posisi: "Recruiters Spesialist",
+      tags: ["Completed Intern"],
+      AboutIntern: ``,
+      socialMedia: [
+        { instagram: "http://instagram.com/qonita.azk" },
+        { linkedIn: "http://linkedin.com/in/qonita-azkiyyah" },
+      ],
+      rating: 3,
+      whatsappNumber: "+6281293554730",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/qonita-azkiyyah.html",
+      avatarPath: "../assets/img/portofolio/qonita-azkiyyah/avatar.webp",
+      resumePath: "../assets/pdf/resume/qonita-azkiyyah.pdf",
+    },
+    {
+      namaIntern: "A'la 'Abid",
+      posisi: "Telemarketing",
+      tags: ["Completed Intern"],
+      AboutIntern: ``,
+      socialMedia: [
+        { instagram: "https://www.instagram.com/alastair.12_/" },
+        { linkedIn: "https://www.linkedin.com/in/alaabid" },
+      ],
+      rating: 3,
+      whatsappNumber: "+6282247505821",
+      profilePage: "https://www.dialogika.co/intern/resume/ala-abid.html",
+      avatarPath: "../assets/img/portofolio/ala-abid/avatar.webp",
+      resumePath: "../assets/pdf/resume/ala-abid.pdf",
+    },
+    {
+      namaIntern: "Anas Solihin",
+      posisi: "Telemarketing",
+      tags: ["Completed Intern"],
+      AboutIntern: ``,
+      socialMedia: [
+        { instagram: "https://www.instagram.com/anasss_ez/" },
+        { linkedIn: "https://www.linkedin.com/in/anas-solihin" },
+      ],
+      rating: 3,
+      whatsappNumber: "+6289507690998",
+      profilePage: "https://www.dialogika.co/intern/resume/anas-solihin.html",
+      avatarPath: "../assets/img/portofolio/anas-solihin/avatar.webp",
+      resumePath: "../assets/pdf/resume/anas-solihin.pdf",
+    },
+
     // Kak Octafiana Hanani
     {
       namaIntern: "Octafiana Hanani",
@@ -22,7 +330,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       ],
       rating: 3,
       whatsappNumber: "+6285326906778",
-      profilePage: "https://www.dialogika.co/intern/resume/octafiana-hanani.html",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/octafiana-hanani.html",
       avatarPath: "../assets/img/portofolio/octafiana-hanani/avatar.webp",
       resumePath: "../assets/pdf/resume/octafiana-hanani-fityati-syifa.pdf",
     },
@@ -38,12 +347,17 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
                   dunia kerja dan juga diluar pekerjaan.`,
       socialMedia: [
         { instagram: "https://www.instagram.com/athiffakhri/" },
-        { linkedIn: "https://www.linkedin.com/in/athif-fakhri-firmansyah-02717426a" },
+        {
+          linkedIn:
+            "https://www.linkedin.com/in/athif-fakhri-firmansyah-02717426a",
+        },
       ],
       rating: 3,
       whatsappNumber: "+6287738127417",
-      profilePage: "https://www.dialogika.co/intern/resume/athif-fakhri-firmansyah.html",
-      avatarPath: "../assets/img/portofolio/athif-fakhri-firmansyah/avatar.webp",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/athif-fakhri-firmansyah.html",
+      avatarPath:
+        "../assets/img/portofolio/athif-fakhri-firmansyah/avatar.webp",
       resumePath: "../assets/pdf/resume/athif-fakhri-firmansyah.pdf",
     },
     // Kak Erico Rizky Nabilah
@@ -58,7 +372,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       ],
       rating: 3,
       whatsappNumber: "+6282247463677",
-      profilePage: "https://www.dialogika.co/intern/resume/erico-rizky-nabilah.html",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/erico-rizky-nabilah.html",
       avatarPath: "../assets/img/portofolio/erico-rizky/avatar.webp",
       resumePath: "../assets/pdf/resume/erico-rizky-nabilah.pdf",
     },
@@ -70,11 +385,15 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       AboutIntern: `An undergraduate student of Communication Science at Yogyakarta State University, who has interests in several fields such as marketing, advertising, and public relations. Experienced in managing databases and communication with clients, and able to build relationships with new clients.`,
       socialMedia: [
         { instagram: "https://www.instagram.com/nadnsw_/" },
-        { linkedIn: "https://www.linkedin.com/in/nadia-nasywa-nurul-huda-bb512b31b/" },
+        {
+          linkedIn:
+            "https://www.linkedin.com/in/nadia-nasywa-nurul-huda-bb512b31b/",
+        },
       ],
       rating: 3,
       whatsappNumber: "+6289665716724",
-      profilePage: "https://www.dialogika.co/intern/resume/nadia-nasywa-nurul-huda.html",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/nadia-nasywa-nurul-huda.html",
       avatarPath: "../assets/img/portofolio/nadia-nasywa/avatar.webp",
       resumePath: "../assets/pdf/resume/nadia-nasywa-nurul-huda.pdf",
     },
@@ -86,11 +405,15 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       AboutIntern: `Saya adalah mahasiswa jurusan Ekonomi Pembangunan UPN "Veteran" Yogyakarta yang bersemangat, berorientasi pada solusi, dan selalu terbuka untuk belajar hal-hal baru. Saya memiliki ketertarikan di bidang Public Relations, Business Development, Manajemen, dan Administrasi. Berbekal pengalaman dalam magang, organisasi, dan kepanitiaan, saya telah mengasah keterampilan komunikasi, kepemimpinan, manajemen proyek, serta problem-solving. Saya terbiasa bekerja di lingkungan yang dinamis, berpikir strategis, dan menyelesaikan tugas secara terorganisir dengan hasil yang maksimal. Dengan kemampuan beradaptasi yang baik serta komitmen untuk terus berkembang, saya siap berkontribusi dan menjalin hubungan kerja yang positif dalam tim maupun dengan klien.`,
       socialMedia: [
         { instagram: "https://www.instagram.com/venilstynh" },
-        { linkedIn: "https://www.linkedin.com/in/veni-listiyaningsih-4625412a0/" },
+        {
+          linkedIn:
+            "https://www.linkedin.com/in/veni-listiyaningsih-4625412a0/",
+        },
       ],
       rating: 3,
       whatsappNumber: "+6282133659317",
-      profilePage: "https://www.dialogika.co/intern/resume/veni-listiyaningsih.html",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/veni-listiyaningsih.html",
       avatarPath: "../assets/img/portofolio/veni-listiyaningsih/avatar.webp",
       resumePath: "../assets/pdf/resume/veni-listiyaningsih.pdf",
     },
@@ -103,12 +426,19 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
         "Saya adalah seorang mahasiswa Administrasi Bisnis di Universitas Pembangunan Nasional Veteran Yogyakarta dengan minat yang kuat dalam manajemen sumber daya manusia dan digital marketing. Saat ini, saya aktif mengikuti dua organisasi yang mendukung minat saya, yaitu UKM Bisnis Digital dan Ikatan Mahasiswa Administrasi Bisnis (IMABI). Selain itu, saya juga memiliki pengalaman kepemimpinan yang signifikan, salah satunya sebagai leader di Persekutuan Kaum Muda Gereja Mawar Sharon Yogyakarta. Dalam peran ini, saya memimpin kegiatan ibadah, merencanakan acara sosial, dan mendampingi anggota untuk berkembang dalam iman. Pengalaman saya ini mengasah keterampilan kepemimpinan, komunikasi, dan manajemen waktu yang sangat berguna dalam berbagai konteks profesional. ",
       socialMedia: [
         { instagram: "https://www.instagram.com/nataliabarus15" },
-        { linkedIn: "https://www.linkedin.com/in/natalia-cristi-fany-barus-563735281/" },
-        { tiktok: "https://www.tiktok.com/@nataliabarus155?_t=ZS-8sjY4RcUDW3&_r=1" },
+        {
+          linkedIn:
+            "https://www.linkedin.com/in/natalia-cristi-fany-barus-563735281/",
+        },
+        {
+          tiktok:
+            "https://www.tiktok.com/@nataliabarus155?_t=ZS-8sjY4RcUDW3&_r=1",
+        },
       ],
       rating: 3,
       whatsappNumber: "+6281914782067",
-      profilePage: "https://www.dialogika.co/intern/resume/natalia-cristi-fany-br-barus.html",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/natalia-cristi-fany-br-barus.html",
       avatarPath: "../assets/img/portofolio/natalia/natalia-avt.webp",
       resumePath: "../assets/pdf/resume/natalia-cristy-fany-br-barus.pdf",
     },
@@ -126,7 +456,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       ],
       rating: 3.5,
       whatsappNumber: "+6281344609351",
-      profilePage: "https://www.dialogika.co/intern/resume/novita-irianti-merauje.html",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/novita-irianti-merauje.html",
       avatarPath: "../assets/img/portofolio/novita-merauje/novita-profil.webp",
       resumePath: "../assets/pdf/resume/novita-irianti-merauje.pdf",
     },
@@ -139,11 +470,15 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
         "Mahasiswa aktif program studi Manajemen di Sekolah Tinggi Ilmu Manajemen YKPN Yogyakarta yang tertarik pada bidang Marketing terutama Digital Marketing. Era digital yang semakin pesat pertumbuhannya, mengiringi pengembanganilmu marketing dalam memberikan inovasi strategi yang mutakhir bagi perusahaan. Ketertarikan dalam mempelajari hal baru dan ketekunan yang telah tertanam dalam diri saya membuat saya tertarik terjun dalam bidang ini.",
       socialMedia: [
         { instagram: "https://www.instagram.com/lavendik.u/?hl=id" },
-        { linkedIn: "https://www.linkedin.com/in/lavendi-kurnia-utama-459597222/" },
+        {
+          linkedIn:
+            "https://www.linkedin.com/in/lavendi-kurnia-utama-459597222/",
+        },
       ],
       rating: 4,
       whatsappNumber: "+6281247721081",
-      profilePage: "https://www.dialogika.co/intern/resume/Lavendi-Kurnia-Utama.html",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/Lavendi-Kurnia-Utama.html",
       avatarPath: "../assets/img/portofolio/lavendi-kurnia/vendi-avatar.webp",
       resumePath: "../assets/pdf/resume/lavendi-kurnia-utama.pdf",
     },
@@ -163,7 +498,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       ],
       rating: 3.5,
       whatsappNumber: "+6281220265890",
-      profilePage: "https://www.dialogika.co/intern/resume/Ilham-Nadhip-Muhammad.html",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/Ilham-Nadhip-Muhammad.html",
       avatarPath: "../assets/img/portofolio/ilham-nadhip-muhammad/avatar.webp",
       resumePath: "../assets/pdf/resume/ilham-nadhip-muhammad.pdf",
     },
@@ -182,15 +518,22 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       ],
       rating: 3.5,
       whatsappNumber: "+6281298561322",
-      profilePage: "https://www.dialogika.co/intern/resume/jeremia-siahaan.html",
-      avatarPath: "../assets/img/portofolio/jeremia-siahaan/jeremia-siahaan-avatar.webp",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/jeremia-siahaan.html",
+      avatarPath:
+        "../assets/img/portofolio/jeremia-siahaan/jeremia-siahaan-avatar.webp",
       resumePath: "../assets/pdf/resume/jeremia-siahaan.pdf",
     },
     // Rahma Kamila
     {
       namaIntern: "Rahma Kamila",
       posisi: "Designer Specialist",
-      tags: ["Excellent Talent", "Completed Intern", "Extended Intern", "CEO Verified"],
+      tags: [
+        "Excellent Talent",
+        "Completed Intern",
+        "Extended Intern",
+        "CEO Verified",
+      ],
       AboutIntern:
         "A versatile and innovative designer with a strong eye for detail and a passion for creating impactful visual materials. I specialize in developing cohesive design systems that ensure brand consistency across platforms. With expertise in social media strategy and content creation, I excel at turning creative concepts into high-performing designs that drive engagement and growth. My approach combines aesthetic precision with strategic thinking, enabling me to craft visuals that not only stand out but also effectively communicate a brand's unique identity.",
       socialMedia: [
@@ -220,8 +563,10 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       ],
       rating: 3.5,
       whatsappNumber: "+6288228771388",
-      profilePage: "https://www.dialogika.co/intern/resume/sabrina-yolanda.html",
-      avatarPath: "../assets/img/portofolio/sabrina-yolanda/sabrina-yolanda-putri.webp",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/sabrina-yolanda.html",
+      avatarPath:
+        "../assets/img/portofolio/sabrina-yolanda/sabrina-yolanda-putri.webp",
       resumePath: "../assets/pdf/resume/sabrina-yolanda-putri.pdf",
     },
     // Lisda Nur Halisa
@@ -241,7 +586,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       ],
       rating: 4.5,
       whatsappNumber: "+6289504338354",
-      profilePage: "https://www.dialogika.co/intern/resume/lisda-nur-halisa.html",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/lisda-nur-halisa.html",
       avatarPath: "../assets/img/portofolio/lisda-nur-halisa/avatar.webp",
       resumePath: "../assets/pdf/resume/Lisda-Nur-Halisa.pdf",
     },
@@ -254,13 +600,16 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       socialMedia: [
         { instagram: "https://www.instagram.com/darma._.x/" },
         {
-          linkedIn: "https://www.linkedin.com/in/darma-putra-kusuma-wijaya-11a98b247/",
+          linkedIn:
+            "https://www.linkedin.com/in/darma-putra-kusuma-wijaya-11a98b247/",
         },
       ],
       rating: 3.5,
       whatsappNumber: "+6285263512084",
-      profilePage: "https://www.dialogika.co/intern/resume/darma-putra-kusuma-wijaya.html",
-      avatarPath: "../assets/img/portofolio/darma-putra-kusuma-wijaya/darma-avatar.webp",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/darma-putra-kusuma-wijaya.html",
+      avatarPath:
+        "../assets/img/portofolio/darma-putra-kusuma-wijaya/darma-avatar.webp",
       resumePath: "../assets/pdf/resume/darma-putra-kusuma-wijaya.pdf",
     },
     // Annisa Parahita Rahmandya
@@ -272,13 +621,17 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
         "Saya merupakan seseorang yang rajin, bertanggung jawab, mampu bekerja dalam tim dengan baik, dan mampu beradaptasi dengan baik pada lingkungan baru.",
       socialMedia: [
         { instagram: "https://www.instagram.com/annisaparahita/" },
-        { linkedIn: "https://www.linkedin.com/in/annisa-parahita-rahmandya-025752218/" },
+        {
+          linkedIn:
+            "https://www.linkedin.com/in/annisa-parahita-rahmandya-025752218/",
+        },
         { tiktok: "https://www.tiktok.com/@buzzlightyir" },
       ],
       rating: 4.5,
       whatsappNumber: "+6281908126664",
       profilePage: "annisa-parahita-rahmandya.html",
-      avatarPath: "../assets/img/portofolio/annisa-parahita-rahmandya/annisa.webp",
+      avatarPath:
+        "../assets/img/portofolio/annisa-parahita-rahmandya/annisa.webp",
       resumePath: "../assets/pdf/resume/annisa-parahita-rahmandya.pdf",
     },
     // Muh. Awaluddin
@@ -307,7 +660,10 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
         "Bachelor of Philosophy from Gadjah Mada University with a GPA of 3.88 (cum laude). Possesses strong leadership, analytical thinking, and managerial skills. Held key roles, including Leader of the Pekan Kreativitas Mahasiswa, Secretary General of Keluarga Muslim Filsafat, and Coordinator of the Socio-Cultural Cluster in the Kuliah Kerja Nyata program at Gadjah Mada University. Deeply passionate about education, technology, research, and philosophy, as reflected in a thesis titled 'Symbolic Meaning of Physical Computation Theory in the Perspective of Analytical Philosophy of Gottlob Frege' and the development of the Do-You mobile app. Currently exploring new career opportunities, including experience as an Intern Client Manager at Dialogika.",
       socialMedia: [
         { instagram: "https://instagram.com/riza.id29" },
-        { linkedIn: "https://www.linkedin.com/in/syahriza-indra-utomo-395269296/" },
+        {
+          linkedIn:
+            "https://www.linkedin.com/in/syahriza-indra-utomo-395269296/",
+        },
       ],
       rating: 4.5,
       whatsappNumber: "+6289653793594",
@@ -349,7 +705,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       rating: 3,
       whatsappNumber: "+6281221712390",
       profilePage: "sesilia-octamivia-kayla-nugraha.html",
-      avatarPath: "../assets/img/portofolio/sesilia-octamivia-kayla-nugraha/sesilia-avatar.webp",
+      avatarPath:
+        "../assets/img/portofolio/sesilia-octamivia-kayla-nugraha/sesilia-avatar.webp",
       resumePath: "../assets/pdf/resume/sesilia-octamivia-kayla-nugraha.pdf",
     },
     // Ismi Wulandari
@@ -422,7 +779,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       rating: 3,
       whatsappNumber: "+6282163134338",
       profilePage: "dian-lies-seviona-dabukke.html",
-      avatarPath: "../assets/img/portofolio/dian-lies-seviona-dabukke/dian.webp",
+      avatarPath:
+        "../assets/img/portofolio/dian-lies-seviona-dabukke/dian.webp",
       resumePath: "../assets/pdf/resume/dian-lies-seviona-dabukke.pdf",
     },
     // Naela Rosya Nurilita
@@ -458,7 +816,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       rating: 4.5,
       whatsappNumber: "+6282265015104",
       profilePage: "ariq-nabil-widigdo.html",
-      avatarPath: "../assets/img/portofolio/ariq-nabil-widigdo/ariq-avatar-2.webp",
+      avatarPath:
+        "../assets/img/portofolio/ariq-nabil-widigdo/ariq-avatar-2.webp",
       resumePath: "../assets/pdf/resume/ariq-nabil-widigdo.pdf",
     },
     // Mahdalena Shinta Nugroho
@@ -470,7 +829,10 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
         "A second semester student of Applied English for Public Relations with an interest in the creative field, especially graphic design. Passionate about developing creativity in design for social media posts.",
       socialMedia: [
         { instagram: "http://instagram.com/eliammn_" },
-        { linkedIn: "https://www.linkedin.com/in/mahdalena-shinta-nugroho-403a112a5/" },
+        {
+          linkedIn:
+            "https://www.linkedin.com/in/mahdalena-shinta-nugroho-403a112a5/",
+        },
       ],
       rating: 3,
       whatsappNumber: "+628989205608",
@@ -493,7 +855,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       whatsappNumber: "+6282136956994",
       profilePage: "artika-dian-kumarajati.html",
       avatarPath: "../assets/img/portofolio/Artika/Artika.webp",
-      resumePath: "../assets/pdf/resume/artika-dian-kumarajati-artika-dian-k.pdf",
+      resumePath:
+        "../assets/pdf/resume/artika-dian-kumarajati-artika-dian-k.pdf",
     },
 
     // M. Faris Nauval.R
@@ -542,7 +905,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       namaIntern: "Septi Allya Rizki",
       posisi: "Designer Specialist",
       tags: ["Completed Intern"],
-      AboutIntern: "A person who is eager for knowledge, curious about everything, and willing to learn.",
+      AboutIntern:
+        "A person who is eager for knowledge, curious about everything, and willing to learn.",
       socialMedia: [
         { facebook: "https://www.facebook.com/share/uPJZC8rDywq3TL5a" },
         { youtube: "https://youtube.com/@septirizki" },
@@ -569,8 +933,10 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       ],
       rating: 3.5,
       whatsappNumber: "+6289673862662",
-      profilePage: "https://www.dialogika.co/intern/resume/Tasya-Carolina-Simanjuntak.html",
-      avatarPath: "../assets/img/portofolio/Tasya/Tasya-Carolina-Simanjuntak.webp",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/Tasya-Carolina-Simanjuntak.html",
+      avatarPath:
+        "../assets/img/portofolio/Tasya/Tasya-Carolina-Simanjuntak.webp",
       resumePath: "../assets/pdf/resume/tasya-carolina-simanjuntak.pdf",
     },
 
@@ -588,7 +954,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       ],
       rating: 3.5,
       whatsappNumber: "+6285876062095",
-      profilePage: "https://www.dialogika.co/intern/resume/rana-fairus-hanifah.html",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/rana-fairus-hanifah.html",
       avatarPath: "../assets/img/portofolio/rana-fairus-hanifah/Rana.webp",
       resumePath: "../assets/pdf/resume/rana-fairus-hanifah.pdf",
     },
@@ -608,7 +975,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       rating: 3.5,
       whatsappNumber: "+6282313100881",
       profilePage: "mei_Taufik.html",
-      avatarPath: "../assets/img/portofolio/mei-taufik-hidayat/IMG_1002-Mei-Taufik-Hidayat.webp",
+      avatarPath:
+        "../assets/img/portofolio/mei-taufik-hidayat/IMG_1002-Mei-Taufik-Hidayat.webp",
       resumePath: "../assets/pdf/resume/mei-taufik-hidayat.pdf",
     },
     // Sidiq Imam Maulana
@@ -624,7 +992,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       ],
       rating: 3.5,
       whatsappNumber: "+6289644560239",
-      profilePage: "https://www.dialogika.co/intern/resume/Sidiq-Imam-Maulana.html",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/Sidiq-Imam-Maulana.html",
       avatarPath: "../assets/img/portofolio/sidiq-imam-maulana/avatar.webp",
       resumePath: null,
     },
@@ -638,11 +1007,15 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
         "Suka mencoba hal baru, bertemu dan berinteraksi dengan orang baru, cepat beradaptasi dan komunikatif adalah hal - hal yang cukup mendeskripsikan diri saya.",
       socialMedia: [
         { instagram: "https://www.instagram.com/restian.res" },
-        { linkedIn: "https://www.linkedin.com/in/resti-aisyah-qotrunada-134342221" },
+        {
+          linkedIn:
+            "https://www.linkedin.com/in/resti-aisyah-qotrunada-134342221",
+        },
       ],
       rating: 3,
       whatsappNumber: "+6283123611054",
-      profilePage: "https://www.dialogika.co/intern/resume/Resti-Aisyah-Qotrunada.html",
+      profilePage:
+        "https://www.dialogika.co/intern/resume/Resti-Aisyah-Qotrunada.html",
       avatarPath: "../assets/img/portofolio/resti-aisyah-qotrunada/avatar.webp",
       resumePath: "../assets/pdf/resume/resti-aisyah-qotrunnada.pdf",
     },
@@ -673,7 +1046,9 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       tags: ["Completed Intern", "Extended Intern", "Excellent Talent"],
       AboutIntern:
         "Mahasiswa Manajemen Universitas Islam Indonesia dengan ketertarikan di bidang pemasaran dan operasi. Bercita-cita menjadi pengusaha sukses yang mampu mensejahterakan karyawan. Memiliki kemampuan belajar baik, semangat kerja tinggi, komunikasi efektif, dan manajemen proyek.",
-      socialMedia: [{ linkedIn: "https://www.linkedin.com/in/alfa-yudishtira-524435298" }],
+      socialMedia: [
+        { linkedIn: "https://www.linkedin.com/in/alfa-yudishtira-524435298" },
+      ],
       rating: 4,
       whatsappNumber: "+6285273350062",
       profilePage: "alfa-yudishtira.html",
@@ -694,7 +1069,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       rating: 3,
       whatsappNumber: "+6285176860612",
       profilePage: "muhammad-ariq-dzulfikar.html",
-      avatarPath: "../assets/img/portofolio/muhammad-ariq-dzulfikar/avatar.webp",
+      avatarPath:
+        "../assets/img/portofolio/muhammad-ariq-dzulfikar/avatar.webp",
       resumePath: undefined,
     },
 
@@ -740,7 +1116,10 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       AboutIntern: "............",
       socialMedia: [
         { instagram: "https://www.instagram.com/jieemv" },
-        { linkedIn: "https://www.linkedin.com/in/rosievi-hijrih-juniar-132976253" },
+        {
+          linkedIn:
+            "https://www.linkedin.com/in/rosievi-hijrih-juniar-132976253",
+        },
       ],
       rating: 3,
       whatsappNumber: "+6282192074307",
@@ -762,7 +1141,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       rating: 3.5,
       whatsappNumber: "+6282326610533",
       profilePage: "agatha-betasabrina-sampebua.html",
-      avatarPath: "../assets/img/portofolio/agatha-betasabrina-sampebua/avatar.webp",
+      avatarPath:
+        "../assets/img/portofolio/agatha-betasabrina-sampebua/avatar.webp",
       resumePath: undefined,
     },
     // Elizabet Noviliani Arruanlinggi
@@ -778,7 +1158,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       rating: 3,
       whatsappNumber: "+6283103068614",
       profilePage: "elizabet-noviliani-arruanlinggi.html",
-      avatarPath: "../assets/img/portofolio/elizabet-noviliani-arruanlinggi/avatar.webp",
+      avatarPath:
+        "../assets/img/portofolio/elizabet-noviliani-arruanlinggi/avatar.webp",
       resumePath: undefined,
     },
 
@@ -789,7 +1170,10 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       tags: ["Completed Intern", "Excellent Talent"],
       AboutIntern:
         "Bachelor of Psychology with experience of almost 2 years as a Human Resource Recruiter, Organizational Development, Employee Relations, Culture, Employer Branding.",
-      socialMedia: [{ instagram: "http://instagram.com/aryadh_" }, { linkedIn: "http://linkedin.com/in/aryadh" }],
+      socialMedia: [
+        { instagram: "http://instagram.com/aryadh_" },
+        { linkedIn: "http://linkedin.com/in/aryadh" },
+      ],
       rating: 3.5,
       whatsappNumber: "+6281386009315",
       profilePage: "arya-difa.html",
@@ -880,8 +1264,10 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
     const nama = searchInput.value.toLowerCase();
 
     const filteredDataIntern = dataIntern.filter((item) => {
-      const filteredPosisi = posisi === "all" || item.posisi.toLowerCase() === posisi;
-      const filteredNama = nama === "" || item.namaIntern.toLowerCase().includes(nama);
+      const filteredPosisi =
+        posisi === "all" || item.posisi.toLowerCase() === posisi;
+      const filteredNama =
+        nama === "" || item.namaIntern.toLowerCase().includes(nama);
 
       return filteredNama && filteredPosisi;
     });
@@ -892,7 +1278,12 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
         .map((internData) => {
           // Membuat TAGS "Completed Intern", "Excellent Intern", dll
           const tagsHTML = internData.tags
-            .map((tag) => `<span class="badge rounded-pill ${getTagClass(tag)}">${tag}</span>`)
+            .map(
+              (tag) =>
+                `<span class="badge rounded-pill ${getTagClass(
+                  tag
+                )}">${tag}</span>`
+            )
             .join(" ");
 
           const socialLinksHTML = internData.socialMedia
@@ -910,10 +1301,16 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
             <div class="card-header">
               <div class="card-cover" style="
         background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');"></div>
-              <img class="card-avatar" src="${internData.avatarPath}" alt="avatar" />
+              <img class="card-avatar" src="${
+                internData.avatarPath
+              }" alt="avatar" />
               <h1 class="card-fullname">
                 ${internData.namaIntern}
-                ${internData.tags.includes("CEO Verified") ? '<i class="bi bi-patch-check-fill text-primary"></i>' : ""}
+                ${
+                  internData.tags.includes("CEO Verified")
+                    ? '<i class="bi bi-patch-check-fill text-primary"></i>'
+                    : ""
+                }
               </h1>
               <h2 class="card-jobtitle">${internData.posisi}</h2>
               <div class="top-left">${starsHTML}</div>
@@ -939,7 +1336,9 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
           .trim()}
         <span class="dots">...</span>
         <span class="moreText" style="display: none;">
-          ${internData.AboutIntern.slice(internData.AboutIntern.slice(0, 150).replace(/\s+\S*$/, "").length).trim()} 
+          ${internData.AboutIntern.slice(
+            internData.AboutIntern.slice(0, 150).replace(/\s+\S*$/, "").length
+          ).trim()} 
         </span>
         <span class="readMore"> Read More &raquo;</span>
         <span class="readLess" style="display: none;"> &laquo; Read Less</span>
@@ -955,7 +1354,10 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
                 }'">
                   <i class="bi bi-person-circle"></i> About Me
                 </button>
-                <button onclick="location.href='https://wa.me/${internData.whatsappNumber.replace(/\D/g, "")}';">
+                <button onclick="location.href='https://wa.me/${internData.whatsappNumber.replace(
+                  /\D/g,
+                  ""
+                )}';">
                   <i class="bi bi-whatsapp"></i> Whatsapp Me
                 </button>
                 <button onclick="location.href='mailto:admin@dialogika.co';">
