@@ -111,7 +111,10 @@ document.addEventListener("DOMContentLoaded", () => {
       posisi: "Admin Kelas",
       tags: ["Incomplete Intern"],
       AboutIntern: "............",
-      socialMedia: [{ linkedIn: "https://www.linkedin.com/in/aariiyy/" }],
+      socialMedia: [
+        { instagram: "https://www.instagram.com/arianii.e" },
+        { linkedIn: "https://www.linkedin.com/in/aariiyy/" },
+      ],
       rating: 2,
       whatsappNumber: "+62895344393231",
       profilePage: null,
@@ -125,6 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
       AboutIntern:
         "Mahasiswa D4 Administrasi Negara Universitas Negeri Surabaya yang memiliki minat di bidang administrasi dan kepegawaian. Selama berkuliah aktif dalam organisasi dan berkontribusi dalam penelitian dengan dosen sehingga ikut serta mempublikasikan artikel.",
       socialMedia: [
+        { instagram: "https://www.instagram.com/audifaradilla" },
         {
           linkedIn:
             "https://www.linkedin.com/in/audi-faradilla-rachman-6b4775217/",
@@ -142,9 +146,8 @@ document.addEventListener("DOMContentLoaded", () => {
       tags: ["Incomplete Intern"],
       AboutIntern: "............",
       socialMedia: [
-        {
-          linkedIn: "https://www.linkedin.com/in/hanifahmutiara/",
-        },
+        { instagram: "https://www.instagram.com/olirsders" },
+        { linkedIn: "https://www.linkedin.com/in/hanifahmutiara/" },
       ],
       rating: 2,
       whatsappNumber: "+6285191259268",
@@ -158,9 +161,8 @@ document.addEventListener("DOMContentLoaded", () => {
       tags: ["Incomplete Intern"],
       AboutIntern: "............",
       socialMedia: [
-        {
-          linkedIn: "https://www.linkedin.com/in/imroatun-nurul-a9946b306/",
-        },
+        { instagram: "https://www.instagram.com/imroatunnurul9" },
+        { linkedIn: "https://www.linkedin.com/in/imroatun-nurul-a9946b306/" },
       ],
       rating: 2,
       whatsappNumber: "+6282131851856",
@@ -174,9 +176,8 @@ document.addEventListener("DOMContentLoaded", () => {
       tags: ["Incomplete Intern"],
       AboutIntern: "............",
       socialMedia: [
-        {
-          linkedIn: "https://www.linkedin.com/in/melta-meliano-putri/",
-        },
+        { instagram: "https://www.instagram.com/meltaamp" },
+        { linkedIn: "https://www.linkedin.com/in/melta-meliano-putri/" },
       ],
       rating: 2,
       whatsappNumber: "+628953800439",
@@ -190,9 +191,8 @@ document.addEventListener("DOMContentLoaded", () => {
       tags: ["Incomplete Intern"],
       AboutIntern: "............",
       socialMedia: [
-        {
-          linkedIn: "https://www.linkedin.com/in/dindaartya/",
-        },
+        { instagram: "https://www.instagram.com/dindaartya_" },
+        { linkedIn: "https://www.linkedin.com/in/dindaartya/" },
       ],
       rating: 2,
       whatsappNumber: "+6287838190516",
@@ -204,11 +204,11 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Firly Faturachmi Yatnikaputri",
       posisi: "Telemarketing",
       tags: ["Incomplete Intern"],
-      AboutIntern: "I’m bachelor management graduate from Universitas Islam Indonesia. I have hands-on experience in sales promotion and sales pricing at Telkom Indonesia. Skilled in SAP ERP, teamwork, marketing, and data analysis. These areas of interest and expertise are supported by certifications in Data Analytics and SAP Overview.",
+      AboutIntern:
+        "I’m bachelor management graduate from Universitas Islam Indonesia. I have hands-on experience in sales promotion and sales pricing at Telkom Indonesia. Skilled in SAP ERP, teamwork, marketing, and data analysis. These areas of interest and expertise are supported by certifications in Data Analytics and SAP Overview.",
       socialMedia: [
-        {
-          linkedIn: "https://www.linkedin.com/in/firly-faturachmi-8646401b7/",
-        },
+        { instagram: "https://www.instagram.com/firlyfputri" },
+        { linkedIn: "https://www.linkedin.com/in/firly-faturachmi-8646401b7/" },
       ],
       rating: 2,
       whatsappNumber: "+6285797853194",
@@ -222,9 +222,8 @@ document.addEventListener("DOMContentLoaded", () => {
       tags: ["Incomplete Intern"],
       AboutIntern: "............",
       socialMedia: [
-        {
-          linkedIn: "http://linkedin.com/in/PaulinaBerlianaAnanto/",
-        },
+        { instagram: "https://www.instagram.com/paulinaberlianaa" },
+        { linkedIn: "https://www.linkedin.com/in/PaulinaBerlianaAnanto/" },
       ],
       rating: 2,
       whatsappNumber: "+6285797853194",
@@ -236,27 +235,30 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Estetika Nusantara Yutardo",
       posisi: "HTML Writer",
       tags: ["Incomplete Intern"],
-      AboutIntern: "Estetika is a highly motivated and hardworking undergraduate Information System student, with a passion for data science and creative design, especially in website design and development. She is currently an event organizer staff member at the Google Developer Student Club where she pursues her creative thinking skills and public speaking.",
+      AboutIntern:
+        "Estetika is a highly motivated and hardworking undergraduate Information System student, with a passion for data science and creative design, especially in website design and development. She is currently an event organizer staff member at the Google Developer Student Club where she pursues her creative thinking skills and public speaking.",
       socialMedia: [
+        { instagram: "https://www.instagram.com/estetikaaa.19" },
         {
-          linkedIn: "https://www.linkedin.com/in/estetika-nusantara-yutardo-667223247/",
+          linkedIn:
+            "https://www.linkedin.com/in/estetika-nusantara-yutardo-667223247/",
         },
       ],
       rating: 2,
       whatsappNumber: "+6282329310878",
       profilePage: null,
-      avatarPath: "../assets/img/portofolio/paulina-berliana/avatar.webp",
+      avatarPath: "../assets/img/portofolio/estetika-nusantara/avatar.webp",
       resumePath: null,
     },
     {
       namaIntern: "Evina Delavani",
       posisi: "People Development",
       tags: ["Incomplete Intern"],
-      AboutIntern: "A Certified Human Capital Officer (CHCO) with a Bachelor's degree in Human Resources Management from Universitas Islam Indonesia and a passion for fostering organizational growth through strategic talent acquisition and employee development. Recently contributed to diverse recruitment and people development initiatives, sourcing top talent and designing impactful training programs.",
+      AboutIntern:
+        "A Certified Human Capital Officer (CHCO) with a Bachelor's degree in Human Resources Management from Universitas Islam Indonesia and a passion for fostering organizational growth through strategic talent acquisition and employee development. Recently contributed to diverse recruitment and people development initiatives, sourcing top talent and designing impactful training programs.",
       socialMedia: [
-        {
-          linkedIn: "https://www.linkedin.com/in/evinadelavani/",
-        },
+        { instagram: "https://www.instagram.com/ghiyatsasyifa" },
+        { linkedIn: "https://www.linkedin.com/in/evinadelavani/" },
       ],
       rating: 2,
       whatsappNumber: "+6285162625457",
@@ -268,11 +270,11 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Ghiyatsa Syifa Kirana",
       posisi: "Admin Kelas",
       tags: ["Incomplete Intern"],
-      AboutIntern: "Undergraduate communication science student specializing in public relations, skilled in external links, strategic communications, and media relations. Proven track record in building cooperative relationships. Proficient in public affairs, conflict resolution, and decisionmaking processes. Adept at empowering communities through targeted programs.",
+      AboutIntern:
+        "Undergraduate communication science student specializing in public relations, skilled in external links, strategic communications, and media relations. Proven track record in building cooperative relationships. Proficient in public affairs, conflict resolution, and decisionmaking processes. Adept at empowering communities through targeted programs.",
       socialMedia: [
-        {
-          linkedIn: "https://www.linkedin.com/in/ghiyatsasyifa/"
-        },
+        { instagram: "https://www.instagram.com/ghiyatsasyifa" },
+        { linkedIn: "https://www.linkedin.com/in/ghiyatsasyifa/" },
       ],
       rating: 2,
       whatsappNumber: "+6282153917890",
@@ -395,10 +397,17 @@ document.addEventListener("DOMContentLoaded", () => {
           // Check if text is longer than 150 characters and create read more functionality
           const aboutText = internData.AboutIntern;
           const isLongText = aboutText.length > 150;
-          const shortText = isLongText ? aboutText.slice(0, 150).replace(/\s+\S*$/, "").trim() : aboutText;
-          const longText = isLongText ? aboutText.slice(shortText.length).trim() : "";
-          
-          const aboutMeHTML = isLongText 
+          const shortText = isLongText
+            ? aboutText
+                .slice(0, 150)
+                .replace(/\s+\S*$/, "")
+                .trim()
+            : aboutText;
+          const longText = isLongText
+            ? aboutText.slice(shortText.length).trim()
+            : "";
+
+          const aboutMeHTML = isLongText
             ? `<p class="card-desc">
                 ${shortText}
                 <span class="dots">...</span>
@@ -482,26 +491,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Add read more/read less functionality
   const addReadMoreListeners = () => {
-    const readMoreElements = document.querySelectorAll('.readMore');
-    const readLessElements = document.querySelectorAll('.readLess');
-    const moreTextElements = document.querySelectorAll('.moreText');
-    const dotsElements = document.querySelectorAll('.dots');
+    const readMoreElements = document.querySelectorAll(".readMore");
+    const readLessElements = document.querySelectorAll(".readLess");
+    const moreTextElements = document.querySelectorAll(".moreText");
+    const dotsElements = document.querySelectorAll(".dots");
 
     readMoreElements.forEach((element, index) => {
-      element.addEventListener('click', function() {
-        moreTextElements[index].style.display = 'inline';
-        readLessElements[index].style.display = 'inline';
-        readMoreElements[index].style.display = 'none';
-        dotsElements[index].style.display = 'none';
+      element.addEventListener("click", function () {
+        moreTextElements[index].style.display = "inline";
+        readLessElements[index].style.display = "inline";
+        readMoreElements[index].style.display = "none";
+        dotsElements[index].style.display = "none";
       });
     });
 
     readLessElements.forEach((element, index) => {
-      element.addEventListener('click', function() {
-        moreTextElements[index].style.display = 'none';
-        readLessElements[index].style.display = 'none';
-        readMoreElements[index].style.display = 'inline';
-        dotsElements[index].style.display = 'inline';
+      element.addEventListener("click", function () {
+        moreTextElements[index].style.display = "none";
+        readLessElements[index].style.display = "none";
+        readMoreElements[index].style.display = "inline";
+        dotsElements[index].style.display = "inline";
       });
     });
   };
