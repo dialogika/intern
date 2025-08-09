@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       rating: 2,
       whatsappNumber: "+6282143700131",
       profilePage: null,
-      avatarPath: "",
+      avatarPath: "../assets/img/portofolio/anis-hasnawati/avatar.webp",
       resumePath: null,
     },
     {
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
       rating: 2,
       whatsappNumber: "+6281325012868",
       profilePage: null,
-      avatarPath: "",
+      avatarPath: "../assets/img/portofolio/adelia-wahyu-suryandari/adel.webp",
       resumePath: null,
     },
     {
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
       rating: 2,
       whatsappNumber: "+6285954365493",
       profilePage: null,
-      avatarPath: "",
+      avatarPath: "../assets/img/portofolio/mayla-anita-fariska/avatar.webp",
       resumePath: null,
     },
     {
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
       rating: 2,
       whatsappNumber: "+6285702708164",
       profilePage: null,
-      avatarPath: "",
+      avatarPath: "../assets/img/portofolio/al-virizky-arjunitha/avatar.webp",
       resumePath: null,
     },
     {
