@@ -4,6 +4,205 @@
 document.addEventListener("DOMContentLoaded", () => {
   const dataIncompleteIntern = [
     {
+      namaIntern: "Muhammad Nashih Al Wafi",
+      posisi: "HTML Writer",
+      tags: ["Incomplete Intern"],
+      AboutIntern: "............",
+      socialMedia: [
+        {
+          instagram: "https://www.instagram.com/nidanone",
+        },
+        {
+          linkedIn: "https://www.linkedin.com/in/mnalwafi/",
+        },
+      ],
+      rating: 2,
+      whatsappNumber: "+6288229793327",
+      profilePage: null,
+      avatarPath: "../assets/img/portofolio/muhammad-nashih-alwafi/avatar.png",
+      resumePath: null,
+    },
+    {
+      namaIntern: "Winema Aleshanee Rasti Azzayna",
+      posisi: "AI Content/Copy Writer",
+      tags: ["Incomplete Intern"],
+      AboutIntern: "............",
+      socialMedia: [
+        {
+          instagram: "https://www.instagram.com/aleshaneera",
+        },
+        {
+          linkedIn: "https://www.linkedin.com/in/winemaaleshaneera/",
+        },
+      ],
+      rating: 2,
+      whatsappNumber: "+62895353021037",
+      profilePage: null,
+      avatarPath:
+        "../assets/img/portofolio/winema-aleshanee-rasti-azzayna/avatar.png",
+      resumePath: null,
+    },
+    {
+      namaIntern: "Ridho Alfattah",
+      posisi: "Video Editor",
+      tags: ["Incomplete Intern"],
+      AboutIntern: "............",
+      socialMedia: [
+        {
+          instagram: "http://ant.idoyyy/",
+        },
+        {
+          linkedIn: "https://www.linkedin.com/404/",
+        },
+      ],
+      rating: 2,
+      whatsappNumber: "+6285752535606",
+      profilePage: null,
+      avatarPath: "",
+      resumePath: null,
+    },
+    {
+      namaIntern: "Sharoomita Prameshvari",
+      posisi: "Content Creator",
+      tags: ["Incomplete Intern"],
+      AboutIntern: "............",
+      socialMedia: [],
+      rating: 2,
+      whatsappNumber: "+6289638886512",
+      profilePage: null,
+      avatarPath: "",
+      resumePath: null,
+    },
+    {
+      namaIntern: "Dyota Medhataqiya Zaizafuni",
+      posisi: "AI Content/Copy Writer",
+      tags: ["Incomplete Intern"],
+      AboutIntern: "............",
+      socialMedia: [
+        {
+          instagram: "https://www.instagram.com/_dyota.mz",
+        },
+        {
+          linkedIn: "https://www.linkedin.com/in/dyotamedhataqiya/",
+        },
+      ],
+      rating: 2,
+      whatsappNumber: "+6281234263309",
+      profilePage: null,
+      avatarPath:
+        "../assets/img/portofolio/dyota-medhataqiya-zaizafuni/avatar.png",
+      resumePath: null,
+    },
+    {
+      namaIntern: "Indah Nariyatur Rachmah",
+      posisi: "Sosial Media Analyst",
+      tags: ["Incomplete Intern"],
+      AboutIntern: "............",
+      socialMedia: [
+        {
+          instagram:
+            "https://www.instagram.com/indnysnr_?igsh=czR4NTMyc3pkaHV0&utm_source=qr",
+        },
+        {
+          linkedIn: "https://www.linkedin.com/in/indnysnr/",
+        },
+      ],
+      rating: 2,
+      whatsappNumber: "+6285780628349",
+      profilePage: null,
+      avatarPath: "../assets/img/portofolio/indah-nariyatur-rachmah/avatar.png",
+      resumePath: null,
+    },
+    {
+      namaIntern: "Waila Sofia",
+      posisi: "Admin Kelas",
+      tags: ["Incomplete Intern"],
+      AboutIntern: "............",
+      socialMedia: [
+        {
+          instagram:
+            "https://www.instagram.com/waill_sf/profilecard/?igsh=a2d0ODNxcXQxZGFs",
+        },
+        {
+          linkedIn:
+            "https://www.linkedin.com/in/waila-sofia-03a859268/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+      ],
+      rating: 2,
+      whatsappNumber: "+6282331561202",
+      profilePage: null,
+      avatarPath: "../assets/img/portofolio/waila-sofia/avatar.png",
+      resumePath: null,
+    },
+    {
+      namaIntern: "Ricky Christian",
+      posisi: "Recruiter Specialist",
+      tags: ["Incomplete Intern"],
+      AboutIntern: "............",
+      socialMedia: [
+        { instagram: "https://www.instagram.com/rckychrstian" },
+        {
+          linkedIn: "https://www.linkedin.com/in/rckychrstian/",
+        },
+      ],
+      rating: 2,
+      whatsappNumber: "+628987763620",
+      profilePage: null,
+      avatarPath: "../assets/img/portofolio/ricky-christian/avatar.png",
+      resumePath: null,
+    },
+    {
+      namaIntern: "Ni Nyoman Della Lies Indistra",
+      posisi: "Recruiter Specialist",
+      tags: ["Incomplete Intern"],
+      AboutIntern: "............",
+      socialMedia: [
+        { instagram: "https://www.instagram.com/nyomanindistra" },
+        {
+          linkedIn: "https://www.linkedin.com/in/nyomanindistra/",
+        },
+      ],
+      rating: 2,
+      whatsappNumber: "+6282326318117",
+      profilePage: null,
+      avatarPath:
+        "../assets/img/portofolio/ni-nyoman-della-lies-indistra/avatar.png",
+      resumePath: null,
+    },
+    {
+      namaIntern: "Widya Pramowardani",
+      posisi: "Sosial Media Analyst",
+      tags: ["Incomplete Intern"],
+      AboutIntern: "............",
+      socialMedia: [
+        { instagram: "https://www.instagram.com/widya_prw" },
+        {
+          linkedIn:
+            "https://www.linkedin.com/in/widya-pramowardani/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+      ],
+      rating: 2,
+      whatsappNumber: "+6281293407103",
+      profilePage: null,
+      avatarPath: "../assets/img/portofolio/widya-pramowardani/avatar.png",
+      resumePath: null,
+    },
+    {
+      namaIntern: "Imelda Stevani",
+      posisi: "Recruiter Specialist",
+      tags: ["Incomplete Intern"],
+      AboutIntern: "............",
+      socialMedia: [
+        { instagram: "https://www.instagram.com/imeldastevani_" },
+        { linkedIn: "https://www.linkedin.com/in/imeldastevani/" },
+      ],
+      rating: 2,
+      whatsappNumber: "+62895402942200",
+      profilePage: null,
+      avatarPath: "../assets/img/portofolio/imelda-stevani/avatar.png",
+      resumePath: null,
+    },
+    {
       namaIntern: "Aivi Apriliani Alvionita",
       posisi: "Recruiter Specialist",
       tags: ["Incomplete Intern"],
