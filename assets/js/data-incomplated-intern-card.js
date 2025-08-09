@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
       rating: 2,
       whatsappNumber: "+6285752535606",
       profilePage: null,
-      avatarPath: "",
+      avatarPath: "../assets/img/portofolio/no-picture/avatar.webp",
       resumePath: null,
     },
     {
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       rating: 2,
       whatsappNumber: "+6289638886512",
       profilePage: null,
-      avatarPath: "",
+      avatarPath: "../assets/img/portofolio/no-picture/avatar.webp",
       resumePath: null,
     },
     {
