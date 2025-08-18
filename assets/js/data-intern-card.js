@@ -1061,7 +1061,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       namaIntern: "Muhammad Ariq Dzulfikar",
       posisi: "Recruiter Specialist",
       tags: ["Completed Intern"],
-      AboutIntern: "............",
+      AboutIntern:
+        "Passionate about building efficient, people-centered HR systems and continuously expanding my skills in areas like talent management, organizational development, and strategic recruitment.",
       socialMedia: [
         { instagram: "https://instagram.com/ariqdz_" },
         { linkedIn: "https://www.linkedin.com/in/ariqdzulfikar" },
