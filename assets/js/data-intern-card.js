@@ -1181,6 +1181,43 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       avatarPath: "../assets/img/portofolio/arya-difa/1.webp",
       resumePath: undefined,
     },
+
+    // Yudhoyono Novianto
+    {
+      namaIntern: "Yudhoyono Novianto ",
+      posisi: "Recruiter Specialist",
+      tags: ["Completed Intern", "Excellent Talent"],
+      AboutIntern:
+        "Undergraduate management student with a strong interest in Human Resources and Organizational Development. Experienced in end-to-end recruitment, employer branding, talent management, and organizational culture. Proven leadership through national-level roles and impactful project execution. Seeking to contribute to HR excellence in a dynamic organization.",
+      socialMedia: [
+        { instagram: "https://www.instagram.com/noviannn__/" },
+        { linkedIn: "https://www.linkedin.com/in/yudhoyononovianto/" },
+      ],
+      rating: 3.5,
+      whatsappNumber: "+62895363361484",
+      profilePage: "yudhoyono-novianto.html",
+      avatarPath: "../assets/img/portofolio/yudhoyono-novianto/avatar.webp",
+      resumePath: "../assets/pdf/resume/yudhoyono-novianto.pdf",
+    },
+    // Haqqirais Rahmanulya Suryaman
+    {
+      namaIntern: "Haqqirais Rahmanulya Suryaman",
+      posisi: "People Development",
+      tags: ["Completed Intern", "Excellent Talent"],
+      AboutIntern: "",
+      socialMedia: [
+        { instagram: "https://www.instagram.com/haqqirs/" },
+        {
+          linkedIn:
+            "https://www.linkedin.com/in/haqqirais-rahmanulya-suryaman-3129a7226/",
+        },
+      ],
+      rating: 3.5,
+      whatsappNumber: "+62895363361484",
+      profilePage: "haqqirais.html",
+      avatarPath: "../assets/img/portofolio/haqqirais/avatar.webp",
+      resumePath: "../assets/pdf/resume/haqqirais-rahmanulya-suryaman.pdf",
+    },
   ];
 
   // Helper to determine badge colors
