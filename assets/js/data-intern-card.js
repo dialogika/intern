@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const dataIntern = [
     {
-      namaIntern: "Zahra",
+      namaIntern: "Hafizah Az-Zahra",
       posisi: "Telemarketing",
       tags: ["Completed Intern"], // atau tag lain sesuai status
       AboutIntern: "Deskripsi singkat tentang intern",
