@@ -186,7 +186,8 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Ariful Fathoni",
       posisi: "AI Content/Copy Writer",
       tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern: "Deskripsi singkat tentang intern",
+      AboutIntern:
+        "   Nama saya Ari dan mimpi saya adalah untuk memberi sumbangsih yang cemerlang pada peradaban dan masyarakat, misalnya melalui penulisan konten (content writing). Mimpi ini bukan sekedar mimpi, tapi adalah mimpi yang mewujud dalam berbagai kegiatan keorganisasian yang saya jalani, proyek-proyek sosial yang saya bangun, hingga tulisan-tulisan yang saya susun. ",
       socialMedia: [
         { instagram: "http://instagram.com/rif.fathoni" },
         { linkedIn: "http://linkedin.com/in/ariful-fathoni-823194235" },
