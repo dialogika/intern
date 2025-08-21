@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
       AboutIntern: "............",
       socialMedia: [
         { instagram: "https://instagram.com/adeliawys" },
-        { linkedIn: "https://www.linkedin.com/in/adelia-wahyu-suryandari/" },
+        { linkedIn: "https://www.linkedin.com/in/adelia-wahyu-suryandari.html" },
       ],
       rating: 2,
       whatsappNumber: "+6281325012868",
