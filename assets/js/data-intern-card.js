@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Ulfiatun Wahidah",
       posisi: "Admin Kelas",
       tags: ["Completed Intern"],
-      AboutIntern: "Deskripsi singkat tentang intern",
+      AboutIntern: "Hai perkenalkan nama saya Ulfiatun Wahidah, saya lulusan Bimbingan dan Konseling Islam di UIN Saefuddin Zuhri Purwokerto, saya memiliki minat yang sangat tinggi terkait bidang komunikasi dan juga pendidikan, saya juga memiliki kemampuan berpikir sistematis untuk pemecahan masalah, dan suka melakukan hal-hal yang baru ataupun tantangan.",
       socialMedia: [
         {
           instagram: "https://www.instagram.com/ulfiiaaaaaa",
@@ -1210,7 +1210,7 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       namaIntern: "Haqqirais Rahmanulya Suryaman",
       posisi: "People Development",
       tags: ["Completed Intern", "Excellent Talent"],
-      AboutIntern: "",
+      AboutIntern: "Mahasiswa dari Universitas Gadjah Mada jurusan Ilmu Komunikasi yang memiliki minat di bidang Data Marketing, Management, dan Internal Development. Memiliki pribadi yang gemar belajar hal baru dan adaptif di segala situasi, dengan memprioritaskan hasil kerja efektif dan progresif dengan sistem yang terukur",
       socialMedia: [
         { instagram: "https://www.instagram.com/haqqirs/" },
         {
