@@ -54,7 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Nisa Nurlatifa Rahmah",
       posisi: "Telemarketing",
       tags: ["Completed Intern"],
-      AboutIntern: "Deskripsi singkat tentang intern",
+      AboutIntern:
+        "Saya Nisa Nurlatifa Rahmah, lulusan Universitas Pendidikan Indonesia dengan minat pada administrasi, marketing dan business development. Saya memiliki pengalaman dalam pengelolaan data, komunikasi, dan marketing. Saya bersemangat untuk terus belajar, berkembang, serta memberikan kontribusi positif dalam lingkungan profesional.",
       socialMedia: [
         { instagram: "http://instagram.com/nisanurlatifa11" },
         { linkedIn: "https://www.linkedin.com/in/nisanurlatifarahmah/" },
@@ -236,7 +237,8 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Irsyadassabila ",
       posisi: "Designer Specialist",
       tags: ["Completed Intern"],
-      AboutIntern: "Deskripsi singkat tentang intern",
+      AboutIntern:
+        "Visual Communication Design student, with a focus on education, digital, and writing. Easy-adaptable and enthusiastic about exploring references and perspectives on visual design and human collaboration.",
       socialMedia: [
         { instagram: "http://instagram.com/syaunthetic" },
         { linkedIn: "https://www.linkedin.com/in/irsya-dassabila/" },
@@ -299,7 +301,7 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Anas Solihin",
       posisi: "Telemarketing",
       tags: ["Completed Intern"],
-      AboutIntern: ``,
+      AboutIntern: `Perkenalkan saya Anas Solihin dan sekarang sedang menempuh pendidikan S1 Manajemen semester akhir di Sekolah Tinggi Ilmu Manajemen YKPN Yogyakarta. Saya memiliki ketertarikan di bidang Manajemen Pemasaran dibuktikan dengan pengalaman kerja dan magang di bagian marketing. Kemudian pada tahun 2025 saya baru memperoleh sertifikasi Digital Marketing ber lisensi BNSP pada Asosiasi Digital Marketing Indonesia. Saya merupakan orang yang kreatif, inovatif dan memiliki semangat juang yang tinggi.`,
       socialMedia: [
         { instagram: "https://www.instagram.com/anasss_ez/" },
         { linkedIn: "https://www.linkedin.com/in/anas-solihin" },
@@ -1098,7 +1100,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       namaIntern: "Theo Martin Santoso",
       posisi: "Copywriter",
       tags: ["Completed Intern"],
-      AboutIntern: "............",
+      AboutIntern:
+        "Seorang copywriter yang bukan hanya menulis, tapi meramu kata menjadi pesan bermakna. Pesan yang mampu menyentuh hati audiens, membangun koneksi emosional, serta menjadikan brand tidak sekadar terdengar, melainkan benar-benar diingat, dipercaya, dan melekat kuat dalam benak mereka.",
       socialMedia: [
         { instagram: "http://instagram.com/theomartinsantoso" },
         { linkedIn: "https://www.linkedin.com/in/theomartinsantoso" },
@@ -1115,7 +1118,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       namaIntern: "Rosievi Hijrih Juniar",
       posisi: "Video Editor",
       tags: ["Completed Intern"],
-      AboutIntern: "............",
+      AboutIntern:
+        "I’m a student passionate about creativity, currently growing as a 3D artist focused on modeling and animation. With a background in motion graphics, video editing, and design, I love blending digital art to bring stories to life and always enjoy learning new tools.",
       socialMedia: [
         { instagram: "https://www.instagram.com/jieemv" },
         {
@@ -1135,7 +1139,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       namaIntern: "Agatha Betasabrina Sampebua",
       posisi: "CopyWriter",
       tags: ["Completed Intern", "Excellent Talent"],
-      AboutIntern: "............",
+      AboutIntern:
+        "Saya Agatha Betasabrina Sampebua adalah lulusan S1 Akuntansi dari Universitas Atma Jaya Yogyakarta. Berawal dari pengalaman berorganisasi saya selama berkuliah menjadikan saya tertarik dalam dunia content writing.",
       socialMedia: [
         { instagram: "https://www.instagram.com/agathabs23" },
         { linkedIn: "https://www.linkedin.com/in/agatha-sampebua" },
