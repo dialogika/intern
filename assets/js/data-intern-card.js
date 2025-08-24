@@ -3,6 +3,62 @@
 document.addEventListener("DOMContentLoaded", () => {
   const dataIntern = [
     {
+      namaIntern: "Marheni Berna Rahmawati",
+      posisi: "Recruiters Spesialist",
+      tags: ["Completed Intern"], // atau tag lain sesuai status
+      AboutIntern: "Deskripsi singkat tentang intern....",
+      socialMedia: [
+        {
+          instagram: "http://instagram.com/marheniberna",
+        },
+        {
+          linkedIn: "https://www.linkedin.com/in/marheni-berna/",
+        },
+      ],
+      rating: 3,
+      whatsappNumber: "+6281227446851",
+      profilePage: "marheni-berna-rahmawati.html",
+      avatarPath: "../assets/img/portofolio/marheni-berna-rahmawati/image.png",
+      resumePath: "-",
+    },
+    {
+      namaIntern: "Fitriani",
+      posisi: "AI Content/Copy Writer",
+      tags: ["Completed Intern", "Extended Intern"], // atau tag lain sesuai status
+      AboutIntern:
+        "Mahasiswi Ilmu Komunikasi Universitas Amikom Yogyakarta yang memiliki minat dan keahlian dalam menulis. Memiliki kemampuan untuk merangkai kata menjadi konten yang informatif dan menarik. Berbekal pengalaman sebagai script writer mengerjakan project-project besar kuliah seperti film, iklan, dokumenter dan mv, saya termotivasi tinggi untuk terus belajar hal baru dan beradaptasi dengan tren digital, khususnya dalam platform media sosial.",
+      socialMedia: [
+        {
+          instagram:
+            "https://www.instagram.com/_ipiitt/profilecard/?igsh=cWVrY2p6YzFieHMy",
+        },
+        {
+          linkedIn:
+            "https://www.linkedin.com/in/fitriani-%E2%80%8E-79b668356?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
+      ],
+      rating: 3.5,
+      whatsappNumber: "+6283120777837",
+      profilePage: "fitriani.html",
+      avatarPath: "../assets/img/portofolio/fitriani/fitriani.png",
+      resumePath: "../assets/pdf/resume/Fitriani.pdf",
+    },
+    {
+      namaIntern: "Deinar Aghazi Saragih",
+      posisi: "Video Editor",
+      tags: ["Completed Intern"], // atau tag lain sesuai status
+      AboutIntern: "Deskripsi singkat tentang intern",
+      socialMedia: [
+        { instagram: "https://www.instagram.com/deinaraghazi" },
+        { linkedIn: "https://www.linked.com/in/deinar-aghazi-saragih" },
+      ],
+      rating: 3,
+      whatsappNumber: "+6281210098006",
+      profilePage: "deinar-aghazi-saragih.html",
+      avatarPath: "../assets/img/portofolio/deinar-aghazi-saragih/image.png",
+      resumePath: "../assets/pdf/resume/Deinar-Aghazi-Saragih.pdf",
+    },
+    {
       namaIntern: "Hafizah Az-Zahra",
       posisi: "Telemarketing",
       tags: ["Completed Intern"], // atau tag lain sesuai status
@@ -37,7 +93,8 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Ulfiatun Wahidah",
       posisi: "Admin Kelas",
       tags: ["Completed Intern"],
-      AboutIntern: "Hai perkenalkan nama saya Ulfiatun Wahidah, saya lulusan Bimbingan dan Konseling Islam di UIN Saefuddin Zuhri Purwokerto, saya memiliki minat yang sangat tinggi terkait bidang komunikasi dan juga pendidikan, saya juga memiliki kemampuan berpikir sistematis untuk pemecahan masalah, dan suka melakukan hal-hal yang baru ataupun tantangan.",
+      AboutIntern:
+        "Hai perkenalkan nama saya Ulfiatun Wahidah, saya lulusan Bimbingan dan Konseling Islam di UIN Saefuddin Zuhri Purwokerto, saya memiliki minat yang sangat tinggi terkait bidang komunikasi dan juga pendidikan, saya juga memiliki kemampuan berpikir sistematis untuk pemecahan masalah, dan suka melakukan hal-hal yang baru ataupun tantangan.",
       socialMedia: [
         {
           instagram: "https://www.instagram.com/ulfiiaaaaaa",
@@ -998,7 +1055,7 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       profilePage:
         "https://www.dialogika.co/intern/resume/Sidiq-Imam-Maulana.html",
       avatarPath: "../assets/img/portofolio/sidiq-imam-maulana/avatar.webp",
-      resumePath: null,
+      resumePath: "../assets/pdf/resume/Sidiq-Imam-Maulana.pdf",
     },
 
     // Resti Aisyah Qotrunada
@@ -1056,7 +1113,7 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       whatsappNumber: "+6285273350062",
       profilePage: "alfa-yudishtira.html",
       avatarPath: "../assets/img/portofolio/alfa-yudishtira/avatar.webp",
-      resumePath: null,
+      resumePath: "../assets/pdf/resume/alfa-Yudishtira.pdf",
     },
 
     // Muhammad Ariq Dzulfikar
@@ -1210,7 +1267,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       namaIntern: "Haqqirais Rahmanulya Suryaman",
       posisi: "People Development",
       tags: ["Completed Intern", "Excellent Talent"],
-      AboutIntern: "Mahasiswa dari Universitas Gadjah Mada jurusan Ilmu Komunikasi yang memiliki minat di bidang Data Marketing, Management, dan Internal Development. Memiliki pribadi yang gemar belajar hal baru dan adaptif di segala situasi, dengan memprioritaskan hasil kerja efektif dan progresif dengan sistem yang terukur",
+      AboutIntern:
+        "Mahasiswa dari Universitas Gadjah Mada jurusan Ilmu Komunikasi yang memiliki minat di bidang Data Marketing, Management, dan Internal Development. Memiliki pribadi yang gemar belajar hal baru dan adaptif di segala situasi, dengan memprioritaskan hasil kerja efektif dan progresif dengan sistem yang terukur",
       socialMedia: [
         { instagram: "https://www.instagram.com/haqqirs/" },
         {
