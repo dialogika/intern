@@ -1249,7 +1249,7 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
     {
       namaIntern: "Yudhoyono Novianto ",
       posisi: "Recruiter Specialist",
-      tags: ["Completed Intern", "Excellent Talent"],
+      tags: ["Completed Intern"],
       AboutIntern:
         "Undergraduate management student with a strong interest in Human Resources and Organizational Development. Experienced in end-to-end recruitment, employer branding, talent management, and organizational culture. Proven leadership through national-level roles and impactful project execution. Seeking to contribute to HR excellence in a dynamic organization.",
       socialMedia: [
@@ -1266,9 +1266,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
     {
       namaIntern: "Haqqirais Rahmanulya Suryaman",
       posisi: "People Development",
-      tags: ["Completed Intern", "Excellent Talent"],
-      AboutIntern:
-        "Mahasiswa dari Universitas Gadjah Mada jurusan Ilmu Komunikasi yang memiliki minat di bidang Data Marketing, Management, dan Internal Development. Memiliki pribadi yang gemar belajar hal baru dan adaptif di segala situasi, dengan memprioritaskan hasil kerja efektif dan progresif dengan sistem yang terukur",
+      tags: ["Completed Intern"],
+      AboutIntern: "",
       socialMedia: [
         { instagram: "https://www.instagram.com/haqqirs/" },
         {
@@ -1276,11 +1275,64 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
             "https://www.linkedin.com/in/haqqirais-rahmanulya-suryaman-3129a7226/",
         },
       ],
-      rating: 3.5,
+      rating: 3,
       whatsappNumber: "+62895363361484",
       profilePage: "haqqirais.html",
       avatarPath: "../assets/img/portofolio/haqqirais/avatar.webp",
       resumePath: "../assets/pdf/resume/haqqirais-rahmanulya-suryaman.pdf",
+    },
+    // Arsha Haroun Al Rasyid
+    {
+      namaIntern: "Arsha Haroun Al Rasyid",
+      posisi: "AI Content/Copy Writer",
+      tags: ["Completed Intern"],
+      AboutIntern: "",
+      socialMedia: [
+        { instagram: "http://instagram.com/arshaharounn" },
+        { linkedIn: "https://www.linkedin.com/in/arsha-rasyid-50207735b/" },
+      ],
+      rating: 3,
+      whatsappNumber: "+6289648610262",
+      profilePage: "arsha-haroun-al-rasyid.html",
+      avatarPath: "../assets/img/portofolio/arsha-haroun-al-rasyid/avatar.webp",
+      resumePath: "../assets/pdf/resume/arsha-haroun-al-rasyid.pdf",
+    },
+    // Falah Rahman Kurniasyah
+    {
+      namaIntern: "Falah Rahman Kurniasyah ",
+      posisi: "Designer Specialist",
+      tags: ["Completed Intern", "Extended Intern"],
+      AboutIntern:
+        "Mahasiswa dari Universitas AMIKOM Yogyakarta jurusan Ilmu Komunikasi yang memiliki ketertarikan dalam bidang perfilman, produksi iklan, MV dan desain grafis. Gemar belajar banyak hal baru, aktif dalam mengeksplorasi topik-topik seputar film, desain grafis, media dan branding.",
+      socialMedia: [
+        { instagram: "http://instagram.com/fal.rk" },
+        { linkedIn: "http://linkedin.com/in/falah-rahman" },
+      ],
+      rating: 3.5,
+      whatsappNumber: "+628157914922",
+      profilePage: "falah-rahman-kurniasyah.html",
+      avatarPath:
+        "../assets/img/portofolio/falah-rahman-kurniasyah/avatar.webp",
+      resumePath: "../assets/pdf/resume/falah-rahman-kurniasyah.pdf",
+    },
+    // Puti Cinta Novtazulfa
+    {
+      namaIntern: "Puti Cinta Novtazulfa",
+      posisi: "AI Content/Copy Writer",
+      tags: ["Completed Intern"],
+      AboutIntern: "",
+      socialMedia: [
+        { instagram: "https://www.instagram.com/putiicinta/" },
+        {
+          linkedIn:
+            "https://www.linkedin.com/in/puti-cinta-novtazulfa-b58b02343/",
+        },
+      ],
+      rating: 3,
+      whatsappNumber: "+6281229370976",
+      profilePage: "puti-cinta-novtazulfa.html",
+      avatarPath: "../assets/img/portofolio/puti-cinta-novtazulfa/avatar.webp",
+      resumePath: "../assets/pdf/resume/puti-cinta-novtazulfa.pdf",
     },
   ];
 
