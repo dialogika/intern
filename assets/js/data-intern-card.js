@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Deinar Aghazi Saragih",
       posisi: "Video Editor",
       tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern: "Deskripsi singkat tentang intern",
+      AboutIntern: "Mahasiswa Tahun ke-3 dari Universitas Gadjah Mada jurusan Matematika yang memiliki minat dan bakat di bidang Media dan Informasi. Memiliki keinginan untuk belajar hal yang baru untuk mengembangkan bakat dan dapat beradaptasi dengan lingkungan baru.",
       socialMedia: [
         { instagram: "https://www.instagram.com/deinaraghazi" },
         { linkedIn: "https://www.linked.com/in/deinar-aghazi-saragih" },
