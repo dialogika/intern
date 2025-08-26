@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Ilham Afriansyah",
       posisi: "Admin Kelas",
       tags: ["Completed Intern"],
-      AboutIntern: "Deskripsi singkat tentang intern",
+      AboutIntern: "Halo, saya Ilham Afriansyah, mahasiswa Psikologi Universitas Islam Indonesia dengan cita-cita menjadi psikolog yang dapat memberi manfaat bagi banyak orang. Pengalaman magang di divisi Client Manager mengasah keterampilan saya dalam komunikasi, problem solving cepat, serta manajemen klien dengan mentor ataupun member. Dengan etos kerja disiplin, adaptif, dan solutif, saya berkomitmen untuk terus berkembang dan berkontribusi nyata dalam menaiki tangga karir profesional.",
       socialMedia: [
         { instagram: "http://instagram.com/lukeeskywalkerr" },
         { linkedIn: "http://linkedin.com/in/ilhamafrian" },
