@@ -234,10 +234,14 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Bela Setiya Ambarwati",
       posisi: "Telemarketing",
       tags: ["Completed Intern"],
-      AboutIntern: "Deskripsi singkat tentang intern",
+      AboutIntern:
+        "A management student actively involved in organizations and social activities, with a strong interest in marketing, communication, education, and social issues. Highly motivated to contribute to team success through ambition, hard work, attention to detail, and excellent organizational and leadership skills. Excellent verbal and written communicator with a strong background in cultivating positive relationships and exceeding goals. Empathetic, motivated to learn and grow, and capable of working independently or collaboratively in dynamic environments",
       socialMedia: [
         { instagram: "http://instagram.com/bellaset__" },
-        { linkedIn: "http://linkedin.com/Bela-Setiya-Ambarwati" },
+        {
+          linkedIn:
+            "https://www.linkedin.com/in/bela-setiya-ambarwati-9b41b9312/",
+        },
       ],
       rating: 3, // rating 1-5
       whatsappNumber: "+6285741592802",
