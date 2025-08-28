@@ -1146,7 +1146,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       namaIntern: "Thomas Theo Arisadewo",
       posisi: "Video Editor",
       tags: ["Completed Intern", "Extended Intern", "Excellent Talent"],
-      AboutIntern: "............",
+      AboutIntern:
+        "Hi, I’m Theo Arisadewo, a recent Psychology graduate with a keen interest in Talent Acquisition. During my time in university, I gained hands-on experience in end-to-end recruitment through various campus activities, from sourcing candidates to conducting interviews. My background in psychology has equipped me with valuable insights into understanding human behavior and communication, which I apply to help identify the right talent for the right roles. I’m excited to begin my professional journey in Talent Acquisition and contribute to creating strong teams that drive business success. I’m always eager to learn and grow in the HR industry, particularly in recruitment strategies, candidate experience, and employer branding.",
       socialMedia: [
         { instagram: "https://www.instagram.com/arisadewok" },
         { linkedIn: "https://www.linkedin.com/in/arisadewotheo" },
@@ -1273,7 +1274,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       namaIntern: "Haqqirais Rahmanulya Suryaman",
       posisi: "People Development",
       tags: ["Completed Intern"],
-      AboutIntern: "",
+      AboutIntern:
+        "Mahasiswa dari Universitas Gadjah Mada jurusan Ilmu Komunikasi yang memiliki minat di bidang Data Marketing, Management, dan Internal Development. Memiliki pribadi yang gemar belajar hal baru dan adaptif di segala situasi, dengan memprioritaskan hasil kerja efektif dan progresif dengan sistem yang terukur",
       socialMedia: [
         { instagram: "https://www.instagram.com/haqqirs/" },
         {
