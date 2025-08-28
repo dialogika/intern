@@ -1221,7 +1221,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       namaIntern: "Elizabet Noviliani Arruanlinggi",
       posisi: "Account Executive",
       tags: ["Completed Intern"],
-      AboutIntern: "............",
+      AboutIntern:
+        "Hello, my name is Elizabet. I’m a final-year accounting student with a strong background in organizational activities, where I’ve developed solid management and creative skills through various campus projects and competitions. I also have hands-on experience in both accounting and marketing through internships, where I worked on financial documentation, invoice tracking, and content planning. These roles have sharpened my attention to detail, adaptability, and analytical thinking. I am now seeking an internship opportunity aligned with my major to further grow and contribute effectively.",
       socialMedia: [
         { instagram: "https://instagram.com/elnoviliani" },
         { linkedIn: "https://www.linkedin.com/in/elizabetnoviliani" },
