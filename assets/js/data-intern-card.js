@@ -202,7 +202,8 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Erena Valentina Br Ginting",
       posisi: "Content Creator",
       tags: ["Completed Intern"],
-      AboutIntern: "Deskripsi singkat tentang intern",
+      AboutIntern:
+        "I am an adaptable, fast-learning individual and driven by curiosity with a strong passion for education, finance, environment, and social impact. Throughout my experiences in student organizations, public events, and international programs, I have developed the ability to work collaboratively, communicate effectively, and take initiative in diverse settings. I thrive in dynamic and growth-oriented environments, where I can contribute meaningfully through strategic planning, event coordination, public speaking, and community-driven projects. I take pride in building connections, solving problems, and helping others access broader opportunities. With a professional mindset and a strong sense of integrity, I am committed to continuous learning and making a positive contribution wherever I am involved.",
       socialMedia: [
         { instagram: "http://instagram.com/erenavga" },
         { linkedIn: "https://www.linkedin.com/in/ernvga/" },
