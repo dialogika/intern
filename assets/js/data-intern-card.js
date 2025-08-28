@@ -263,7 +263,8 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Muhammad Rubben Ramadhan",
       posisi: "Video Editor",
       tags: ["Completed Intern"],
-      AboutIntern: "Deskripsi singkat tentang intern",
+      AboutIntern:
+        "Saya Muhammad Rubben Ramadhan, mahasiswa Film & Televisi ISI Yogyakarta dengan pengalaman lebih dari 4 tahun sebagai video editor, videografer, dan sutradara. Fokus saya pada cinematic editing, storytelling, dan color grading. Saya terbiasa menggarap berbagai konten kreatif mulai dari film, media sosial, hingga audio visual",
       socialMedia: [
         { instagram: "http://instagram.com/benzramadhan" },
         { linkedIn: "http://www.linkedin.com/in/ben-ramadhan" },
