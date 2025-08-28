@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Marheni Berna Rahmawati",
       posisi: "Recruiters Spesialist",
       tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern: "Lulusan Psikologi dari Universitas 'Aisyiyah Yogyakarta dengan ketertarikan kuat di bidang Human Resources, khususnya recruitment serta compensation & benefit. Berpengalaman dalam administrasi alat tes psikologi untuk profiling intelegensi, pemetaan minat dan bakat, serta proses seleksi karyawan. Teliti, adaptif, dan memiliki semangat belajar tinggi untuk mengembangkan karier di bidang HR.",
+      AboutIntern:
+        "Lulusan Psikologi dari Universitas 'Aisyiyah Yogyakarta dengan ketertarikan kuat di bidang Human Resources, khususnya recruitment serta compensation & benefit. Berpengalaman dalam administrasi alat tes psikologi untuk profiling intelegensi, pemetaan minat dan bakat, serta proses seleksi karyawan. Teliti, adaptif, dan memiliki semangat belajar tinggi untuk mengembangkan karier di bidang HR.",
       socialMedia: [
         {
           instagram: "http://instagram.com/marheniberna",
@@ -47,7 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Deinar Aghazi Saragih",
       posisi: "Video Editor",
       tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern: "Mahasiswa Tahun ke-3 dari Universitas Gadjah Mada jurusan Matematika yang memiliki minat dan bakat di bidang Media dan Informasi. Memiliki keinginan untuk belajar hal yang baru untuk mengembangkan bakat dan dapat beradaptasi dengan lingkungan baru.",
+      AboutIntern:
+        "Mahasiswa Tahun ke-3 dari Universitas Gadjah Mada jurusan Matematika yang memiliki minat dan bakat di bidang Media dan Informasi. Memiliki keinginan untuk belajar hal yang baru untuk mengembangkan bakat dan dapat beradaptasi dengan lingkungan baru.",
       socialMedia: [
         { instagram: "https://www.instagram.com/deinaraghazi" },
         { linkedIn: "https://www.linked.com/in/deinar-aghazi-saragih" },
@@ -214,7 +216,8 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Ilham Afriansyah",
       posisi: "Admin Kelas",
       tags: ["Completed Intern"],
-      AboutIntern: "Halo, saya Ilham Afriansyah, mahasiswa Psikologi Universitas Islam Indonesia dengan cita-cita menjadi psikolog yang dapat memberi manfaat bagi banyak orang. Pengalaman magang di divisi Client Manager mengasah keterampilan saya dalam komunikasi, problem solving cepat, serta manajemen klien dengan mentor ataupun member. Dengan etos kerja disiplin, adaptif, dan solutif, saya berkomitmen untuk terus berkembang dan berkontribusi nyata dalam menaiki tangga karir profesional.",
+      AboutIntern:
+        "Halo, saya Ilham Afriansyah, mahasiswa Psikologi Universitas Islam Indonesia dengan cita-cita menjadi psikolog yang dapat memberi manfaat bagi banyak orang. Pengalaman magang di divisi Client Manager mengasah keterampilan saya dalam komunikasi, problem solving cepat, serta manajemen klien dengan mentor ataupun member. Dengan etos kerja disiplin, adaptif, dan solutif, saya berkomitmen untuk terus berkembang dan berkontribusi nyata dalam menaiki tangga karir profesional.",
       socialMedia: [
         { instagram: "http://instagram.com/lukeeskywalkerr" },
         { linkedIn: "http://linkedin.com/in/ilhamafrian" },
@@ -325,7 +328,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       namaIntern: "Qonita Azkiyyah",
-      posisi: "Recruiters Spesialist",
+      posisi: "People Development",
       tags: ["Completed Intern"],
       AboutIntern: ``,
       socialMedia: [
