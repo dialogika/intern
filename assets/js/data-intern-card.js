@@ -64,7 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Hafizah Az-Zahra",
       posisi: "Telemarketing",
       tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern: "Deskripsi singkat tentang intern",
+      AboutIntern:
+        "Mahasiswi Ilmu Komunikasi Universitas Amikom Yogyakarta dengan ketertarikan pada Digital Marketing. Melalui project kuliah di iklan dan media digital, saya terbiasa menyusun pesan yang menarik. Pengalaman saya sebelumnya di bidang pelayanan pelanggan juga memperkuat pemahaman tentang pentingnya interaksi yang baik, sekaligus melatih kemampuan komunikasi yang ramah, persuasif, dan solutif. Bagi saya, telemarketing adalah ruang belajar untuk mengembangkan kemampuan tersebut sekaligus membangun relasi positif dengan konsumen.",
       socialMedia: [
         { instagram: "https://www.instagram.com/hafzhra" },
         { linkedIn: "https://www.linkedin.com/in/hafizah-az-zahra-a70b162b3/" },
