@@ -348,7 +348,8 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "A'la 'Abid",
       posisi: "Telemarketing",
       tags: ["Completed Intern"],
-      AboutIntern: ``,
+      AboutIntern:
+        "Halo, saya A’la Abid, mahasiswa semester 7 Universitas Pendidikan Indonesia jurusan Bisnis Digital. Saya memiliki minat di bidang digital marketing dan telah menyelesaikan pengalaman magang di Dialogika sebagai Telemarketing Intern. Di luar kampus, saya senang traveling ke alam seperti gunung dan air terjun.",
       socialMedia: [
         { instagram: "https://www.instagram.com/alastair.12_/" },
         { linkedIn: "https://www.linkedin.com/in/alaabid" },
