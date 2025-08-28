@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
       namaIntern: "Marheni Berna Rahmawati",
       posisi: "Recruiters Spesialist",
       tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern: "Deskripsi singkat tentang intern....",
+      AboutIntern: "Lulusan Psikologi dari Universitas 'Aisyiyah Yogyakarta dengan ketertarikan kuat di bidang Human Resources, khususnya recruitment serta compensation & benefit. Berpengalaman dalam administrasi alat tes psikologi untuk profiling intelegensi, pemetaan minat dan bakat, serta proses seleksi karyawan. Teliti, adaptif, dan memiliki semangat belajar tinggi untuk mengembangkan karier di bidang HR.",
       socialMedia: [
         {
           instagram: "http://instagram.com/marheniberna",
