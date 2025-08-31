@@ -1300,7 +1300,8 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       namaIntern: "Arsha Haroun Al Rasyid",
       posisi: "AI Content/Copy Writer",
       tags: ["Completed Intern"],
-      AboutIntern: "",
+      AboutIntern:
+        "Mahasiswa dari Universitas Amikom Yogyakarta jurusan Ilmu Komunikasi yang memiliki ketertarikan dalam bidang Media, Digital Marketing, dan Content Development. Memiliki semangat belajar tinggi, mampu beradaptasi dengan cepat pada situasi baru, serta berkomitmen untuk menghasilkan karya yang efektif, kreatif, dan berdampak positif. Berfokus pada pengembangan diri serta kontribusi dalam tim dengan sistem kerja yang terstruktur dan progresif.",
       socialMedia: [
         { instagram: "http://instagram.com/arshaharounn" },
         { linkedIn: "https://www.linkedin.com/in/arsha-rasyid-50207735b/" },
