@@ -1,0 +1,2442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Internship Program | Dialogika</title>
+  <meta
+    content="Tingkatkan skill, sekaligus membangun pengalaman kerja bersama Dialogika - Program Internship Dialogika."
+    name="description">
+  <meta content="Internship" name="keywords">
+
+  <!-- Favicons -->
+
+  <link href="assets/img/favicon.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+
+  <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+  <meta property="og:site_name" content="Dialogika | Kelas Public Speaking" />
+  <meta property="og:site" content="dialogika.co" />
+  <meta property="og:title" content="Internship Dialogika" />
+  <meta property="og:description" content="Formulir Pendaftaran Internship Dialogika" />
+  <meta property="og:image" content="assets/img/hero-bg.webp" />'
+  <meta property="og:url" content="dialogika.co/intern/index.html" />
+  <meta property="og:type" content="article" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.css" rel="stylesheet" />
+  <link href="assets/vendor/international-phone-number/intlTelInput.css" rel="stylesheet" />
+
+
+  <!-- Part CSS Files -->
+  <link href="assets/part/theme-counter/theme-counter.css" rel="stylesheet" />
+  <link href="assets/part/testimoni-insurin/testi.css" rel="stylesheet" />
+  <link href="assets/part/breadcrumbs-banner/banner.css" rel="stylesheet" />
+  <link href="assets/part/course-mentor/course.css" rel="stylesheet" />
+  <link href="assets/part/team-impact/team.css" rel="stylesheet" />
+  <link href="assets/part/counting-down/count.css" rel="stylesheet" />
+  <link href="assets/part/schedule-event/schedule.css" rel="stylesheet" />
+  <link href="assets/part/contact-append/contact.css" rel="stylesheet" />
+  <link href="assets/part/popup-box/popup.css" rel="stylesheet" />
+  <link href="assets/part/video-sec/video.css" rel="stylesheet" />
+  <link href="assets/part/cta-echooling/cta.css" rel="stylesheet" />
+  <link href="assets/part/gallery-photo/gallery.css" rel="stylesheet" />
+  <link href="assets/part/internship-list/internship.css" rel="stylesheet" />
+  <link href="assets/part/tiga-d-gallery/style.css" rel="stylesheet" />
+  <link href="assets/part/event-venue/style.css" rel="stylesheet" />
+  <link href="assets/part/read-more/read-more_less.css" rel="stylesheet" />
+  <link href="assets/part/smooth-slider/smooth-slider.css" rel="stylesheet" />
+  <link href="assets/part/smooth-slider/graduate-slider.css" rel="stylesheet" />
+  <link href="assets/part/custom-hero-section/style.css" rel="stylesheet" />
+  <link href="assets/part/modals/modal.css" rel="stylesheet" />
+  <link href="assets/part/basic-rules/basicrules.css" rel="stylesheet" />
+
+  <script src="https://kit.fontawesome.com/cdde75dea2.js" crossorigin="anonymous"></script>
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+
+  <!--  ========================================================  -->
+  <!-- Spreadsheet API Form Pendaftaran -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function HeroForm() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/nFEcActjMjE46FAP/",
+        type: "post",
+        data: $("#heroForm").serializeArray(),
+        headers: {
+          accessKey: "6df7b75d348bfbdfa9684dfc76ed0053",
+          secretKey: "68a998592183dc30cdc2b07576759f04"
+        },
+        success: function () {
+          alert("Anda Telah Mendaftar :)")
+        },
+        error: function () {
+          alert("There was an error :(")
+        }
+      });
+    }
+
+    function SubForm() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/qBMNmHWNwLnA3S2s/",
+        type: "post",
+        data: $("#myForm").serializeArray(),
+        success: function () {
+          alert("Form Data Submitted :)")
+        },
+        error: function () {
+          alert("There was an error :(")
+        }
+      });
+
+    }
+
+    function Subcription() {
+      $.ajax({
+        url: "https://api.apispreadsheets.com/data/18511/",
+        type: "post",
+        data: $("#subcriptions").serializeArray(),
+        success: function () {
+          // $('#subcription-modal').modal('show');
+          // open("https://link.dialogika.co/open-whatsapp-group");
+          window.location.href = "https://link.dialogika.co/open-whatsapp-group";
+        },
+        error: function () {
+          alert("There was an error :(")
+        }
+      });
+    }
+  </script>
+  <!-- End Spreadsheet API Form Pendaftaran -->
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '916674555903437');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=916674555903437&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Pixel Quora -->
+  <!-- DO NOT MODIFY -->
+  <!-- Quora Pixel Code (JS Helper) -->
+  <script>
+    !function (q, e, v, n, t, s) { if (q.qp) return; n = q.qp = function () { n.qp ? n.qp.apply(n, arguments) : n.queue.push(arguments); }; n.queue = []; t = document.createElement(e); t.async = !0; t.src = v; s = document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, 'script', 'https://a.quora.com/qevents.js');
+    qp('init', 'cae6711903da464ab62f03df5f66aedc');
+    qp('track', 'ViewContent');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://q.quora.com/_/ad/cae6711903da464ab62f03df5f66aedc/pixel?tag=ViewContent&noscript=1" /></noscript>
+  <!-- End of Quora Pixel Code -->
+  <script>qp('track', 'GenerateLead');</script>
+  <!-- End Pixel Quora -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HV60XT856G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-148836422-2');
+    gtag('config', 'G-HV60XT856G');
+  </script>
+  <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KGK9D6H');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Hotjar Tracking Code for https://dialogika.co -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 2828594, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <!-- End Hotjar -->
+  <!--  ========================================================  -->
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGK9D6H" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript><!-- End Google Tag Manager (noscript) -->
+
+  <!-- ======= Top Bar, Header, Side Bar ======= -->
+  <main-header></main-header>
+  <!-- ======= Top Bar, Header, Side Bar ======= -->
+
+  <!-- ======= Breadcrumbs Section ======= -->
+  <section class="breadcrumbs" style="margin-top: 115px;">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Internship Program</h2>
+        <ol>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="index.html">Intern</a></li>
+        </ol>
+      </div>
+
+    </div>
+  </section><!-- End Breadcrumbs Section -->
+<!-- ======= Internship Hero Section ======= -->
+<section id="hero-internship" class="d-flex align-items-center" style="
+  background: url('https://i.pinimg.com/1200x/55/f1/25/55f125ac6c307ae8e7ad953e48edaa03.jpg') center center/cover no-repeat;
+  min-height: 100vh;
+  position: relative;
+">
+  <!-- Overlay semi-transparan -->
+  <div style="
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    inset: 0;
+  "></div>
+
+  <div class="container text-center position-relative" data-aos="fade-up" style="z-index: 1;">
+    <h1 class="text-white fw-bold mb-3">Internship at Dialogika</h1>
+    <p class="text-white fs-5 mb-4">
+      Belajar, Berkembang, dan Berkontribusi Bersama Kami.
+    </p>
+    
+    <a href="#recruitment" class="btn btn-primary btn-lg rounded-pill px-4 py-2 fw-semibold shadow-lg">
+      Daftar Sekarang
+    </a>
+  </div>
+</section>
+
+<!-- ======= Smooth Scroll CSS ======= -->
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056d2;
+    transform: scale(1.05);
+  }
+</style>
+
+<!-- End Internship Hero Section -->
+
+  <main id="main">
+    <!-- ======= Hero Section ======= -->
+ 
+
+
+        <!-- ======= Cource Details Section ======= -->
+         <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="section-title" data-aos="fade-right">
+              <h5>Jobdesc</h5>
+              <h3>Intern Position</h3>
+              <p class="text-start">
+                Semua posisi intern di Dialogika sangatlah vital dan penting terutama dibagian seperti
+                <span class="badge rounded-pill text-bg-success">client manager</span>, model talent dan video editor.
+                <br><br>Adapun bagian-bagian yang lainnya di posisi internship Dialogika cukup beragam.
+                <br><br>Namun jika kamu bingung bisa <b>chat langsung</b> ke admin via whatsapp dibawah ini
+              </p>
+              <div class="text-center text-md-start" style="margin-top: 20px">
+                <a target="__blank" href="https://wa.me/6285780007799" class="more-btn blue-modern-dialogika-btn"><i class="bi bi-whatsapp"></i> Whatsapp
+                  Admin</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="testimonials-slider swiper swiper-initialized swiper-horizontal swiper-pointer-events" data-aos="fade-up" data-aos-delay="100">
+
+              <!--Model Talent-->
+              <div class="swiper-wrapper" id="swiper-wrapper-a3343c2ceef0069f" aria-live="off" style="transition-duration: 600ms; transform: translate3d(-7876px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate" role="group" aria-label="13 / 13" style="width: 696px; margin-right: 20px;" data-swiper-slide-index="12">
+                  <div class="testimonial-wrap">
+
+                    <article class="testimonial-item">
+
+                      <div class="post-img">
+                        <img loading="lazy" src="assets\img\position\Event-Organizer.webp" alt="Gambar Event Organizer" class="img-fluid">
+                      </div>
+
+                      <h2 class="title">
+                        <a href="event-organizing.html">Event Organizer</a>
+                      </h2>
+
+                      <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                          <p class="post-author">learn how to plan and organizer events also learn how to be a well-communicated person.
+                          </p>
+                             <a href="event-organizing.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job
+                            Description</a>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">
+                              <span class="badge text-bg-success">Work From Office <i class="bi bi-check-circle"></i></span>
+                              <span class="badge text-bg-danger">Work From Home <i class="bi bi-x-circle"></i></span>
+                            </time>
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+
+                  </div>
+                </div>
+                <div class="swiper-slide" role="group" aria-label="1 / 13" style="width: 696px; margin-right: 20px;" data-swiper-slide-index="0">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-wrap">
+
+                      <article class="testimonial-item">
+
+                        <div class="post-img">
+                          <img loading="lazy" src="assets\img\position\Content-Creator.webp" alt="Gambar Content Creator" class="img-fluid">
+                        </div>
+
+                        <h2 class="title">
+                          <a href="model-talent.html">Content Creator</a>
+                        </h2>
+
+                        <div class="d-flex align-items-center">
+                          <div class="post-meta">
+                            <p class="post-author">Learn how to present in front of the camera &amp; provide education..
+                            </p>
+                            <a href="model-talent.html" target="_blank" class="blue-modern-dialogika-btn">Job
+                              Description</a>
+                            <p class="post-date">
+                              <time datetime="2022-01-01">
+                                <span class="badge text-bg-success">Work From Office <i class="bi bi-check-circle"></i></span>
+                                <span class="badge text-bg-success">Work From Home <i class="bi bi-check-circle"></i></span>
+                              </time>
+                            </p>
+                          </div>
+                        </div>
+
+                      </article>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <!--Client Manager-->
+                <div class="swiper-slide" role="group" aria-label="2 / 13" style="width: 696px; margin-right: 20px;" data-swiper-slide-index="1">
+                  <div class="testimonial-wrap">
+
+                    <article class="testimonial-item">
+
+                      <div class="post-img">
+                        <img loading="lazy" src="assets\img\position\Client-Manager.webp" alt="Gambar Client Manager" class="img-fluid">
+                      </div>
+
+                      <h2 class="title">
+                        <a href="client-manager.html">Admin Kelas</a>
+                      </h2>
+
+                      <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                          <p class="post-author">Learn how to manage clients, mentors, develop product public
+                            speaking.
+                          </p>
+                          <a href="client-manager.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job
+                            Description</a>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">
+                              <span class="badge text-bg-success">Work From Office <i class="bi bi-check-circle"></i></span>
+                              <span class="badge text-bg-danger">Work From Home <i class="bi bi-x-circle"></i></span>
+                            </time>
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+
+                  </div>
+                </div>
+                <!-- End Client Manager -->
+
+                <!--HR Generalist-->
+                <div class="swiper-slide" role="group" aria-label="3 / 13" style="width: 696px; margin-right: 20px;" data-swiper-slide-index="2">
+                  <div class="testimonial-wrap">
+
+                    <article class="testimonial-item">
+
+                      <div class="post-img">
+                        <img loading="lazy" src="assets/img/position/hr-generalist.webp" alt="Gambar HR Generalist" class="img-fluid">
+                      </div>
+
+                      <h2 class="title">
+                        <a href="hr-generalist.html">HR Generalist</a>
+                      </h2>
+
+                      <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                          <p class="post-author">Learn how to coordinate between team, help administrative and
+                            recruitement.
+                          </p>
+                          <a href="hr-generalist.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job
+                            Description</a>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">
+                              <span class="badge text-bg-success">Work From Office <i class="bi bi-check-circle"></i></span>
+                              <span class="badge text-bg-danger">Work From Home <i class="bi bi-x-circle"></i></span>
+                            </time>
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+
+                  </div>
+                </div>
+                <!-- End HR Generalist -->
+
+                <!--Design-->
+                <div class="swiper-slide" role="group" aria-label="4 / 13" style="width: 696px; margin-right: 20px;" data-swiper-slide-index="3">
+                  <div class="testimonial-wrap">
+
+                    <article class="testimonial-item">
+
+                      <div class="post-img">
+                        <img loading="lazy" src="assets\img\position\Design-Specialist.webp" alt="Gambar Design Specialist" class="img-fluid">
+                      </div>
+
+                      <h2 class="title">
+                        <a href="design-specialist.html">Design Specialist</a>
+                      </h2>
+
+                      <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                          <p class="post-author">Learn to create elegant, persuasive, and high-end designs.</p>
+                          <a href="design-specialist.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job Description</a>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">
+                              <span class="badge text-bg-success">Work From Office <i class="bi bi-check-circle"></i></span>
+                              <span class="badge text-bg-success">Work From Home <i class="bi bi-check-circle"></i></span>
+                            </time>
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+                  </div>
+                </div>
+                <!-- End Design -->
+
+                <!--Social Media Analyst-->
+                <div class="swiper-slide" role="group" aria-label="5 / 13" style="width: 696px; margin-right: 20px;" data-swiper-slide-index="4">
+                  <div class="testimonial-wrap">
+
+                    <article class="testimonial-item">
+
+                      <div class="post-img">
+                        <img loading="lazy" src="assets\img\position\Socmed-Specialist.webp" alt="Gambar Social Media Analyst" class="img-fluid">
+                      </div>
+
+                      <h2 class="title">
+                        <a href="social-media-analyst.html">Social Media Analyst</a>
+                      </h2>
+
+                      <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                          <p class="post-author">Learn how to analyze company's social media and give insigth based on
+                            data.</p>
+                          <a href="social-media-analyst.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job Description</a>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">
+                              <span class="badge text-bg-success">Work From Office <i class="bi bi-check-circle"></i></span>
+                              <span class="badge text-bg-danger">Work From Home <i class="bi bi-x-circle"></i></span>
+                            </time>
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+
+                  </div>
+                </div>
+                <!-- End Social Media Analyst -->
+
+                <!--Telemarketing-->
+                <div class="swiper-slide" role="group" aria-label="6 / 13" style="width: 696px; margin-right: 20px;" data-swiper-slide-index="5">
+                  <div class="testimonial-wrap">
+
+                    <article class="testimonial-item">
+
+                      <div class="post-img">
+                        <img loading="lazy" src="assets\img\position\Deal-Maker.webp" alt="Gambar Telemarketing" class="img-fluid">
+                      </div>
+
+                      <h2 class="title">
+                        <a href="telemarketing.html">Admin Marketing</a>
+                      </h2>
+
+                      <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                          <p class="post-author">Learn how to to chat, respond, persuade, and negotiate with potential
+                            clients.</p>
+                          <a href="telemarketing.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job
+                            Description</a>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">
+                              <span class="badge text-bg-success">Work From Office <i class="bi bi-check-circle"></i></span>
+                              <span class="badge text-bg-danger">Work From Home <i class="bi bi-x-circle"></i></span>
+                            </time>
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+
+                  </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <!--Writer-->
+                <div class="swiper-slide" role="group" aria-label="7 / 13" style="width: 696px; margin-right: 20px;" data-swiper-slide-index="6">
+                  <div class="testimonial-wrap">
+
+                    <article class="testimonial-item">
+
+                      <div class="post-img">
+                        <img loading="lazy" src="assets\img\position\Content-Writer.webp" alt="Gambar Content Writer" class="img-fluid">
+                      </div>
+
+                      <h2 class="title">
+                        <a href="content-writing.html">Content Writer</a>
+                      </h2>
+
+                      <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                          <p class="post-author">Learn how to create copies, headlines, subheadings, and main
+                            paragraphs.</p>
+                          <a href="content-writing.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job
+                            Description</a>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">
+                              <span class="badge text-bg-success">Work From Office <i class="bi bi-check-circle"></i></span>
+                              <span class="badge text-bg-success">Work From Home <i class="bi bi-check-circle"></i></span>
+                            </time>
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+
+                  </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <!--Recruiter-->
+                <div class="swiper-slide" role="group" aria-label="8 / 13" style="width: 696px; margin-right: 20px;" data-swiper-slide-index="7">
+                  <div class="testimonial-wrap">
+
+                    <article class="testimonial-item">
+
+                      <div class="post-img">
+                        <img loading="lazy" src="assets\img\position\Recruiter.webp" alt="Gambar Recruiter" class="img-fluid">
+                      </div>
+
+                      <h2 class="title">
+                        <a href="recruiter-specialist.html">Recruiter Specialist</a>
+                      </h2>
+
+                      <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                          <p class="post-author">Learn how to conduct interviews for intern, mentor &amp; team.</p>
+                          <a href="recruiter-specialist.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job Description</a>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">
+                              <span class="badge text-bg-success">Work From Office <i class="bi bi-check-circle"></i></span>
+                              <span class="badge text-bg-danger">Work From Home <i class="bi bi-x-circle"></i></span>
+                            </time>
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+
+                  </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <!--People Development-->
+                <div class="swiper-slide" role="group" aria-label="9 / 13" style="width: 696px; margin-right: 20px;" data-swiper-slide-index="8">
+                  <div class="testimonial-wrap">
+
+                    <article class="testimonial-item">
+
+                      <div class="post-img">
+                        <img loading="lazy" src="assets\img\position\People-Development.webp" alt="Gambar People Development" class="img-fluid">
+                      </div>
+
+                      <h2 class="title">
+                        <a href="people-development.html">People Development</a>
+                      </h2>
+
+                      <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                          <p class="post-author">Learn to create elegant, persuasive, and high-end designs.</p>
+                          <a href="people-development.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job Description</a>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">
+                              <span class="badge text-bg-success">Work From Office <i class="bi bi-check-circle"></i></span>
+                              <span class="badge text-bg-danger">Work From Home <i class="bi bi-x-circle"></i></span>
+                            </time>
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+
+                  </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <!--video editor-->
+                <div class="swiper-slide swiper-slide-prev" role="group" aria-label="10 / 13" style="width: 696px; margin-right: 20px;" data-swiper-slide-index="9">
+                  <div class="testimonial-wrap">
+
+                    <article class="testimonial-item">
+
+                      <div class="post-img">
+                        <img loading="lazy" src="assets\img\position\Video-Editor.webp" alt="Gambar Video Editor" class="img-fluid">
+                      </div>
+
+                      <h2 class="title">
+                        <a href="video-editing.html">Video Editor</a>
+                      </h2>
+
+                      <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                          <p class="post-author">Learn how to edit, cut and creating a short video, cinematography for
+                            company branding.</p>
+                          <a href="video-editing.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job
+                            Description</a>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">
+                              <span class="badge text-bg-success">Work From Office <i class="bi bi-check-circle"></i></span>
+                              <span class="badge text-bg-success">Work From Home <i class="bi bi-check-circle"></i></span>
+                            </time>
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+
+                  </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <!--digital marketing-->
+                <div class="swiper-slide swiper-slide-active" role="group" aria-label="11 / 13" style="width: 696px; margin-right: 20px;" data-swiper-slide-index="10">
+                  <div class="testimonial-wrap">
+
+                    <article class="testimonial-item">
+
+                      <div class="post-img">
+                        <img loading="lazy" src="assets\img\position\Digital-Marketing.webp" alt="Gambar Digital Marketing" class="img-fluid">
+                      </div>
+
+                      <h2 class="title">
+                        <a href="digital-marketing.html">Digital Marketing</a>
+                      </h2>
+
+                      <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                          <p class="post-author">Learn how to analyze and understand google ads and keywords</p>
+                          <a href="digital-marketing.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job Description</a>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">
+                              <span class="badge text-bg-success">Work From Office <i class="bi bi-check-circle"></i></span>
+                              <span class="badge text-bg-danger">Work From Home <i class="bi bi-x-circle"></i></span>
+                            </time>
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+
+                  </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <!--UI Developer-->
+                <div class="swiper-slide swiper-slide-next" role="group" aria-label="12 / 13" style="width: 696px; margin-right: 20px;" data-swiper-slide-index="11">
+                  <div class="testimonial-wrap">
+
+                    <article class="testimonial-item">
+
+                      <div class="post-img">
+                        <img loading="lazy" src="assets\img\position\UI-Developer.webp" alt="Gambar UI Developer" class="img-fluid">
+                      </div>
+
+                      <h2 class="title">
+                        <a href="html-writing.html">UI Developer</a>
+                      </h2>
+
+                      <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                          <p class="post-author">Learn how to create a website page, based on SEO and beautiful UI.
+                          </p>
+                          <a href="html-writing.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job
+                            Description</a>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">
+                              <span class="badge text-bg-success">Work From Office <i class="bi bi-check-circle"></i></span>
+                              <span class="badge text-bg-success">Work From Home <i class="bi bi-check-circle"></i></span>
+                            </time>
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+
+                  </div>
+                </div>
+                <!-- End testimonial item -->
+
+                  <!--Event Organizer-->
+                <div class="swiper-slide" role="group" aria-label="13 / 13" style="width: 696px; margin-right: 20px;" data-swiper-slide-index="12">
+                  <div class="testimonial-wrap">
+
+                    <article class="testimonial-item">
+
+                      <div class="post-img">
+                        <img loading="lazy" src="assets\img\position\Event-Organizer.webp" alt="Gambar Event Organizer" class="img-fluid">
+                      </div>
+
+                      <h2 class="title">
+                        <a href="event-organizing.html">Event Organizer</a>
+                      </h2>
+
+                      <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                          <p class="post-author">learn how to plan and organizer events also learn how to be a well-communicated person.
+                          </p>
+                             <a href="event-organizing.html" target="_blank" class="more-btn blue-modern-dialogika-btn">Job
+                            Description</a>
+                          <p class="post-date">
+                            <time datetime="2022-01-01">
+                              <span class="badge text-bg-success">Work From Office <i class="bi bi-check-circle"></i></span>
+                              <span class="badge text-bg-danger">Work From Home <i class="bi bi-x-circle"></i></span>
+                            </time>
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+
+                  </div>
+                </div>
+                <!-- End testimonial item -->
+
+              <div class="swiper-slide swiper-slide-duplicate" role="group" aria-label="1 / 13" style="width: 696px; margin-right: 20px;" data-swiper-slide-index="0">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-wrap">
+
+                      <article class="testimonial-item">
+
+                        <div class="post-img">
+                          <img loading="lazy" src="assets\img\position\Content-Creator.webp" alt="Gambar Content Creator" class="img-fluid">
+                        </div>
+
+                        <h2 class="title">
+                          <a href="model-talent.html">Content Creator</a>
+                        </h2>
+
+                        <div class="d-flex align-items-center">
+                          <div class="post-meta">
+                            <p class="post-author">Learn how to present in front of the camera &amp; provide education..
+                            </p>
+                            <a href="model-talent.html" target="_blank" class="blue-modern-dialogika-btn">Job
+                              Description</a>
+                            <p class="post-date">
+                              <time datetime="2022-01-01">
+                                <span class="badge text-bg-success">Work From Office <i class="bi bi-check-circle"></i></span>
+                                <span class="badge text-bg-success">Work From Home <i class="bi bi-check-circle"></i></span>
+                              </time>
+                            </p>
+                          </div>
+                        </div>
+
+                      </article>
+
+                    </div>
+                  </div>
+                </div></div>
+              <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 9"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 10"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 11" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 12"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 13"></span></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+       <!-- ======= Recruitment Form Section ======= -->
+
+    <!-- ======= Qualification & Benefits Section ======= -->
+<section id="qualification-benefits" class="py-5">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title text-center mb-5">
+      <h5>Open Recruitment</h5>
+      <h3>Qualification & Benefits</h3>
+      <p class="text-muted">
+        Berikut adalah kualifikasi yang dibutuhkan dan keuntungan yang akan kamu dapatkan jika bergabung
+        sebagai intern di <b>Dialogika</b>.
+      </p>
+    </div>
+
+    <div class="row gy-4">
+      <!-- Qualification -->
+      <div class="col-lg-6">
+        <div class="card h-100 shadow-sm border-0 rounded-4 p-4">
+          <h4 class="mb-3 text-primary fw-bold">
+            <i class="bi bi-person-check-fill me-2"></i>Qualification
+          </h4>
+          <ul class="list-unstyled mb-0">
+            <li><i class="bx bxs-check-circle text-success me-2"></i> Berdomisili di Yogyakarta</li>
+            <li><i class="bx bxs-check-circle text-success me-2"></i> Bisa WFO minimal 4x dalam seminggu</li>
+            <li><i class="bx bxs-check-circle text-success me-2"></i> Mahasiswa aktif atau fresh graduate</li>
+            <li><i class="bx bxs-check-circle text-success me-2"></i> Komunikatif dan mampu bekerja dalam tim</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Benefits -->
+      <div class="col-lg-6">
+        <div class="card h-100 shadow-sm border-0 rounded-4 p-4">
+          <h4 class="mb-3 text-warning fw-bold">
+            <i class="bi bi-stars me-2"></i>Benefits
+          </h4>
+          <ul class="list-unstyled mb-0">
+            <li><i class="bx bxs-star text-warning me-2"></i> Sertifikat internship & raport penilaian</li>
+            <li><i class="bx bxs-star text-warning me-2"></i> Nilai tambahan untuk CV</li>
+            <li><i class="bx bxs-star text-warning me-2"></i> Profil kamu tampil di website Dialogika</li>
+            <li><i class="bx bxs-star text-warning me-2"></i> Kesempatan ngobrol langsung dengan CEO</li>
+            <li><i class="bx bxs-star text-warning me-2"></i> Jam kerja fleksibel</li>
+            <li><i class="bx bxs-star text-warning me-2"></i> Dan benefit lainnya!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ======= End Qualification & Benefits Section ======= -->
+
+<section id="recruitment" class="recruitment-section py-5">
+  <div class="container" data-aos="fade-up">
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">Formulir Rekrutmen</h2>
+          <p class="text-muted">Bergabunglah bersama tim kami dan kembangkan potensimu!</p>
+        </div>
+
+        <div class="card shadow-sm rounded-4 border-0 p-4">
+          <form action="#" method="POST" enctype="multipart/form-data">
+
+            <!-- Nama Lengkap -->
+            <div class="mb-3">
+              <label for="fullname" class="form-label fw-semibold">Nama Lengkap</label>
+              <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Masukkan nama lengkap Anda" required>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Alamat Email</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="contoh@email.com" required>
+            </div>
+
+            <!-- Nomor Telepon -->
+            <div class="mb-3">
+              <label for="phone" class="form-label fw-semibold">Nomor Telepon</label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="081234567890" required>
+            </div>
+
+            <!-- Posisi yang Dilamar -->
+            <div class="mb-3">
+              <label for="position" class="form-label fw-semibold">Posisi yang Dilamar</label>
+              <select id="position" name="position" class="form-select" required>
+                <option value="">-- Posisi yang dibutuhkan hanya bertanda ⭐ --</option>
+                <option value="Admin Kelas">⭐ Admin Kelas</option>
+                <option value="Liaison Officer">Liaison Officer</option>
+                <option value="Admin markering/Telemarketing">⭐ Admin markering/Telemarketing</option>
+                <option value="Recruiter Specialist">Recruiter Specialist</option>
+                <option value="People Development">People Development</option>
+                <option value="Generalist">Generalist</option>
+                <option value="Content Creator">Content Creator</option>
+                <option value="Social Media Analyst">Social Media Analyst</option>
+                <option value="Content Writer">Content Writer</option>
+                <option value="HTML Writer">HTML Writer</option>
+                <option value="Design Specialist">Design Specialist</option>
+                <option value="Video Editor">Video Editor</option>
+                <option value="Event">Event</option>
+              </select>
+            </div>
+
+            <!-- Pengalaman Kerja -->
+            <div class="mb-3">
+              <label for="experience" class="form-label fw-semibold">Pengalaman Kerja (Opsional)</label>
+              <textarea id="experience" name="experience" class="form-control" rows="3" placeholder="Ceritakan pengalaman kerja atau proyek sebelumnya..."></textarea>
+            </div>
+
+            <!-- Upload CV -->
+            <div class="mb-3">
+              <label for="cv" class="form-label fw-semibold">Upload CV (PDF/DOCX)</label>
+              <input type="file" id="cv" name="cv" class="form-control" accept=".pdf,.doc,.docx" required>
+            </div>
+
+            <!-- Pesan Tambahan -->
+            <div class="mb-3">
+              <label for="message" class="form-label fw-semibold">Pesan Tambahan</label>
+              <textarea id="message" name="message" class="form-control" rows="3" placeholder="Tulis sesuatu jika ada hal yang ingin disampaikan..."></textarea>
+            </div>
+
+            <!-- Tombol Kirim -->
+            <div class="text-center mt-4">
+              <button type="submit" class="btn btn-success px-5 py-2 rounded-pill">
+                Kirim Lamaran
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ======= End Recruitment Form Section ======= -->
+
+<!-- Optional CSS for style enhancement -->
+<style>
+  .recruitment-section {
+    background: #f8f9fa;
+  }
+
+  .form-label {
+    color: #333;
+  }
+
+  .form-control:focus, .form-select:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+  }
+
+  .btn-success:hover {
+    background-color: #157347;
+  }
+</style>
+
+      
+    <!-- ======= CTA Section ======= -->
+    <section id="react-footer" class="react-footer react-footer-two pt---120">
+      <div class="container">
+        <div class="footer-top-cta">
+          <div class="row">
+            <div class="col-lg-7 text-lg-start text-center">
+              <h4>Join Our Vibes</h4>
+              <h3>Ready to dive in? <br> Check Our Details.</h3>
+            </div>
+            <div class="col-lg-5 text-lg-right text-center">
+              <a href="#faq">Go To FAQ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- CTA Section End Here -->
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6 mt-4">
+            <div class="section-title">
+              <h5>Mengapa Memilih Kami</h5>
+              <h3>Kami tidak hanya <span>membentuk keterampilan,</span> <br class="d-md-block d-none">tetapi juga <span>pola pikir</span>
+                dan ketahanan mental.</h3>
+              <p class="text-start">Bergabung dengan program magang Dialogika berarti tidak hanya mengasah keterampilan Anda, tetapi juga
+                mengembangkan pola pikir yang tangguh dan ketahanan mental yang tak tergoyahkan - bahan penting untuk
+                karir yang sukses
+                dan memuaskan.</p>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0 mt-4">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon">
+                    <img loading="lazy" src="assets/img/home/map-blue.webp" class="course-social-1 ">
+                    <img loading="lazy" src="assets/img/home/map-yellow.webp" class="course-social-2 ">
+                  </div>
+                  <h4 class="title"><a>Tinggal di Yogyakarta</a></h4>
+                  <hr />
+                  <p class="description">Bersedia untuk mengikuti program magang di Yogyakarta selama tiga bulan.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0 mt-4">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon">
+                    <img loading="lazy" src="assets/img/home/stopwatch-blue.webp" class="course-social-1 ">
+                    <img loading="lazy" src="assets/img/home/stopwatch-yellow.webp" class="course-social-2 ">
+                  </div>
+                  <h4 class="title"><a>Respons Cepat</a></h4>
+                  <hr />
+                  <p class="description">Mampu memberikan respons cepat di luar jam kerja & Memiliki laptop
+                    serta alat transportasi.</p>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0 mt-4">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon">
+                    <img loading="lazy" src="assets/img/home/dart-blue.webp" class="course-social-1 ">
+                    <img loading="lazy" src="assets/img/home/dart-red.webp" class="course-social-2 ">
+                  </div>
+                  <h4 class="title"><a>Memiliki Fokus</a></h4>
+                  <hr />
+                  <p class="description">Tidak sedang terlibat aktif dalam kegiatan organisasi dan mampu mengelola waktu
+                    secara efektif.</p>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0 mt-4">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <div class="icon">
+                    <img loading="lazy" src="assets/img/home/copy-blue.webp" class="course-social-1 ">
+                    <img loading="lazy" src="assets/img/home/copy-yellow.webp" class="course-social-2 ">
+                  </div>
+                  <h4 class="title"><a href="#basic-rules" data-bs-toggle="modal">Aturan Dasar</a></h4>
+                  <hr />
+                  <p class="description">Mematuhi aturan dasar dan menerima suasana kerja di Dialogika.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4 faq" id="faq">
+            <div class="section-title">
+              <h6>F.A.Q</h6>
+              <h2>Tentang program<span> Magang</span></h2>
+              <p>Harap perhatikan poin-poin di bawah ini; poin-poin ini memberikan penjelasan rinci mengenai semua detail terkait
+                magang kami. Selamat membaca!</p>
+            </div>
+            <div class="faq-list">
+              <ul>
+
+                <span class="badge rounded-pill bg-primary">Apa?</span>
+                <li>
+                  <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
+                    data-bs-target="#faq-list-attend" class="collapsed">Apakah kami harus hadir setiap hari?<i
+                      class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="faq-list-attend" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                     Anda hanya perlu hadir setiap hari Selasa, Kamis, Sabtu, dan Minggu dari jam 10:00 pagi hingga 16:00 sore. 
+                      Namun, pada hari Sabtu dan Minggu, terkadang kita mulai jam 09:00 pagi.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5"
+                    class="collapsed">Apakah magang ini berbayar atau tidak berbayar?<i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                     Sayangnya, saat ini program magang di Dialogika masih belum berbayar, karena kami masih
+                      perusahaan baru yang sedang berkembang dan belum memiliki kestabilan finansial untuk memberikan kompensasi moneter.
+                      Kami hanya bisa berharap prospek yang lebih baik di masa depan untuk para intern kami.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3"
+                    class="collapsed">Apakah ada kompensasi yang diberikan perusahaan,
+                    seperti transportasi dan
+                    makan siang?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                    <p>Sayangnya, kami tidak dapat memberikan tunjangan seperti makan siang dan transportasi saat ini.
+                      Terkadang, Dialogika mengadakan makan bersama pada acara-acara tertentu, tetapi ini masih cukup
+                      jarang terjadi. Jika Anda merasa ini tidak memuaskan, kami mohon untuk tidak mendaftar ke program ini.</p>
+                  </div>
+                </li>
+
+                <li>
+                  <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4"
+                    class="collapsed">Apa yang terjadi jika jadwal kuliah saya tumpang tindih dengan jam magang? <i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                      Saat wawancara, kami akan menanyakan jadwal kuliah Anda. Biasanya, jika Anda tidak tersedia
+                      pada hari Selasa, Kamis, Sabtu, dan Minggu, kami akan menyarankan untuk tidak mengambil program magang ini. 
+                      Namun, jika hanya ada dua hari Anda tidak dapat hadir, kami masih dapat mempertimbangkan partisipasi Anda.</p>
+                  </div>
+                </li>
+
+
+                <span class="badge rounded-pill bg-primary">Bagaimana?</span>
+                <li>
+                  <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2"
+                    class="collapsed">Bagaimana jika saya tidak menyelesaikan program magang? <i
+                      class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                     Jika Anda tidak dapat menyelesaikan program magang ini, sangat disayangkan Anda tidak akan menerima
+                      eSertifikat dari kami, dan juga disayangkan jika ada perusahaan yang bertanya tentang Anda di masa
+                      depan, kami tidak akan bisa berbicara banyak tentang Anda. Pastikan hati Anda siap jika ingin
+                      bergabung.
+                    </p>
+                  </div>
+                </li>
+                
+                <li>
+                  <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapsed"
+                    data-bs-target="#faq-list-1">Bagaimana cara mendaftar untuk magang ini?<i
+                      class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                      Untuk memulai proses pendaftaran, silakan ikuti langkah-langkah berikut: mulailah dengan memilih posisi 
+                      dan program magang yang diinginkan. Selanjutnya, akses formulir pendaftaran dan berikan detail pribadi Anda.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Featured Services Section -->
+
+
+    <!-- ======= Graduated Intern Section ======= -->
+    <section class="section" id="graduated-intern">
+      <div class="container">
+        <div class="section-title text-start" id="graduate-header">
+          <h5>Resume</h5>
+          <h3>See the resume of our graduated <span>interns</span>.</h3>
+          <p>Explore the accomplishments and projects of our exceptional graduates. See how they have applied their
+            skills
+            and experiences to launch successful careers and make a meaningful impact in their fields. </p>
+          <a href="resume/" target="_blank" class="blue-modern-dialogika-btn my-3" style="cursor: pointer;">See More
+            Resume</a>
+        </div>
+        <div class="flex-grow-1 row justify-content-center gap-5 overflow-hidden p-0 position-relative"
+          id="graduate-cards-container">
+
+          <!-- left cards -->
+          <div id="left-card-batch" class="left-card-batch swiper p-0 m-0 fit-width col-xl-3 col-md-3 col-5 ">
+            <div class="w-100 swiper-wrapper d-flex flex-column gap-4">
+
+              <!-- kak Natalia Cristi Fany Br Barus -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/natalia-cristi-fany-br-barus.html" target="_blank">
+                  <img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/natalia-cristi-fany-br-barus/avatar.webp"
+                    alt="Natalia Cristi Fany Br Barus" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Natalia Cristi Fany Br Barus</p>
+                    <p class="graduate-card-position text-white-50 ">Client Manager</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- kak Rahma Kamila -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/rahma-kamila.html" target="_blank">
+                  <img class="object-fit-cover h-100 w-100" src="assets/img/portofolio/rahma-kamila/kamila-1.webp"
+                    alt="Rahma Kamila" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Rahma Kamila</p>
+                    <p class="graduate-card-position text-white-50 ">Design Specialist</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- kak Delya fatima -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/delya-fatima-az-zahra.html" target="_blank">
+                  <img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/delya-fatima-az-zahra/avatar.webp" alt="Delya Fatima Az Zahra" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Delya Fatima Az Zahra</p>
+                    <p class="graduate-card-position text-white-50 ">Telemarketing</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- kak Ilham Nadhip Muhammad -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/Ilham-Nadhip-Muhammad.html" target="_blank">
+                  <img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/ilham-nadhip-muhammad/avatar.webp"
+                    alt="Ilham Nadhip Muhammad Az Zahra" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Ilham Nadhip Muhammad Az Zahra</p>
+                    <p class="graduate-card-position text-white-50 ">Telemarketing</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- kak jeremia -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/jeremia-siahaan.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/jeremia-siahaan/jeremia-3.webp" alt="Jeremia Siahaan" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Jeremia Siahaan</p>
+                    <p class="graduate-card-position text-white-50 ">
+                      People Development</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- kak Dian Lies Seviona -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/dian-lies-seviona-dabukke.html" target="_blank"><img
+                    class="object-fit-cover h-100 w-100" src="assets/img/portofolio/dian-lies-seviona-dabukke/dian.webp"
+                    alt="Dian Lies Seviona" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Dian Lies Seviona</p>
+                    <p class="graduate-card-position text-white-50 ">HTML Writer</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Sabrina Yolanda -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/sabrina-yolanda.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/sabrina-yolanda/sabrina-yolanda-2.webp" alt="Sabrina Yolanda" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Sabrina Yolanda</p>
+                    <p class="graduate-card-position text-white-50 ">Content Creator</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Lisda Nur Halisa -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/lisda-nur-halisa.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/lisda-nur-halisa/avatar.webp" alt="Lisda Nur Halisa" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Lisda Nur Halisa</p>
+                    <p class="graduate-card-position text-white-50 ">Client Manager</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Darma Putra Kusuma Wijaya -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/darma-putra-kusuma-wijaya.html" target="_blank"><img
+                    class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/darma-putra-kusuma-wijaya/darma-avatar.webp"
+                    alt="Darma Putra Kusuma Wijaya" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Darma Putra Kusuma Wijaya</p>
+                    <p class="graduate-card-position text-white-50 ">Copywriter</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Annisa Parahita R. -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/annisa-parahita-rahmandya.html" target="_blank"><img
+                    class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/annisa-parahita-rahmandya/annnisa-parahita1.webp"
+                    alt="Annisa Parahita R." />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Annisa Parahita R.</p>
+                    <p class="graduate-card-position text-white-50 ">Client Manager</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Rana Fairus Hanifah -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/rana-fairus-hanifah.html" target="_blank">
+                  <img class="object-fit-cover h-100 w-100" src="assets/img/portofolio/rana-fairus-hanifah/Rana.webp"
+                    alt="Rana Fairus Hanifah" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Rana Fairus Hanifah</p>
+                    <p class="graduate-card-position text-white-50 ">Recruiter Specialist</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Sidiq Imam Maulana -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/Sidiq-Imam-Maulana.html" target="_blank">
+                  <img class="object-fit-cover h-100 w-100" src="assets/img/portofolio/sidiq-imam-maulana/avatar.webp"
+                    alt="Sidiq Imam Maulana" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Sidiq Imam Maulana</p>
+                    <p class="graduate-card-position text-white-50 ">Telemarketing</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Resti Aisyah Qotrunada -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/Resti-Aisyah-Qotrunada.html" target="_blank">
+                  <img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/resti-aisyah-qotrunada/avatar.webp" alt="Resti Aisyah Qotrunada" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Resti Aisyah Qotrunada</p>
+                    <p class="graduate-card-position text-white-50 ">Telemarketing</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Mahdini Majidah -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/mahdini-majidah.html" target="_blank">
+                  <img class="object-fit-cover h-100 w-100" src="assets/img/portofolio/mahdini-majidah/mahdini.webp"
+                    alt="Mahdini Majidah" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Mahdini Majidah</p>
+                    <p class="graduate-card-position text-white-50 ">People Development</p>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- middle cards -->
+          <div id="middle-card-batch" class="middle-card-batch swiper p-0 m-0 fit-width col-xl-3 col-md-3 col-5 ">
+
+            <div class="w-100 swiper-wrapper d-flex flex-column gap-4">
+
+              <!-- Kak Novita Irianti Merauje -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/novita-irianti-merauje.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/novita-merauje/novita-profil.webp" alt="Novita Irianti Merauje" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Novita Irianti Merauje</p>
+                    <p class="graduate-card-position text-white-50 ">Client Manager</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Muh. Awaluddin -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/muh-awaluddin.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/muh-awaluddin/awal2x3.webp" alt="Muh. Awaluddin" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Muh. Awaluddin</p>
+                    <p class="graduate-card-position text-white-50 ">HTML Writer</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Syahriza Indra Utomo -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/Syahriza-Indra-Utomo.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/syahriza-indra-utomo/iza-sitting.jpg" alt="Syahriza Indra Utomo" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Syahriza Indra Utomo</p>
+                    <p class="graduate-card-position text-white-50 ">Client Manager</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Sesilia Octamivia Kayla N -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/sesilia-octamivia-kayla-nugraha.html" target="_blank"><img
+                    class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/sesilia-octamivia-kayla-nugraha/sesilia-avatar.webp"
+                    alt="Sesilia Octamivia Kayla N" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Sesilia Octamivia Kayla N</p>
+                    <p class="graduate-card-position text-white-50 ">Recruiter Specialist</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Ismia Wulandari -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/ismi-wulandari.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/ismia-wulandari/ismi-avatar.webp" alt="Ismia Wulandari" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Ismia Wulandari</p>
+                    <p class="graduate-card-position text-white-50 ">People Development</p>
+                  </div>
+                </a>
+              </div>
+
+
+              <!-- Kak Adnan Kusumahadi -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/adnan-kusumahadi.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/adnan-kusumahadi/avatar.webp" alt="Adnan Kusumahadi" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Adnan Kusumahadi</p>
+                    <p class="graduate-card-position text-white-50 ">Client Manager</p>
+                  </div>
+                </a>
+              </div>
+
+
+              <!-- Kak Didik Firmansyah -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/didik-firmansyah.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/didik-firmansyah/talent-1.webp" alt="Didik Firmansyah" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Didik Firmansyah</p>
+                    <p class="graduate-card-position text-white-50 ">Telemarketing</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Naela Rosya Nurilita -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/naela-rosya-nurilita.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/naela-rosya/avatar.webp" alt="Naela Rosya Nurilita" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Naela Rosya Nurilita</p>
+                    <p class="graduate-card-position text-white-50 ">Telemarketing</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Ariq Nabil Widigdo -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/ariq-nabil-widigdo.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/ariq-nabil-widigdo/ariq-avatar-2.webp" alt="Ariq Nabil Widigdo" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Ariq Nabil Widigdo</p>
+                    <p class="graduate-card-position text-white-50 ">Client Manager</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Mahdalena Shinta Nugroho -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/mahdalena-shinta-nugroho.html" target="_blank"><img
+                    class="object-fit-cover h-100 w-100" src="assets/img/portofolio/mahdalena-shinta/mahda5.webp"
+                    alt="Mahdalena Shinta Nugroho" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Mahdalena Shinta Nugroho</p>
+                    <p class="graduate-card-position text-white-50 ">Designer Specialist</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak M. Faris Nauval. R -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/M-Faris-Nauval-R.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/m-faris-naufal-r/content-creator.webp" alt="M. Faris Nauval. R" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">M. Faris Nauval. R</p>
+                    <p class="graduate-card-position text-white-50 ">Designer Specialist</p>
+                  </div>
+                </a>
+              </div>
+
+
+
+            </div>
+          </div>
+          <!-- right cards -->
+          <div id="right-card-batch"
+            class="right-card-batch d-md-flex d-none swiper p-0 m-0 fit-width col-xl-3 col-md-3 col-5 ">
+
+            <div class="w-100 swiper-wrapper d-flex flex-column gap-4">
+
+              <!-- Kak Lavendi Kurnia Utama -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/Lavendi-Kurnia-Utama.html" target="_blank">
+                  <img class="object-fit-cover h-100 w-100" src="assets/img/portofolio/lavendi-kurnia/vendi-avatar.jpg"
+                    alt="Lavendi Kurnia Utama" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Lavendi Kurnia Utama</p>
+                    <p class="graduate-card-position text-white-50 ">Telemarketing</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Arya Difa -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/arya-difa.html" target="_blank">
+                  <img class="object-fit-cover h-100 w-100" src="assets/img/portofolio/arya-difa/1.webp"
+                    alt="Arya Difa" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Arya Difa</p>
+                    <p class="graduate-card-position text-white-50 ">UI Developer</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Elizabet Noviliani Arruanlinggi -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/elizabet-noviliani-arruanlinggi.html" target="_blank"><img
+                    class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/elizabet-noviliani-arruanlinggi/avatar.webp"
+                    alt="Elizabet Noviliani Arruanlinggi" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Elizabet Noviliani Arruanlinggi</p>
+                    <p class="graduate-card-position text-white-50 ">Account Executive</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Agatha Betasabrina Sampebua -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/agatha-betasabrina-sampebua.html" target="_blank"><img
+                    class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/agatha-betasabrina-sampebua/agatha-2x3.jpg"
+                    alt="Agatha Betasabrina Sampebua" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Agatha Betasabrina Sampebua</p>
+                    <p class="graduate-card-position text-white-50 ">CopyWriter</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Theo Martin Santoso -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/theo-martin-santoso.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/theo-martin-santoso/avatar.webp" alt="Theo Martin Santoso" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Theo Martin Santoso</p>
+                    <p class="graduate-card-position text-white-50 ">CopyWriter</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Alfa Yudishtira -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/alfa-yudishtira.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/alfa-yudishtira/avatar.webp" alt="Alfa Yudishtira" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Alfa Yudishtira</p>
+                    <p class="graduate-card-position text-white-50 ">Telemarketing</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Thomas Theo Arisadewo -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/thomas-theo-arisadewo.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/thomas-theo-arisadewo/thomas.webp" alt="Thomas Theo Arisadewo" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Thomas Theo Arisadewo</p>
+                    <p class="graduate-card-position text-white-50 ">Video Editor</p>
+                  </div>
+                </a>
+              </div>
+
+
+              <!-- Kak Mei Taufik Hidayat -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/mei_Taufik.html" target="_blank">
+                  <img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/mei-taufik-hidayat/IMG_1002-Mei-Taufik-Hidayat.webp"
+                    alt="Mei Taufik Hidayat" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Mei Taufik Hidayat</p>
+                    <p class="graduate-card-position text-white-50 ">Client Manager</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Muhammad Ariq Dzulfikar -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/muhammad-ariq-dzulfikar.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/muhammad-ariq-dzulfikar/avatar.webp" alt="Muhammad Ariq Dzulfikar" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Muhammad Ariq Dzulfikar</p>
+                    <p class="graduate-card-position text-white-50 ">Recruiter Specialist</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Muhammad Nasrudin Fahmi -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/nasrudin-fahmi.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/nasrudin-fahmi/1.webp" alt="Muhammad Nasrudin Fahmi" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Muhammad Nasrudin Fahmi</p>
+                    <p class="graduate-card-position text-white-50 ">HTML Writer</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Artika Dian Kumarajati -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/artika-dian-kumarajati.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/Artika/Artika.webp" alt="Artika Dian Kumarajati" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Artika Dian Kumarajati</p>
+                    <p class="graduate-card-position text-white-50 ">Social Media Analyst</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Septi Allya Rizki -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/septi-allya.html" target="_blank"><img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/septi-allya/1.webp" alt="Septi Allya Rizki" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Septi Allya Rizki</p>
+                    <p class="graduate-card-position text-white-50 ">Designer Specialist</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Kak Tasya Carolina Simanjuntak -->
+              <div class="swiper-slide swiper-card position-relative overflow-hidden p-0 rounded-3 ">
+                <a href="/resume/Tasya-Carolina-Simanjuntak.html" target="_blank">
+                  <img class="object-fit-cover h-100 w-100"
+                    src="assets/img/portofolio/Tasya/Tasya-Carolina-Simanjuntak.webp"
+                    alt="Tasya Carolina Simanjuntak" />
+                  <div id="card-details" class="position-absolute bottom-0 z-2 w-100 px-2 pt-2">
+                    <p class="text-white graduate-card-name p-0 m-0">Tasya Carolina Simanjuntak</p>
+                    <p class="graduate-card-position text-white-50 ">Client Manager</p>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Graduated Intern Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="section-title" data-aos="fade-right">
+              <h5>Testimonials</h5>
+              <h3>Positive Feedback</h3>
+              <p class="text-start">Here are testimonials from friends who participated in the internship activities
+                at
+                Dialogika, especially those who joined the internship program in Yogyakarta.</p>
+              <div class="text-center text-md-start" style="margin-top:20px;">
+                <a target="__blank" class="more-btn blue-modern-dialogika-btn"
+                  href="https://www.google.com/maps/place/Dialogika+Kelas+Public+Speaking/@-7.7552251,110.3760129,17z/data=!4m18!1m9!3m8!1s0x2e7a597ab489149d:0x9306a2474322de7c!2sDialogika+Kelas+Public+Speaking!8m2!3d-7.7552251!4d110.3785878!9m1!1b1!16s%2Fg%2F11qyjgv8c8!3m7!1s0x2e7a597ab489149d:0x9306a2474322de7c!8m2!3d-7.7552251!4d110.3785878!9m1!1b1!16s%2Fg%2F11qyjgv8c8?entry=ttu">Google
+                  Review</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <img loading="lazy" src="assets/img/intern/naela.webp" class="testimonial-img " alt="Testimoni-1">
+                      <h3>Naela Rosya N</h3>
+                      <h4>
+                        Telemarketing
+                      </h4>
+                      <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Magang di Dialogika selama 3 bulan adalah pengalaman luar biasa yang membuka wawasan saya dalam
+                        dunia marketing. Selama waktu tersebut, saya tidak hanya belajar teori, tetapi langsung terjun
+                        dan menghadapi tantangan nyata dalam mengembangkan strategi pemasaran dan berinteraksi dengan
+                        klien.
+                        <span class="dots">...</span> <span class="readMore">Read More
+                          &raquo;</span>
+                        <span class="moreText"> Lingkungan kerja yang mendukung dan kesempatan untuk terus belajar
+                          membuat saya semakin
+                          percaya diri untuk melangkah ke dunia profesional.
+                          Thank you, Dialogika, for shaping me into a better version of myself.
+                          <span class="readLess">&laquo;Real Less</span>
+                        </span>
+
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <img loading="lazy" src="assets/img/intern/m-faris.jpg" class="testimonial-img "
+                        alt="Testimoni-1">
+                      <h3>M. Faris Naufal.R</h3>
+                      <h4>
+                        Designer Specialist
+                      </h4>
+                      <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Saya sangat senang atas kesempatan magang selama tiga bulan di Dialogika. Selama masa magang
+                        ini, saya berhasil mendorong batasan kreativitas saya dalam mendesign, menghadapi tantangan
+                        baru, dan menemukan solusi inovatif. Selain itu, saya juga memperoleh wawasan yang b...
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <img loading="lazy" src="assets/img/intern/septi.jpg" class="testimonial-img" alt="Testimoni-2">
+                      <h3>Septi Allya Rizki</h3>
+                      <h4>
+                        Design Specialist
+                      </h4>
+                      <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Worth it banget untuk teman teman mahasiswa atau teman teman yang lagi cari experience magang
+                        baik itu online atau offline, bisa nambah relasi, nambah pengalaman, bisa untuk isi
+                        portofolio,
+                        dan cv jugaa teman temanya seruu dan humble.
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+
+
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <img loading="lazy" src="assets/img/intern/Alfa.jpg" class="testimonial-img" alt="Testimoni-3">
+                      <h3>Alfa Yudishtira</h3>
+                      <h4>
+                        Telemarketing
+                      </h4>
+                      <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Magang di Dialogika merupakan pengalaman baru yang sangat menarik dan mungkin sulit didapatkan
+                        di tempat lain yang menjadikan hal yang sangat berkesan untuk saya, banyak hal baru yang saya
+                        dapat mulai dari ilmu baru, pengalaman pekerjaan baru dan teman teman baru. Untuk dialogika
+                        semoga bisa ...
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <img loading="lazy" src="assets/img/intern/Artika.jpg" class="testimonial-img" alt="Testimoni-4">
+                      <h3>Artika Dian Kumarajati</h3>
+                      <h4>
+                        Social Media Analyst
+                      </h4>
+                      <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Seneng bisa join Dialogika, 3 bulan internship belajar banyak hal, bisa ngembangin soft & hard
+                        skill, ketemu temen² baru dari berbagai univ dan kerja sambil seru²an
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- Venue Section -->
+    <section id="venue" class="venue section" style="margin-bottom:-60px;">
+      <!-- Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" style="padding-inline: 0">
+        <div class="row g-0">
+          <div class="col-lg-6 venue-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15813.303312562135!2d110.3785878!3d-7.7552251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a597ab489149d%3A0x9306a2474322de7c!2sKelas%20Public%20Speaking%3A%20Dialogika!5e0!3m2!1sen!2ssg!4v1720210353444!5m2!1sen!2ssg"
+              frameborder="0" style="border: 0" allowfullscreen=""></iframe>
+          </div>
+
+          <div class="col-lg-6 venue-info">
+            <div class="row justify-content-center">
+              <div class="col-11 col-lg-8 position-relative">
+                <div class="section-title" style="margin-bottom:0px;">
+                  <h5>Our Office</h5>
+                  <h3>Sleman, Yogyakarta</h3>
+                </div>
+                <p>
+                  Masih bingung dengan posisi yang ingin Anda ambil? Kontak Admin Dialogika sekarang! Anda bisa curhat
+                  ngobrol dan menentukan posisi yang sesuai dengan kebutuhan Anda
+                </p>
+
+                <a class="cta-btn" href="https://wa.me/6285780007799" target="__blank"><i class="bi bi-whatsapp"></i>
+                  Whatsapp Admin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid venue-gallery-container" data-aos="fade-up" data-aos-delay="100"
+        style="padding-inline: 0">
+        <div class="row g-0">
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/photo/1.webp" class="glightbox" data-gall="venue-gallery">
+                <img loading="lazy" src="assets/img/photo/1.webp" alt="Gambar CEO Dialogika" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/photo/2.webp" class="glightbox" data-gall="venue-gallery">
+                <img loading="lazy" src="assets/img/photo/2.webp" alt="Gambar Social Media Manager" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/photo/3.webp" class="glightbox" data-gall="venue-gallery">
+                <img loading="lazy" src="assets/img/photo/3.webp" alt="Gambar tim mengobrol santai" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/photo/4.webp" class="glightbox" data-gall="venue-gallery">
+                <img loading="lazy" src="assets/img/photo/4.webp" alt="Gambar Human Resource" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer & Counter Area ======= -->
+  <main-footer></main-footer>
+  <!-- ======= End Footer & Counter Area ======= -->
+
+  <footer-modal></footer-modal>
+
+  <a href="#hero" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- ======= Modal Basic Rules ======= -->
+  <div class="modal fade" id="basic-rules" tabindex="-1" aria-labelledby="basic-rules" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>Basic Rules Internship</strong></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="services-title">
+            <!-- <div class="section-label">ATURAN</div> -->
+            <div class="section-label">
+              *Panduan wajib untuk semua peserta internship Dialogika. 
+              Pastikan Anda memahami dan mematuhi setiap poin sebelum memulai program.
+            </div>
+          </div>
+          <div class="row">
+        <!-- service-1 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-briefcase-fill"></i>
+                </div>
+                <h4 class="service-title">Mengerti Bahwa Internship Adalah Latihan Kerja</h4>
+                <p class="service-description">Mengerti bahwa internship adalah latihan kerja, bukan latihan organisasi kampus, yang
+                    berarti kamu memahami bahwa berkomitmen internship setara dengan komitmen kerja.</p>
+              </div>
+            </div>
+        <!-- service-2 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi bi-calendar-check"></i>
+                </div>
+                <h4 class="service-title">Tiga Bulan Internship</h4>
+                <p class="service-description">Mampu melakukan internship selama 3 bulan di Dialogika. Apabila belum bisa atau ada permintaan khusus
+                  dari kampus diharapkan melapor terlebih dahulu.</p>
+              </div>
+            </div>
+        <!-- service-3 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h4 class="service-title">Mendapatkan Izin Orang Tua</h4>
+                <p class="service-description">Pastikan sebelum join kamu sudah mendapatkan izin dari orang tua, kami tidak ingin internshipmu
+                  terhenti karena tidak dapat izin dari orang tua.</p>
+              </div>
+            </div>
+        <!-- service-4 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-heart-fill"></i>
+                </div>
+                <h4 class="service-title">Tidak Bucin</h4>
+                <p class="service-description">
+                  Aturan ini serius! Jika kamu punya pacar dan masih harus dapat izin dari pacarmu untuk ikutan
+                  internship atau kegiatan apapun. Saran kami jangan join ke Dialogika.
+                </p>
+              </div>
+            </div>
+        <!-- service-5-->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-person-check"></i>
+                </div>
+                <h4 class="service-title">Care Dengan Penampilan</h4>
+                <p class="service-description">
+                  Menjaga dan terus memperbaiki penampilan adalah bagian dari core yang ada di Dialogika, karena product
+                  Dialogika adalah public speaking. Dan berlatih menjaga penampilan adalah bagian dari representasi yang
+                  ditampilkan di Dialogika.
+                </p>
+              </div>
+            </div>
+        <!-- service-6 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-emoji-smile"></i>
+                </div>
+                <h4 class="service-title">Smile : Happy & Fun</h4>
+                <p class="service-description">
+                  aking one person smile can change the world. Maybe not the whole world, but their world. Mari kita
+                  bersama-sama membiasakan tersenyum, memberi salam, dan menyapa kepada siapapun yang kita jumpai.
+                </p>
+              </div>
+            </div>
+        <!-- service-7 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-phone-fill"></i>
+                </div>
+                <h4 class="service-title">Wajib Install Aplikasi</h4>
+                <p class="service-description">
+                  Berikut ini adalah aplikasi wajib yang harus terinstall untuk seluruh tim:
+                </p>
+                <ul class="service-description">
+                  <li>Clickup</li>
+                  <li>Messenger (from Facebook)</li>
+                </ul>
+              </div>
+            </div>
+        <!-- service-8 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-exclamation-triangle"></i>
+                </div>
+                <h4 class="service-title">No Excuse</h4>
+                <p class="service-description">
+                  Senantiasa “no excuse” yaitu tidak beralasan untuk sesuatu yang dianggap bisa menjadi solusi
+                  pekerjaan. (dengan catatan tidak melanggar agama dan keyakinan).
+                </p>
+              </div>
+            </div>
+        <!-- service-9 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-hand-thumbs-up"></i>
+                </div>
+                <h4 class="service-title">No Blaming</h4>
+                <p class="service-description">
+                  Senantiasa “no blame” yaitu tidak mengeluhkan dan menyalahkan orang lain atau rekan kerja terkait
+                  pekerjaan atau apapun yang dirasa diluar kekuasaan kita.
+                </p>
+                <blockquote>
+                  <p><b>Jangan menjadi korban, jadilah tersangka</b><br>－Anonymous</p>
+                  <p></p>
+                </blockquote>
+              </div>
+            </div>
+        <!-- service-10 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-chat-dots"></i>
+                </div>
+                <h4 class="service-title">Budayakan Salah Saya</h4>
+                <p class="service-description">
+                  Apabila terjadi sesuatu yang salah, baik internal dan eksternal maka jawablah dengan "Salah Saya".
+                </p>
+              </div>
+            </div>
+        <!-- service-11 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-lightning-charge"></i>
+                </div>
+                <h4 class="service-title">Amat Sangat Wajib Fast Response</h4>
+                <p class="service-description">
+                  Catatan, respose dapat berupa:Catatan, respose dapat berupa:
+                </p>
+                <ul>
+                  <li><b>Komentar :</b> noted kak</li>
+                  <li><b>Reaction :</b> 👍🏻👎🏼 ❤️ 😊😆😢 😡</li>
+                </ul>
+                <blockquote>Apabila tidak bisa fast response maka <b>wajib izin</b></blockquote>
+              </div>
+            </div>
+        <!-- service-12 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-chat-square-text"></i>
+                </div>
+                <h4 class="service-title">Berkomunikasi Via Clickup Chat</h4>
+                <p class="service-description">
+                  Setiap chatting di dalam kerjaan, harus menggunakan clickup chat, dan diwajibkan untuk memantau
+                  clickup chat
+                  dan meng-aktifkan notifikasi clickup chat.
+                </p>
+              </div>
+            </div>
+        <!-- service-13 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-eye-slash"></i>
+                </div>
+                <h4 class="service-title">Tidak Menjadi Silent Reader</h4>
+                <p class="service-description">
+                  Upayakan untuk exist di dalam group kerja tidak menjadi silent reader saat ada pembicaraan di group
+                  clickup chat.
+                </p>
+              </div>
+            </div>
+        <!-- service-14 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-wifi"></i>
+                </div>
+                <h4 class="service-title">Pastikan Koneksi Internet Aman</h4>
+                <p class="service-description">
+                  Pastikan koneksi internetmu aman, karena internship di Dialogika bersifat mix, WFO dan WFH.
+                </p>
+              </div>
+            </div>
+        <!-- service-15 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-camera-video"></i>
+                </div>
+                <h4 class="service-title">Always ON CAM</h4>
+                <p class="service-description">
+                  Selalu On Cam apabila melakukan meeting online bersama tim lainnya.
+                </p>
+              </div>
+            </div>
+        <!-- service-16 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-search"></i>
+                </div>
+                <h4 class="service-title">Selalu Explore Sebelum Bertanya</h4>
+                <p class="service-description">
+                  Latihan untuk mencari tahu sebelum bertanya, selalu memanfaatkan internet resources sebelum menanyakan
+                  hal-hal teknis.
+                </p>
+              </div>
+            </div>
+        <!-- service-17 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h4 class="service-title">Apabila Tidak Mengerti Maka Bertanyalah di Group Chat</h4>
+                <p class="service-description">
+                  Dilarang keras bertanya via private chat terutama saat terkait dengan perkerjaan.
+                </p>
+              </div>
+            </div>
+        <!-- service-18 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-file-text"></i>
+                </div>
+                <h4 class="service-title">Berlatih Membuat Laporan</h4>
+                <p class="service-description">
+                  Apapun profesimu dimasa depan, membuat laporan adalah bagian dari perkerjaan yang akan selalu kamu
+                  lakukan. Baik itu entrepreneur, seniman dan lain-lain.
+                </p>
+                <blockquote>
+                  <p>Perkerjaan ini tidak menyenangkan namun berlatihlah untuk melakukannya</p>
+                </blockquote>
+              </div>
+            </div>
+        <!-- service-19 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-phone-vibrate"></i>
+                </div>
+                <h4 class="service-title">Respect: Tidak Pegang HP Saat Seseorang Berbicara</h4>
+                <p class="service-description">
+                  Sangat dilarang KERAS untuk FOMO dan melihat HP di saat ada yang sedang berbicara.
+                </p>
+              </div>
+            </div>
+        <!-- service-20 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-check-circle"></i>
+                </div>
+                <h4 class="service-title">Deal Done</h4>
+                <p class="service-description">
+                  Biasakan dan berlatihlah untuk menyelesaikan apa yang sudah dikomitmenkan kepada diri kita sendiri dan
+                  ini sangatlah penting untuk menjadi pribadi yang lebih baik.
+                </p>
+                <blockquote>Contoh <b>BUKAN Deal Done:</b> Kak Design nya udah selesai <b>tinggal</b> di upload.
+                </blockquote>
+                <p>Kata-kata "tinggal" itu <b>bukanlah</b> deal done</p>
+              </div>
+            </div>
+        <!-- service-21 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-person-plus"></i>
+                </div>
+                <h4 class="service-title">Panggilan "Kak"</h4>
+                <p class="service-description">
+                  Mari kita panggil semua teman-teman kita dengan panggilan yang lebih layak, bukan mas dan mbak, tetapi
+                  "kakak".
+                </p>
+              </div>
+            </div>
+        <!-- service-22 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-clock"></i>
+                </div>
+                <h4 class="service-title">Do Not Wasting Time</h4>
+                <p class="service-description">
+                  <b>Dilarang untuk menghabiskan waktu terlalu lama</b> untuk ngobrol, me-rokok, leyeh-leyeh, update
+                  story dan lain sebagainya terutama diwaktu istirahat.
+                </p>
+              </div>
+            </div>
+        <!-- service-23 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h4 class="service-title">Jaga Nama Baik</h4>
+                <p class="service-description">
+                  DIALOGIKA adalah milik kita bersama. Untuk itu, mari kita jaga nama baik DIALOGIKA bersama-sama.
+                </p>
+              </div>
+            </div>
+        <!-- service-24 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-translate"></i>
+                </div>
+                <h4 class="service-title">Tidak Menggunakan Bahasa Daerah</h4>
+                <p class="service-description">
+                  Pastikan selalu menggunakn bahasa indonesia atau bahasa asing, dan jangan menggunakan bahasa daerah.
+                </p>
+              </div>
+            </div>
+        <!-- service-25 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-file-earmark-x"></i>
+                </div>
+                <h4 class="service-title">Dilarang Menghapus files tanpa izin</h4>
+                <p class="service-description">
+                  Dilarang menghapus file yang ada didalam google drive tanpa izin. Ini pelanggaran berat dan untuk
+                  beberapa hal bisa kami tuntut hingga ke meja hijau.
+                </p>
+              </div>
+            </div>
+        <!-- service-26 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-exclamation-circle"></i>
+                </div>
+                <h4 class="service-title">Wajib Salah, atau kena SP</h4>
+                <p class="service-description">
+                <blockquote>Dialogika kalau kamu nggak salah kamu akan kena SP.</blockquote>
+                  Jangan takut untuk take action, jangan tunggu menunggu, ingatlah kalau kesalahan membuat kita jauh
+                  lebih baik dan menjadikan kita lebih berani. Just do it!
+                </p>
+              </div>
+            </div>
+        <!-- service-27 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-calendar-x"></i>
+                </div>
+                <h4 class="service-title">Izin Lebih Dari 3 Hari WAJIB Memakai Surat Tertulis</h4>
+                <p class="service-description">
+                  Khusus untuk izin lebih dari 3 hari karena kepentingan apapun wajib membuat surat tertulis
+                </p>
+              </div>
+            </div>
+        <!-- service-28 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="bi bi-exclamation-triangle-fill"></i>
+                </div>
+                <h4 class="service-title">Surat Peringatan: Apabila Rules Dilanggar Terlalu Sering</h4>
+                <p class="service-description">
+                  Apabila melanggar rules diatas <b>terlalu sering kemudian bila diberitahu justru ngeyel</b> maka
+                  <b>dengan terpaksa</b> kami memberikan surat peringatan, apabila masih dilanggar maka sertifikat tidak
+                  bisa keluar
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="blue-modern-dialogika-btn" data-bs-dismiss="modal">I Read Everything</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- End Modal Basic Rules -->
+
+  <!-- ======= Modal Open Letter ======= -->
+  <div class="modal fade" id="open-letter" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="open-letter" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5"><strong>Dear Candidate</strong></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body inner-page">
+          <div class="container">
+            <p class="blogs">
+            <h3>Building Career... isn't Simple</h3>
+            <p>Beberapa dari <b>kamu mungkin sudah</b> sadar</p>
+            <p>Mungkin juga belum, masih belum tau kedepannya gimana...?</p>
+            <p><b>Mau jadi apa?</b></p>
+            <p>Pengen liburan, <u>pengen</u> healing...</p>
+            <p>Skrpsi <u>belum selesai</u>, mulai menyesal mengambil jurusan saat ini.</p>
+            <p>Atau malah masih runyam sama pacar atau gebetan yang gak jelas.</p>
+            <p>That's ok... <b><strong>but time never stop</strong></b></p>
+            <p>Jika kamu <u>membaca sampai tulisan ini,</u> <b>then you care about your career</b></p>
+            <p>Bukan internship ini, bukan pula paid dan unpaid nya internship ini.</p>
+            <h3>It's time to care about you!</h3>
+            <p>Let's invest your time and energy</p>
+            <p>We have <b>challenging news</b> for you</p>
+            <p>Internship ini berlangsung selama 3 bulan dan unpaid.</p>
+            <p>dan jam kerjanya ajaib kayak trampolin</p>
+            <p>WFH dan juga WFO (khusus Jogja & Jakarta)</p>
+            <p>But this is a <b>good news</b></p>
+            <p>Kami <strong>tidak mendidik</strong> kamu menjadi karyawan</p>
+            <p>Kamu akan belajar menjadi intrapreneur dan entrepreneur</p>
+            <p>Mindset mu mengenai uang juga kami latih</p>
+            <p>Not how to make the money, but <u>how the money goes</u> to you.</p>
+            <p>Mengerti pola uang masuk, dan mempelajari sistemnya hingga <u>science</u>-nya</p>
+            <p>Then you will understand... why after this intern you will different.</p>
+            <p class="fst-italic">Now it's time to make <u><b>decision:</b></u> leave or take it!</p>
+            <p>Listen to your self, and <b>remember...</b></p>
+            <p>“Whenever you see a <u>successful man or woman</u>, they once made a <b>courageous decision.</b>”</p>
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="blue-modern-dialogika-btn" data-bs-dismiss="modal">I'm Ready</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- End Modal Open Letter -->
+
+  <!-- Modal 2 -->
+  <div class="modal popup-box fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog popup-box-dialog modal-dialog-centered">
+      <div class="modal-content popup-box-content">
+        <div class="popup-card" style="width:100%">
+          <button type="button" class="btn popup2-btn ms-auto" data-bs-dismiss="modal"><i
+              class="fa-solid fa-xmark"></i></button>
+          <img loading="lazy" src="https://i.ytimg.com/vi/1hJKq6QAb48/maxresdefault.jpg" class="card-img-top"
+            alt="don't know" style="border-top-left-radius: 20px;border-top-right-radius: 20px;border:0px;">
+          <div class="card-body popup-card-body">
+            <div class="popup-title-area">
+              <p class="popup-sub">Isikan Sekarang</p>
+              <h5 class="card-title popup-title">Form Pendaftaran Internship</h5>
+            </div>
+            <a href="#" class="btn popup-play" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                class="fa-solid fa-play"></i></a>
+          </div>
+          <form action="javascript:void" method="post" id="heroForm" enctype="text/plain" class="popup-form">
+            <div class="row gy-3 mb-3">
+              <div class="col-lg-6">
+                <label for="names" class="form-label">Full Name</label>
+                <input type="text" name="Name" class="form-control" id="names" pattern="[a-zA-Z\s]{3,100}"
+                  placeholder="Nama Lengkap*" required>
+              </div>
+              <div class="col-lg-6">
+                <label for="locations" class="form-label">Domisili</label>
+                <input type="text" class="form-control" name="Location" id="locations" pattern="[a-zA-Z\s]{3,100}"
+                  placeholder="Domisili*" required>
+              </div>
+              <div class="col-lg-6">
+                <label for="whatsapps" class="form-label">Whatsapp</label>
+                <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" pattern="[0-9]{10,15}"
+                  placeholder="Whatsapp*" required="">
+              </div>
+              <div class="col-lg-6">
+                <label for="events" class="form-label">Position</label>
+                <select name="Program" id="programs" class="form-control" required>
+                  <option value="" selected disabled value="">Choose Program</option>
+                  <optgroup label="General Manager">
+                    <option>Client Manager</option>
+                  </optgroup>
+                  <optgroup label="Marketing">
+                    <option>Telemarketing</option>
+                    <option>Digital Marketing</option>
+                  </optgroup>
+                  <optgroup label="Human Resource">
+                    <option>Recruiter</option>
+                    <option>People Development</option>
+                  </optgroup>
+                  <optgroup label="Social Media Manager">
+                    <option>Content Writer</option>
+                    <option>Design Specialist</option>
+                    <option>Content Creator</option>
+                    <option>HTML Writer</option>
+                    <option>Video Editor</option>
+                  </optgroup>
+                </select>
+              </div>
+              <select class="d-none" name="Timestamp">
+                <option id="timestamp"></option>
+              </select>
+            </div>
+            <button class="custom-btn2 send_contact" id="submits" onclick="HeroForm()">Daftar Sekarang</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Modal 3 -->
+  <div class="modal popup-box fade" id="clickup" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog popup-box-dialog modal-dialog-centered">
+      <div class="modal-content popup-box-content">
+        <div class="modal-body inner-page">
+          <iframe class="clickup-embed clickup-dynamic-height"
+            src="https://forms.clickup.com/2307700/f/26dkm-10122/A7YM1VQHA312Y7QYYC" onwheel="" width="100%"
+            height="100%" style="background: transparent; border: 0px solid #ccc;border-radius:8px;"></iframe>
+          <script async src="https://app-cdn.clickup.com/assets/js/forms-embed/v1.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Part JS -->
+  <script src="assets/part/counting-down/count.js"></script>
+  <script src="assets/part/gallery-photo/gallery.js"></script>
+  <script src="assets/part/redirect.js"></script>
+  <script src="assets/part/smooth-slider/smooth-slider.js"></script>
+  <script src="assets/part/smooth-slider/graduate-slider.js"></script>
+  <script src="assets/part/read-more/read-more_less.js"></script>
+  <script src="assets/part/modals/modal-component.js"></script>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/international-phone-number/intlTelInput.min.js"></script>
+  <script src="assets/vendor/international-phone-number/script.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/js/headerfooter.js"></script>
+  <script src="assets/js/timestamp.js"></script>
+  <script src="assets/js/whatsapp.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/clickup-task.js"></script>
+
+
+</body>
+
+</html>
