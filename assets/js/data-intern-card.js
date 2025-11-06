@@ -15,6 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
+        ],
+      rating: -,
+      whatsappNumber: "-",
+      profilePage: "nabilah-al-mira.html",
+      avatarPath: "../assets/img/portofolio/nabilah-al-mira/image.png",
+      resumePath: "-",
+    },
     {
       namaIntern: "Nilam Azzahro",
       posisi: "-",
@@ -28,6 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
+        ],
+      rating: -,
+      whatsappNumber: "-",
+      profilePage: "nilam-azzahro.html",
+      avatarPath: "../assets/img/portofolio/nilam-azzahro/image.png",
+      resumePath: "-",
+    },
+    
     {
       namaIntern: "Dilla Nafisa",
       posisi: "-",
@@ -41,6 +56,13 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
+        ],
+      rating: -,
+      whatsappNumber: "-",
+      profilePage: "dilla-nafisa.html",
+      avatarPath: "../assets/img/portofolio/dilla-nafisa/image.png",
+      resumePath: "-",
+    },
     {
       namaIntern: "Kayla Ranatasya Rahmadania Putri",
       posisi: "-",
@@ -54,6 +76,13 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
+        ],
+      rating: -,
+      whatsappNumber: "-",
+      profilePage: "kayla-ranatasya-rahmadania-putri.html",
+      avatarPath: "../assets/img/portofolio/kayla-ranatasya-rahmadania-putri/image.png",
+      resumePath: "-",
+    },
     {
       namaIntern: "Zahwa Aufa Febrina",
       posisi: "-",
@@ -67,6 +96,13 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
+        ],
+      rating: -,
+      whatsappNumber: "-",
+      profilePage: "zahwa-aufa-febrina.html",
+      avatarPath: "../assets/img/portofolio/zahwa-aufa-febrina/image.png",
+      resumePath: "-",
+    },
     {
       namaIntern: "Ni Made Ana Maharani",
       posisi: "-",
@@ -80,6 +116,13 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
+        ],
+      rating: -,
+      whatsappNumber: "-",
+      profilePage: "ni-made-ana-maharani.html",
+      avatarPath: "../assets/img/portofolio/ni-made-ana-maharani/image.png",
+      resumePath: "-",
+    },
     {
       namaIntern: "Farida Nuraini Beru Peranginangin",
       posisi: "-",
@@ -93,6 +136,13 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
+        ],
+      rating: -,
+      whatsappNumber: "-",
+      profilePage: "farida-nuraini-beru-peranginangin.html",
+      avatarPath: "../assets/img/portofolio/farida-nuraini-beru-peranginangin/image.png",
+      resumePath: "-",
+    },
     {
       namaIntern: "Muhammad Rumi Fasabrun Jamil",
       posisi: "-",
@@ -106,6 +156,13 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
+        ],
+      rating: -,
+      whatsappNumber: "-",
+      profilePage: "muhammad-rumi-fasabrun-jamil.html",
+      avatarPath: "../assets/img/portofolio/muhammad-rumi-fasabrun-jamil/image.png",
+      resumePath: "-",
+    },
     {
       namaIntern: "Muhammad Nafis Muwaffaq Muwas",
       posisi: "-",
@@ -119,6 +176,13 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
+        ],
+      rating: -,
+      whatsappNumber: "-",
+      profilePage: "muhammad-nafis-muwaffaq-muwas.html",
+      avatarPath: "../assets/img/portofolio/muhammad-nafis-muwaffaq-muwas/image.png",
+      resumePath: "-",
+    },
     {
       namaIntern: "Avip Al Mukti",
       posisi: "-",
@@ -132,6 +196,13 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
+        ],
+      rating: -,
+      whatsappNumber: "-",
+      profilePage: "avip-al-mukti.html",
+      avatarPath: "../assets/img/portofolio/avip-al-mukti/image.png",
+      resumePath: "-",
+    },
     {
       namaIntern: "Muhammad Abyan Alhafizh",
       posisi: "-",
@@ -145,6 +216,13 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
+        ],
+      rating: -,
+      whatsappNumber: "-",
+      profilePage: "muhammad-abyan-alhafizh.html",
+      avatarPath: "../assets/img/portofolio/muhammad-abyan-alhafizh/image.png",
+      resumePath: "-",
+    },
    {
       namaIntern: "Vina Ayu Lestari",
       posisi: "-",
@@ -158,6 +236,13 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
+        ],
+      rating: -,
+      whatsappNumber: "-",
+      profilePage: "vina-ayu-lestari.html",
+      avatarPath: "../assets/img/portofolio/vina-ayu-lestari/image.png",
+      resumePath: "-",
+    },
     {
       namaIntern: "Fauziah Fadilla Rachma",
       posisi: "-",
@@ -171,6 +256,13 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
+        ],
+      rating: -,
+      whatsappNumber: "-",
+      profilePage: "fauziah-fadilla-rachma.html",
+      avatarPath: "../assets/img/portofolio/fauziah-fadilla-rachma/image.png",
+      resumePath: "-",
+    },
     {
       namaIntern: "Muhammad Sulthoni Akbar",
       posisi: "-",
@@ -184,6 +276,13 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
+        ],
+      rating: -,
+      whatsappNumber: "-",
+      profilePage: "muhammad-sulthoni-akbar.html",
+      avatarPath: "../assets/img/portofolio/muhammad-sulthoni-akbar/image.png",
+      resumePath: "-",
+    },
     {
       namaIntern: "Agnes Debora Marina Sangkide",
       posisi: "-",
@@ -197,6 +296,13 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
+        ],
+      rating: -,
+      whatsappNumber: "-",
+      profilePage: "agnes-debora-marina-sangkide.html",
+      avatarPath: "../assets/img/portofolio/agnes-debora-marina-sangkide/image.png",
+      resumePath: "-",
+    },
     {
       namaIntern: "Muhammad Alban",
       posisi: "-",
@@ -210,6 +316,13 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
+        ],
+      rating: -,
+      whatsappNumber: "-",
+      profilePage: "muhammad-alban.html",
+      avatarPath: "../assets/img/portofolio/muhammad-alban/image.png",
+      resumePath: "-",
+    },
     {
       namaIntern: "Rakha Damonza Yodiansyah",
       posisi: "-",
@@ -223,6 +336,13 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
+      ],
+      rating: -,
+      whatsappNumber: "-",
+      profilePage: "rakha-damonza-yodiansyah.html",
+      avatarPath: "../assets/img/portofolio/rakha-damonza-yodiansyah/image.png",
+      resumePath: "-",
+    },
     {
       namaIntern: "Nabilah Al Mira",
       posisi: "-",
