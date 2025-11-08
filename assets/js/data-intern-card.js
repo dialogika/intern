@@ -1708,19 +1708,46 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
     }
   };
 
-  // Helper to generate star ratings
-  const generateStars = (tags) => {
-    let stars = 3; // Default value, bila tags hanya ada "Completed Intern"
-    if (tags.includes("Excellent Talent")) stars += 0.5;
-    if (tags.includes("Extended Intern")) stars += 0.5;
-    if (tags.includes("CEO Verified")) stars += 1;
+ // Helper to generate star ratings. Sekarang menerima rating numerik dan array tags.
+  const generateStars = (rating, tags) => {
+    let finalStars = 0;
+    
+    // 1. Prioritas: Menggunakan nilai numerik 'rating' jika ada dan valid (antara 0 hingga 5)
+    if (typeof rating === 'number' && rating > 0 && rating <= 5) {
+        finalStars = rating;
+    } 
+    // 2. Fallback: Menggunakan logika perhitungan dari 'tags'
+    else {
+        finalStars = 3; // Default value, bila tags hanya ada "Completed Intern"
+        if (tags.includes("Excellent Talent")) finalStars += 0.5;
+        if (tags.includes("Extended Intern")) finalStars += 0.5;
+        if (tags.includes("CEO Verified")) finalStars += 1;
+    }
+    
+    // Pastikan skor tidak melebihi 5
+    finalStars = Math.min(finalStars, 5); 
+    
+    const maxStars = 5;
+    const fullStars = Math.floor(finalStars);
+    let starsHTML = '';
+    
+    for (let i = 0; i < fullStars; i++) {
+        starsHTML += '<i class="bi bi-star-fill"></i>';
+    }
+    
+    if (finalStars % 1 === 0.5) {
+        starsHTML += '<i class="bi bi-star-half"></i>';
+    }
+    
+    const currentStarsCount = fullStars + (finalStars % 1 === 0.5 ? 1 : 0);
+    const emptyStars = maxStars - currentStarsCount;
 
-    return Array.from({ length: 5 }, (_, i) => {
-      if (i < Math.floor(stars)) return '<i class="bi bi-star-fill"></i>';
-      if (i < stars) return '<i class="bi bi-star-half"></i>';
-      return '<i class="bi bi-star"></i>';
-    }).join("");
-  };
+    for (let i = 0; i < emptyStars; i++) {
+        starsHTML += '<i class="bi bi-star"></i>';
+    }
+
+    return starsHTML;
+  };
 
   // SVG Icons untuk platform social media
   const getSocialIcon = (platform, url) => {
@@ -1804,7 +1831,7 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
             })
             .join(" ");
 
-          const starsHTML = generateStars(internData.tags);
+          const starsHTML = generateStars(internData.rating, internData.tags);
 
           return `
           <div class="card mt-4 mb-4" data-state="#about">
