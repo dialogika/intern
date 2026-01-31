@@ -68,7 +68,7 @@
                     <h2 class="text-xl font-bold text-slate-800 mb-6">Informasi Umum</h2>
                     <div class="grid grid-cols-1 gap-6">
                         <div>
-                            <label>Mode</label>
+                            <label>Bisa WFO/Full di Rumah?</label>
                             <select class="input-field" id="candidateMode">
                                 <option value="">Pilih mode</option>
                                 <option value="WFO">WFO</option>
@@ -77,13 +77,13 @@
                             </select>
                         </div>
                         <div>
-                            <label>Posisi</label>
+                            <label>Kamu minat di posisi apa?</label>
                             <select class="input-field" id="candidatePosition">
                                 <option value="">Pilih posisi</option>
                             </select>
                         </div>
                         <div>
-                            <label>Platform</label>
+                            <label>Tau Dialogika darimana?</label>
                             <select class="input-field" id="candidatePlatform">
                                 <option value="">Pilih platform</option>
                                 <option value="Website Dialogika">Website Dialogika</option>
@@ -101,16 +101,16 @@
                     <h2 class="text-xl font-bold text-slate-800 mb-6">Data Pribadi & Kontak</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="md:col-span-1">
-                            <label>Nama Lengkap</label>
+                            <label>Nama Kamu</label>
                             <input type="text" class="input-field" id="candidateFullName" placeholder="Nama sesuai KTP">
                         </div>
                         <div>
-                            <label>Foto Profil</label>
+                            <label>Foto terbaru kamu yang bukan paspoto</label>
                             <input type="file" class="input-field text-sm" id="candidatePhoto">
                         </div>
                         <div class="md:col-span-2">
                             <label>Deskripsi Diri</label>
-                            <textarea class="input-field h-24" id="candidateShortDescription" placeholder="Ceritakan singkat siapa Anda..."></textarea>
+                            <textarea class="input-field h-24" id="candidateShortDescription" placeholder="Ceritain sedikit tentang kamu..."></textarea>
                         </div>
                         <div>
                             <label>Nomor WhatsApp</label>
@@ -286,7 +286,7 @@
             }
 
             if (n === (steps.length - 1)) {
-                nextBtn.innerHTML = "Simpan Lamaran";
+                nextBtn.innerHTML = "Kirim Lamaran";
                 nextBtn.classList.replace("bg-[#003366]", "bg-green-600");
             } else {
                 nextBtn.innerHTML = "Selanjutnya";
@@ -438,7 +438,7 @@
                 alert("Gagal mengirim lamaran. Silakan coba lagi.");
             } finally {
                 nextBtn.disabled = false;
-                nextBtn.innerHTML = "Simpan Lamaran";
+                nextBtn.innerHTML = "Kirim Lamaran";
                 if (!nextBtn.classList.contains("bg-green-600")) {
                     nextBtn.classList.replace("bg-[#003366]", "bg-green-600");
                 }
