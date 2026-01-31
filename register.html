@@ -45,18 +45,21 @@
             <!-- Progress Line -->
             <div class="absolute top-1/2 left-0 w-full h-0.5 bg-gray-200 -z-10 transform -translate-y-1/2"></div>
             
-            <div class="step-item step-active relative" id="step-icon-1">
-                <div class="step-circle">1</div>
-                <p class="absolute -bottom-7 left-1/2 transform -translate-x-1/2 text-[10px] md:text-xs font-semibold uppercase tracking-wider text-slate-500">Info Umum</p>
-            </div>
-            <div class="step-item relative" id="step-icon-2">
-                <div class="step-circle">2</div>
-                <p class="absolute -bottom-7 left-1/2 transform -translate-x-1/2 text-[10px] md:text-xs font-semibold uppercase tracking-wider text-slate-500 text-center">Data Pribadi</p>
-            </div>
-            <div class="step-item relative" id="step-icon-3">
-                <div class="step-circle">3</div>
-                <p class="absolute -bottom-7 left-1/2 transform -translate-x-1/2 text-[10px] md:text-xs font-semibold uppercase tracking-wider text-slate-500">Dokumen</p>
-            </div>
+          <div class="step-item step-active text-center">
+            <div class="step-circle mx-auto">1</div>
+            <p class="text-xs mt-2 font-semibold text-slate-500">INFO UMUM</p>
+        </div>
+
+        <div class="step-item text-center">
+            <div class="step-circle mx-auto">2</div>
+            <p class="text-xs mt-2 font-semibold text-slate-500">DATA PRIBADI</p>
+        </div>
+
+
+             <div class="step-item text-center">
+            <div class="step-circle mx-auto">2</div>
+            <p class="text-xs mt-2 font-semibold text-slate-500">DOKUMEN</p>
+        </div>
         </div>
 
         <!-- Card Form -->
@@ -120,6 +123,15 @@
                             <label>Email Aktif</label>
                             <input type="email" class="input-field" id="candidateEmail" placeholder="email@contoh.com">
                         </div>
+                        <div>
+                        <label>Instagram</label>
+                        <input type="url" id="candidateInstagram" class="input-field" placeholder="https://instagram.com/username">
+                    </div>
+
+                    <div>
+                        <label>LinkedIn</label>
+                        <input type="url" id="candidateLinkedin" class="input-field" placeholder="https://linkedin.com/in/username">
+                    </div>
                     </div>
                 </div>
 
