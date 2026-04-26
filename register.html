@@ -508,7 +508,7 @@
                     <div class="flex flex-col gap-3 border-b border-slate-200/70 pb-3 shrink-0">
                         <div>
                             <img src="https://www.dialogika.co/assets/img/logo.webp" alt="Dialogika Logo" class="h-12 md:h-14 mb-2">
-                            <span class="section-kicker">Mulai Pendaftaran</span>
+                            <!-- <span class="section-kicker">Mulai Pendaftaran</span> -->
                             <h2 class="mt-3 text-2xl font-bold text-slate-900">Formulir Registrasi Internship Dialogika</h2>
                             <p class="mt-2 text-sm leading-6 text-slate-500">
                                 Pastikan data yang diisi valid dan terbaru agar proses verifikasi berjalan lebih cepat.
@@ -610,35 +610,35 @@
                             <p class="helper-text">Gunakan nama sesuai identitas resmi agar data pendaftaran valid.</p>
                         </div>
                         <div class="md:col-span-2">
-                            <label for="candidateShortDescription">Ceritakan Tentang Diri Anda</label>
+                            <label for="candidateShortDescription">Ceritakan Tentang Diri Anda<span class="required-mark">*</span></label>
                             <textarea class="input-field h-20" id="candidateShortDescription" placeholder="Ceritakan singkat latar belakang, minat, dan kompetensi Anda."></textarea>
                         </div>
                         <div class="md:col-span-2">
-                            <label for="candidateExperience">Ceritakan Pengalaman Kamu Sebelumnya</label>
+                            <label for="candidateExperience">Ceritakan Pengalaman Kamu Sebelumnya<span class="required-mark">*</span></label>
                             <textarea class="input-field h-20" id="candidateExperience" placeholder="Ceritakan pengalaman organisasi, kerja, project, atau kegiatan relevan lainnya."></textarea>
                         </div>
                         <div>
                             <label for="candidateWhatsapp">Whatsapp<span class="required-mark">*</span></label>
-                            <input type="tel" class="input-field" id="candidateWhatsapp" placeholder="081234567890">
+                            <input type="tel" class="input-field" id="candidateWhatsapp" inputmode="numeric" pattern="[0-9]*" placeholder="081234567890">
                         </div>
                         <div>
                             <label for="candidateEmail">Email<span class="required-mark">*</span></label>
-                            <input type="email" class="input-field" id="candidateEmail" placeholder="Masukan email anda">
+                            <input type="email" class="input-field" id="candidateEmail" placeholder="contoh@email.com">
                         </div>
                         <div>
-                            <label for="candidateDomicile">Domisili Anda Saat Ini</label>
+                            <label for="candidateDomicile">Domisili Anda Saat Ini<span class="required-mark">*</span></label>
                             <input type="text" class="input-field" id="candidateDomicile" placeholder="Dimana kota anda tinggal?">
                         </div>
                         <div>
-                            <label for="candidateCampus">Kampus/Sekolah Anda Saat Ini</label>
+                            <label for="candidateCampus">Kampus/Sekolah Anda Saat Ini<span class="required-mark">*</span></label>
                             <input type="text" class="input-field" id="candidateCampus" placeholder="Masukan nama kampus atau sekolah anda">
                         </div>
                         <div>
-                            <label for="candidateLinkedin">Username / Custom URL LinkedIn</label>
+                            <label for="candidateLinkedin">Username LinkedIn<span class="required-mark">*</span></label>
                             <input type="text" id="candidateLinkedin" class="input-field" placeholder="Username LinkedIn">
                         </div>
                         <div>
-                            <label for="candidateInstagram">Username Instagram</label>
+                            <label for="candidateInstagram">Username Instagram<span class="required-mark">*</span></label>
                             <input type="text" id="candidateInstagram" class="input-field" placeholder="Username Instagram (tanpa @)">
                         </div>
                     </div>
@@ -656,40 +656,33 @@
                     <div class="space-y-6">
                         <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
                             <div>
-                                <label for="candidatePhoto">Attach Foto Pribadi (BUKAN Merah/Biru)<span class="required-mark">*</span></label>
+                                <label for="candidatePhoto">Attach Foto Pribadi (BUKAN Merah/Biru atau pas foto)<span class="required-mark">*</span></label>
                                 <input type="file" class="input-field text-sm" id="candidatePhoto" accept="image/*" required>
-                                <p class="helper-text">No file chosen. Drop your files here to upload.</p>
+                                <p class="helper-text">Tidak ada file terpilih.</p>
                             </div>
                             <div>
                                 <label for="candidateResume">Attach Resume atau CV<span class="required-mark">*</span></label>
                                 <input type="file" class="input-field" id="candidateResume" accept=".pdf,.doc,.docx" required>
-                                <p class="helper-text">No file chosen. Drop your files here to upload.</p>
+                                <p class="helper-text">Tidak ada file terpilih.</p>
                             </div>
                             <div>
                                 <label for="candidatePortfolio">Portofolio</label>
                                 <input type="file" class="input-field" id="candidatePortfolio">
-                                <p class="helper-text">Portofolio (jika ada, tidak wajib). No file chosen. Drop your files here to upload.</p>
+                                <p class="helper-text">Portofolio (jika ada, tidak wajib). Tidak ada file terpilih.</p>
                             </div>
                             <div>
-                                <label for="candidatePortfolioLink">Link Portofolio (Website/Drive)</label>
+                                <label for="candidatePortfolioLink">Link Portofolio</label>
                                 <input type="url" class="input-field" id="candidatePortfolioLink" placeholder="https://contoh.com atau https://drive.google.com/...">
                                 <p class="helper-text">Opsional. Isi jika portofolio Anda berupa website atau file online.</p>
                             </div>
                         </div>
                         <div>
-                            <label for="candidateChoose">Alasan Mendaftar</label>
+                            <label for="candidateChoose">Alasan Mendaftar<span class="required-mark">*</span></label>
                             <textarea class="input-field h-24" id="candidateChoose" placeholder="Jelaskan alasan utama Anda mendaftar internship di Dialogika."></textarea>
                         </div>
+                        
                         <div>
-                            <label for="candidateWfoJogja">Saya Bisa WFO di Yogyakarta</label>
-                            <select class="input-field" id="candidateWfoJogja">
-                                <option value="">Pilih jawaban</option>
-                                <option value="Ya">Ya</option>
-                                <option value="Tidak">Tidak</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="candidateHope">Apa harapan kamu mendaftar magang di Dialogika?</label>
+                            <label for="candidateHope">Apa harapan kamu mendaftar magang di Dialogika?<span class="required-mark">*</span></label>
                             <textarea class="input-field h-24" id="candidateHope" placeholder="Jelaskan target pembelajaran dan kontribusi yang ingin Anda capai selama internship."></textarea>
                         </div>
                         <div>
@@ -699,10 +692,10 @@
                                 <option value="Ya">Ya</option>
                                 <option value="Tidak">Tidak</option>
                             </select>
-                            <p class="helper-text">This field is required.</p>
+                            
                         </div>
                         <div>
-                            <label for="candidatePickIfAccepted">Jika kamu keterima di 2 perusahaan, mana yang akan kamu pilih? Berikan alasannya</label>
+                            <label for="candidatePickIfAccepted">Jika kamu diterima di 2 perusahaan, mana yang akan kamu pilih? Berikan alasannya<span class="required-mark">*</span></label>
                             <textarea class="input-field h-24" id="candidatePickIfAccepted" placeholder="Jelaskan pilihan Anda dan alasannya."></textarea>
                         </div>
                     </div>
@@ -803,23 +796,41 @@
         let successToastTimer = null;
         const requiredFieldIds = [
             "candidateFullName",
+            "candidateShortDescription",
+            "candidateExperience",
             "candidateEmail",
             "candidateWhatsapp",
+            "candidateDomicile",
+            "candidateCampus",
+            "candidateInstagram",
+            "candidateLinkedin",
             "candidatePlatform",
             "candidatePosition",
             "candidateWorkMode",
+            "candidateChoose",
+            "candidateHope",
             "candidateApplyOther"
+            ,"candidatePickIfAccepted"
         ];
         const requiredFileIds = ["candidatePhoto", "candidateResume"];
         const requiredCheckboxIds = ["candidateConsent"];
         const requiredFieldLabels = {
             candidateFullName: "Nama Lengkap",
+            candidateShortDescription: "Ceritakan Tentang Diri Anda",
+            candidateExperience: "Ceritakan Pengalaman Kamu Sebelumnya",
             candidateEmail: "Email",
             candidateWhatsapp: "Whatsapp",
+            candidateDomicile: "Domisili Anda Saat Ini",
+            candidateCampus: "Kampus/Sekolah Anda Saat Ini",
+            candidateInstagram: "Username Instagram",
+            candidateLinkedin: "Username LinkedIn",
             candidatePlatform: "Darimana mengetahui program internship Dialogika",
             candidatePosition: "Posisi Internship Yang Dilamar",
             candidateWorkMode: "Pilihan mode kerja (WFO/WFH)",
+            candidateChoose: "Alasan Mendaftar",
+            candidateHope: "Harapan mendaftar magang",
             candidateApplyOther: "Pertanyaan pendaftaran di perusahaan lain",
+            candidatePickIfAccepted: "Pilihan jika diterima di 2 perusahaan",
             candidatePhoto: "Attach Foto Pribadi",
             candidateResume: "Attach Resume atau CV",
             candidateConsent: "Persetujuan penggunaan data"
@@ -863,30 +874,33 @@
             }, 3600);
         }
 
+        function sanitizeWhatsappInputValue(rawValue) {
+            let digitsOnly = (rawValue || "").replace(/\D/g, "");
+            if (!digitsOnly) return "";
+
+            if (digitsOnly.startsWith("620")) {
+                digitsOnly = "0" + digitsOnly.slice(3);
+            } else if (digitsOnly.startsWith("62")) {
+                digitsOnly = "0" + digitsOnly.slice(2);
+            } else if (digitsOnly.startsWith("8")) {
+                digitsOnly = "0" + digitsOnly;
+            }
+
+            return digitsOnly.replace(/^0+/, "0");
+        }
+
         function normalizeWhatsappUrl(rawValue) {
-            const digitsOnly = (rawValue || "").replace(/\D/g, "");
-            if (!digitsOnly) {
+            const localNumber = sanitizeWhatsappInputValue(rawValue);
+            if (!localNumber) {
                 return { ok: false, error: "Nomor Whatsapp wajib diisi." };
             }
 
-            let normalized = digitsOnly;
-            if (normalized.startsWith("0")) {
-                normalized = "62" + normalized.slice(1);
-            } else if (normalized.startsWith("8")) {
-                normalized = "62" + normalized;
-            } else if (normalized.startsWith("62")) {
-                if (normalized.startsWith("620")) {
-                    normalized = "62" + normalized.slice(3);
-                }
-            } else {
-                return { ok: false, error: "Format Whatsapp tidak valid. Gunakan nomor Indonesia (contoh: 081234567890)." };
-            }
-
-            if (!/^62\d{8,13}$/.test(normalized)) {
+            if (!/^0\d{8,13}$/.test(localNumber)) {
                 return { ok: false, error: "Format Whatsapp tidak valid. Periksa kembali jumlah digit nomor." };
             }
 
-            return { ok: true, url: "https://wa.me/" + normalized };
+            const intlNumber = "62" + localNumber.slice(1);
+            return { ok: true, local: localNumber, url: "https://wa.me/" + intlNumber };
         }
 
         function normalizeInstagramUrl(rawValue) {
@@ -918,6 +932,15 @@
             }
 
             return { ok: true, url: "https://www.linkedin.com/in/" + slug };
+        }
+
+        function normalizeEmailValue(rawValue) {
+            const email = (rawValue || "").trim();
+            if (!email) return { ok: false, error: "Email wajib diisi." };
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                return { ok: false, error: "Format email tidak valid. Pastikan menggunakan tanda @ dan domain yang benar." };
+            }
+            return { ok: true, value: email.toLowerCase() };
         }
 
         function updateWfhAvailability() {
@@ -1074,6 +1097,46 @@
             el.addEventListener("change", clearAndSync);
         });
 
+        const whatsappField = document.getElementById("candidateWhatsapp");
+        if (whatsappField) {
+            whatsappField.addEventListener("input", () => {
+                const sanitized = sanitizeWhatsappInputValue(whatsappField.value || "");
+                whatsappField.value = sanitized;
+            });
+        }
+
+        const instagramField = document.getElementById("candidateInstagram");
+        if (instagramField) {
+            instagramField.addEventListener("input", () => {
+                const withoutAt = (instagramField.value || "").replace(/@/g, "").replace(/\s+/g, "");
+                instagramField.value = withoutAt;
+            });
+        }
+
+        const wfoModeField = document.getElementById("candidateMode");
+        const wfhModeField = document.getElementById("candidateModeWfh");
+        function enforceSingleWorkMode(changed) {
+            if (!wfoModeField || !wfhModeField) return;
+            if (changed === "wfo" && wfoModeField.checked) {
+                wfhModeField.checked = false;
+            }
+            if (changed === "wfh" && wfhModeField.checked) {
+                wfoModeField.checked = false;
+            }
+        }
+        if (wfoModeField) {
+            wfoModeField.addEventListener("change", () => {
+                enforceSingleWorkMode("wfo");
+                setFormErrorMessage("");
+            });
+        }
+        if (wfhModeField) {
+            wfhModeField.addEventListener("change", () => {
+                enforceSingleWorkMode("wfh");
+                setFormErrorMessage("");
+            });
+        }
+
         const positionField = document.getElementById("candidatePosition");
         if (positionField) {
             positionField.addEventListener("change", () => {
@@ -1112,7 +1175,6 @@
             const linkedinInput = document.getElementById("candidateLinkedin");
             const chooseInput = document.getElementById("candidateChoose");
             const hopeInput = document.getElementById("candidateHope");
-            const wfoJogjaInput = document.getElementById("candidateWfoJogja");
             const applyOtherInput = document.getElementById("candidateApplyOther");
             const pickIfAcceptedInput = document.getElementById("candidatePickIfAccepted");
             const consentInput = document.getElementById("candidateConsent");
@@ -1120,7 +1182,7 @@
 
             const canWfo = !!(modeSelect && modeSelect.checked);
             const canWfh = !!(modeWfhSelect && modeWfhSelect.checked);
-            const mode = canWfo && canWfh ? "WFO/WFH" : (canWfh ? "WFH" : (canWfo ? "WFO" : ""));
+            const mode = canWfh ? "WFH" : (canWfo ? "WFO" : "");
             const platform = platformSelect ? (platformSelect.value || "").trim() : "";
             const fullName = fullNameInput ? (fullNameInput.value || "").trim() : "";
             const shortDesc = shortDescInput ? (shortDescInput.value || "").trim() : "";
@@ -1133,7 +1195,6 @@
             const linkedin = linkedinInput ? (linkedinInput.value || "").trim() : "";
             const chooseText = chooseInput ? (chooseInput.value || "").trim() : "";
             const hopeText = hopeInput ? (hopeInput.value || "").trim() : "";
-            const wfoJogja = wfoJogjaInput ? (wfoJogjaInput.value || "").trim() : "";
             const applyOther = applyOtherInput ? (applyOtherInput.value || "").trim() : "";
             const pickIfAccepted = pickIfAcceptedInput ? (pickIfAcceptedInput.value || "").trim() : "";
             const hasConsent = !!(consentInput && consentInput.checked);
@@ -1166,6 +1227,14 @@
                 if (whatsappInput) whatsappInput.focus();
                 return;
             }
+            if (whatsappInput) whatsappInput.value = whatsappFormatted.local || "";
+
+            const emailFormatted = normalizeEmailValue(email);
+            if (!emailFormatted.ok) {
+                setFormErrorMessage(emailFormatted.error);
+                if (emailInput) emailInput.focus();
+                return;
+            }
 
             const instagramFormatted = normalizeInstagramUrl(instagram);
             if (!instagramFormatted.ok) {
@@ -1182,6 +1251,7 @@
             }
 
             const whatsappUrl = whatsappFormatted.url;
+            const emailValue = emailFormatted.value;
             const instagramUrl = instagramFormatted.url;
             const linkedinUrl = linkedinFormatted.url;
 
@@ -1212,7 +1282,7 @@
                     address: domicile || null,
                     campus: campus || null,
                     whatsapp: whatsappUrl || null,
-                    email: email || null,
+                    email: emailValue || null,
                     instagram: instagramUrl || null,
                     linkedin: linkedinUrl || null
                 },
@@ -1226,7 +1296,7 @@
                     address: domicile || null,
                     campus: campus || null,
                     whatsapp: whatsappUrl || null,
-                    email: email || null,
+                    email: emailValue || null,
                     instagram: instagramUrl || null,
                     linkedin: linkedinUrl || null,
                     portfolio_url: null,
@@ -1237,7 +1307,6 @@
                     reason: pickIfAccepted || null,
                     hope: hopeText || null,
                     other: applyOther || null,
-                    wfo_yogyakarta: wfoJogja || null,
                     consent: hasConsent,
                     role_id: ROLE_ID,
                     role_name: ROLE_NAME
