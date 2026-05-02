@@ -118,7 +118,7 @@ class Header extends HTMLElement {
           <i class="bi bi-list d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"></i>
         </nav><!-- .navbar -->
 
-        <button type="button" data-bs-toggle="modal" data-bs-target="#clickup" class="appointment-btn">Daftar <span class="d-md-inline">Sekarang</span></button>
+        <a href="https://www.dialogika.co/link/candidate-screening.html" class="appointment-btn">Daftar <span class="d-md-inline">Sekarang</span></a>
 
       </div>
     </header><!-- End Header -->
