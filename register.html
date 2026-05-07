@@ -243,6 +243,18 @@
             min-height: 2.2em;
         }
 
+        .input-field-error {
+            border-color: #dc2626 !important;
+            box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12);
+        }
+
+        .field-error-text {
+            margin-top: 0.35rem;
+            font-size: 0.78rem;
+            color: #b91c1c;
+            min-height: 1.2em;
+        }
+
         .consent-wrap {
             margin-top: 0.8rem;
             display: flex;
@@ -657,19 +669,22 @@
                         <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
                             <div>
                                 <label for="candidatePhoto">Attach Foto Pribadi (BUKAN Merah/Biru atau pas foto)<span class="required-mark">*</span></label>
-                                <input type="file" class="input-field text-sm" id="candidatePhoto" accept="image/*" required>
-                                <p class="helper-text">Tidak ada file terpilih.</p>
+                                <input type="file" class="input-field text-sm" id="candidatePhoto" accept=".jpg,.jpeg,.png,image/jpeg,image/png" required>
+                                <p class="helper-text">Format: JPG, JPEG, PNG. Maksimal 2 MB.</p>
+                                <p id="candidatePhotoError" class="field-error-text hidden"></p>
                             </div>
                             <div>
                                 <label for="candidateResume">Attach Resume atau CV<span class="required-mark">*</span></label>
-                                <input type="file" class="input-field" id="candidateResume" accept=".pdf,.doc,.docx" required>
-                                <p class="helper-text">Tidak ada file terpilih.</p>
+                                <input type="file" class="input-field" id="candidateResume" accept=".jpg,.jpeg,.png,.pdf,image/jpeg,image/png,application/pdf" required>
+                                <p class="helper-text">Format: JPG, JPEG, PNG, PDF. Maksimal 2 MB.</p>
+                                <p id="candidateResumeError" class="field-error-text hidden"></p>
                             </div>
                             <div>
                                 <label for="candidatePortfolio">Portofolio</label>
-                                <input type="file" class="input-field" id="candidatePortfolio">
+                                <input type="file" class="input-field" id="candidatePortfolio" accept=".jpg,.jpeg,.png,.pdf,image/jpeg,image/png,application/pdf">
                           <p class="helper-text">
-                                Portofolio (opsional). Jika ukuran file portofolio Anda melebihi 5 MB, Disarankan unggah file tersebut ke Google Drive dan sertakan tautannya.</p>
+                                Portofolio opsional. Format: JPG, JPEG, PNG, PDF. Maksimal 2 MB.</p>
+                                <p id="candidatePortfolioError" class="field-error-text hidden"></p>
                             </div>
                             <div>
                                 <label for="candidatePortfolioLink">Link Portofolio</label>
@@ -815,6 +830,30 @@
         ];
         const requiredFileIds = ["candidatePhoto", "candidateResume"];
         const requiredCheckboxIds = ["candidateConsent"];
+        const MAX_UPLOAD_SIZE = 2097152;
+        const fileValidationRules = {
+            candidatePhoto: {
+                label: "Attach Foto Pribadi",
+                required: true,
+                allowedExtensions: ["jpg", "jpeg", "png"],
+                allowedMimeTypes: ["image/jpeg", "image/png"],
+                helperText: "Format: JPG, JPEG, PNG. Maksimal 2 MB."
+            },
+            candidateResume: {
+                label: "Attach Resume atau CV",
+                required: true,
+                allowedExtensions: ["jpg", "jpeg", "png", "pdf"],
+                allowedMimeTypes: ["image/jpeg", "image/png", "application/pdf"],
+                helperText: "Format: JPG, JPEG, PNG, PDF. Maksimal 2 MB."
+            },
+            candidatePortfolio: {
+                label: "Portofolio",
+                required: false,
+                allowedExtensions: ["jpg", "jpeg", "png", "pdf"],
+                allowedMimeTypes: ["image/jpeg", "image/png", "application/pdf"],
+                helperText: "Portofolio opsional. Format: JPG, JPEG, PNG, PDF. Maksimal 2 MB."
+            }
+        };
         const requiredFieldLabels = {
             candidateFullName: "Nama Lengkap",
             candidateShortDescription: "Ceritakan Tentang Diri Anda",
@@ -942,6 +981,84 @@
                 return { ok: false, error: "Format email tidak valid. Pastikan menggunakan tanda @ dan domain yang benar." };
             }
             return { ok: true, value: email.toLowerCase() };
+        }
+
+        function getFileExtension(filename) {
+            const name = (filename || "").toLowerCase();
+            const idx = name.lastIndexOf(".");
+            if (idx < 0) return "";
+            return name.slice(idx + 1);
+        }
+
+        function setFileFieldError(inputId, message) {
+            const inputEl = document.getElementById(inputId);
+            const errorEl = document.getElementById(inputId + "Error");
+            if (!inputEl) return;
+
+            if (message && message.trim()) {
+                inputEl.classList.add("input-field-error");
+                inputEl.setAttribute("aria-invalid", "true");
+                if (errorEl) {
+                    errorEl.textContent = message;
+                    errorEl.classList.remove("hidden");
+                }
+                return;
+            }
+
+            inputEl.classList.remove("input-field-error");
+            inputEl.removeAttribute("aria-invalid");
+            if (errorEl) {
+                errorEl.textContent = "";
+                errorEl.classList.add("hidden");
+            }
+        }
+
+        function validateSingleFileInput(inputId, checkRequired) {
+            const inputEl = document.getElementById(inputId);
+            const rule = fileValidationRules[inputId];
+            if (!inputEl || !rule) return { ok: true };
+
+            const hasFile = !!(inputEl.files && inputEl.files.length > 0);
+            if (!hasFile) {
+                if (checkRequired && rule.required) {
+                    const message = rule.label + " wajib diunggah.";
+                    setFileFieldError(inputId, message);
+                    return { ok: false, message, inputId };
+                }
+                setFileFieldError(inputId, "");
+                return { ok: true };
+            }
+
+            const file = inputEl.files[0];
+            if (file.size > MAX_UPLOAD_SIZE) {
+                const message = rule.label + " melebihi batas ukuran 2 MB. Silakan pilih file maksimal 2 MB.";
+                setFileFieldError(inputId, message);
+                inputEl.value = "";
+                return { ok: false, message, inputId };
+            }
+
+            const ext = getFileExtension(file.name);
+            const mime = (file.type || "").toLowerCase();
+            const extAllowed = rule.allowedExtensions.includes(ext);
+            const mimeAllowed = !mime || rule.allowedMimeTypes.includes(mime);
+            if (!extAllowed || !mimeAllowed) {
+                const message = rule.label + " tidak valid. Gunakan format: " + rule.allowedExtensions.join(", ").toUpperCase() + ".";
+                setFileFieldError(inputId, message);
+                inputEl.value = "";
+                return { ok: false, message, inputId };
+            }
+
+            setFileFieldError(inputId, "");
+            return { ok: true };
+        }
+
+        function validateAllFileInputs(checkRequired) {
+            const fileInputIds = Object.keys(fileValidationRules);
+            for (let i = 0; i < fileInputIds.length; i++) {
+                const result = validateSingleFileInput(fileInputIds[i], checkRequired);
+                if (!result.ok) return result;
+            }
+            return { ok: true };
         }
 
         function updateWfhAvailability() {
@@ -1106,6 +1223,15 @@
             });
         }
 
+        Object.keys(fileValidationRules).forEach(inputId => {
+            const fileInput = document.getElementById(inputId);
+            if (!fileInput) return;
+            fileInput.addEventListener("change", () => {
+                setFormErrorMessage("");
+                validateSingleFileInput(inputId, false);
+            });
+        });
+
         const instagramField = document.getElementById("candidateInstagram");
         if (instagramField) {
             instagramField.addEventListener("input", () => {
@@ -1218,6 +1344,16 @@
                 const firstMissingEl = document.getElementById(focusTargetId);
                 if (firstMissingEl && typeof firstMissingEl.focus === "function") {
                     firstMissingEl.focus();
+                }
+                return;
+            }
+
+            const fileValidationResult = validateAllFileInputs(true);
+            if (!fileValidationResult.ok) {
+                setFormErrorMessage(fileValidationResult.message || "Periksa kembali file yang diunggah.");
+                const invalidFileInput = document.getElementById(fileValidationResult.inputId || "");
+                if (invalidFileInput && typeof invalidFileInput.focus === "function") {
+                    invalidFileInput.focus();
                 }
                 return;
             }
