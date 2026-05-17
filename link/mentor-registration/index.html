@@ -510,7 +510,7 @@
                             <img src="https://www.dialogika.co/assets/img/logo.webp" alt="Dialogika Logo" class="h-12 md:h-14 mb-2">
                             <h2 class="mt-3 text-2xl font-bold text-slate-900">Formulir Registrasi Mentor Dialogika</h2>
                             <p class="mt-2 text-sm leading-6 text-slate-500">
-                                Mohon isi data dengan lengkap dan valid agar proses screening berjalan lancar.
+                                Silahkan isikan form dibawah ini, ini merupakan form screening (tahap 2) sebelum masuk ke fase berikutnya yaitu wawancara, apabila ada yang tidak dipahami silahkan contact kami via <strong>career@dialogika.co</strong>
                             </p>
                         </div>
 
@@ -520,7 +520,7 @@
                             <div class="flex items-start justify-between gap-3">
                                 <div class="step-item step-active text-center">
                                     <div class="step-circle mx-auto">1</div>
-                                    <p class="step-title mt-3 text-[11px] font-semibold uppercase tracking-[0.18em]">Info Umum</p>
+                                    <p class="step-title mt-3 text-[11px] font-semibold uppercase tracking-[0.18em]">Info Dasar</p>
                                 </div>
                                 <div class="step-item text-center">
                                     <div class="step-circle mx-auto">2</div>
@@ -534,93 +534,24 @@
                         </div>
                     </div>
 
-                    <form id="multiStepForm" class="mt-3 flex flex-col">
+                                        <form id="multiStepForm" class="mt-3 flex flex-col">
                         <div class="form-step form-step-active">
                             <div class="mb-4">
-                                <h3 class="mt-3 text-xl font-bold text-slate-900">Informasi Umum</h3>
+                                <h3 class="mt-3 text-xl font-bold text-slate-900">Informasi Dasar</h3>
                                 <p class="mt-2 text-sm leading-6 text-slate-500">
-                                    Beri tahu preferensi metode mengajar dan ketersediaan Anda.
+                                    Isi data identitas dan kontak Anda.
                                 </p>
                             </div>
                             <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
                                 <div>
-                                    <label for="mentorTeachingMethod">Preferensi Metode Mengajar<span class="required-mark">*</span></label>
-                                    <select class="input-field" id="mentorTeachingMethod">
-                                        <option value="">Pilih metode</option>
-                                        <option value="Online">Online</option>
-                                        <option value="Offline">Offline</option>
-                                        <option value="Hybrid">Hybrid</option>
-                                    </select>
-                                    <p class="helper-text" id="mentorTeachingMethodHelp" data-default="Pilih metode mengajar yang paling sesuai dengan Anda.">Pilih metode mengajar yang paling sesuai dengan Anda.</p>
-                                </div>
-
-                                <div>
-                                    <label for="mentorAvailabilityTime">Ketersediaan Jam Mengajar<span class="required-mark">*</span></label>
-                                    <input type="text" class="input-field" id="mentorAvailabilityTime" placeholder="Contoh: Senin–Jumat 19.00–21.00 WIB">
-                                    <p class="helper-text" id="mentorAvailabilityTimeHelp" data-default="Tuliskan jam mengajar yang paling memungkinkan untuk Anda.">Tuliskan jam mengajar yang paling memungkinkan untuk Anda.</p>
-                                </div>
-
-                                <div class="md:col-span-2">
-                                    <label>Ketersediaan Hari Mengajar<span class="required-mark">*</span></label>
-                                    <div class="mode-options">
-                                        <div class="consent-wrap mt-0">
-                                            <input type="checkbox" id="mentorDayMon" data-day="Senin">
-                                            <label for="mentorDayMon" class="consent-text !mb-0">Senin</label>
-                                        </div>
-                                        <div class="consent-wrap mt-0">
-                                            <input type="checkbox" id="mentorDayTue" data-day="Selasa">
-                                            <label for="mentorDayTue" class="consent-text !mb-0">Selasa</label>
-                                        </div>
-                                        <div class="consent-wrap mt-0">
-                                            <input type="checkbox" id="mentorDayWed" data-day="Rabu">
-                                            <label for="mentorDayWed" class="consent-text !mb-0">Rabu</label>
-                                        </div>
-                                        <div class="consent-wrap mt-0">
-                                            <input type="checkbox" id="mentorDayThu" data-day="Kamis">
-                                            <label for="mentorDayThu" class="consent-text !mb-0">Kamis</label>
-                                        </div>
-                                        <div class="consent-wrap mt-0">
-                                            <input type="checkbox" id="mentorDayFri" data-day="Jumat">
-                                            <label for="mentorDayFri" class="consent-text !mb-0">Jumat</label>
-                                        </div>
-                                        <div class="consent-wrap mt-0">
-                                            <input type="checkbox" id="mentorDaySat" data-day="Sabtu">
-                                            <label for="mentorDaySat" class="consent-text !mb-0">Sabtu</label>
-                                        </div>
-                                        <div class="consent-wrap mt-0">
-                                            <input type="checkbox" id="mentorDaySun" data-day="Minggu">
-                                            <label for="mentorDaySun" class="consent-text !mb-0">Minggu</label>
-                                        </div>
-                                    </div>
-                                    <p class="helper-text" id="mentorAvailabilityDaysHelp" data-default="Pilih minimal satu hari yang Anda bisa mengajar.">Pilih minimal satu hari yang Anda bisa mengajar.</p>
-                                </div>
-
-                                <div>
-                                    <label for="mentorWifiProvider">Provider WiFi di Rumah</label>
-                                    <input type="text" class="input-field" id="mentorWifiProvider" placeholder="Contoh: IndiHome / Biznet / First Media">
-                                    <p class="helper-text" id="mentorWifiProviderHelp" data-default="Opsional. Membantu tim memahami dukungan mengajar online.">Opsional. Membantu tim memahami dukungan mengajar online.</p>
-                                </div>
-
-                                <div>
-                                    <label for="mentorLaptopBrand">Merek Notebook/Laptop</label>
-                                    <input type="text" class="input-field" id="mentorLaptopBrand" placeholder="Contoh: ASUS / Lenovo / MacBook">
-                                    <p class="helper-text" id="mentorLaptopBrandHelp" data-default="Opsional. Tulis merek perangkat utama Anda.">Opsional. Tulis merek perangkat utama Anda.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-step">
-                            <div class="mb-3">
-                                <h3 class="mt-3 text-xl font-bold text-slate-900">Profil & Keahlian</h3>
-                                <p class="mt-2 text-sm leading-6 text-slate-500">
-                                    Isi data identitas, ringkasan profil, pengalaman mengajar, dan bidang keahlian Anda.
-                                </p>
-                            </div>
-                            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-                                <div>
                                     <label for="mentorFullName">Nama Lengkap<span class="required-mark">*</span></label>
                                     <input type="text" class="input-field" id="mentorFullName" placeholder="Masukkan nama lengkap Anda">
                                     <p class="helper-text" id="mentorFullNameHelp" data-default="Gunakan nama sesuai identitas resmi.">Gunakan nama sesuai identitas resmi.</p>
+                                </div>
+                                <div>
+                                    <label for="mentorWhatsapp">Nomor Whatsapp<span class="required-mark">*</span></label>
+                                    <input type="tel" class="input-field" id="mentorWhatsapp" inputmode="numeric" pattern="[0-9]*" placeholder="081234567890">
+                                    <p class="helper-text" id="mentorWhatsappHelp" data-default="Hanya angka. Contoh: 081234567890">Hanya angka. Contoh: 081234567890</p>
                                 </div>
                                 <div>
                                     <label for="mentorEmail">Alamat Email<span class="required-mark">*</span></label>
@@ -628,78 +559,68 @@
                                     <p class="helper-text" id="mentorEmailHelp" data-default="Email aktif untuk komunikasi proses seleksi.">Email aktif untuk komunikasi proses seleksi.</p>
                                 </div>
                                 <div>
-                                    <label for="mentorWhatsapp">Nomor Telepon/WhatsApp<span class="required-mark">*</span></label>
-                                    <input type="tel" class="input-field" id="mentorWhatsapp" inputmode="numeric" pattern="[0-9]*" placeholder="081234567890">
-                                    <p class="helper-text" id="mentorWhatsappHelp" data-default="Hanya angka. Contoh: 081234567890">Hanya angka. Contoh: 081234567890</p>
-                                </div>
-                                <div>
-                                    <label for="mentorDomicile">Domisili Saat Ini<span class="required-mark">*</span></label>
+                                    <label for="mentorDomicile">Domisili<span class="required-mark">*</span></label>
                                     <input type="text" class="input-field" id="mentorDomicile" placeholder="Contoh: Yogyakarta">
                                     <p class="helper-text" id="mentorDomicileHelp" data-default="Tulis kota/kabupaten domisili Anda saat ini.">Tulis kota/kabupaten domisili Anda saat ini.</p>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="form-step">
+                            <div class="mb-3">
+                                <h3 class="mt-3 text-xl font-bold text-slate-900">Profil & Peralatan</h3>
+                                <p class="mt-2 text-sm leading-6 text-slate-500">
+                                    Ceritakan tentang Anda, tautkan sosial media, dan informasi peralatan mengajar.
+                                </p>
+                            </div>
+                            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
                                 <div class="md:col-span-2">
                                     <label for="mentorAbout">Ceritakan Tentang Diri Anda<span class="required-mark">*</span></label>
                                     <textarea class="input-field h-20" id="mentorAbout" placeholder="Ceritakan singkat latar belakang, minat, dan kompetensi Anda."></textarea>
                                     <p class="helper-text" id="mentorAboutHelp" data-default="Minimal 20 karakter agar profil lebih jelas.">Minimal 20 karakter agar profil lebih jelas.</p>
                                 </div>
-                                <div class="md:col-span-2">
-                                    <label for="mentorTeachingExperience">Pengalaman Mengajar<span class="required-mark">*</span></label>
-                                    <textarea class="input-field h-20" id="mentorTeachingExperience" placeholder="Ceritakan pengalaman mengajar (topik, durasi, audiens, hasil)."></textarea>
-                                    <p class="helper-text" id="mentorTeachingExperienceHelp" data-default="Tuliskan pengalaman mengajar yang paling relevan.">Tuliskan pengalaman mengajar yang paling relevan.</p>
-                                </div>
-                                <div class="md:col-span-2">
-                                    <label for="mentorExpertise">Bidang Keahlian<span class="required-mark">*</span></label>
-                                    <textarea class="input-field h-20" id="mentorExpertise" placeholder="Contoh: Public Speaking, Storytelling, Interview, Leadership (pisahkan dengan koma)"></textarea>
-                                    <p class="helper-text" id="mentorExpertiseHelp" data-default="Pisahkan dengan koma untuk memudahkan pemetaan.">Pisahkan dengan koma untuk memudahkan pemetaan.</p>
-                                </div>
                                 <div>
-                                    <label for="mentorInstagram">Link Instagram (URL/username)<span class="required-mark">*</span></label>
-                                    <input type="text" id="mentorInstagram" class="input-field" placeholder="username atau https://instagram.com/username">
+                                    <label for="mentorInstagram">Link Instagram<span class="required-mark">*</span></label>
+                                    <input type="text" id="mentorInstagram" class="input-field" placeholder="instagram.com/username_kamu">
                                     <p class="helper-text" id="mentorInstagramHelp" data-default="Boleh isi username saja, tanpa @.">Boleh isi username saja, tanpa @.</p>
                                 </div>
                                 <div>
-                                    <label for="mentorLinkedin">Link LinkedIn (URL/username)<span class="required-mark">*</span></label>
-                                    <input type="text" id="mentorLinkedin" class="input-field" placeholder="username atau https://linkedin.com/in/username">
+                                    <label for="mentorLinkedin">Link Linkedin<span class="required-mark">*</span></label>
+                                    <input type="text" id="mentorLinkedin" class="input-field" placeholder="linkedin.com/in/username_kamu">
                                     <p class="helper-text" id="mentorLinkedinHelp" data-default="Boleh isi username atau URL profile LinkedIn.">Boleh isi username atau URL profile LinkedIn.</p>
+                                </div>
+                                <div>
+                                    <label for="mentorWifiProvider">Provider Wifi di Rumah</label>
+                                    <input type="text" class="input-field" id="mentorWifiProvider" placeholder="Contoh: IndiHome / Biznet / First Media">
+                                    <p class="helper-text" id="mentorWifiProviderHelp" data-default="Opsional. Membantu tim memahami dukungan mengajar online.">Opsional. Membantu tim memahami dukungan mengajar online.</p>
+                                </div>
+                                <div>
+                                    <label for="mentorLaptopBrand">Merek Notebook / Laptop<span class="required-mark">*</span></label>
+                                    <input type="text" class="input-field" id="mentorLaptopBrand" placeholder="Contoh: ASUS / Lenovo / MacBook">
+                                    <p class="helper-text" id="mentorLaptopBrandHelp" data-default="Wajib. Tulis merek perangkat utama Anda.">Wajib. Tulis merek perangkat utama Anda.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-step">
                             <div class="mb-4">
-                                <h3 class="mt-3 text-xl font-bold text-slate-900">Dokumen & Portofolio</h3>
+                                <h3 class="mt-3 text-xl font-bold text-slate-900">Dokumen</h3>
                                 <p class="mt-2 text-sm leading-6 text-slate-500">
-                                    Unggah dokumen pendukung dan lampirkan portofolio untuk membantu proses penilaian.
+                                    Unggah dokumen pendukung Anda.
                                 </p>
                             </div>
                             <div class="space-y-6">
                                 <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
                                     <div>
-                                        <label for="mentorPhoto">Foto Pribadi<span class="required-mark">*</span></label>
-                                        <input type="file" class="input-field text-sm" id="mentorPhoto" accept="image/*">
-                                        <p class="helper-text" id="mentorPhotoHelp" data-default="Wajib. Maks 5MB. Format gambar (JPG/PNG).">Wajib. Maks 5MB. Format gambar (JPG/PNG).</p>
-                                    </div>
-                                    <div>
-                                        <label for="mentorResume">Upload Resume/CV (PDF)<span class="required-mark">*</span></label>
+                                        <label for="mentorResume">Upload Resume Anda (PDF)<span class="required-mark">*</span></label>
                                         <input type="file" class="input-field" id="mentorResume" accept=".pdf,application/pdf">
                                         <p class="helper-text" id="mentorResumeHelp" data-default="Wajib. Format PDF, maks 10MB.">Wajib. Format PDF, maks 10MB.</p>
                                     </div>
                                     <div>
-                                        <label for="mentorPortfolioFile">Portofolio (File)</label>
-                                        <input type="file" class="input-field" id="mentorPortfolioFile" accept=".pdf,image/*">
-                                        <p class="helper-text" id="mentorPortfolioFileHelp" data-default="Opsional. Boleh PDF atau gambar.">Opsional. Boleh PDF atau gambar.</p>
+                                        <label for="mentorPhoto">Photo Pribadi</label>
+                                        <input type="file" class="input-field text-sm" id="mentorPhoto" accept="image/*">
+                                        <p class="helper-text" id="mentorPhotoHelp" data-default="Opsional. Maks 5MB. Format gambar (JPG/PNG).">Opsional. Maks 5MB. Format gambar (JPG/PNG).</p>
                                     </div>
-                                    <div>
-                                        <label for="mentorPortfolioLink">Portofolio (Link)</label>
-                                        <input type="url" class="input-field" id="mentorPortfolioLink" placeholder="https://contoh.com atau https://drive.google.com/...">
-                                        <p class="helper-text" id="mentorPortfolioLinkHelp" data-default="Opsional. Isi jika portofolio berupa website atau file online.">Opsional. Isi jika portofolio berupa website atau file online.</p>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label for="mentorCommitment">Komitmen & Ekspektasi</label>
-                                    <textarea class="input-field h-24" id="mentorCommitment" placeholder="Tuliskan komitmen Anda sebagai mentor dan ekspektasi selama proses mentoring."></textarea>
-                                    <p class="helper-text" id="mentorCommitmentHelp" data-default="Opsional. Membantu tim memahami kesiapan dan ekspektasi Anda.">Opsional. Membantu tim memahami kesiapan dan ekspektasi Anda.</p>
                                 </div>
                             </div>
                         </div>
@@ -1054,8 +975,8 @@
             const input = document.getElementById("mentorPhoto");
             const file = input && input.files && input.files[0] ? input.files[0] : null;
             if (!file) {
-                setFieldState("mentorPhoto", { error: "Foto pribadi wajib diunggah." });
-                return { ok: false, el: input };
+                setFieldState("mentorPhoto");
+                return { ok: true, el: input, file: null };
             }
             if (!String(file.type || "").startsWith("image/")) {
                 setFieldState("mentorPhoto", { error: "Foto harus berupa file gambar (JPG/PNG)." });
@@ -1126,44 +1047,37 @@
         function validateStep(stepIndex) {
             setFormErrorMessage("");
             if (stepIndex === 0) {
-                const teachingMethod = validateRequiredSelect("mentorTeachingMethod", { label: "Preferensi metode mengajar" });
-                const availabilityTime = validateRequiredText("mentorAvailabilityTime", { minLength: 3, label: "Ketersediaan jam mengajar" });
-                const days = validateAvailabilityDays();
-                if (!teachingMethod.ok) return teachingMethod.el;
-                if (!availabilityTime.ok) return availabilityTime.el;
-                if (!days.ok) return days.firstEl;
+                const fullName = validateRequiredText("mentorFullName", { minLength: 3, label: "Nama Lengkap" });
+                const whatsapp = validateWhatsapp();
+                const email = validateEmail();
+                const domicile = validateRequiredText("mentorDomicile", { minLength: 2, label: "Domisili" });
+                
+                if (!fullName.ok) return fullName.el;
+                if (!whatsapp.ok) return whatsapp.el;
+                if (!email.ok) return email.el;
+                if (!domicile.ok) return domicile.el;
                 return null;
             }
 
             if (stepIndex === 1) {
-                const fullName = validateRequiredText("mentorFullName", { minLength: 3, label: "Nama lengkap" });
-                const email = validateEmail();
-                const whatsapp = validateWhatsapp();
-                const domicile = validateRequiredText("mentorDomicile", { minLength: 2, label: "Domisili" });
                 const about = validateRequiredText("mentorAbout", { minLength: 20, label: "Tentang diri" });
-                const teachingExp = validateRequiredText("mentorTeachingExperience", { minLength: 20, label: "Pengalaman mengajar" });
-                const expertise = validateRequiredText("mentorExpertise", { minLength: 3, label: "Bidang keahlian" });
                 const ig = validateInstagram();
                 const linkedin = validateLinkedin();
-                if (!fullName.ok) return fullName.el;
-                if (!email.ok) return email.el;
-                if (!whatsapp.ok) return whatsapp.el;
-                if (!domicile.ok) return domicile.el;
+                const laptop = validateRequiredText("mentorLaptopBrand", { minLength: 2, label: "Merek Notebook / Laptop" });
+                
                 if (!about.ok) return about.el;
-                if (!teachingExp.ok) return teachingExp.el;
-                if (!expertise.ok) return expertise.el;
                 if (!ig.ok) return ig.el;
                 if (!linkedin.ok) return linkedin.el;
+                if (!laptop.ok) return laptop.el;
                 return null;
             }
 
             if (stepIndex === 2) {
-                const photo = validatePhotoFile();
                 const resume = validateResumeFile();
-                const portfolio = validatePortfolioRequirement();
-                if (!photo.ok) return photo.el;
+                const photo = validatePhotoFile();
                 if (!resume.ok) return resume.el;
-                if (!portfolio.ok) return portfolio.el;
+                if (!photo.ok) return photo.el;
+                
                 const consentInput = document.getElementById("mentorConsent");
                 if (!(consentInput && consentInput.checked)) {
                     setFormErrorMessage("Silakan centang persetujuan penggunaan data sebelum mengirim.");
@@ -1274,19 +1188,17 @@
         }
 
         [
-            "mentorTeachingMethod",
-            "mentorAvailabilityTime",
             "mentorWifiProvider",
             "mentorLaptopBrand",
             "mentorFullName",
             "mentorEmail",
+            "mentorWhatsapp",
             "mentorDomicile",
             "mentorAbout",
-            "mentorTeachingExperience",
-            "mentorExpertise",
+            "mentorInstagram",
             "mentorLinkedin",
-            "mentorPortfolioLink",
-            "mentorCommitment"
+            "mentorPhoto",
+            "mentorResume"
         ].forEach(id => {
             const el = document.getElementById(id);
             if (!el) return;
@@ -1355,8 +1267,6 @@
                 return;
             }
 
-            const teachingMethod = document.getElementById("mentorTeachingMethod");
-            const availabilityTime = document.getElementById("mentorAvailabilityTime");
             const wifiProvider = document.getElementById("mentorWifiProvider");
             const laptopBrand = document.getElementById("mentorLaptopBrand");
 
@@ -1365,68 +1275,25 @@
             const whatsappInput = document.getElementById("mentorWhatsapp");
             const domicileInput = document.getElementById("mentorDomicile");
             const aboutInput = document.getElementById("mentorAbout");
-            const teachingExpInput = document.getElementById("mentorTeachingExperience");
-            const expertiseInput = document.getElementById("mentorExpertise");
             const instagramInput = document.getElementById("mentorInstagram");
             const linkedinInput = document.getElementById("mentorLinkedin");
-            const portfolioLinkInput = document.getElementById("mentorPortfolioLink");
-            const commitmentInput = document.getElementById("mentorCommitment");
 
             const photoInput = document.getElementById("mentorPhoto");
             const resumeInput = document.getElementById("mentorResume");
-            const portfolioFileInput = document.getElementById("mentorPortfolioFile");
 
             const photoFile = photoInput && photoInput.files && photoInput.files[0] ? photoInput.files[0] : null;
             const resumeFile = resumeInput && resumeInput.files && resumeInput.files[0] ? resumeInput.files[0] : null;
-            const portfolioFile = portfolioFileInput && portfolioFileInput.files && portfolioFileInput.files[0] ? portfolioFileInput.files[0] : null;
 
-            const daysResult = validateAvailabilityDays();
             const whatsappResult = validateWhatsapp();
             const emailResult = validateEmail();
             const igResult = validateInstagram();
             const linkedinResult = validateLinkedin();
-            const portfolioResult = validatePortfolioRequirement();
-
-            if (!daysResult.ok) {
-                if (daysResult.firstEl && typeof daysResult.firstEl.focus === "function") daysResult.firstEl.focus();
-                return;
-            }
-            if (!whatsappResult.ok) {
-                if (whatsappResult.el && typeof whatsappResult.el.focus === "function") whatsappResult.el.focus();
-                return;
-            }
-            if (!emailResult.ok) {
-                if (emailResult.el && typeof emailResult.el.focus === "function") emailResult.el.focus();
-                return;
-            }
-            if (!igResult.ok) {
-                if (igResult.el && typeof igResult.el.focus === "function") igResult.el.focus();
-                return;
-            }
-            if (!linkedinResult.ok) {
-                if (linkedinResult.el && typeof linkedinResult.el.focus === "function") linkedinResult.el.focus();
-                return;
-            }
-            if (!portfolioResult.ok) {
-                if (portfolioResult.el && typeof portfolioResult.el.focus === "function") portfolioResult.el.focus();
-                return;
-            }
 
             const formEl = document.getElementById("multiStepForm");
 
             const fullName = fullNameInput ? (fullNameInput.value || "").trim() : "";
             const domicile = domicileInput ? (domicileInput.value || "").trim() : "";
             const about = aboutInput ? (aboutInput.value || "").trim() : "";
-            const teachingExperience = teachingExpInput ? (teachingExpInput.value || "").trim() : "";
-            const expertiseRaw = expertiseInput ? (expertiseInput.value || "").trim() : "";
-            const expertiseList = expertiseRaw
-                .split(",")
-                .map(item => item.trim())
-                .filter(Boolean);
-
-            const commitment = commitmentInput ? (commitmentInput.value || "").trim() : "";
-            const method = teachingMethod ? (teachingMethod.value || "").trim() : "";
-            const timeAvailability = availabilityTime ? (availabilityTime.value || "").trim() : "";
             const wifi = wifiProvider ? (wifiProvider.value || "").trim() : "";
             const laptop = laptopBrand ? (laptopBrand.value || "").trim() : "";
 
@@ -1449,19 +1316,10 @@
                 },
                 profiling: about ? { short_description: about } : null,
                 mentor: {
-                    teaching_method: method || null,
-                    availability_days: daysResult.value || [],
-                    availability_time: timeAvailability || null,
                     wifi_provider: wifi || null,
                     laptop_brand: laptop || null,
-                    teaching_experience: teachingExperience || null,
-                    expertise: expertiseList,
-                    expertise_raw: expertiseRaw || null,
-                    portfolio_url: null,
-                    portfolio_link: portfolioResult.link || null,
                     resume_url: null,
-                    commitment: commitment || null,
-                    consent: !!(consentInput && consentInput.checked),
+                    consent: !!(document.getElementById("mentorConsent") && document.getElementById("mentorConsent").checked),
                     role_id: ROLE_ID,
                     role_name: ROLE_NAME
                 },
@@ -1484,16 +1342,13 @@
                     if (photoFile) {
                         payload.basic_info.avatar_url = await uploadFileToStorageFn(photoFile, "mentor-avatars");
                     }
-                    if (portfolioFile) {
-                        payload.mentor.portfolio_url = await uploadFileToStorageFn(portfolioFile, "mentor-portfolio");
-                    }
                     if (resumeFile) {
                         payload.mentor.resume_url = await uploadFileToStorageFn(resumeFile, "mentor-resume");
                     }
                 }
 
-                if (!payload.basic_info.avatar_url || !payload.mentor.resume_url) {
-                    setFormErrorMessage("Foto pribadi dan CV (PDF) wajib diunggah.");
+                if (!payload.mentor.resume_url) {
+                    setFormErrorMessage("CV (PDF) wajib diunggah.");
                     return;
                 }
 
@@ -1504,8 +1359,6 @@
                 }
 
                 [
-                    "mentorTeachingMethod",
-                    "mentorAvailabilityTime",
                     "mentorWifiProvider",
                     "mentorLaptopBrand",
                     "mentorFullName",
@@ -1513,18 +1366,11 @@
                     "mentorWhatsapp",
                     "mentorDomicile",
                     "mentorAbout",
-                    "mentorTeachingExperience",
-                    "mentorExpertise",
                     "mentorInstagram",
                     "mentorLinkedin",
                     "mentorPhoto",
-                    "mentorResume",
-                    "mentorPortfolioFile",
-                    "mentorPortfolioLink",
-                    "mentorCommitment"
+                    "mentorResume"
                 ].forEach(id => setFieldState(id));
-
-                setGroupHelperState("mentorAvailabilityDaysHelp");
 
                 currentStep = 0;
                 showStep(currentStep);
