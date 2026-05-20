@@ -614,12 +614,12 @@
                                     <div>
                                         <label for="mentorResume">Upload Resume Anda (PDF)<span class="required-mark">*</span></label>
                                         <input type="file" class="input-field" id="mentorResume" accept=".pdf,application/pdf">
-                                        <p class="helper-text" id="mentorResumeHelp" data-default="Wajib. Format PDF, maks 10MB.">Wajib. Format PDF, maks 10MB.</p>
+                                        <p class="helper-text" id="mentorResumeHelp" data-default="Wajib. Format PDF, maks 2MB.">Wajib. Format PDF, maks 2MB.</p>
                                     </div>
                                     <div>
                                         <label for="mentorPhoto">Photo Pribadi</label>
                                         <input type="file" class="input-field text-sm" id="mentorPhoto" accept="image/*">
-                                        <p class="helper-text" id="mentorPhotoHelp" data-default="Opsional. Maks 5MB. Format gambar (JPG/PNG).">Opsional. Maks 5MB. Format gambar (JPG/PNG).</p>
+                                        <p class="helper-text" id="mentorPhotoHelp" data-default="Opsional. Maks 2MB. Format gambar (JPG/PNG).">Opsional. Maks 2MB. Format gambar (JPG/PNG).</p>
                                     </div>
                                 </div>
                             </div>
@@ -718,8 +718,8 @@
         const successToastOverlay = document.getElementById("successToastOverlay");
         const successToast = document.getElementById("successToast");
         let successToastTimer = null;
-        const MAX_PHOTO_BYTES = 5 * 1024 * 1024;
-        const MAX_RESUME_BYTES = 10 * 1024 * 1024;
+        const MAX_PHOTO_BYTES = 2 * 1024 * 1024;
+        const MAX_RESUME_BYTES = 2 * 1024 * 1024;
 
         const checkIcon = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
@@ -983,7 +983,7 @@
                 return { ok: false, el: input };
             }
             if (file.size > MAX_PHOTO_BYTES) {
-                setFieldState("mentorPhoto", { error: "Ukuran foto maksimal 5MB." });
+                setFieldState("mentorPhoto", { error: "Ukuran foto maksimal 2MB." });
                 return { ok: false, el: input };
             }
             setFieldState("mentorPhoto");
@@ -1004,7 +1004,7 @@
                 return { ok: false, el: input };
             }
             if (file.size > MAX_RESUME_BYTES) {
-                setFieldState("mentorResume", { error: "Ukuran resume maksimal 10MB." });
+                setFieldState("mentorResume", { error: "Ukuran resume maksimal 2MB." });
                 return { ok: false, el: input };
             }
             setFieldState("mentorResume");
