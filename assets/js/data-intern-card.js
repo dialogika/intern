@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const dataIntern = [
- {
+    {
       namaIntern: "Nabilah Al Mira",
       posisi: "-",
       tags: ["Completed Intern"], // atau tag lain sesuai status
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
-        ],
+      ],
       rating: 5,
       whatsappNumber: "-",
       profilePage: "nabilah-al-mira.html",
@@ -35,14 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
-        ],
+      ],
       rating: 2,
       whatsappNumber: "-",
       profilePage: "nilam-azzahro.html",
       avatarPath: "../assets/img/portofolio/nilam-azzahro/image.png",
       resumePath: "-",
     },
-    
+
     {
       namaIntern: "Dilla Nafisa",
       posisi: "-",
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
-        ],
+      ],
       rating: 5,
       whatsappNumber: "-",
       profilePage: "dilla-nafisa.html",
@@ -76,11 +76,12 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
-        ],
+      ],
       rating: 5,
       whatsappNumber: "-",
       profilePage: "kayla-ranatasya-rahmadania-putri.html",
-      avatarPath: "../assets/img/portofolio/kayla-ranatasya-rahmadania-putri/image.png",
+      avatarPath:
+        "../assets/img/portofolio/kayla-ranatasya-rahmadania-putri/image.png",
       resumePath: "-",
     },
     {
@@ -96,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
-        ],
+      ],
       rating: 5,
       whatsappNumber: "-",
       profilePage: "zahwa-aufa-febrina.html",
@@ -116,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
-        ],
+      ],
       rating: 5,
       whatsappNumber: "-",
       profilePage: "ni-made-ana-maharani.html",
@@ -136,11 +137,12 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
-        ],
+      ],
       rating: 5,
       whatsappNumber: "-",
       profilePage: "farida-nuraini-beru-peranginangin.html",
-      avatarPath: "../assets/img/portofolio/farida-nuraini-beru-peranginangin/image.png",
+      avatarPath:
+        "../assets/img/portofolio/farida-nuraini-beru-peranginangin/image.png",
       resumePath: "-",
     },
     {
@@ -156,11 +158,12 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
-        ],
+      ],
       rating: 5,
       whatsappNumber: "-",
       profilePage: "muhammad-rumi-fasabrun-jamil.html",
-      avatarPath: "../assets/img/portofolio/muhammad-rumi-fasabrun-jamil/image.png",
+      avatarPath:
+        "../assets/img/portofolio/muhammad-rumi-fasabrun-jamil/image.png",
       resumePath: "-",
     },
     {
@@ -176,11 +179,12 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
-        ],
+      ],
       rating: 3,
       whatsappNumber: "-",
       profilePage: "muhammad-nafis-muwaffaq-muwas.html",
-      avatarPath: "../assets/img/portofolio/muhammad-nafis-muwaffaq-muwas/image.png",
+      avatarPath:
+        "../assets/img/portofolio/muhammad-nafis-muwaffaq-muwas/image.png",
       resumePath: "-",
     },
     {
@@ -196,7 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
-        ],
+      ],
       rating: 5,
       whatsappNumber: "-",
       profilePage: "avip-al-mukti.html",
@@ -216,14 +220,14 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
-        ],
+      ],
       rating: 4,
       whatsappNumber: "-",
       profilePage: "muhammad-abyan-alhafizh.html",
       avatarPath: "../assets/img/portofolio/muhammad-abyan-alhafizh/image.png",
       resumePath: "-",
     },
-   {
+    {
       namaIntern: "Vina Ayu Lestari",
       posisi: "-",
       tags: ["Completed Intern"], // atau tag lain sesuai status
@@ -236,7 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
-        ],
+      ],
       rating: 5,
       whatsappNumber: "-",
       profilePage: "vina-ayu-lestari.html",
@@ -256,7 +260,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
-        ],
+      ],
       rating: 5,
       whatsappNumber: "-",
       profilePage: "fauziah-fadilla-rachma.html",
@@ -276,7 +280,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
-        ],
+      ],
       rating: 4,
       whatsappNumber: "-",
       profilePage: "muhammad-sulthoni-akbar.html",
@@ -296,11 +300,12 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
-        ],
+      ],
       rating: 4,
       whatsappNumber: "-",
       profilePage: "agnes-debora-marina-sangkide.html",
-      avatarPath: "../assets/img/portofolio/agnes-debora-marina-sangkide/image.png",
+      avatarPath:
+        "../assets/img/portofolio/agnes-debora-marina-sangkide/image.png",
       resumePath: "-",
     },
     {
@@ -316,7 +321,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           linkedIn: "-",
         },
-        ],
+      ],
       rating: 4,
       whatsappNumber: "-",
       profilePage: "muhammad-alban.html",
@@ -1708,46 +1713,37 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
     }
   };
 
- // Helper to generate star ratings. Sekarang menerima rating numerik dan array tags.
-  const generateStars = (rating, tags) => {
-    let finalStars = 0;
-    
-    // 1. Prioritas: Menggunakan nilai numerik 'rating' jika ada dan valid (antara 0 hingga 5)
-    if (typeof rating === 'number' && rating > 0 && rating <= 5) {
-        finalStars = rating;
-    } 
-    // 2. Fallback: Menggunakan logika perhitungan dari 'tags'
-    else {
-        finalStars = 3; // Default value, bila tags hanya ada "Completed Intern"
-        if (tags.includes("Excellent Talent")) finalStars += 0.5;
-        if (tags.includes("Extended Intern")) finalStars += 0.5;
-        if (tags.includes("CEO Verified")) finalStars += 1;
-    }
-    
-    // Pastikan skor tidak melebihi 5
-    finalStars = Math.min(finalStars, 5); 
-    
-    const maxStars = 5;
-    const fullStars = Math.floor(finalStars);
-    let starsHTML = '';
-    
-    for (let i = 0; i < fullStars; i++) {
-        starsHTML += '<i class="bi bi-star-fill"></i>';
-    }
-    
-    if (finalStars % 1 === 0.5) {
-        starsHTML += '<i class="bi bi-star-half"></i>';
-    }
-    
-    const currentStarsCount = fullStars + (finalStars % 1 === 0.5 ? 1 : 0);
-    const emptyStars = maxStars - currentStarsCount;
+  // Helper to generate star ratings. Sekarang menerima rating numerik dan array tags.
+  const generateStars = (rating, tags) => {
+    let finalStars = 0; // 1. Prioritas: Menggunakan nilai numerik 'rating' jika ada dan valid (antara 0 hingga 5)
+    if (typeof rating === "number" && rating > 0 && rating <= 5) {
+      finalStars = rating;
+    } else // 2. Fallback: Menggunakan logika perhitungan dari 'tags'
+    {
+      finalStars = 3; // Default value, bila tags hanya ada "Completed Intern"
+      if (tags.includes("Excellent Talent")) finalStars += 0.5;
+      if (tags.includes("Extended Intern")) finalStars += 0.5;
+      if (tags.includes("CEO Verified")) finalStars += 1;
+    } // Pastikan skor tidak melebihi 5
+    finalStars = Math.min(finalStars, 5);
+    const maxStars = 5;
+    const fullStars = Math.floor(finalStars);
+    let starsHTML = "";
+    for (let i = 0; i < fullStars; i++) {
+      starsHTML += '<i class="bi bi-star-fill"></i>';
+    }
+    if (finalStars % 1 === 0.5) {
+      starsHTML += '<i class="bi bi-star-half"></i>';
+    }
+    const currentStarsCount = fullStars + (finalStars % 1 === 0.5 ? 1 : 0);
+    const emptyStars = maxStars - currentStarsCount;
 
-    for (let i = 0; i < emptyStars; i++) {
-        starsHTML += '<i class="bi bi-star"></i>';
-    }
+    for (let i = 0; i < emptyStars; i++) {
+      starsHTML += '<i class="bi bi-star"></i>';
+    }
 
-    return starsHTML;
-  };
+    return starsHTML;
+  };
 
   // SVG Icons untuk platform social media
   const getSocialIcon = (platform, url) => {
@@ -1796,33 +1792,184 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
 
   const searchInput = document.getElementById("search-input-intern");
 
+  const CARDS_PER_PAGE = 10;
+  let currentPage = 1;
+
+  /**
+   * Renders pagination controls below the intern cards.
+   * @param {number} totalItems - Total number of filtered intern items.
+   */
+  const renderPagination = (totalItems) => {
+    const totalPages = Math.ceil(totalItems / CARDS_PER_PAGE);
+    const paginationContainer = document.getElementById("pagination");
+    if (!paginationContainer) return;
+
+    // Sembunyikan pagination jika hanya 1 halaman atau tidak ada hasil
+    if (totalPages <= 1) {
+      paginationContainer.innerHTML = "";
+      return;
+    }
+
+    /**
+     * Membuat array tombol halaman dengan elipsis.
+     * Contoh: [1, 2, 3, '...', 12] atau [1, '...', 10, 11, 12]
+     */
+    const buildPageRange = () => {
+      const delta = 1; // Jumlah halaman di kiri/kanan halaman aktif
+      const range = [];
+      const rangeWithDots = [];
+
+      // Selalu tampilkan halaman pertama, terakhir, dan sekitar currentPage
+      for (let i = 1; i <= totalPages; i++) {
+        if (
+          i === 1 ||
+          i === totalPages ||
+          (i >= currentPage - delta && i <= currentPage + delta)
+        ) {
+          range.push(i);
+        }
+      }
+
+      // Sisipkan elipsis di antara angka yang tidak berurutan
+      let prev = null;
+      for (const page of range) {
+        if (prev !== null) {
+          if (page - prev === 2) {
+            // Selisih 2: isi langsung dengan angka di tengah, tidak perlu elipsis
+            rangeWithDots.push(prev + 1);
+          } else if (page - prev > 2) {
+            // Selisih > 2: tampilkan elipsis
+            rangeWithDots.push("...");
+          }
+        }
+        rangeWithDots.push(page);
+        prev = page;
+      }
+
+      return rangeWithDots;
+    };
+
+    const pageRange = buildPageRange();
+
+    // Render tombol-tombol halaman termasuk elipsis
+    const pageButtonsHTML = pageRange
+      .map((page) => {
+        if (page === "...") {
+          // Elipsis tidak bisa diklik
+          return `<li class="page-item disabled">
+            <span class="page-link">...</span>
+          </li>`;
+        }
+        const isActive = page === currentPage ? "active" : "";
+        return `<li class="page-item ${isActive}">
+          <button class="page-link" onclick="goToPage(${page})">${page}</button>
+        </li>`;
+      })
+      .join("");
+
+    const prevDisabled = currentPage === 1 ? "disabled" : "";
+    const nextDisabled = currentPage === totalPages ? "disabled" : "";
+
+    paginationContainer.innerHTML = `
+      <nav aria-label="Intern pagination">
+        <ul class="pagination justify-content-center align-items-center mt-4 gap-1">
+
+          <!-- Tombol Previous -->
+          <li class="page-item ${prevDisabled}">
+            <button class="page-link rounded-circle" onclick="goToPage(${currentPage - 1})" aria-label="Previous">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+          </li>
+
+          <!-- Tombol nomor halaman + elipsis -->
+          ${pageButtonsHTML}
+
+          <!-- Tombol Next -->
+          <li class="page-item ${nextDisabled}">
+            <button class="page-link rounded-circle" onclick="goToPage(${currentPage + 1})" aria-label="Next">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Label: Showing X–Y of Z interns -->
+      <p class="text-center text-muted small mt-2">
+        Showing ${Math.min((currentPage - 1) * CARDS_PER_PAGE + 1, totalItems)}–${Math.min(currentPage * CARDS_PER_PAGE, totalItems)} of ${totalItems} interns
+      </p>
+    `;
+  };
+  /**
+   * Navigates to the given page number and re-renders the cards.
+   * Exposed on window so inline onclick handlers can call it.
+   * @param {number} page - Target page number.
+   */
+  window.goToPage = (page) => {
+    const posisi = filterInput.value.toLowerCase();
+    const nama = searchInput.value.toLowerCase();
+
+    // Recalculate total filtered count to validate the target page
+    const totalFiltered = dataIntern.filter((item) => {
+      const filteredPosisi =
+        posisi === "all" || item.posisi.toLowerCase() === posisi;
+      const filteredNama =
+        nama === "" || item.namaIntern.toLowerCase().includes(nama);
+      return filteredNama && filteredPosisi;
+    }).length;
+
+    const totalPages = Math.ceil(totalFiltered / CARDS_PER_PAGE);
+
+    // Ignore out-of-range page requests (e.g. clicking prev on page 1)
+    if (page < 1 || page > totalPages) return;
+
+    currentPage = page;
+    renderInternCard();
+
+    // Scroll smoothly back to the top of the cards after page change
+    container.scrollIntoView({ behavior: "smooth" });
+  };
+
+  /**
+   * Main render function — filters, paginates, and renders intern cards.
+   * Also re-renders pagination controls after each call.
+   */
   const renderInternCard = () => {
     const posisi = filterInput.value.toLowerCase();
     const nama = searchInput.value.toLowerCase();
 
+    // Filter interns by position and name
     const filteredDataIntern = dataIntern.filter((item) => {
       const filteredPosisi =
         posisi === "all" || item.posisi.toLowerCase() === posisi;
       const filteredNama =
         nama === "" || item.namaIntern.toLowerCase().includes(nama);
-
       return filteredNama && filteredPosisi;
     });
 
-    // MAP data intern untuk membuat card untuk masing-masing intern
+    // Guard: if the current page exceeds total pages (e.g. after a filter change), reset to page 1
+    const totalPages = Math.ceil(filteredDataIntern.length / CARDS_PER_PAGE);
+    if (currentPage > totalPages) currentPage = 1;
+
+    // Slice the filtered array to only the items for the current page
+    const startIndex = (currentPage - 1) * CARDS_PER_PAGE;
+    const paginatedData = filteredDataIntern.slice(
+      startIndex,
+      startIndex + CARDS_PER_PAGE,
+    );
+
     if (container) {
-      container.innerHTML = filteredDataIntern
+      container.innerHTML = paginatedData
         .map((internData) => {
-          // Membuat TAGS "Completed Intern", "Excellent Intern", dll
+          // Build badge HTML for each tag (e.g. "Completed Intern", "Excellent Intern")
           const tagsHTML = internData.tags
             .map(
               (tag) =>
-                `<span class="badge rounded-pill ${getTagClass(
-                  tag
-                )}">${tag}</span>`
+                `<span class="badge rounded-pill ${getTagClass(tag)}">${tag}</span>`,
             )
             .join(" ");
 
+          // Build social media icon links
           const socialLinksHTML = internData.socialMedia
             .map((social) => {
               const platform = Object.keys(social)[0];
@@ -1831,87 +1978,94 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
             })
             .join(" ");
 
+          // Build star rating HTML
           const starsHTML = generateStars(internData.rating, internData.tags);
 
           return `
           <div class="card mt-4 mb-4" data-state="#about">
             <div class="card-header">
-              <div class="card-cover" style="
-        background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');"></div>
-              <img class="card-avatar" src="${
-                internData.avatarPath
-              }" alt="avatar" />
+              <div class="card-cover" style="background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');"></div>
+              <img class="card-avatar" src="${internData.avatarPath}" alt="avatar" />
               <h1 class="card-fullname">
                 ${internData.namaIntern}
-                ${
-                  internData.tags.includes("CEO Verified")
-                    ? '<i class="bi bi-patch-check-fill text-primary"></i>'
-                    : ""
-                }
+                <!-- Show verified badge only if CEO Verified tag is present -->
+                ${internData.tags.includes("CEO Verified") ? '<i class="bi bi-patch-check-fill text-primary"></i>' : ""}
               </h1>
               <h2 class="card-jobtitle">${internData.posisi}</h2>
               <div class="top-left">${starsHTML}</div>
+
+              <!-- Resume download button — only rendered if a resume path exists -->
               ${
                 internData.resumePath &&
-                `<div class="top-right">
-                    <a
-                      href="${internData.resumePath}"
-                      target="_blank">
-                      <i class="bi bi-box-arrow-in-down"></i>
-                    </a>
-                  </div>`
+                `
+                <div class="top-right">
+                  <a href="${internData.resumePath}" target="_blank">
+                    <i class="bi bi-box-arrow-in-down"></i>
+                  </a>
+                </div>`
               }
             </div>
-  
+
             <div class="card-main">
-  <div class="card-section is-active" id="about">
-    <div class="card-content">
-      <div class="card-subtitle">About Me</div>
-      <p class="card-desc">
-        ${internData.AboutIntern.slice(0, 150)
-          .replace(/\s+\S*$/, "")
-          .trim()}
-        <span class="dots">...</span>
-        <span class="moreText" style="display: none;">
-          ${internData.AboutIntern.slice(
-            internData.AboutIntern.slice(0, 150).replace(/\s+\S*$/, "").length
-          ).trim()} 
-        </span>
-        <span class="readMore"> Read More &raquo;</span>
-        <span class="readLess" style="display: none;"> &laquo; Read Less</span>
-      </p>
-      <p class="card-desc small">${tagsHTML}</p>
-    </div>
-    <div class="card-social">${socialLinksHTML}</div>
-  </div>
-</div>
-              <div class="card-buttons">
-                <button data-section="#about" class="about-me-animate" onclick="window.location.href='${
-                  internData.profilePage
-                }'">
-                  <i class="bi bi-person-circle"></i> About Me
-                </button>
-                <button onclick="location.href='https://wa.me/${internData.whatsappNumber.replace(
-                  /\D/g,
-                  ""
-                )}';">
-                  <i class="bi bi-whatsapp"></i> Whatsapp Me
-                </button>
-                <button onclick="location.href='mailto:admin@dialogika.co';">
-                  <i class="bi bi-envelope-at"></i> My Supervisor
-                </button>
+              <div class="card-section is-active" id="about">
+                <div class="card-content">
+                  <div class="card-subtitle">About Me</div>
+
+                  <!-- Truncate bio to ~150 chars with Read More / Read Less toggle -->
+                  <p class="card-desc">
+                    ${internData.AboutIntern.slice(0, 150)
+                      .replace(/\s+\S*$/, "")
+                      .trim()}
+                    <span class="dots">...</span>
+                    <span class="moreText" style="display: none;">
+                      ${internData.AboutIntern.slice(internData.AboutIntern.slice(0, 150).replace(/\s+\S*$/, "").length).trim()}
+                    </span>
+                    <span class="readMore"> Read More »</span>
+                    <span class="readLess" style="display: none;"> « Read Less</span>
+                  </p>
+
+                  <p class="card-desc small">${tagsHTML}</p>
+                </div>
+                <div class="card-social">${socialLinksHTML}</div>
               </div>
+            </div>
+
+            <div class="card-buttons">
+              <!-- Navigate to intern's profile page -->
+              <button data-section="#about" class="about-me-animate" onclick="window.location.href='${internData.profilePage}'">
+                <i class="bi bi-person-circle"></i> About Me
+              </button>
+
+              <!-- Open WhatsApp chat — strips non-numeric characters from the number -->
+              <button onclick="location.href='https://wa.me/${internData.whatsappNumber.replace(/\D/g, "")}';">
+                <i class="bi bi-whatsapp"></i> Whatsapp Me
+              </button>
+
+              <!-- Email the intern's supervisor -->
+              <button onclick="location.href='mailto:admin@dialogika.co';">
+                <i class="bi bi-envelope-at"></i> My Supervisor
+              </button>
             </div>
           </div>
         `;
         })
         .join("");
     }
+
+    // Re-render pagination controls based on total filtered count
+    renderPagination(filteredDataIntern.length);
   };
 
-  renderInternCard();
+  // Reset to page 1 whenever filters or search input change, then re-render
+  filterInput.addEventListener("change", () => {
+    currentPage = 1;
+    renderInternCard();
+  });
+  searchInput.addEventListener("input", () => {
+    currentPage = 1;
+    renderInternCard();
+  });
 
-  // Event listener untuk select dan input search
-  filterInput.addEventListener("change", renderInternCard);
-  searchInput.addEventListener("input", renderInternCard);
+  // Initial render on page load
+  renderInternCard();
 });
