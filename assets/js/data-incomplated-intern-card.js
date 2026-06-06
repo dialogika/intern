@@ -483,22 +483,44 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   ];
 
-  // Helper to determine badge colors
-  const getTagClass = (tag) => {
-    switch (tag) {
-      case "Completed Intern":
-        return "text-bg-success";
-      case "Extended Intern":
-        return "text-bg-info";
-      case "Excellent Talent":
-        return "text-bg-warning";
-      case "CEO Verified":
-        return "text-bg-primary";
-      case "Incomplete Intern":
-        return "text-bg-danger";
-      default:
-        return "text-bg-secondary";
+  const getBadgeMeta = (tags = []) => {
+    if (tags.includes("Excellent Talent")) {
+      return { label: "Top Talent", className: "excellent" };
     }
+    if (tags.includes("CEO Verified")) {
+      return { label: "CEO Verified", className: "verified" };
+    }
+    if (tags.includes("Extended Intern")) {
+      return { label: "Extended", className: "extended" };
+    }
+    if (tags.includes("Incomplete Intern")) {
+      return { label: "Incomplete", className: "incomplete" };
+    }
+    return { label: "Completed", className: "completed" };
+  };
+
+  const formatAboutText = (text) => {
+    const normalized = String(text || "").replace(/\s+/g, " ").trim();
+    if (!normalized || normalized === "............") {
+      return "Profil singkat kandidat belum ditambahkan.";
+    }
+    return '"' + normalized + '"';
+  };
+
+  const getPrimarySocialLink = (socialMedia = []) => {
+    for (const social of socialMedia) {
+      const platform = Object.keys(social)[0];
+      const url = social[platform];
+      if (url) {
+        return { platform, url };
+      }
+    }
+    return null;
+  };
+
+  const getWhatsappUrl = (whatsappNumber = "") => {
+    const sanitized = String(whatsappNumber || "").replace(/\D/g, "");
+    return sanitized ? `https://wa.me/${sanitized}` : null;
   };
 
   // Helper to generate star ratings
@@ -609,108 +631,55 @@ document.addEventListener("DOMContentLoaded", () => {
     const endIndex = startIndex + itemsPerPage;
     const paginatedData = filteredDataIncompleteIntern.slice(startIndex, endIndex);
 
-    // MAP data incomplete intern untuk membuat card untuk masing-masing intern
     if (container) {
       const incompleteCardsHTML = paginatedData
         .map((internData) => {
-          // Membuat TAGS "Incomplete Intern"
-          const tagsHTML = internData.tags
-            .map(
-              (tag) =>
-                `<span class="badge rounded-pill ${getTagClass(
-                  tag
-                )}">${tag}</span>`
-            )
-            .join(" ");
-
-          const socialLinksHTML = internData.socialMedia
-            .map((social) => {
-              const platform = Object.keys(social)[0];
-              const url = social[platform];
-              return getSocialIcon(platform, url);
-            })
-            .join(" ");
-
+          const badgeMeta = getBadgeMeta(internData.tags);
+          const tagsHTML = (internData.tags || [])
+            .slice(0, 3)
+            .map((tag) => `<span class="resume-card__chip">${tag}</span>`)
+            .join("");
+          const primarySocial = getPrimarySocialLink(internData.socialMedia);
+          const whatsappUrl = getWhatsappUrl(internData.whatsappNumber);
           const starsHTML = generateStars(internData.rating);
-
-          // Check if text is longer than 150 characters and create read more functionality
-          const aboutText = internData.AboutIntern;
-          const isLongText = aboutText.length > 150;
-          const shortText = isLongText
-            ? aboutText
-              .slice(0, 150)
-              .replace(/\s+\S*$/, "")
-              .trim()
-            : aboutText;
-          const longText = isLongText
-            ? aboutText.slice(shortText.length).trim()
-            : "";
-
-          const aboutMeHTML = isLongText
-            ? `<p class="card-desc">
-                ${shortText}
-                <span class="dots">...</span>
-                <span class="moreText" style="display: none;">
-                  ${longText}
-                </span>
-                <span class="readMore"> Read More &raquo;</span>
-                <span class="readLess" style="display: none;"> &laquo; Read Less</span>
-              </p>`
-            : `<p class="card-desc">${aboutText}</p>`;
+          const profileUrl = internData.profilePage || "#";
+          const buttonDisabled = !internData.profilePage;
+          const aboutText = formatAboutText(internData.AboutIntern);
 
           return `
-          <div class="card mt-4 mb-4" data-state="#about">
-            <div class="card-header">
-              <div class="card-cover" style="
-        background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');"></div>
-              <img class="card-avatar" src="${internData.avatarPath || ""
-            }" alt="avatar ${internData.namaIntern}" />
-              <h1 class="card-fullname">
-                ${internData.namaIntern}
-              </h1>
-              <h2 class="card-jobtitle">${internData.posisi}</h2>
-              <div class="top-left">${starsHTML}</div>
-              ${internData.resumePath &&
-            `<div class="top-right">
-                    <a
-                      href="${internData.resumePath}"
-                      target="_blank">
-                      <i class="bi bi-box-arrow-in-down"></i>
-                    </a>
-                  </div>`
-            }
-            </div>
-  
-            <div class="card-main">
-              <div class="card-section is-active" id="about">
-                <div class="card-content">
-                  <div class="card-subtitle">About Me</div>
-                  ${aboutMeHTML}
-                  <p class="card-desc small">${tagsHTML}</p>
-                </div>
-                <div class="card-social">${socialLinksHTML}</div>
+          <article class="resume-card">
+            <div class="resume-card__badge ${badgeMeta.className}">${badgeMeta.label}</div>
+            <div class="resume-card__inner">
+              <div class="resume-card__avatar-wrap">
+                <img class="resume-card__avatar" src="${internData.avatarPath || ""}" alt="${internData.namaIntern}" />
               </div>
+              <h3 class="resume-card__name">${internData.namaIntern}</h3>
+              <p class="resume-card__role">${internData.posisi}</p>
+              <div class="resume-card__rating" aria-label="Rating kandidat">${starsHTML}</div>
+              <p class="resume-card__desc">${aboutText}</p>
+              <div class="resume-card__chips">${tagsHTML}</div>
+              <div class="resume-card__footer">
+                <div class="resume-card__links">
+                  ${
+                    primarySocial
+                      ? `<a class="resume-card__icon-link" href="${primarySocial.url}" target="_blank" rel="noopener noreferrer" aria-label="Kunjungi profil sosial ${internData.namaIntern}"><i class="bi bi-link-45deg"></i></a>`
+                      : `<span class="resume-card__icon-link is-disabled" aria-hidden="true"><i class="bi bi-link-45deg"></i></span>`
+                  }
+                  ${
+                    whatsappUrl
+                      ? `<a class="resume-card__icon-link" href="${whatsappUrl}" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp ${internData.namaIntern}"><i class="bi bi-chat-dots"></i></a>`
+                      : `<span class="resume-card__icon-link is-disabled" aria-hidden="true"><i class="bi bi-chat-dots"></i></span>`
+                  }
+                </div>
+                <a class="resume-card__reference" href="mailto:admin@dialogika.co">
+                  <i class="bi bi-envelope"></i> Reference
+                </a>
+              </div>
+              <button class="resume-card__button" ${buttonDisabled ? "disabled" : `onclick="window.location.href='${profileUrl}'"`}>
+                ${buttonDisabled ? "Profile Soon" : "View Profile"}
+              </button>
             </div>
-            <div class="card-buttons">
-              <button data-section="#about" class="about-me-animate" 
-                ${internData.profilePage
-              ? `onclick="window.location.href='${internData.profilePage}'"`
-              : "disabled"
-            }
-                ${!internData.profilePage ? "disabled" : ""}>
-                <i class="bi bi-person-circle"></i> About Me
-              </button>
-              <button onclick="location.href='https://wa.me/${internData.whatsappNumber.replace(
-              /\D/g,
-              ""
-            )}';">
-                <i class="bi bi-whatsapp"></i> Whatsapp Me
-              </button>
-              <button onclick="location.href='mailto:admin@dialogika.co';">
-                <i class="bi bi-envelope-at"></i> My Supervisor
-              </button>
-            </div>
-          </div>
+          </article>
         `;
         })
         .join("");
@@ -719,14 +688,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Insert the incomplete intern cards after the section title
       // We need to clear the old cards and old pagination first
-      const existingCards = container.querySelectorAll(".card");
-      existingCards.forEach((card) => card.remove());
+      const existingGrids = container.querySelectorAll(".resume-card-grid");
+      existingGrids.forEach((grid) => grid.remove());
       const existingPagination = container.querySelectorAll(".pagination-container-incomplete");
       existingPagination.forEach((p) => p.remove());
 
       const sectionTitle = container.querySelector(".incomplete-intern-title");
       if (sectionTitle) {
-        sectionTitle.insertAdjacentHTML("afterend", incompleteCardsHTML + paginationHTML);
+        sectionTitle.insertAdjacentHTML(
+          "afterend",
+          `<div class="resume-card-grid">${incompleteCardsHTML}</div>${paginationHTML}`
+        );
       }
       
       // Pagination click events
@@ -739,7 +711,6 @@ document.addEventListener("DOMContentLoaded", () => {
             currentPageIncomplete = selectedPage;
             renderIncompleteInternCard();
             window.location.hash = "#incomplete-intern";
-            addReadMoreListeners();
           }
         });
       });
@@ -748,42 +719,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderIncompleteInternCard();
 
-  // Add read more/read less functionality
-  const addReadMoreListeners = () => {
-    if(!container) return;
-    const readMoreElements = container.querySelectorAll(".readMore");
-    const readLessElements = container.querySelectorAll(".readLess");
-    const moreTextElements = container.querySelectorAll(".moreText");
-    const dotsElements = container.querySelectorAll(".dots");
-
-    readMoreElements.forEach((element, index) => {
-      element.addEventListener("click", function () {
-        moreTextElements[index].style.display = "inline";
-        readLessElements[index].style.display = "inline";
-        readMoreElements[index].style.display = "none";
-        dotsElements[index].style.display = "none";
-      });
-    });
-
-    readLessElements.forEach((element, index) => {
-      element.addEventListener("click", function () {
-        moreTextElements[index].style.display = "none";
-        readLessElements[index].style.display = "none";
-        readMoreElements[index].style.display = "inline";
-        dotsElements[index].style.display = "inline";
-      });
-    });
-  };
-
-  // Add listeners after initial render
-  addReadMoreListeners();
-
   // Event listener untuk select dan input search
   if (filterInput) {
     filterInput.addEventListener("change", () => {
       currentPageIncomplete = 1;
       renderIncompleteInternCard();
-      addReadMoreListeners();
     });
   }
 
@@ -791,7 +731,6 @@ document.addEventListener("DOMContentLoaded", () => {
     searchInput.addEventListener("input", () => {
       currentPageIncomplete = 1;
       renderIncompleteInternCard();
-      addReadMoreListeners();
     });
   }
 });

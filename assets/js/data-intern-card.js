@@ -1387,6 +1387,7 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
         socialMedia: [],
         rating: 3,
         whatsappNumber: data.phone || "",
+        userId: data.user_id || doc.id,
         profilePage: data.user_id ? `detail.html?id=${data.user_id}` : "#",
         avatarPath: data.photo || "../assets/img/portofolio/default.webp",
         resumePath: "-",
@@ -1408,20 +1409,65 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
     console.error("Error fetching interns from Firestore: ", error);
   }
 
-  // Helper to determine badge colors
-  const getTagClass = (tag) => {
-    switch (tag) {
-      case "Completed Intern":
-        return "text-bg-success";
-      case "Extended Intern":
-        return "text-bg-info";
-      case "Excellent Talent":
-        return "text-bg-warning";
-      case "CEO Verified":
-        return "text-bg-primary";
-      default:
-        return "text-bg-secondary";
+  const getBadgeMeta = (tags = []) => {
+    if (tags.includes("Excellent Talent")) {
+      return { label: "Top Talent", className: "excellent" };
     }
+    if (tags.includes("CEO Verified")) {
+      return { label: "CEO Verified", className: "verified" };
+    }
+    if (tags.includes("Extended Intern")) {
+      return { label: "Extended", className: "extended" };
+    }
+    return { label: "Completed", className: "completed" };
+  };
+
+  const formatAboutText = (text) => {
+    const normalized = String(text || "").replace(/\s+/g, " ").trim();
+    if (!normalized) {
+      return "Profil singkat kandidat belum ditambahkan.";
+    }
+    return '"' + normalized + '"';
+  };
+
+  const getPrimarySocialLink = (socialMedia = []) => {
+    for (const social of socialMedia) {
+      const platform = Object.keys(social)[0];
+      const url = social[platform];
+      if (url) {
+        return { platform, url };
+      }
+    }
+    return null;
+  };
+
+  const getWhatsappUrl = (whatsappNumber = "") => {
+    const sanitized = String(whatsappNumber || "").replace(/\D/g, "");
+    return sanitized ? `https://wa.me/${sanitized}` : null;
+  };
+
+  const buildDetailUrl = (internData) => {
+    if (internData.userId) {
+      return `detail.html?id=${encodeURIComponent(internData.userId)}`;
+    }
+
+    const params = new URLSearchParams();
+    params.set("name", internData.namaIntern || "Intern");
+    params.set("position", internData.posisi || "Intern");
+    params.set("about", internData.AboutIntern || "");
+    params.set("avatar", internData.avatarPath || "../assets/img/portofolio/default.webp");
+    params.set("rating", String(internData.rating || 0));
+    params.set("tags", JSON.stringify(internData.tags || []));
+    params.set("whatsapp", internData.whatsappNumber || "");
+    params.set("resume", internData.resumePath || "");
+    params.set("referenceEmail", internData.referenceEmail || "admin@dialogika.co");
+
+    const instagram = (internData.socialMedia || []).find((item) => item.instagram)?.instagram || "";
+    const linkedin = (internData.socialMedia || []).find((item) => item.linkedIn)?.linkedIn || "";
+    params.set("instagram", instagram);
+    params.set("linkedin", linkedin);
+
+    return `detail.html?${params.toString()}`;
   };
 
   // Helper to generate star ratings. Sekarang menerima rating numerik dan array tags.
@@ -1556,128 +1602,62 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
     const endIndex = startIndex + itemsPerPage;
     const paginatedData = filteredDataIntern.slice(startIndex, endIndex);
 
-    // MAP data intern untuk membuat card untuk masing-masing intern
     if (container) {
       const cardsHTML = paginatedData
         .map((internData) => {
-          // Build badge HTML for each tag (e.g. "Completed Intern", "Excellent Intern")
-          const tagsHTML = internData.tags
-            .map(
-              (tag) =>
-                `<span class="badge rounded-pill ${getTagClass(tag)}">${tag}</span>`,
-            )
-            .join(" ");
-
-          // Build social media icon links
-          const socialLinksHTML = internData.socialMedia
-            .map((social) => {
-              const platform = Object.keys(social)[0];
-              const url = social[platform];
-              return getSocialIcon(platform, url);
-            })
-            .join(" ");
-
-          // Build star rating HTML
+          const badgeMeta = getBadgeMeta(internData.tags);
+          const tagsHTML = (internData.tags || [])
+            .slice(0, 3)
+            .map((tag) => `<span class="resume-card__chip">${tag}</span>`)
+            .join("");
+          const primarySocial = getPrimarySocialLink(internData.socialMedia);
+          const whatsappUrl = getWhatsappUrl(internData.whatsappNumber);
           const starsHTML = generateStars(internData.rating, internData.tags);
+          const profileUrl = buildDetailUrl(internData);
+          const buttonDisabled = !profileUrl;
+          const aboutText = formatAboutText(internData.AboutIntern);
 
           return `
-          <div class="card mt-4 mb-4" data-state="#about">
-            <div class="card-header">
-              <div class="card-cover" style="background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');"></div>
-              <img class="card-avatar" src="${internData.avatarPath}" alt="avatar" />
-              <h1 class="card-fullname">
-                ${internData.namaIntern}
-                <!-- Show verified badge only if CEO Verified tag is present -->
-                ${internData.tags.includes("CEO Verified") ? '<i class="bi bi-patch-check-fill text-primary"></i>' : ""}
-              </h1>
-              <h2 class="card-jobtitle">${internData.posisi}</h2>
-              <div class="top-left">${starsHTML}</div>
-
-              <!-- Resume download button — only rendered if a resume path exists -->
-              ${
-                internData.resumePath &&
-                `
-                <div class="top-right">
-                  <a href="${internData.resumePath}" target="_blank">
-                    <i class="bi bi-box-arrow-in-down"></i>
-                  </a>
-                </div>`
-              }
-            </div>
-
-            <div class="card-main">
-  <div class="card-section is-active" id="about">
-    <div class="card-content">
-      <div class="card-subtitle">About Me</div>
-      <p class="card-desc">
-        ${internData.AboutIntern.slice(0, 150)
-          .replace(/\s+\S*$/, "")
-          .trim()}
-        <span class="dots">...</span>
-        <span class="moreText" style="display: none;">
-          ${internData.AboutIntern.slice(
-            internData.AboutIntern.slice(0, 150).replace(/\s+\S*$/, "").length
-          ).trim()} 
-        </span>
-        <span class="readMore"> Read More &raquo;</span>
-        <span class="readLess" style="display: none;"> &laquo; Read Less</span>
-      </p>
-      <p class="card-desc small">${tagsHTML}</p>
-    </div>
-    <div class="card-social">${socialLinksHTML}</div>
-  </div>
-</div>
-              <div class="card-buttons">
-                <button data-section="#about" class="about-me-animate" onclick="window.location.href='${
-                  internData.profilePage
-                }'">
-                  <i class="bi bi-person-circle"></i> About Me
-                </button>
-                <button onclick="location.href='https://wa.me/${internData.whatsappNumber.replace(
-                  /\D/g,
-                  ""
-                )}';">
-                  <i class="bi bi-whatsapp"></i> Whatsapp Me
-                </button>
-                <button onclick="location.href='mailto:${
-                  internData.referenceEmail || "admin@dialogika.co"
-                }';">
-                  <i class="bi bi-envelope-at"></i> My Supervisor
-                </button>
+          <article class="resume-card">
+            <div class="resume-card__badge ${badgeMeta.className}">${badgeMeta.label}</div>
+            <div class="resume-card__inner">
+              <div class="resume-card__avatar-wrap">
+                <img class="resume-card__avatar" src="${internData.avatarPath}" alt="${internData.namaIntern}" />
               </div>
+              <h3 class="resume-card__name">${internData.namaIntern}</h3>
+              <p class="resume-card__role">${internData.posisi}</p>
+              <div class="resume-card__rating" aria-label="Rating kandidat">${starsHTML}</div>
+              <p class="resume-card__desc">${aboutText}</p>
+              <div class="resume-card__chips">${tagsHTML}</div>
+              <div class="resume-card__footer">
+                <div class="resume-card__links">
+                  ${
+                    primarySocial
+                      ? `<a class="resume-card__icon-link" href="${primarySocial.url}" target="_blank" rel="noopener noreferrer" aria-label="Kunjungi profil sosial ${internData.namaIntern}"><i class="bi bi-link-45deg"></i></a>`
+                      : `<span class="resume-card__icon-link is-disabled" aria-hidden="true"><i class="bi bi-link-45deg"></i></span>`
+                  }
+                  ${
+                    whatsappUrl
+                      ? `<a class="resume-card__icon-link" href="${whatsappUrl}" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp ${internData.namaIntern}"><i class="bi bi-chat-dots"></i></a>`
+                      : `<span class="resume-card__icon-link is-disabled" aria-hidden="true"><i class="bi bi-chat-dots"></i></span>`
+                  }
+                </div>
+                <a class="resume-card__reference" href="mailto:${internData.referenceEmail || "admin@dialogika.co"}">
+                  <i class="bi bi-envelope"></i> Reference
+                </a>
+              </div>
+              <button class="resume-card__button" ${buttonDisabled ? "disabled" : `onclick="window.location.href='${profileUrl}'"`}>
+                ${buttonDisabled ? "Profile Soon" : "View Profile"}
+              </button>
             </div>
-          </div>
+          </article>
         `;
         })
         .join("");
         
       const paginationHTML = renderPagination(totalItems);
       
-      container.innerHTML = `<div class="intern-section-title">COMPLETED INTERN</div>` + cardsHTML + paginationHTML;
-
-      // Add read more/read less functionality
-      const readMoreElements = container.querySelectorAll(".readMore");
-      const readLessElements = container.querySelectorAll(".readLess");
-      const moreTextElements = container.querySelectorAll(".moreText");
-      const dotsElements = container.querySelectorAll(".dots");
-  
-      readMoreElements.forEach((element, index) => {
-        element.addEventListener("click", function () {
-          moreTextElements[index].style.display = "inline";
-          readLessElements[index].style.display = "inline";
-          readMoreElements[index].style.display = "none";
-          dotsElements[index].style.display = "none";
-        });
-      });
-  
-      readLessElements.forEach((element, index) => {
-        element.addEventListener("click", function () {
-          moreTextElements[index].style.display = "none";
-          readLessElements[index].style.display = "none";
-          readMoreElements[index].style.display = "inline";
-          dotsElements[index].style.display = "inline";
-        });
-      });
+      container.innerHTML = `<div class="resume-card-grid">${cardsHTML}</div>${paginationHTML}`;
 
       // Pagination click events
       const pageLinks = container.querySelectorAll(".page-link");
