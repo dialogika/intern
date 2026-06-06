@@ -556,9 +556,36 @@ document.addEventListener("DOMContentLoaded", () => {
   const filterInput = document.getElementById("filter-posisi");
   const searchInput = document.getElementById("search-input-intern");
 
+  let currentPageIncomplete = 1;
+  const itemsPerPage = 12;
+
+  const renderPaginationIncomplete = (totalItems) => {
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    if (totalPages <= 1) return "";
+    
+    let paginationHTML = '<nav aria-label="Page navigation" class="w-100 mt-4 pagination-container-incomplete" style="clear: both; padding-top: 20px;"><ul class="pagination justify-content-center">';
+    
+    paginationHTML += `<li class="page-item ${currentPageIncomplete === 1 ? 'disabled' : ''}">
+      <a class="page-link page-link-incomplete" href="#incomplete-intern" data-page="${currentPageIncomplete - 1}">Previous</a>
+    </li>`;
+    
+    for (let i = 1; i <= totalPages; i++) {
+      paginationHTML += `<li class="page-item ${currentPageIncomplete === i ? 'active' : ''}">
+        <a class="page-link page-link-incomplete" href="#incomplete-intern" data-page="${i}">${i}</a>
+      </li>`;
+    }
+    
+    paginationHTML += `<li class="page-item ${currentPageIncomplete === totalPages || totalPages === 0 ? 'disabled' : ''}">
+      <a class="page-link page-link-incomplete" href="#incomplete-intern" data-page="${currentPageIncomplete + 1}">Next</a>
+    </li>`;
+    
+    paginationHTML += '</ul></nav>';
+    return paginationHTML;
+  };
+
   const renderIncompleteInternCard = () => {
-    const posisi = filterInput.value.toLowerCase();
-    const nama = searchInput.value.toLowerCase();
+    const posisi = filterInput ? filterInput.value.toLowerCase() : "all";
+    const nama = searchInput ? searchInput.value.toLowerCase() : "";
 
     const filteredDataIncompleteIntern = dataIncompleteIntern.filter((item) => {
       const filteredPosisi =
@@ -569,9 +596,22 @@ document.addEventListener("DOMContentLoaded", () => {
       return filteredNama && filteredPosisi;
     });
 
+    const totalItems = filteredDataIncompleteIntern.length;
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    
+    if (currentPageIncomplete > totalPages && totalPages > 0) {
+      currentPageIncomplete = totalPages;
+    } else if (totalPages === 0) {
+      currentPageIncomplete = 1;
+    }
+
+    const startIndex = (currentPageIncomplete - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const paginatedData = filteredDataIncompleteIntern.slice(startIndex, endIndex);
+
     // MAP data incomplete intern untuk membuat card untuk masing-masing intern
     if (container) {
-      const incompleteCardsHTML = filteredDataIncompleteIntern
+      const incompleteCardsHTML = paginatedData
         .map((internData) => {
           // Membuat TAGS "Incomplete Intern"
           const tagsHTML = internData.tags
@@ -598,9 +638,9 @@ document.addEventListener("DOMContentLoaded", () => {
           const isLongText = aboutText.length > 150;
           const shortText = isLongText
             ? aboutText
-                .slice(0, 150)
-                .replace(/\s+\S*$/, "")
-                .trim()
+              .slice(0, 150)
+              .replace(/\s+\S*$/, "")
+              .trim()
             : aboutText;
           const longText = isLongText
             ? aboutText.slice(shortText.length).trim()
@@ -623,24 +663,22 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="card-header">
               <div class="card-cover" style="
         background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');"></div>
-              <img class="card-avatar" src="${
-                internData.avatarPath || ""
-              }" alt="avatar ${internData.namaIntern}" />
+              <img class="card-avatar" src="${internData.avatarPath || ""
+            }" alt="avatar ${internData.namaIntern}" />
               <h1 class="card-fullname">
                 ${internData.namaIntern}
               </h1>
               <h2 class="card-jobtitle">${internData.posisi}</h2>
               <div class="top-left">${starsHTML}</div>
-              ${
-                internData.resumePath &&
-                `<div class="top-right">
+              ${internData.resumePath &&
+            `<div class="top-right">
                     <a
                       href="${internData.resumePath}"
                       target="_blank">
                       <i class="bi bi-box-arrow-in-down"></i>
                     </a>
                   </div>`
-              }
+            }
             </div>
   
             <div class="card-main">
@@ -655,18 +693,17 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
             <div class="card-buttons">
               <button data-section="#about" class="about-me-animate" 
-                ${
-                  internData.profilePage
-                    ? `onclick="window.location.href='${internData.profilePage}'"`
-                    : "disabled"
-                }
+                ${internData.profilePage
+              ? `onclick="window.location.href='${internData.profilePage}'"`
+              : "disabled"
+            }
                 ${!internData.profilePage ? "disabled" : ""}>
                 <i class="bi bi-person-circle"></i> About Me
               </button>
               <button onclick="location.href='https://wa.me/${internData.whatsappNumber.replace(
-                /\D/g,
-                ""
-              )}';">
+              /\D/g,
+              ""
+            )}';">
                 <i class="bi bi-whatsapp"></i> Whatsapp Me
               </button>
               <button onclick="location.href='mailto:admin@dialogika.co';">
@@ -678,11 +715,34 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .join("");
 
+      const paginationHTML = renderPaginationIncomplete(totalItems);
+
       // Insert the incomplete intern cards after the section title
+      // We need to clear the old cards and old pagination first
+      const existingCards = container.querySelectorAll(".card");
+      existingCards.forEach((card) => card.remove());
+      const existingPagination = container.querySelectorAll(".pagination-container-incomplete");
+      existingPagination.forEach((p) => p.remove());
+
       const sectionTitle = container.querySelector(".incomplete-intern-title");
       if (sectionTitle) {
-        sectionTitle.insertAdjacentHTML("afterend", incompleteCardsHTML);
+        sectionTitle.insertAdjacentHTML("afterend", incompleteCardsHTML + paginationHTML);
       }
+      
+      // Pagination click events
+      const pageLinks = container.querySelectorAll(".page-link-incomplete");
+      pageLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const selectedPage = parseInt(e.target.getAttribute("data-page"));
+          if (!isNaN(selectedPage)) {
+            currentPageIncomplete = selectedPage;
+            renderIncompleteInternCard();
+            window.location.hash = "#incomplete-intern";
+            addReadMoreListeners();
+          }
+        });
+      });
     }
   };
 
@@ -690,10 +750,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Add read more/read less functionality
   const addReadMoreListeners = () => {
-    const readMoreElements = document.querySelectorAll(".readMore");
-    const readLessElements = document.querySelectorAll(".readLess");
-    const moreTextElements = document.querySelectorAll(".moreText");
-    const dotsElements = document.querySelectorAll(".dots");
+    if(!container) return;
+    const readMoreElements = container.querySelectorAll(".readMore");
+    const readLessElements = container.querySelectorAll(".readLess");
+    const moreTextElements = container.querySelectorAll(".moreText");
+    const dotsElements = container.querySelectorAll(".dots");
 
     readMoreElements.forEach((element, index) => {
       element.addEventListener("click", function () {
@@ -720,22 +781,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // Event listener untuk select dan input search
   if (filterInput) {
     filterInput.addEventListener("change", () => {
-      // Clear existing incomplete intern cards
-      const existingCards = container.querySelectorAll(".card");
-      existingCards.forEach((card) => card.remove());
+      currentPageIncomplete = 1;
       renderIncompleteInternCard();
-      // Re-add listeners after re-rendering
       addReadMoreListeners();
     });
   }
 
   if (searchInput) {
     searchInput.addEventListener("input", () => {
-      // Clear existing incomplete intern cards
-      const existingCards = container.querySelectorAll(".card");
-      existingCards.forEach((card) => card.remove());
+      currentPageIncomplete = 1;
       renderIncompleteInternCard();
-      // Re-add listeners after re-rendering
       addReadMoreListeners();
     });
   }

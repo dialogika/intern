@@ -1,348 +1,22 @@
 // Untuk tags terdapat total 5 tags yang bisa digunakan yaitu : Completed Intern,Extended Intern, Excellent Talent,CEO Verified, Incomplete Intern
 
-document.addEventListener("DOMContentLoaded", () => {
-  const dataIntern = [
- {
-      namaIntern: "Nabilah Al Mira",
-      posisi: "-",
-      tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo ligula, vulputate et eros sed, lacinia dapibus urna. Vestibulum pellentesque dapibus luctus.",
-      socialMedia: [
-        {
-          instagram: "-",
-        },
-        {
-          linkedIn: "-",
-        },
-        ],
-      rating: 5,
-      whatsappNumber: "-",
-      profilePage: "nabilah-al-mira.html",
-      avatarPath: "../assets/img/portofolio/nabilah-al-mira/image.png",
-      resumePath: "-",
-    },
-    {
-      namaIntern: "Nilam Azzahro",
-      posisi: "-",
-      tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo ligula, vulputate et eros sed, lacinia dapibus urna. Vestibulum pellentesque dapibus luctus.",
-      socialMedia: [
-        {
-          instagram: "-",
-        },
-        {
-          linkedIn: "-",
-        },
-        ],
-      rating: 2,
-      whatsappNumber: "-",
-      profilePage: "nilam-azzahro.html",
-      avatarPath: "../assets/img/portofolio/nilam-azzahro/image.png",
-      resumePath: "-",
-    },
-    
-    {
-      namaIntern: "Dilla Nafisa",
-      posisi: "-",
-      tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo ligula, vulputate et eros sed, lacinia dapibus urna. Vestibulum pellentesque dapibus luctus.",
-      socialMedia: [
-        {
-          instagram: "-",
-        },
-        {
-          linkedIn: "-",
-        },
-        ],
-      rating: 5,
-      whatsappNumber: "-",
-      profilePage: "dilla-nafisa.html",
-      avatarPath: "../assets/img/portofolio/dilla-nafisa/image.png",
-      resumePath: "-",
-    },
-    {
-      namaIntern: "Kayla Ranatasya Rahmadania Putri",
-      posisi: "-",
-      tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo ligula, vulputate et eros sed, lacinia dapibus urna. Vestibulum pellentesque dapibus luctus.",
-      socialMedia: [
-        {
-          instagram: "-",
-        },
-        {
-          linkedIn: "-",
-        },
-        ],
-      rating: 5,
-      whatsappNumber: "-",
-      profilePage: "kayla-ranatasya-rahmadania-putri.html",
-      avatarPath: "../assets/img/portofolio/kayla-ranatasya-rahmadania-putri/image.png",
-      resumePath: "-",
-    },
-    {
-      namaIntern: "Zahwa Aufa Febrina",
-      posisi: "-",
-      tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo ligula, vulputate et eros sed, lacinia dapibus urna. Vestibulum pellentesque dapibus luctus.",
-      socialMedia: [
-        {
-          instagram: "-",
-        },
-        {
-          linkedIn: "-",
-        },
-        ],
-      rating: 5,
-      whatsappNumber: "-",
-      profilePage: "zahwa-aufa-febrina.html",
-      avatarPath: "../assets/img/portofolio/zahwa-aufa-febrina/image.png",
-      resumePath: "-",
-    },
-    {
-      namaIntern: "Ni Made Ana Maharani",
-      posisi: "-",
-      tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo ligula, vulputate et eros sed, lacinia dapibus urna. Vestibulum pellentesque dapibus luctus.",
-      socialMedia: [
-        {
-          instagram: "-",
-        },
-        {
-          linkedIn: "-",
-        },
-        ],
-      rating: 5,
-      whatsappNumber: "-",
-      profilePage: "ni-made-ana-maharani.html",
-      avatarPath: "../assets/img/portofolio/ni-made-ana-maharani/image.png",
-      resumePath: "-",
-    },
-    {
-      namaIntern: "Farida Nuraini Beru Peranginangin",
-      posisi: "-",
-      tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo ligula, vulputate et eros sed, lacinia dapibus urna. Vestibulum pellentesque dapibus luctus.",
-      socialMedia: [
-        {
-          instagram: "-",
-        },
-        {
-          linkedIn: "-",
-        },
-        ],
-      rating: 5,
-      whatsappNumber: "-",
-      profilePage: "farida-nuraini-beru-peranginangin.html",
-      avatarPath: "../assets/img/portofolio/farida-nuraini-beru-peranginangin/image.png",
-      resumePath: "-",
-    },
-    {
-      namaIntern: "Muhammad Rumi Fasabrun Jamil",
-      posisi: "-",
-      tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo ligula, vulputate et eros sed, lacinia dapibus urna. Vestibulum pellentesque dapibus luctus.",
-      socialMedia: [
-        {
-          instagram: "-",
-        },
-        {
-          linkedIn: "-",
-        },
-        ],
-      rating: 5,
-      whatsappNumber: "-",
-      profilePage: "muhammad-rumi-fasabrun-jamil.html",
-      avatarPath: "../assets/img/portofolio/muhammad-rumi-fasabrun-jamil/image.png",
-      resumePath: "-",
-    },
-    {
-      namaIntern: "Muhammad Nafis Muwaffaq Muwas",
-      posisi: "-",
-      tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo ligula, vulputate et eros sed, lacinia dapibus urna. Vestibulum pellentesque dapibus luctus.",
-      socialMedia: [
-        {
-          instagram: "-",
-        },
-        {
-          linkedIn: "-",
-        },
-        ],
-      rating: 3,
-      whatsappNumber: "-",
-      profilePage: "muhammad-nafis-muwaffaq-muwas.html",
-      avatarPath: "../assets/img/portofolio/muhammad-nafis-muwaffaq-muwas/image.png",
-      resumePath: "-",
-    },
-    {
-      namaIntern: "Avip Al Mukti",
-      posisi: "-",
-      tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo ligula, vulputate et eros sed, lacinia dapibus urna. Vestibulum pellentesque dapibus luctus.",
-      socialMedia: [
-        {
-          instagram: "-",
-        },
-        {
-          linkedIn: "-",
-        },
-        ],
-      rating: 5,
-      whatsappNumber: "-",
-      profilePage: "avip-al-mukti.html",
-      avatarPath: "../assets/img/portofolio/avip-al-mukti/image.png",
-      resumePath: "-",
-    },
-    {
-      namaIntern: "Muhammad Abyan Alhafizh",
-      posisi: "-",
-      tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo ligula, vulputate et eros sed, lacinia dapibus urna. Vestibulum pellentesque dapibus luctus.",
-      socialMedia: [
-        {
-          instagram: "-",
-        },
-        {
-          linkedIn: "-",
-        },
-        ],
-      rating: 4,
-      whatsappNumber: "-",
-      profilePage: "muhammad-abyan-alhafizh.html",
-      avatarPath: "../assets/img/portofolio/muhammad-abyan-alhafizh/image.png",
-      resumePath: "-",
-    },
-   {
-      namaIntern: "Vina Ayu Lestari",
-      posisi: "-",
-      tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo ligula, vulputate et eros sed, lacinia dapibus urna. Vestibulum pellentesque dapibus luctus.",
-      socialMedia: [
-        {
-          instagram: "-",
-        },
-        {
-          linkedIn: "-",
-        },
-        ],
-      rating: 5,
-      whatsappNumber: "-",
-      profilePage: "vina-ayu-lestari.html",
-      avatarPath: "../assets/img/portofolio/vina-ayu-lestari/image.png",
-      resumePath: "-",
-    },
-    {
-      namaIntern: "Fauziah Fadilla Rachma",
-      posisi: "-",
-      tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo ligula, vulputate et eros sed, lacinia dapibus urna. Vestibulum pellentesque dapibus luctus.",
-      socialMedia: [
-        {
-          instagram: "-",
-        },
-        {
-          linkedIn: "-",
-        },
-        ],
-      rating: 5,
-      whatsappNumber: "-",
-      profilePage: "fauziah-fadilla-rachma.html",
-      avatarPath: "../assets/img/portofolio/fauziah-fadilla-rachma/image.png",
-      resumePath: "-",
-    },
-    {
-      namaIntern: "Muhammad Sulthoni Akbar",
-      posisi: "-",
-      tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo ligula, vulputate et eros sed, lacinia dapibus urna. Vestibulum pellentesque dapibus luctus.",
-      socialMedia: [
-        {
-          instagram: "-",
-        },
-        {
-          linkedIn: "-",
-        },
-        ],
-      rating: 4,
-      whatsappNumber: "-",
-      profilePage: "muhammad-sulthoni-akbar.html",
-      avatarPath: "../assets/img/portofolio/muhammad-sulthoni-akbar/image.png",
-      resumePath: "-",
-    },
-    {
-      namaIntern: "Agnes Debora Marina Sangkide",
-      posisi: "-",
-      tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo ligula, vulputate et eros sed, lacinia dapibus urna. Vestibulum pellentesque dapibus luctus.",
-      socialMedia: [
-        {
-          instagram: "-",
-        },
-        {
-          linkedIn: "-",
-        },
-        ],
-      rating: 4,
-      whatsappNumber: "-",
-      profilePage: "agnes-debora-marina-sangkide.html",
-      avatarPath: "../assets/img/portofolio/agnes-debora-marina-sangkide/image.png",
-      resumePath: "-",
-    },
-    {
-      namaIntern: "Muhammad Alban",
-      posisi: "-",
-      tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo ligula, vulputate et eros sed, lacinia dapibus urna. Vestibulum pellentesque dapibus luctus.",
-      socialMedia: [
-        {
-          instagram: "-",
-        },
-        {
-          linkedIn: "-",
-        },
-        ],
-      rating: 4,
-      whatsappNumber: "-",
-      profilePage: "muhammad-alban.html",
-      avatarPath: "../assets/img/portofolio/muhammad-alban/image.png",
-      resumePath: "-",
-    },
-    {
-      namaIntern: "Rakha Damonza Yodiansyah",
-      posisi: "-",
-      tags: ["Completed Intern"], // atau tag lain sesuai status
-      AboutIntern:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo ligula, vulputate et eros sed, lacinia dapibus urna. Vestibulum pellentesque dapibus luctus.",
-      socialMedia: [
-        {
-          instagram: "-",
-        },
-        {
-          linkedIn: "-",
-        },
-      ],
-      rating: 3,
-      whatsappNumber: "-",
-      profilePage: "rakha-damonza-yodiansyah.html",
-      avatarPath: "../assets/img/portofolio/rakha-damonza-yodiansyah/image.png",
-      resumePath: "-",
-    },
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyDyzzEYbJkkl-N8snrQf14qvj8De4YliV0",
+    authDomain: "pre-dialogika.firebaseapp.com",
+    projectId: "pre-dialogika",
+    storageBucket: "pre-dialogika.firebasestorage.app",
+    messagingSenderId: "343771410480",
+    appId: "1:343771410480:web:32881c9868522090237df5"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+document.addEventListener("DOMContentLoaded", async () => {
+  let dataIntern = [
     {
       namaIntern: "Marheni Berna Rahmawati",
       posisi: "Recruiters Spesialist",
@@ -1692,6 +1366,48 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
     },
   ];
 
+  try {
+    const positionsSnapshot = await getDocs(collection(db, "positions"));
+    const positionsMap = {};
+    positionsSnapshot.forEach((doc) => {
+      // Asumsi field nama posisinya adalah 'name'
+      positionsMap[doc.id] = doc.data().name || doc.id;
+    });
+
+    const querySnapshot = await getDocs(collection(db, "interns_resume"));
+    const firebaseInterns = [];
+    querySnapshot.forEach((doc) => {
+      const data = doc.data();
+      
+      const mappedIntern = {
+        namaIntern: data.name || "Unknown",
+        posisi: positionsMap[data.position] || data.position || "Intern",
+        tags: ["Completed Intern"],
+        AboutIntern: data.description || "",
+        socialMedia: [],
+        rating: 3,
+        whatsappNumber: data.phone || "",
+        profilePage: data.user_id ? `detail.html?id=${data.user_id}` : "#",
+        avatarPath: data.photo || "../assets/img/portofolio/default.webp",
+        resumePath: "-",
+        referenceEmail: (data.appraisal && data.appraisal.referenceEmail) ? data.appraisal.referenceEmail : "admin@dialogika.co",
+      };
+      
+      if (data.instagram) {
+        mappedIntern.socialMedia.push({ instagram: data.instagram });
+      }
+      if (data.linkedin) {
+        mappedIntern.socialMedia.push({ linkedIn: data.linkedin });
+      }
+      
+      firebaseInterns.push(mappedIntern);
+    });
+    
+    dataIntern = [...firebaseInterns, ...dataIntern];
+  } catch (error) {
+    console.error("Error fetching interns from Firestore: ", error);
+  }
+
   // Helper to determine badge colors
   const getTagClass = (tag) => {
     switch (tag) {
@@ -1796,6 +1512,33 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
 
   const searchInput = document.getElementById("search-input-intern");
 
+  let currentPage = 1;
+  const itemsPerPage = 12;
+
+  const renderPagination = (totalItems) => {
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    if (totalPages <= 1) return "";
+    
+    let paginationHTML = '<nav aria-label="Page navigation" class="w-100 mt-4" style="clear: both; padding-top: 20px;"><ul class="pagination justify-content-center">';
+    
+    paginationHTML += `<li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
+      <a class="page-link" href="#completed-intern" data-page="${currentPage - 1}">Previous</a>
+    </li>`;
+    
+    for (let i = 1; i <= totalPages; i++) {
+      paginationHTML += `<li class="page-item ${currentPage === i ? 'active' : ''}">
+        <a class="page-link" href="#completed-intern" data-page="${i}">${i}</a>
+      </li>`;
+    }
+    
+    paginationHTML += `<li class="page-item ${currentPage === totalPages || totalPages === 0 ? 'disabled' : ''}">
+      <a class="page-link" href="#completed-intern" data-page="${currentPage + 1}">Next</a>
+    </li>`;
+    
+    paginationHTML += '</ul></nav>';
+    return paginationHTML;
+  };
+
   const renderInternCard = () => {
     const posisi = filterInput.value.toLowerCase();
     const nama = searchInput.value.toLowerCase();
@@ -1809,9 +1552,22 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
       return filteredNama && filteredPosisi;
     });
 
+    const totalItems = filteredDataIntern.length;
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    
+    if (currentPage > totalPages && totalPages > 0) {
+      currentPage = totalPages;
+    } else if (totalPages === 0) {
+      currentPage = 1;
+    }
+
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const paginatedData = filteredDataIntern.slice(startIndex, endIndex);
+
     // MAP data intern untuk membuat card untuk masing-masing intern
     if (container) {
-      container.innerHTML = filteredDataIntern
+      const cardsHTML = paginatedData
         .map((internData) => {
           // Membuat TAGS "Completed Intern", "Excellent Intern", dll
           const tagsHTML = internData.tags
@@ -1897,7 +1653,9 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
                 )}';">
                   <i class="bi bi-whatsapp"></i> Whatsapp Me
                 </button>
-                <button onclick="location.href='mailto:admin@dialogika.co';">
+                <button onclick="location.href='mailto:${
+                  internData.referenceEmail || "admin@dialogika.co"
+                }';">
                   <i class="bi bi-envelope-at"></i> My Supervisor
                 </button>
               </div>
@@ -1906,12 +1664,60 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
         `;
         })
         .join("");
+        
+      const paginationHTML = renderPagination(totalItems);
+      
+      container.innerHTML = `<div class="intern-section-title">COMPLETED INTERN</div>` + cardsHTML + paginationHTML;
+
+      // Add read more/read less functionality
+      const readMoreElements = container.querySelectorAll(".readMore");
+      const readLessElements = container.querySelectorAll(".readLess");
+      const moreTextElements = container.querySelectorAll(".moreText");
+      const dotsElements = container.querySelectorAll(".dots");
+  
+      readMoreElements.forEach((element, index) => {
+        element.addEventListener("click", function () {
+          moreTextElements[index].style.display = "inline";
+          readLessElements[index].style.display = "inline";
+          readMoreElements[index].style.display = "none";
+          dotsElements[index].style.display = "none";
+        });
+      });
+  
+      readLessElements.forEach((element, index) => {
+        element.addEventListener("click", function () {
+          moreTextElements[index].style.display = "none";
+          readLessElements[index].style.display = "none";
+          readMoreElements[index].style.display = "inline";
+          dotsElements[index].style.display = "inline";
+        });
+      });
+
+      // Pagination click events
+      const pageLinks = container.querySelectorAll(".page-link");
+      pageLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const selectedPage = parseInt(e.target.getAttribute("data-page"));
+          if (!isNaN(selectedPage)) {
+            currentPage = selectedPage;
+            renderInternCard();
+            window.location.hash = "#completed-intern";
+          }
+        });
+      });
     }
   };
 
   renderInternCard();
 
   // Event listener untuk select dan input search
-  filterInput.addEventListener("change", renderInternCard);
-  searchInput.addEventListener("input", renderInternCard);
+  filterInput.addEventListener("change", () => {
+    currentPage = 1;
+    renderInternCard();
+  });
+  searchInput.addEventListener("input", () => {
+    currentPage = 1;
+    renderInternCard();
+  });
 });
