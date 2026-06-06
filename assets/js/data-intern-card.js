@@ -1424,46 +1424,37 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
     }
   };
 
- // Helper to generate star ratings. Sekarang menerima rating numerik dan array tags.
-  const generateStars = (rating, tags) => {
-    let finalStars = 0;
-    
-    // 1. Prioritas: Menggunakan nilai numerik 'rating' jika ada dan valid (antara 0 hingga 5)
-    if (typeof rating === 'number' && rating > 0 && rating <= 5) {
-        finalStars = rating;
-    } 
-    // 2. Fallback: Menggunakan logika perhitungan dari 'tags'
-    else {
-        finalStars = 3; // Default value, bila tags hanya ada "Completed Intern"
-        if (tags.includes("Excellent Talent")) finalStars += 0.5;
-        if (tags.includes("Extended Intern")) finalStars += 0.5;
-        if (tags.includes("CEO Verified")) finalStars += 1;
-    }
-    
-    // Pastikan skor tidak melebihi 5
-    finalStars = Math.min(finalStars, 5); 
-    
-    const maxStars = 5;
-    const fullStars = Math.floor(finalStars);
-    let starsHTML = '';
-    
-    for (let i = 0; i < fullStars; i++) {
-        starsHTML += '<i class="bi bi-star-fill"></i>';
-    }
-    
-    if (finalStars % 1 === 0.5) {
-        starsHTML += '<i class="bi bi-star-half"></i>';
-    }
-    
-    const currentStarsCount = fullStars + (finalStars % 1 === 0.5 ? 1 : 0);
-    const emptyStars = maxStars - currentStarsCount;
+  // Helper to generate star ratings. Sekarang menerima rating numerik dan array tags.
+  const generateStars = (rating, tags) => {
+    let finalStars = 0; // 1. Prioritas: Menggunakan nilai numerik 'rating' jika ada dan valid (antara 0 hingga 5)
+    if (typeof rating === "number" && rating > 0 && rating <= 5) {
+      finalStars = rating;
+    } else // 2. Fallback: Menggunakan logika perhitungan dari 'tags'
+    {
+      finalStars = 3; // Default value, bila tags hanya ada "Completed Intern"
+      if (tags.includes("Excellent Talent")) finalStars += 0.5;
+      if (tags.includes("Extended Intern")) finalStars += 0.5;
+      if (tags.includes("CEO Verified")) finalStars += 1;
+    } // Pastikan skor tidak melebihi 5
+    finalStars = Math.min(finalStars, 5);
+    const maxStars = 5;
+    const fullStars = Math.floor(finalStars);
+    let starsHTML = "";
+    for (let i = 0; i < fullStars; i++) {
+      starsHTML += '<i class="bi bi-star-fill"></i>';
+    }
+    if (finalStars % 1 === 0.5) {
+      starsHTML += '<i class="bi bi-star-half"></i>';
+    }
+    const currentStarsCount = fullStars + (finalStars % 1 === 0.5 ? 1 : 0);
+    const emptyStars = maxStars - currentStarsCount;
 
-    for (let i = 0; i < emptyStars; i++) {
-        starsHTML += '<i class="bi bi-star"></i>';
-    }
+    for (let i = 0; i < emptyStars; i++) {
+      starsHTML += '<i class="bi bi-star"></i>';
+    }
 
-    return starsHTML;
-  };
+    return starsHTML;
+  };
 
   // SVG Icons untuk platform social media
   const getSocialIcon = (platform, url) => {
@@ -1543,12 +1534,12 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
     const posisi = filterInput.value.toLowerCase();
     const nama = searchInput.value.toLowerCase();
 
+    // Filter interns by position and name
     const filteredDataIntern = dataIntern.filter((item) => {
       const filteredPosisi =
         posisi === "all" || item.posisi.toLowerCase() === posisi;
       const filteredNama =
         nama === "" || item.namaIntern.toLowerCase().includes(nama);
-
       return filteredNama && filteredPosisi;
     });
 
@@ -1569,16 +1560,15 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
     if (container) {
       const cardsHTML = paginatedData
         .map((internData) => {
-          // Membuat TAGS "Completed Intern", "Excellent Intern", dll
+          // Build badge HTML for each tag (e.g. "Completed Intern", "Excellent Intern")
           const tagsHTML = internData.tags
             .map(
               (tag) =>
-                `<span class="badge rounded-pill ${getTagClass(
-                  tag
-                )}">${tag}</span>`
+                `<span class="badge rounded-pill ${getTagClass(tag)}">${tag}</span>`,
             )
             .join(" ");
 
+          // Build social media icon links
           const socialLinksHTML = internData.socialMedia
             .map((social) => {
               const platform = Object.keys(social)[0];
@@ -1587,38 +1577,34 @@ secara efektif dalam tim, baik dalam proyek kolaboratif maupun saat bekerja mand
             })
             .join(" ");
 
+          // Build star rating HTML
           const starsHTML = generateStars(internData.rating, internData.tags);
 
           return `
           <div class="card mt-4 mb-4" data-state="#about">
             <div class="card-header">
-              <div class="card-cover" style="
-        background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');"></div>
-              <img class="card-avatar" src="${
-                internData.avatarPath
-              }" alt="avatar" />
+              <div class="card-cover" style="background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');"></div>
+              <img class="card-avatar" src="${internData.avatarPath}" alt="avatar" />
               <h1 class="card-fullname">
                 ${internData.namaIntern}
-                ${
-                  internData.tags.includes("CEO Verified")
-                    ? '<i class="bi bi-patch-check-fill text-primary"></i>'
-                    : ""
-                }
+                <!-- Show verified badge only if CEO Verified tag is present -->
+                ${internData.tags.includes("CEO Verified") ? '<i class="bi bi-patch-check-fill text-primary"></i>' : ""}
               </h1>
               <h2 class="card-jobtitle">${internData.posisi}</h2>
               <div class="top-left">${starsHTML}</div>
+
+              <!-- Resume download button — only rendered if a resume path exists -->
               ${
                 internData.resumePath &&
-                `<div class="top-right">
-                    <a
-                      href="${internData.resumePath}"
-                      target="_blank">
-                      <i class="bi bi-box-arrow-in-down"></i>
-                    </a>
-                  </div>`
+                `
+                <div class="top-right">
+                  <a href="${internData.resumePath}" target="_blank">
+                    <i class="bi bi-box-arrow-in-down"></i>
+                  </a>
+                </div>`
               }
             </div>
-  
+
             <div class="card-main">
   <div class="card-section is-active" id="about">
     <div class="card-content">
