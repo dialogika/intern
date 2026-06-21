@@ -562,19 +562,6 @@
                                     <label for="candidatePosition">Posisi Internship Yang Dilamar<span class="required-mark">*</span></label>
                                     <select class="input-field" id="candidatePosition">
                                         <option value="">Pilih posisi</option>
-                                        <option value="Admin Kelas">Admin Kelas</option>
-                                        <option value="Liaison Officer" disabled>Liaison Officer (Ditutup)</option>
-                                        <option value="Admin Marketing/Telemarketing">Admin Marketing/Telemarketing</option>
-                                        <option value="Recruiter Specialist">Recruiter Specialist</option>
-                                        <option value="People Development">People Development</option>
-                                        <option value="Generalist" disabled>Generalist (Ditutup)</option>
-                                        <option value="Content Creator">Content Creator</option>
-                                        <option value="Social Media Analyst" disabled>Social Media Analyst (Ditutup)</option>
-                                        <option value="Content Writer">Content Writer</option>
-                                        <option value="HTML Writer">HTML Writer</option>
-                                        <option value="Design Specialist">Design Specialist</option>
-                                        <option value="Video Editor">Video Editor</option>
-                                        <option value="Event" disabled>Event (Ditutup)</option>
                                     </select>
                                     <p class="helper-text">Silakan pilih satu posisi internship yang sesuai dengan minat Anda.</p>
                                 </div>
@@ -753,7 +740,12 @@
             getFirestore,
             collection,
             addDoc,
-            serverTimestamp
+            serverTimestamp,
+            getDocs,
+            query,
+            where,
+            orderBy,
+            onSnapshot
         } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
         import {
             getStorage,
@@ -795,6 +787,61 @@
         window.uploadBytes = uploadBytes;
         window.getDownloadURL = getDownloadURL;
         window.uploadFileToStorage = uploadFileToStorage;
+
+        // Fetch internship positions from Firestore and populate dropdowns in real-time
+        function loadPositions() {
+            const q = query(
+                collection(db, "recruitment_positions"),
+                where("category", "array-contains", "internship")
+            );
+
+            onSnapshot(q, (snapshot) => {
+                const positions = snapshot.docs.map(ds => ({ id: ds.id, ...ds.data() }));
+                // Sort positions in memory by sort_order
+                positions.sort((a, b) => (a.sort_order || 0) - (b.sort_order || 0));
+
+                window.recruitmentPositions = positions;
+                window.recruitmentPositionsLoaded = true;
+
+                const wfhMap = new Map();
+                positions.forEach(p => wfhMap.set(p.name.toLowerCase(), !!p.wfh_eligible));
+                window.wfhEligiblePositions = wfhMap;
+
+                const selectEl = document.getElementById("candidatePosition");
+                if (selectEl) {
+                    const previousVal = selectEl.value;
+                    selectEl.innerHTML = '<option value="">Pilih posisi</option>';
+                    positions.forEach(p => {
+                        const opt = document.createElement("option");
+                        opt.value = p.id;
+                        if (p.is_active === false) {
+                            opt.textContent = p.name + " (Closed)";
+                            opt.disabled = true;
+                            opt.classList.add("text-slate-400");
+                        } else {
+                            opt.textContent = p.name;
+                        }
+                        selectEl.appendChild(opt);
+                    });
+
+                    // Restore previous value only if it exists and is active
+                    if (previousVal && positions.some(p => p.id === previousVal && p.is_active !== false)) {
+                        selectEl.value = previousVal;
+                    } else {
+                        selectEl.value = "";
+                    }
+                }
+
+                // Trigger update of WFH availability when positions change
+                if (typeof updateWfhAvailability === "function") {
+                    updateWfhAvailability();
+                }
+            }, (error) => {
+                console.error("Failed to load positions from Firestore", error);
+            });
+        }
+
+        loadPositions();
     </script>
 
     <script>
@@ -875,12 +922,55 @@
             candidateResume: "Attach Resume atau CV",
             candidateConsent: "Persetujuan penggunaan data"
         };
-        const wfhEligiblePositions = new Set([
-            "content writer",
-            "video editor",
-            "admin marketing/telemarketing",
-            "admin kelas"
-        ]);
+        const wfhEligiblePositions = window.wfhEligiblePositions || new Map();
+
+        function updateWfhAvailability() {
+            const positionSelect = document.getElementById("candidatePosition");
+            const wfhCheckbox = document.getElementById("candidateModeWfh");
+            const note = document.getElementById("candidateModeWfhNote");
+            if (!wfhCheckbox) return;
+
+            const selectedId = positionSelect ? positionSelect.value : "";
+            const positions = window.recruitmentPositions || [];
+            const selectedPosition = positions.find(p => p.id === selectedId);
+
+            const isEligible = selectedPosition ? !!selectedPosition.wfh_eligible : false;
+            const wfhWrapper = wfhCheckbox.closest('.consent-wrap');
+
+            wfhCheckbox.disabled = !isEligible;
+            if (!isEligible) {
+                wfhCheckbox.checked = false;
+            }
+
+            if (isEligible) {
+                if (wfhWrapper) {
+                    wfhWrapper.style.display = ""; // Show WFH option
+                }
+                if (note) {
+                    note.textContent = "Posisi ini bisa memilih WFO atau WFH.";
+                }
+            } else {
+                if (wfhWrapper) {
+                    wfhWrapper.style.display = "none"; // Hide WFH option
+                }
+                if (note) {
+                    note.textContent = "WFH tidak tersedia untuk posisi ini.";
+                }
+            }
+        }
+
+        function initWfhAfterPositions() {
+            if (window.recruitmentPositionsLoaded) { updateWfhAvailability(); return; }
+            let attempts = 0;
+            const waiter = setInterval(() => {
+                attempts++;
+                if (window.recruitmentPositionsLoaded || attempts > 50) {
+                    clearInterval(waiter);
+                    updateWfhAvailability();
+                }
+            }, 100);
+        }
+        initWfhAfterPositions();
 
         const checkIcon = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
@@ -1061,26 +1151,7 @@
             return { ok: true };
         }
 
-        function updateWfhAvailability() {
-            const positionSelect = document.getElementById("candidatePosition");
-            const wfhCheckbox = document.getElementById("candidateModeWfh");
-            const note = document.getElementById("candidateModeWfhNote");
-            if (!wfhCheckbox) return;
 
-            const position = positionSelect ? (positionSelect.value || "").trim().toLowerCase() : "";
-            const isEligible = wfhEligiblePositions.has(position);
-
-            wfhCheckbox.disabled = !isEligible;
-            if (!isEligible) {
-                wfhCheckbox.checked = false;
-            }
-
-            if (note) {
-                note.textContent = isEligible
-                    ? "Posisi ini bisa memilih WFO atau WFH."
-                    : "WFH hanya tersedia untuk posisi: Content Writer, Video Editor, Admin Marketing/Telemarketing, dan Admin Kelas.";
-            }
-        }
 
         function getMissingRequiredFields() {
             const missing = [];
@@ -1428,6 +1499,8 @@
                 internship: {
                     mode: mode || null,
                     position_id: positionId || null,
+                    position_name: positionName || null,
+                    position_category: "internship",
                     position: positionName || null,
                     platform: platform || null,
                     address: domicile || null,
