@@ -791,14 +791,23 @@
         // Fetch internship positions from Firestore and populate dropdowns in real-time
         function loadPositions() {
             const q = query(
-                collection(db, "recruitment_positions"),
-                where("category", "array-contains", "internship")
+                collection(db, "recruitment_positions")
             );
 
             onSnapshot(q, (snapshot) => {
-                const positions = snapshot.docs.map(ds => ({ id: ds.id, ...ds.data() }));
-                // Sort positions in memory by sort_order
-                positions.sort((a, b) => (a.sort_order || 0) - (b.sort_order || 0));
+                const positions = snapshot.docs
+                    .map(ds => ({ id: ds.id, ...ds.data() }))
+                    .filter(p => {
+                        const cat = p.category;
+                        return Array.isArray(cat) ? cat.includes("internship") : cat === "internship";
+                    });
+                // Sort positions in memory by is_active first, then sort_order
+                positions.sort((a, b) => {
+                    if (a.is_active !== b.is_active) {
+                        return (b.is_active ? 1 : 0) - (a.is_active ? 1 : 0);
+                    }
+                    return (a.sort_order || 0) - (b.sort_order || 0);
+                });
 
                 window.recruitmentPositions = positions;
                 window.recruitmentPositionsLoaded = true;
